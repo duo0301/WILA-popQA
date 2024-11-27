@@ -1,6 +1,6 @@
 '''
-The provided code snippet is part of a function that processes a list of QIDs (Wikidata entity IDs) to retrieve and format their properties, 
-and then saves the results to a JSON file. 
+This script queries a SPARQL endpoint to retrieve properties and sitelinks for a list of Wikidata QIDs.
+It formats the results into a structured dictionary and saves them as JSON files.
 
 Here's a detailed breakdown of the inputs and outputs:
 
