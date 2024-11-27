@@ -7,9 +7,14 @@ import pandas as pd
 
 
 def query_wikidata(sparql_query):
-    endpoint_url = "https://query.wikidata.org/sparql"
+    # endpoint_url = "https://query.wikidata.org/sparql"
+    endpoint_url = "http://localhost:1234/api/endpoint/sparql"
     sparql = SPARQLWrapper(endpoint_url)
-    sparql.setQuery(sparql_query)
+    sparql.setQuery(f"""
+        PREFIX wd: <http://www.wikidata.org/entity/>
+        PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+        {sparql_query}
+    """)
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     return results
@@ -75,16 +80,16 @@ occupation_classes = ["Q2500638", "Q82955", "Q33999", "Q36180"]
 
 # Define language sets
 language_sets = {
-    "English": ["Q1860", "Q7976", "Q7979", "Q44676", "Q44679", "Q7053766", "Q48767245"],  # English variants
+    #"English": ["Q1860", "Q7976", "Q7979", "Q44676", "Q44679", "Q7053766", "Q48767245"],  # English variants
     "Arabic": ["Q13955", "Q29919", "Q56499","Q1194795", "Q1654327","Q5329979"],  # Arabic and Egyptian Arabic
-    "German": ["Q188", "Q248682", "Q306626","Q106937689", "Q26721", "Q387066"],  # German and its variants
-    "French": ["Q150", "Q1450506","Q214086", "Q3083193", "Q979914","Q83503"],  # French and Canadian French
-    "Kannada": ["Q33673", "Q6363888","Q6478506"],
-    "Italian": ["Q652"],
-    "Polish": ["Q809"],
-    "Hindi": ["Q1568"],
-    "Russian": ["Q7737","Q608923"],
-    "Chinese": ["Q7850"]
+    #"German": ["Q188", "Q248682", "Q306626","Q106937689", "Q26721", "Q387066"],  # German and its variants
+    #"French": ["Q150", "Q1450506","Q214086", "Q3083193", "Q979914","Q83503"],  # French and Canadian French
+    #"Kannada": ["Q33673", "Q6363888","Q6478506"],
+    #"Italian": ["Q652"],
+    #"Polish": ["Q809"],
+    #"Hindi": ["Q1568"],
+    #"Russian": ["Q7737","Q608923"],
+    #"Chinese": ["Q7850"]
 }
 
 for offset in range(10000, 10000*2, 1000):
@@ -95,6 +100,8 @@ for offset in range(10000, 10000*2, 1000):
         subclasses_clause = " ".join([f"wd:{class_id}" for class_id in occupation_classes])
 
         sparql_query = f"""
+            PREFIX wd: <http://www.wikidata.org/entity/>
+            PREFIX wdt: <http://www.wikidata.org/prop/direct/>
             SELECT distinct ?creator WHERE {{
             ?creator wdt:P31 wd:Q5;  # Instance of human
                     wdt:P106 ?occupation;  # Occupation
