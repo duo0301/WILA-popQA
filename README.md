@@ -44,6 +44,7 @@ The Ravenclaw Project is a collaborative effort involving contributions from:
 - [Aschimmenti (Andrea Schimmenti)](https://github.com/aschimmenti)
 - [Marta Boscariol](https://github.com/martaboscariol)
 - [Jan Kalo](https://github.com/JanKalo)
+- [Kanchanks (Kanchan Shivashankar)](https://github.com/kanchanks)
 
 ## How to Contribute
 We welcome contributions to make the Ravenclaw Project better. Here’s how you can help:
