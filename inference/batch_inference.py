@@ -151,7 +151,7 @@ def inference(model_id, dataset):
         "property": all_property,
         "gt": all_gt,
         "llm_output": all_output,
-        "prompt": all_prompt
+        "prompt": [prompt.replace("\n", " ") for prompt in all_prompt]
     })
 
     # Get unique values from the 'property' column
