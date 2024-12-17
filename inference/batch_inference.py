@@ -1,5 +1,6 @@
 import json
 import pprint
+import pandas as pd
 
 import torch
 from torch.utils.data import DataLoader
@@ -26,7 +27,7 @@ def get_generation_args(model_id, tokenizer):
 
         generation_args = {
             "eos_token_id":terminators,
-            "max_new_tokens": 1024,
+            "max_new_tokens": 128,
             "do_sample": True,
             "temperature": 0.1,
             "top_p": 0.9,
@@ -78,13 +79,13 @@ def inference(model_id, dataset):
         # torch.backends.cuda.matmul.allow_fp8 = True
         model = AutoModelForCausalLM.from_pretrained(
             model_id,
-            device_map="cuda:0",
+            device_map="cuda:0" if torch.cuda.is_available() else "cpu",
             load_in_4bit=True,
         )
     else:
         model = AutoModelForCausalLM.from_pretrained(
             model_id,
-            device_map="cuda:0",
+            device_map="cuda:0" if torch.cuda.is_available() else "cpu",
             torch_dtype=torch.float32,
             # torch_dtype=torch.bfloat16,
             trust_remote_code=True,
@@ -108,14 +109,22 @@ def inference(model_id, dataset):
 
     dataloader = DataLoader(dataset, batch_size=batch_size, num_workers=4, shuffle=False, collate_fn=collate_fn)
 
-    returned_text = []
+    all_Q_number = [] # q number (entity)
+    all_LoE = [] # language of entity
+    all_LoQ = [] # language of question
+    all_property = [] # property (question)
+    all_gt = [] # ground truth
+    all_prompt = [] # prompt
+    all_output = [] # llm_output
+
     for batch in dataloader:
 
-        print (batch['Q_number']) # q number (entity)
-        print (batch['LoE']) # language of entity
-        print (batch['LoQ']) # language of question
-        print (batch['LoI']) # language of instruction
-        print (batch['qid']) # questions id
+        all_Q_number.extend(batch['Q_number'])
+        all_LoE.extend(batch['LoE'])
+        all_LoQ.extend(batch['LoQ'])
+        all_property.extend(batch['property'])
+        all_prompt.extend(batch['prompt'])
+        all_gt.extend(batch['gt'])
 
         texts = tokenizer.apply_chat_template(batch['input'], add_generation_prompt=False, tokenize=False)
         inputs = tokenizer(texts, padding="longest", return_tensors="pt")
@@ -126,17 +135,41 @@ def inference(model_id, dataset):
             **generation_args
         )
         gen_text = tokenizer.batch_decode(gen_tokens, skip_special_tokens=True)
-        gen_text = [full_text[len(previous_texts[idx]):] for idx, full_text in enumerate(gen_text)]
-        pprint.pprint(gen_text)
-        returned_text.extend(gen_text)
 
-    return returned_text
+        if 'meta-llama' in model_id:
+            # remove prefix, e.g., 'assistant\n\nМарокканское.'
+            gen_text = [full_text[len(previous_texts[idx]) + 11:] for idx, full_text in enumerate(gen_text)]
+        else:
+            gen_text = [full_text[len(previous_texts[idx]):] for idx, full_text in enumerate(gen_text)]
+        all_output.extend(gen_text)
+        pprint.pprint (gen_text)
+
+    df = pd.DataFrame({
+        "Q_number": all_Q_number,
+        "LoE": all_LoE,
+        "LoQ": all_LoQ,
+        "property": all_property,
+        "gt": all_gt,
+        "llm_output": all_output,
+        "prompt": all_prompt
+    })
+
+    # Get unique values from the 'property' column
+    unique_properties = df['property'].unique()
+
+    # Split and save each group as a separate CSV
+    for prop in unique_properties:
+        subset_df = df[df['property'] == prop]  # Filter rows for this property
+        filename = f"property_{prop}.csv"  # Create filename dynamically
+        subset_df.to_csv(filename, index=False)
+        print(f"Saved rows with property '{prop}' to {filename}")
 
 def main():
 
-    data_dir = '/apollo/dya/ISWS/data/'
-    lang_set = ['en', 'de', 'it', 'pl', 'ru']
-    dataset = MultilingualQADataset(data_dir, lang_set)
+    data_dir = '/apollo/dya/ISWS/data_v1/Prompt_final'
+    lang_set = ['ar', 'en', 'de', 'fr', 'it', 'pl', 'ru', 'zh']
+    properties = ['pob', 'dob', 'occ', 'country']
+    dataset = MultilingualQADataset(data_dir, lang_set, properties)
 
     model_ids = [
         # "microsoft/Phi-3-mini-4k-instruct", # not working well
@@ -153,7 +186,7 @@ def main():
     for model_id in model_ids:
         for run_id in range(num_run):
             print ( "model {} - run {}".format(model_id, run_id) )
-            results = inference(model_id, dataset)
+            inference(model_id, dataset)
 
 if __name__ == '__main__':
     main()
