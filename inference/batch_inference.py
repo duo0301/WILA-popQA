@@ -6,7 +6,7 @@ import torch
 from torch.utils.data import DataLoader
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from pt_dataset import MultilingualQADataset, collate_fn
+from pt_dataset import MultilingualQADataset_v1, MultilingualQADataset_v2, collate_fn
 
 # fp8 inference settings
 # Llama-3.1-70B
@@ -160,23 +160,24 @@ def inference(model_id, dataset):
     # Split and save each group as a separate CSV
     for prop in unique_properties:
         subset_df = df[df['property'] == prop]  # Filter rows for this property
-        filename = f"property_{prop}.csv"  # Create filename dynamically
+        filename = f"property_{prop}_{model_id.split('/')[0]}.csv"  # Create filename dynamically
         subset_df.to_csv(filename, index=False)
         print(f"Saved rows with property '{prop}' to {filename}")
 
 def main():
 
-    data_dir = '/apollo/dya/ISWS/data_v1/Prompt_final'
+    # data_dir = '/apollo/dya/ISWS/data_v1/Prompt_final'
+    data_dir = '/apollo/dya/ISWS/data_v2'
     lang_set = ['ar', 'en', 'de', 'fr', 'it', 'pl', 'ru', 'zh']
     properties = ['pob', 'dob', 'occ', 'country']
-    dataset = MultilingualQADataset(data_dir, lang_set, properties)
+    dataset = MultilingualQADataset_v2(data_dir, lang_set, properties)
 
     model_ids = [
         # "microsoft/Phi-3-mini-4k-instruct", # not working well
         # "microsoft/Phi-3.5-mini-instruct", # not working well
-        # "mistralai/Mistral-7B-Instruct-v0.2", # good
+        "mistralai/Mistral-7B-Instruct-v0.2", # good
         # "meta-llama/Meta-Llama-3-8B-Instruct", # good
-        "meta-llama/Meta-Llama-3.1-8B-Instruct", # good
+        # "meta-llama/Meta-Llama-3.1-8B-Instruct", # good
         # "meta-llama/Meta-Llama-3.1-70B-Instruct", # good
         # "google/gemma-1.1-7b-it", # good
         # "google/gemma-2-9b-it" # not working well

@@ -41,7 +41,7 @@ def collate_fn(samples):
     }
     return batch
 
-class MultilingualQADataset(Dataset):
+class MultilingualQADataset_v1(Dataset):
     def __init__(self, data_dir, lang_set, properties):
         """
         Initializes the dataset by setting up paths and transformations.
@@ -89,6 +89,9 @@ class MultilingualQADataset(Dataset):
 
                         if LoQ not in prompt:
                             continue
+
+                        # print (prompt)
+                        # print (LoQ)
 
                         instruction, question = prompt[LoQ].replace('  ', '').split('##')[1:]
 
@@ -141,6 +144,108 @@ class MultilingualQADataset(Dataset):
         #     ]
         # else:
         #     raise ("Could not find the model_id.")
+
+        if self.model_id in ["microsoft/Phi-3.5-mini-instruct", "microsoft/Phi-3-mini-4k-instruct",
+                        "meta-llama/Meta-Llama-3-8B-Instruct", "meta-llama/Meta-Llama-3.1-8B-Instruct",
+                        "meta-llama/Meta-Llama-3.1-70B-Instruct"]:
+            messages = [
+                {"role": "system", "content": instruction },
+                {"role": "user", "content": question },
+            ]
+
+        elif self.model_id in ["mistralai/Mistral-7B-Instruct-v0.2", "google/gemma-1.1-7b-it", "google/gemma-2-9b-it"]:
+            messages = [
+                {"role": "user", "content": instruction + question },
+            ]
+        else:
+            raise ("Could not find the model_id.")
+
+        item['input'] = messages
+        item['prompt'] = instruction + question
+
+        return item
+
+class MultilingualQADataset_v2(Dataset):
+    def __init__(self, data_dir, lang_set, properties):
+        """
+        Initializes the dataset by setting up paths and transformations.
+        """
+        self.base_path = data_dir
+        self.lang_set_LoE = lang_set
+        self.lang_set_LoQ = lang_set
+        self.properties = properties
+        self.data = self._load_data()
+
+    # Some llms have fine-grained roles in prompt engineering, e.g., system role, user role
+    # So it is required to call this function to generate correct prompt based for certain llms
+    def _set_model_id(self, model_id):
+        self.model_id = model_id
+
+    def _load_data(self):
+        """
+        Loads data from the directory and returns a list or other data structure.
+
+        Returns:
+            data (list): A list containing all the data samples.
+        """
+
+        data = []
+        for LoE in self.lang_set_LoE:
+            file_path = self.base_path + '/' + 'prompt_{}_100.json'.format(LoE)
+            if os.path.isfile(file_path):
+                with open(file_path, 'r') as fp:
+                    raw_data = json.load(fp)
+            else:
+                raise ("Could not read the file.")
+
+            for ent_info in raw_data:
+                ent_ID = ent_info['ent_ID']
+                question_prompts = sorted([key for key in ent_info.keys() if key.endswith('_prompt')])
+                question_ground_truths = sorted([key for key in ent_info.keys() if key.endswith('_ground_truth')])
+                LoQ = ent_info['lang']
+                for prompt_key, gt_key in zip(question_prompts, question_ground_truths):
+
+                    assert prompt_key.replace('_prompt', '') == gt_key.replace('_ground_truth', '')
+
+                    property = prompt_key.replace('_prompt', '')
+                    prompt = ent_info[prompt_key]
+                    gt = ent_info[gt_key]
+
+                    if len(prompt) == 0:
+                        continue
+
+                    # print(ent_ID, LoE, LoQ)
+                    # print(prompt)
+
+                    instruction, question = prompt.replace('  ', '').split('##')[1:]
+                    data.append([ent_ID, LoE, property, LoQ, gt, instruction, question])
+
+                    # if property in ['dob']:
+                    #     data.append([ent_info['ent_ID'], LoE, property, LoQ, gt, instruction, question])
+                    # else:
+                    #     data.append([ent_ID, LoE, property, LoQ, gt[LoQ], instruction, question])
+
+        return data
+
+    def __len__(self):
+        """
+        Returns the total number of samples in the dataset.
+        """
+        return len(self.data)
+
+    def __getitem__(self, idx):
+        """
+        Generates one sample of data.
+        """
+
+        Q_number, LoE, property, LoQ, gt, instruction, question = self.data[idx]
+
+        item = dict()
+        item['Q_number'] = Q_number # q number (entity)
+        item['LoE'] = LoE # language of entity
+        item['property'] = property # questions id
+        item['LoQ'] = LoQ # language of question
+        item['gt'] = gt # ground truth
 
         if self.model_id in ["microsoft/Phi-3.5-mini-instruct", "microsoft/Phi-3-mini-4k-instruct",
                         "meta-llama/Meta-Llama-3-8B-Instruct", "meta-llama/Meta-Llama-3.1-8B-Instruct",
