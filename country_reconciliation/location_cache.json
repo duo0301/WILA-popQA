@@ -22766,5 +22766,6273 @@
   "长沙县|zh": [
     "长沙县",
     "Q1062120"
+  ],
+  "جمهورية مصر|ar": [
+    "جمهورية مصر",
+    "Q3087763"
+  ],
+  "Republic of Egypt|en": [
+    "Egypt",
+    "Q79"
+  ],
+  "République d Égypte|fr": [
+    "République d'Égypte",
+    "Q3087763"
+  ],
+  "L Égypte|fr": null,
+  "L|fr": [
+    "Lituanie",
+    "Q37"
+  ],
+  "Égypte|fr": [
+    "Égypte",
+    "Q79"
+  ],
+  "Repubblica d Egitto|it": [
+    "Repubblica d'Egitto",
+    "Q3087763"
+  ],
+  "Republika Egiptu|pl": [
+    "Republika Egiptu",
+    "Q3087763"
+  ],
+  "Egipt|pl": [
+    "Egipt",
+    "Q79"
+  ],
+  "Республика Египет|ru": [
+    "Республика Египет",
+    "Q3087763"
+  ],
+  "Саудовское|ru": null,
+  "埃及共和國|zh": [
+    "埃及共和國",
+    "Q3087763"
+  ],
+  "土耳其|zh": [
+    "土耳其",
+    "Q43"
+  ],
+  "Republik Ägypten 1953–1958|de": null,
+  "Ägypten|de": [
+    "Ägypten",
+    "Q79"
+  ],
+  "阿爾及利亞|zh": [
+    "阿爾及利亞",
+    "Q262"
+  ],
+  "阿尔及利亚|zh": [
+    "阿爾及利亞",
+    "Q262"
+  ],
+  "Алжирское|ru": null,
+  "Algieria|pl": [
+    "Algieria",
+    "Q262"
+  ],
+  "Algérie|fr": [
+    "Algérie",
+    "Q262"
+  ],
+  "Algeria|en": [
+    "Algeria",
+    "Q262"
+  ],
+  "Algerien|de": [
+    "Algerien",
+    "Q262"
+  ],
+  "دولة فلسطين|ar": [
+    "دولة فلسطين",
+    "Q219060"
+  ],
+  "فلسطين|ar": [
+    "دولة فلسطين",
+    "Q219060"
+  ],
+  "巴勒斯坦|zh": [
+    "巴勒斯坦",
+    "Q219060"
+  ],
+  "埃及|zh": [
+    "埃及",
+    "Q79"
+  ],
+  "Государство Палестина|ru": [
+    "Государство Палестина",
+    "Q219060"
+  ],
+  "Палестинское|ru": [
+    "Государство Палестина",
+    "Q219060"
+  ],
+  "Państwo Palestyna|pl": [
+    "Państwo Palestyna",
+    "Q219060"
+  ],
+  "Palestyna|pl": [
+    "Państwo Palestyna",
+    "Q219060"
+  ],
+  "État de Palestine|fr": [
+    "État de Palestine",
+    "Q219060"
+  ],
+  "La Palestine|fr": [
+    "La Palestine",
+    "Q112855520"
+  ],
+  "State of Palestine|en": [
+    "State of Palestine",
+    "Q219060"
+  ],
+  "Palestine|en": [
+    "State of Palestine",
+    "Q219060"
+  ],
+  "Staat Palästina|de": [
+    "Staat Palästina",
+    "Q219060"
+  ],
+  "Palästinenser|de": null,
+  "Stato di Palestina|it": [
+    "Palestina",
+    "Q219060"
+  ],
+  "沙特阿拉伯|zh": [
+    "沙特阿拉伯",
+    "Q851"
+  ],
+  "Arabia Saudyjska|pl": [
+    "Arabia Saudyjska",
+    "Q851"
+  ],
+  "السعودية|ar": [
+    "السعودية",
+    "Q851"
+  ],
+  "Arabie saoudite|fr": [
+    "Arabie saoudite",
+    "Q851"
+  ],
+  "Saudi Arabia|en": [
+    "Saudi Arabia",
+    "Q851"
+  ],
+  "Saudi-Arabien|de": [
+    "Saudi-Arabien",
+    "Q851"
+  ],
+  "Саудовская Аравия|ru": [
+    "Саудовская Аравия",
+    "Q851"
+  ],
+  "敘利亞|zh": [
+    "敘利亞",
+    "Q858"
+  ],
+  "Сирия|ru": [
+    "Сирия",
+    "Q858"
+  ],
+  "Сирийское|ru": null,
+  "Syria|pl": [
+    "Syria",
+    "Q858"
+  ],
+  "Syria|en": [
+    "Syria",
+    "Q858"
+  ],
+  "La Syrie|fr": null,
+  "La|fr": [
+    "Laos",
+    "Q819"
+  ],
+  "Syrien|de": [
+    "Syrien",
+    "Q858"
+  ],
+  "Syrisch|de": [
+    "Syrische Republik",
+    "Q146885"
+  ],
+  "سوريا|ar": [
+    "سوريا",
+    "Q858"
+  ],
+  "Египет|ru": [
+    "Египет",
+    "Q79"
+  ],
+  "Египетское|ru": null,
+  "تشاد|ar": [
+    "تشاد",
+    "Q657"
+  ],
+  "乍得|zh": [
+    "乍得",
+    "Q657"
+  ],
+  "Чад|ru": [
+    "Чад",
+    "Q657"
+  ],
+  "Czad|pl": [
+    "Czad",
+    "Q657"
+  ],
+  "Tchad|fr": [
+    "Tchad",
+    "Q657"
+  ],
+  "Chad|en": [
+    "Chad",
+    "Q657"
+  ],
+  "Tschad|de": [
+    "Tschad",
+    "Q657"
+  ],
+  "Libanon|de": [
+    "Libanon",
+    "Q822"
+  ],
+  "黎巴嫩|zh": [
+    "黎巴嫩",
+    "Q822"
+  ],
+  "伊朗|zh": [
+    "伊朗",
+    "Q794"
+  ],
+  "Liban|pl": [
+    "Liban",
+    "Q822"
+  ],
+  "Liban|fr": [
+    "Liban",
+    "Q822"
+  ],
+  "Le Liban|fr": null,
+  "Le|fr": null,
+  "Lebanon|en": [
+    "Lebanon",
+    "Q822"
+  ],
+  "لبنان|ar": [
+    "لبنان",
+    "Q822"
+  ],
+  "Ливан|ru": [
+    "Ливан",
+    "Q822"
+  ],
+  "Иран|ru": [
+    "Иран",
+    "Q794"
+  ],
+  "叙利亚|zh": [
+    "敘利亞",
+    "Q858"
+  ],
+  "Palestine|fr": [
+    "État de Palestine",
+    "Q219060"
+  ],
+  "阿拉伯联合酋长国|zh": [
+    "阿拉伯联合酋长国",
+    "Q878"
+  ],
+  "阿拉伯聯合大公國|zh": [
+    "阿拉伯联合酋长国",
+    "Q878"
+  ],
+  "Zjednoczone Emiraty Arabskie|pl": [
+    "Zjednoczone Emiraty Arabskie",
+    "Q878"
+  ],
+  "Saudyjski|pl": null,
+  "Émirats arabes unis|fr": [
+    "Émirats arabes unis",
+    "Q878"
+  ],
+  "Les Émirats arabes unis|fr": [
+    "Émirats arabes unis",
+    "Q878"
+  ],
+  "United Arab Emirates|en": [
+    "United Arab Emirates",
+    "Q878"
+  ],
+  "Vereinigte Arabische Emirate|de": [
+    "Vereinigte Arabische Emirate",
+    "Q878"
+  ],
+  "الإمارات العربية المتحدة|ar": [
+    "الإمارات العربية المتحدة",
+    "Q878"
+  ],
+  "Объединённые Арабские Эмираты|ru": [
+    "Объединённые Арабские Эмираты",
+    "Q878"
+  ],
+  "Оман|ru": [
+    "Оман",
+    "Q842"
+  ],
+  "Sacro Romano Impero|it": [
+    "Sacro Romano Impero",
+    "Q12548"
+  ],
+  "神聖羅馬帝國|zh": [
+    "神聖羅馬帝國",
+    "Q12548"
+  ],
+  "丹麥|zh": [
+    "丹麥",
+    "Q35"
+  ],
+  "Священная Римская империя|ru": [
+    "Священная Римская империя",
+    "Q12548"
+  ],
+  "Саксонское|ru": [
+    "курфюршество Саксония",
+    "Q156199"
+  ],
+  "Święte Cesarstwo Rzymskie|pl": [
+    "Święte Cesarstwo Rzymskie",
+    "Q12548"
+  ],
+  "Niemiec|pl": [
+    "Niemiecka Republika Demokratyczna",
+    "Q16957"
+  ],
+  "Saint-Empire romain germanique|fr": [
+    "Saint-Empire romain germanique",
+    "Q12548"
+  ],
+  "Le Saint-Empire romain germanique|fr": null,
+  "Saint-Empire|fr": [
+    "Saint-Empire romain germanique",
+    "Q12548"
+  ],
+  "Holy Roman Empire|en": [
+    "Holy Roman Empire",
+    "Q12548"
+  ],
+  "Heiliges Römisches Reich|de": [
+    "Heiliges Römisches Reich Deutscher Nation",
+    "Q12548"
+  ],
+  "Preußen|de": [
+    "Preußen",
+    "Q38872"
+  ],
+  "الإمبراطورية الرومانية المقدسة|ar": [
+    "الإمبراطورية الرومانية المقدسة",
+    "Q12548"
+  ],
+  "النمسا|ar": [
+    "النمسا",
+    "Q40"
+  ],
+  "آق قويونلو|ar": [
+    "آق قويونلو",
+    "Q555994"
+  ],
+  "Aq Qoyunlu|de": [
+    "Aq Qoyunlu",
+    "Q555994"
+  ],
+  "Aserbaidschaner|de": null,
+  "Aq Qoyunlu|en": [
+    "Aq Qoyunlu",
+    "Q555994"
+  ],
+  "Azerbaijan|en": [
+    "Azerbaijan",
+    "Q227"
+  ],
+  "Aq Qoyunlu|fr": [
+    "Aq Qoyunlu",
+    "Q555994"
+  ],
+  "L Arménie|fr": null,
+  "Arménie|fr": [
+    "Arménie",
+    "Q399"
+  ],
+  "Ak Koyunlu|it": [
+    "Ak Koyunlu",
+    "Q555994"
+  ],
+  "Ak Kojunlu|pl": [
+    "Ak Kojunlu",
+    "Q555994"
+  ],
+  "Azerbejdżan|pl": [
+    "Azerbejdżan",
+    "Q227"
+  ],
+  "Ак-Коюнлу|ru": [
+    "Ак-Коюнлу",
+    "Q555994"
+  ],
+  "Азербайджанец|ru": null,
+  "白羊王朝|zh": [
+    "白羊王朝",
+    "Q555994"
+  ],
+  "法國|zh": [
+    "法國",
+    "Q142"
+  ],
+  "沙烏地阿拉伯|zh": [
+    "沙特阿拉伯",
+    "Q851"
+  ],
+  "Arabii Saudyjskiej|pl": null,
+  "Arabii|pl": [
+    "Arabia Saudyjska",
+    "Q851"
+  ],
+  "Saudyjskiej|pl": null,
+  "تركيا|ar": [
+    "تركيا",
+    "Q43"
+  ],
+  "Турецкое|ru": [
+    "Турецкое",
+    "Q12162909"
+  ],
+  "Turcja|pl": [
+    "Turcja",
+    "Q43"
+  ],
+  "Turquie|fr": [
+    "Turquie",
+    "Q43"
+  ],
+  "Turkey|en": [
+    "Turkey",
+    "Q43"
+  ],
+  "Türkei|de": [
+    "Türkei",
+    "Q43"
+  ],
+  "瑞典|zh": [
+    "瑞典",
+    "Q34"
+  ],
+  "英國|zh": [
+    "英国",
+    "Q145"
+  ],
+  "Szwecja|pl": [
+    "Szwecja",
+    "Q34"
+  ],
+  "السويد|ar": [
+    "السويد",
+    "Q34"
+  ],
+  "فرنسا|ar": [
+    "فرنسا",
+    "Q142"
+  ],
+  "Suède|fr": [
+    "Suède",
+    "Q34"
+  ],
+  "La Suède|fr": null,
+  "Sweden|en": [
+    "Sweden",
+    "Q34"
+  ],
+  "Schweden|de": [
+    "Schweden",
+    "Q34"
+  ],
+  "Норвежка|ru": [
+    "Норвежская военная академия",
+    "Q1506510"
+  ],
+  "Impero ottomano|it": [
+    "Impero ottomano",
+    "Q12560"
+  ],
+  "奥斯曼帝国|zh": [
+    "奥斯曼帝国",
+    "Q12560"
+  ],
+  "Османская империя|ru": [
+    "Османская империя",
+    "Q12560"
+  ],
+  "Алжирец|ru": null,
+  "Imperium osmańskie|pl": [
+    "Imperium osmańskie",
+    "Q12560"
+  ],
+  "Ottoman Empire|en": [
+    "Ottoman Empire",
+    "Q12560"
+  ],
+  "Empire ottoman|fr": [
+    "Empire ottoman",
+    "Q12560"
+  ],
+  "L Algérie|fr": null,
+  "Osmanisches Reich|de": [
+    "Osmanisches Reich",
+    "Q12560"
+  ],
+  "الدولة العثمانية|ar": [
+    "الدولة العثمانية",
+    "Q12560"
+  ],
+  "突尼西亞|zh": [
+    "突尼西亞",
+    "Q948"
+  ],
+  "Tunezja|pl": [
+    "Tunezja",
+    "Q948"
+  ],
+  "تونس|ar": [
+    "تونس",
+    "Q948"
+  ],
+  "Tunisie|fr": [
+    "Tunisie",
+    "Q948"
+  ],
+  "La Tunisie|fr": null,
+  "Tunesien|de": [
+    "Tunesien",
+    "Q948"
+  ],
+  "Tunisia|en": [
+    "Tunisia",
+    "Q948"
+  ],
+  "الدولة الأموية|ar": [
+    "الدولة الأموية",
+    "Q8575586"
+  ],
+  "Umayyaden-Kalifat|de": [
+    "Umayyaden-Kalifat",
+    "Q8575586"
+  ],
+  "Umayyad Caliphate|en": [
+    "Umayyad Caliphate",
+    "Q8575586"
+  ],
+  "Califat omeyyade|fr": [
+    "Califat omeyyade",
+    "Q8575586"
+  ],
+  "La République démocratique du Congo|fr": null,
+  "République|fr": [
+    "République du Congo",
+    "Q971"
+  ],
+  "Congo|fr": [
+    "République démocratique du Congo",
+    "Q974"
+  ],
+  "Califfato Omayyade|it": [
+    "Califfato Omayyade",
+    "Q8575586"
+  ],
+  "kalifat Umajjadów|pl": [
+    "kalifat Umajjadów",
+    "Q8575586"
+  ],
+  "Омейядский халифат|ru": [
+    "Омейядский халифат",
+    "Q8575586"
+  ],
+  "Греческое|ru": [
+    "Греческое",
+    "Q4148759"
+  ],
+  "倭馬亞王朝|zh": [
+    "倭马亚哈里发国",
+    "Q8575586"
+  ],
+  "敘利亞人|zh": null,
+  "科威特|zh": [
+    "科威特",
+    "Q817"
+  ],
+  "الكويت|ar": [
+    "الكويت",
+    "Q817"
+  ],
+  "Kuwait|en": [
+    "Kuwait",
+    "Q817"
+  ],
+  "Kuwait|de": [
+    "Kuwait",
+    "Q817"
+  ],
+  "埃塞俄比亞|zh": [
+    "埃塞俄比亚",
+    "Q115"
+  ],
+  "摩洛哥|zh": [
+    "摩洛哥",
+    "Q1028"
+  ],
+  "Марокко|ru": [
+    "Марокко",
+    "Q1028"
+  ],
+  "Марокканское|ru": null,
+  "Maroko|pl": [
+    "Maroko",
+    "Q1028"
+  ],
+  "Maroc|fr": [
+    "Maroc",
+    "Q1028"
+  ],
+  "Morocco|en": [
+    "Morocco",
+    "Q1028"
+  ],
+  "Marokko|de": [
+    "Marokko",
+    "Q1028"
+  ],
+  "المغرب|ar": [
+    "المغرب",
+    "Q1028"
+  ],
+  "帖木兒帝國|zh": [
+    "帖木兒帝國",
+    "Q484195"
+  ],
+  "印度|zh": [
+    "印度",
+    "Q668"
+  ],
+  "Государство Тимуридов|ru": [
+    "Государство Тимуридов",
+    "Q484195"
+  ],
+  "Timurydzi|pl": [
+    "Timurydzi",
+    "Q484195"
+  ],
+  "Afganistan|pl": [
+    "Afganistan",
+    "Q889"
+  ],
+  "Impero timuride|it": [
+    "Impero timuride",
+    "Q484195"
+  ],
+  "Empire timouride|fr": [
+    "Empire timouride",
+    "Q484195"
+  ],
+  "Je n ai pas trouvé d informations sur Djami|fr": null,
+  "Djami|fr": null,
+  "Timurid Empire|en": [
+    "Timurid Empire",
+    "Q484195"
+  ],
+  "India|en": [
+    "India",
+    "Q668"
+  ],
+  "Timuriden|de": [
+    "Timuriden",
+    "Q484195"
+  ],
+  "Perser|de": [
+    "Perserreich",
+    "Q83311"
+  ],
+  "الدولة التيمورية|ar": [
+    "الدولة التيمورية",
+    "Q484195"
+  ],
+  "以色列|zh": [
+    "以色列",
+    "Q801"
+  ],
+  "塞爾維亞|zh": [
+    "塞爾維亞",
+    "Q403"
+  ],
+  "Израиль|ru": [
+    "Израиль",
+    "Q801"
+  ],
+  "Израильское|ru": [
+    "Северное Израильское царство",
+    "Q230407"
+  ],
+  "Izrael|pl": [
+    "Izrael",
+    "Q801"
+  ],
+  "Israël|fr": [
+    "Israël",
+    "Q801"
+  ],
+  "Regno di Maiorca|it": [
+    "Regno di Maiorca",
+    "Q836676"
+  ],
+  "馬略卡王國|zh": [
+    "馬略卡王國",
+    "Q836676"
+  ],
+  "阿根廷|zh": [
+    "阿根廷",
+    "Q414"
+  ],
+  "Майорка|ru": [
+    "Майорка",
+    "Q836676"
+  ],
+  "Римлянин|ru": null,
+  "Królestwo Majorki|pl": [
+    "Królestwo Majorki",
+    "Q836676"
+  ],
+  "Katalończyk|pl": null,
+  "Königreich Mallorca|de": [
+    "Königreich Mallorca",
+    "Q836676"
+  ],
+  "Mallorquin|de": null,
+  "royaume de Majorque|fr": [
+    "royaume de Majorque",
+    "Q836676"
+  ],
+  "Andorre|fr": [
+    "Andorre",
+    "Q228"
+  ],
+  "مملكة مايوركا|ar": [
+    "مملكة مايوركا",
+    "Q836676"
+  ],
+  "إسرائيل|ar": [
+    "إسرائيل",
+    "Q801"
+  ],
+  "Kingdom of Majorca|en": [
+    "Kingdom of Majorca",
+    "Q836676"
+  ],
+  "Mallorca|en": [
+    "Mallorca",
+    "Q8828"
+  ],
+  "阿塞拜疆|zh": [
+    "阿塞拜疆",
+    "Q227"
+  ],
+  "Francji|pl": null,
+  "La France|fr": [
+    "France",
+    "Q142"
+  ],
+  "Lebanese|en": [
+    "Lebanon",
+    "Q822"
+  ],
+  "埃及蘇丹國|zh": [
+    "埃及蘇丹國",
+    "Q370173"
+  ],
+  "Sułtanat Egiptu|pl": [
+    "Sułtanat Egiptu",
+    "Q370173"
+  ],
+  "Turecki|pl": null,
+  "Sultanato d Egitto|it": [
+    "Sultanato d'Egitto",
+    "Q370173"
+  ],
+  "السلطنة المصرية|ar": [
+    "السلطنة المصرية",
+    "Q370173"
+  ],
+  "Sultanat d Égypte|fr": [
+    "sultanat d'Égypte",
+    "Q370173"
+  ],
+  "Sultanate of Egypt|en": [
+    "Sultanate of Egypt",
+    "Q370173"
+  ],
+  "Sultanat Ägypten|de": [
+    "Sultanat Ägypten",
+    "Q370173"
+  ],
+  "Nigerianer|de": null,
+  "Египетский султанат|ru": [
+    "Египетский султанат",
+    "Q370173"
+  ],
+  "Сенегальское|ru": null,
+  "Jordańczyk|pl": null,
+  "Иранец|ru": null,
+  "Palestinian|en": [
+    "State of Palestine",
+    "Q219060"
+  ],
+  "Gibuti|it": [
+    "Gibuti",
+    "Q977"
+  ],
+  "Jordan|en": [
+    "Jordan",
+    "Q810"
+  ],
+  "Jordanie|fr": [
+    "Jordanie",
+    "Q810"
+  ],
+  "Giordania|it": [
+    "Giordania",
+    "Q810"
+  ],
+  "Jordania|pl": [
+    "Jordania",
+    "Q810"
+  ],
+  "Иордания|ru": [
+    "Иордания",
+    "Q810"
+  ],
+  "Иорданское|ru": [
+    "Иордания",
+    "Q810"
+  ],
+  "約旦|zh": [
+    "約旦",
+    "Q810"
+  ],
+  "伊拉克|zh": [
+    "伊拉克",
+    "Q796"
+  ],
+  "جيبوتي|ar": [
+    "جيبوتي",
+    "Q977"
+  ],
+  "Dschibuti|de": [
+    "Dschibuti",
+    "Q977"
+  ],
+  "Djibouti|en": [
+    "Djibouti",
+    "Q977"
+  ],
+  "La Djibouti|fr": null,
+  "Джибути|ru": [
+    "Джибути",
+    "Q977"
+  ],
+  "Эфиопия|ru": [
+    "Эфиопия",
+    "Q115"
+  ],
+  "الأردن|ar": [
+    "الأردن",
+    "Q810"
+  ],
+  "吉布提|zh": [
+    "吉布提",
+    "Q977"
+  ],
+  "索马里|zh": [
+    "索馬里",
+    "Q1045"
+  ],
+  "Jordanien|de": [
+    "Jordanien",
+    "Q810"
+  ],
+  "Irakier|de": null,
+  "Egyptian|en": null,
+  "La Finlande|fr": null,
+  "Finlande|fr": [
+    "Finlande",
+    "Q33"
+  ],
+  "Japan|de": [
+    "Japan",
+    "Q17"
+  ],
+  "Finland|en": [
+    "Finland",
+    "Q33"
+  ],
+  "اليابان|ar": [
+    "اليابان",
+    "Q17"
+  ],
+  "Finlandia|it": [
+    "Finlandia",
+    "Q33"
+  ],
+  "Finlandia|pl": [
+    "Finlandia",
+    "Q33"
+  ],
+  "Финляндия|ru": [
+    "Финляндия",
+    "Q33"
+  ],
+  "毛里塔尼亞|zh": [
+    "毛里塔尼亞",
+    "Q1025"
+  ],
+  "Мавритания|ru": [
+    "Мавритания",
+    "Q1025"
+  ],
+  "Мавританское|ru": null,
+  "Mauretania|pl": [
+    "Mauretania",
+    "Q1025"
+  ],
+  "Mauretanii|pl": null,
+  "Mauritanie|fr": [
+    "Mauritanie",
+    "Q1025"
+  ],
+  "Mauritania|en": [
+    "Mauritania",
+    "Q1025"
+  ],
+  "Mauretanien|de": [
+    "Mauretanien",
+    "Q1025"
+  ],
+  "科威特人|zh": null,
+  "Австралийское|ru": null,
+  "American|en": null,
+  "US-amerikanisch|de": null,
+  "US|de": [
+    "Vereinigte Staaten",
+    "Q30"
+  ],
+  "اليمن|ar": [
+    "اليمن",
+    "Q805"
+  ],
+  "塞爾維亞人|zh": null,
+  "Irak|pl": [
+    "Irak",
+    "Q796"
+  ],
+  "L Empire abbasside|fr": null,
+  "Israel|en": [
+    "Israel",
+    "Q801"
+  ],
+  "Israel|de": [
+    "Israel",
+    "Q801"
+  ],
+  "四大哈里发的伊斯蘭國|zh": [
+    "四大哈里发的伊斯蘭國",
+    "Q12490507"
+  ],
+  "阿拉伯人|zh": null,
+  "Califfato dei Rashidun|it": [
+    "Califfato dei Rashidun",
+    "Q12490507"
+  ],
+  "califat Rachidun|fr": [
+    "califat Rachidun",
+    "Q12490507"
+  ],
+  "L Arabie saoudite|fr": null,
+  "Arabie|fr": [
+    "Arabie saoudite",
+    "Q851"
+  ],
+  "Rashidun Caliphate|en": [
+    "Rashidun Caliphate",
+    "Q12490507"
+  ],
+  "Arabia|en": [
+    "Saudi Arabia",
+    "Q851"
+  ],
+  "الخلافة الراشدة|ar": [
+    "الخلافة الراشدة",
+    "Q12490507"
+  ],
+  "Праведный халифат|ru": [
+    "Праведный халифат",
+    "Q12490507"
+  ],
+  "Саудовец|ru": null,
+  "Колонии Италии|ru": [
+    "Колонии Италии",
+    "Q926295"
+  ],
+  "Сомалийское|ru": [
+    "Пунтленд",
+    "Q485112"
+  ],
+  "الإمبراطورية الاستعمارية الإيطالية|ar": [
+    "الإمبراطورية الاستعمارية الإيطالية",
+    "Q926295"
+  ],
+  "الصومال|ar": [
+    "الصومال",
+    "Q1045"
+  ],
+  "Italienische Kolonien|de": [
+    "Italienische Kolonien",
+    "Q926295"
+  ],
+  "Somalia|de": [
+    "Somalia",
+    "Q1045"
+  ],
+  "Italian Empire|en": [
+    "Italian Empire",
+    "Q926295"
+  ],
+  "Somalia|en": [
+    "Somalia",
+    "Q1045"
+  ],
+  "Empire colonial italien|fr": [
+    "Empire colonial italien",
+    "Q926295"
+  ],
+  "La Somalie|fr": null,
+  "Somalie|fr": [
+    "Somalie",
+    "Q1045"
+  ],
+  "Impero coloniale italiano|it": [
+    "Impero coloniale italiano",
+    "Q926295"
+  ],
+  "Kolonie włoskie|pl": [
+    "Kolonie włoskie",
+    "Q926295"
+  ],
+  "Somalia|pl": [
+    "Somalia",
+    "Q1045"
+  ],
+  "Vereinigtes Königreich Großbritannien und Irland|de": [
+    "Vereinigtes Königreich Großbritannien und Irland",
+    "Q174193"
+  ],
+  "Britin|de": [
+    "Britin",
+    "Q122590240"
+  ],
+  "意大利殖民地|zh": [
+    "意大利殖民地",
+    "Q926295"
+  ],
+  "索馬里|zh": [
+    "索馬里",
+    "Q1045"
+  ],
+  "المملكة المتحدة لبريطانيا العظمى وأيرلندا|ar": [
+    "المملكة المتحدة لبريطانيا العظمى وأيرلندا",
+    "Q174193"
+  ],
+  "كندا|ar": [
+    "كندا",
+    "Q16"
+  ],
+  "United Kingdom of Great Britain and Ireland|en": [
+    "United Kingdom of Great Britain and Ireland",
+    "Q174193"
+  ],
+  "British|en": [
+    "British Columbia",
+    "Q1973"
+  ],
+  "Royaume-Uni de Grande-Bretagne et d Irlande|fr": [
+    "Royaume-Uni de Grande-Bretagne et d'Irlande",
+    "Q174193"
+  ],
+  "Le Royaume-Uni|fr": null,
+  "Royaume-Uni|fr": [
+    "Royaume-Uni",
+    "Q145"
+  ],
+  "Royaume|fr": [
+    "Royaume-Uni",
+    "Q145"
+  ],
+  "Uni|fr": [
+    "Union soviétique",
+    "Q15180"
+  ],
+  "Regno Unito di Gran Bretagna e Irlanda|it": [
+    "Regno Unito di Gran Bretagna e Irlanda",
+    "Q174193"
+  ],
+  "Zjednoczone Królestwo Wielkiej Brytanii i Irlandii|pl": [
+    "Zjednoczone Królestwo Wielkiej Brytanii i Irlandii",
+    "Q174193"
+  ],
+  "Wielka Brytania|pl": [
+    "Wielka Brytania",
+    "Q145"
+  ],
+  "Соединённое королевство Великобритании и Ирландии|ru": [
+    "Соединённое королевство Великобритании и Ирландии",
+    "Q174193"
+  ],
+  "Британское|ru": [
+    "Британское Сомали",
+    "Q662653"
+  ],
+  "大不列颠及爱尔兰联合王国|zh": [
+    "大不列颠及爱尔兰联合王国",
+    "Q174193"
+  ],
+  "Oman|pl": [
+    "Oman",
+    "Q842"
+  ],
+  "阿拉伯聯合酋長國|zh": null,
+  "Арабское|ru": [
+    "Арабское королевство Сирия",
+    "Q146600"
+  ],
+  "薩拉戈薩王國|zh": [
+    "薩拉戈薩王國",
+    "Q33061"
+  ],
+  "Taifa di Saragozza|it": [
+    "Taifa di Saragozza",
+    "Q33061"
+  ],
+  "Britischer|de": [
+    "Order of Saint John",
+    "Q1465984"
+  ],
+  "Le Royaume-Uni de Grande-Bretagne et d Irlande|fr": null,
+  "Grande-Bretagne|fr": [
+    "Royaume-Uni",
+    "Q145"
+  ],
+  "Grande|fr": [
+    "Royaume-Uni",
+    "Q145"
+  ],
+  "Bretagne|fr": [
+    "Bretagne",
+    "Q12130"
+  ],
+  "Канадское|ru": null,
+  "قطر|ar": [
+    "قطر",
+    "Q846"
+  ],
+  "Katar|de": [
+    "Katar",
+    "Q846"
+  ],
+  "Qatar|en": [
+    "Qatar",
+    "Q846"
+  ],
+  "Qatar|fr": [
+    "Qatar",
+    "Q846"
+  ],
+  "Qatar|it": [
+    "Qatar",
+    "Q846"
+  ],
+  "Katar|pl": [
+    "Katar",
+    "Q846"
+  ],
+  "Катар|ru": [
+    "Катар",
+    "Q846"
+  ],
+  "卡塔尔|zh": [
+    "卡塔尔",
+    "Q846"
+  ],
+  "卡達|zh": [
+    "卡塔尔",
+    "Q846"
+  ],
+  "طائفة سرقسطة|ar": [
+    "طائفة سرقسطة",
+    "Q33061"
+  ],
+  "taïfa de Saragosse|fr": [
+    "taïfa de Saragosse",
+    "Q33061"
+  ],
+  "Le Maroc|fr": [
+    "le maroc",
+    "Q6931579"
+  ],
+  "فلسطين الانتدابية|ar": [
+    "فلسطين الانتدابية",
+    "Q193714"
+  ],
+  "Taifa of Zaragoza|en": null,
+  "Al-Andalus|en": [
+    "Wilayah of Al-Andalus",
+    "Q6159007"
+  ],
+  "المملكة المتحدة|ar": [
+    "المملكة المتحدة",
+    "Q145"
+  ],
+  "نيوزيلندا|ar": [
+    "نيوزيلندا",
+    "Q664"
+  ],
+  "Vereinigtes Königreich|de": [
+    "Vereinigtes Königreich",
+    "Q145"
+  ],
+  "Britisch|de": [
+    "UTC+1",
+    "Q6655"
+  ],
+  "United Kingdom|en": [
+    "United Kingdom",
+    "Q145"
+  ],
+  "Australia|pl": [
+    "Australia",
+    "Q408"
+  ],
+  "Великобритания|ru": [
+    "Великобритания",
+    "Q145"
+  ],
+  "英国|zh": [
+    "英国",
+    "Q145"
+  ],
+  "L Angleterre|fr": null,
+  "Völkerbundsmandat für Palästina|de": [
+    "Völkerbundsmandat für Palästina",
+    "Q193714"
+  ],
+  "Palestine mandataire|fr": [
+    "Palestine mandataire",
+    "Q193714"
+  ],
+  "Mandato britannico della Palestina|it": [
+    "Palestina mandataria",
+    "Q193714"
+  ],
+  "Подмандатная Палестина|ru": [
+    "Подмандатная Палестина",
+    "Q193714"
+  ],
+  "巴勒斯坦託管地|zh": [
+    "巴勒斯坦託管地",
+    "Q193714"
+  ],
+  "Taifa von Saragossa|de": [
+    "Taifa von Saragossa",
+    "Q33061"
+  ],
+  "Mandatory Palestine|en": [
+    "Mandatory Palestine",
+    "Q193714"
+  ],
+  "United States|en": [
+    "United States",
+    "Q30"
+  ],
+  "Индийское|ru": [
+    "индийское стандартное время",
+    "Q604055"
+  ],
+  "Amerikaner|de": null,
+  "Les États-Unis d Amérique|fr": [
+    "États-Unis",
+    "Q30"
+  ],
+  "Nigru|pl": null,
+  "Сербия|ru": [
+    "Сербия",
+    "Q403"
+  ],
+  "Ирак|ru": [
+    "Ирак",
+    "Q796"
+  ],
+  "Иракское|ru": null,
+  "Russland|de": [
+    "Russland",
+    "Q159"
+  ],
+  "俄罗斯|zh": [
+    "俄罗斯",
+    "Q159"
+  ],
+  "Россия|ru": [
+    "Россия",
+    "Q159"
+  ],
+  "Российское|ru": [
+    "Русское царство",
+    "Q186096"
+  ],
+  "Rosja|pl": [
+    "Rosja",
+    "Q159"
+  ],
+  "Rosji|pl": [
+    "Roszczino",
+    "Q2121050"
+  ],
+  "La Russie|fr": null,
+  "روسيا|ar": [
+    "روسيا",
+    "Q159"
+  ],
+  "波斯人|zh": null,
+  "Kurdystan|pl": null,
+  "Russia|en": [
+    "Russia",
+    "Q159"
+  ],
+  "Irak|fr": [
+    "Irak",
+    "Q796"
+  ],
+  "La Turquie|fr": null,
+  "البرازيل|ar": [
+    "البرازيل",
+    "Q155"
+  ],
+  "Iraq|en": [
+    "Iraq",
+    "Q796"
+  ],
+  "L Egypte|fr": null,
+  "Egypte|fr": [
+    "Égypte",
+    "Q79"
+  ],
+  "العراق|ar": [
+    "العراق",
+    "Q796"
+  ],
+  "Malezja|pl": [
+    "Malezja",
+    "Q833"
+  ],
+  "Irak|de": [
+    "Irak",
+    "Q796"
+  ],
+  "Kurdistan|de": [
+    "Kurdistan",
+    "Q134386"
+  ],
+  "Нидерланды|ru": [
+    "Нидерланды",
+    "Q55"
+  ],
+  "Syrian|en": [
+    "Syria",
+    "Q858"
+  ],
+  "Альморавиды|ru": [
+    "Альморавиды",
+    "Q75613"
+  ],
+  "穆拉比特王朝|zh": [
+    "穆拉比特王朝",
+    "Q75613"
+  ],
+  "Jemen|de": [
+    "Jemen",
+    "Q805"
+  ],
+  "Греция|ru": [
+    "Греция",
+    "Q41"
+  ],
+  "伊拉克人|zh": null,
+  "Almoravidi|it": [
+    "Almoravidi",
+    "Q75613"
+  ],
+  "Almorawidzi|pl": [
+    "Almorawidzi",
+    "Q75613"
+  ],
+  "Ibn Tufajl|pl": null,
+  "Ibn|pl": null,
+  "Tufajl|pl": null,
+  "印度尼西亞|zh": [
+    "印度尼西亚",
+    "Q252"
+  ],
+  "Almoravides|fr": [
+    "Almoravides",
+    "Q75613"
+  ],
+  "Almoravid dynasty|en": [
+    "Almoravid dynasty",
+    "Q75613"
+  ],
+  "Almoravid Caliphate|en": null,
+  "Almoravid|en": [
+    "Almoravid dynasty",
+    "Q75613"
+  ],
+  "Caliphate|en": [
+    "Umayyad Caliphate",
+    "Q8575586"
+  ],
+  "الدولة المرابطية|ar": [
+    "الدولة المرابطية",
+    "Q75613"
+  ],
+  "Almoraviden|de": [
+    "Almoraviden",
+    "Q75613"
+  ],
+  "Andalusier|de": null,
+  "阿爾圖格王朝|zh": [
+    "阿爾圖格王朝",
+    "Q1133431"
+  ],
+  "Артукиды|ru": [
+    "Артукиды",
+    "Q1133431"
+  ],
+  "Artukidzi|pl": [
+    "Artukidzi",
+    "Q1133431"
+  ],
+  "Artuqidi|it": [
+    "Artuqidi",
+    "Q1133431"
+  ],
+  "Artukides|fr": [
+    "Artukides",
+    "Q1133431"
+  ],
+  "أرتقيون|ar": [
+    "الدولة الأرتقية",
+    "Q1133431"
+  ],
+  "Ortoqiden|de": [
+    "Ortoqiden",
+    "Q1133431"
+  ],
+  "Artuqids|en": [
+    "Artuqids",
+    "Q1133431"
+  ],
+  "后倭马亚王朝|zh": [
+    "后倭马亚王朝",
+    "Q171740"
+  ],
+  "Kalifat Kordoby|pl": [
+    "Kalifat Kordoby",
+    "Q171740"
+  ],
+  "Irlandia|pl": [
+    "Irlandia",
+    "Q27"
+  ],
+  "Califfato di Cordova|it": [
+    "Califfato di Cordova",
+    "Q171740"
+  ],
+  "califat de Cordoue|fr": [
+    "califat de Cordoue",
+    "Q171740"
+  ],
+  "Le pays de citoyenneté de Salomon ibn Gabirol est l Espagne|fr": null,
+  "Salomon|fr": [
+    "Îles Salomon",
+    "Q685"
+  ],
+  "Gabirol|fr": null,
+  "Espagne|fr": [
+    "Espagne",
+    "Q29"
+  ],
+  "Caliphate of Córdoba|en": [
+    "Caliphate of Córdoba",
+    "Q171740"
+  ],
+  "Spain|en": [
+    "Spain",
+    "Q29"
+  ],
+  "Kalifat von Córdoba|de": [
+    "Kalifat von Córdoba",
+    "Q171740"
+  ],
+  "Jüdisch|de": null,
+  "الدولة الأموية في الأندلس|ar": [
+    "الدولة الأموية في الأندلس",
+    "Q129177915"
+  ],
+  "Кордовский халифат|ru": [
+    "Кордовский халифат",
+    "Q171740"
+  ],
+  "烏茲別克|zh": [
+    "乌兹别克斯坦",
+    "Q265"
+  ],
+  "俄羅斯|zh": [
+    "俄罗斯",
+    "Q159"
+  ],
+  "Uzbekistan|pl": [
+    "Uzbekistan",
+    "Q265"
+  ],
+  "Kazachstan|pl": [
+    "Kazachstan",
+    "Q232"
+  ],
+  "Ouzbékistan|fr": [
+    "Ouzbékistan",
+    "Q265"
+  ],
+  "Uzbekistan|en": [
+    "Uzbekistan",
+    "Q265"
+  ],
+  "Kazakhstan|en": [
+    "Kazakhstan",
+    "Q232"
+  ],
+  "Usbekistan|de": [
+    "Usbekistan",
+    "Q265"
+  ],
+  "أوزبكستان|ar": [
+    "أوزبكستان",
+    "Q265"
+  ],
+  "أوروجواي|ar": [
+    "الأوروغواي",
+    "Q77"
+  ],
+  "Узбекистан|ru": [
+    "Узбекистан",
+    "Q265"
+  ],
+  "Russian Empire|en": [
+    "Russian Empire",
+    "Q34266"
+  ],
+  "Moldova|en": [
+    "Moldova",
+    "Q217"
+  ],
+  "Гранадский эмират|ru": [
+    "Гранадский эмират",
+    "Q238445"
+  ],
+  "Германия|ru": [
+    "Германия",
+    "Q183"
+  ],
+  "格拉納達王國|zh": [
+    "格拉納達王國",
+    "Q238445"
+  ],
+  "羅馬人|zh": null,
+  "الإمبراطورية الروسية|ar": [
+    "الإمبراطورية الروسية",
+    "Q34266"
+  ],
+  "Russisches Kaiserreich|de": [
+    "Russisches Kaiserreich",
+    "Q34266"
+  ],
+  "Moldau|de": [
+    "Moldau",
+    "Q217"
+  ],
+  "Российская империя|ru": [
+    "Российская империя",
+    "Q34266"
+  ],
+  "Молдавия|ru": [
+    "Молдавия",
+    "Q217"
+  ],
+  "Empire russe|fr": [
+    "Empire russe",
+    "Q34266"
+  ],
+  "Moldavie|fr": [
+    "Moldavie",
+    "Q217"
+  ],
+  "Impero russo|it": [
+    "Impero russo",
+    "Q34266"
+  ],
+  "Moldavia|it": [
+    "Moldavia",
+    "Q217"
+  ],
+  "Imperium Rosyjskie|pl": [
+    "Imperium Rosyjskie",
+    "Q34266"
+  ],
+  "Mołdawia|pl": [
+    "Mołdawia",
+    "Q217"
+  ],
+  "俄罗斯帝国|zh": [
+    "俄罗斯帝国",
+    "Q34266"
+  ],
+  "Emirat Grenady|pl": [
+    "Emirat Grenady",
+    "Q238445"
+  ],
+  "Sultanato di Granada|it": [
+    "Sultanato di Granada",
+    "Q238445"
+  ],
+  "royaume de Grenade|fr": [
+    "royaume de Grenade",
+    "Q238445"
+  ],
+  "Léon l Africain est un auteur et un voyageur italien du XVIe siècle|fr": null,
+  "Léon|fr": [
+    "Léon",
+    "Q458198"
+  ],
+  "Africain|fr": null,
+  "XVIe|fr": null,
+  "Regno dell Iraq|it": [
+    "Regno dell'Iraq",
+    "Q149805"
+  ],
+  "Emirate of Granada|en": [
+    "Emirate of Granada",
+    "Q238445"
+  ],
+  "Königreich Irak|de": [
+    "Königreich Irak",
+    "Q149805"
+  ],
+  "Iraqi Republic 1958–1968|en": null,
+  "république d Irak 1958-1968|fr": null,
+  "جمهورية العراق|ar": [
+    "العراق",
+    "Q796"
+  ],
+  "Republika Iraku|pl": [
+    "Republika Iraku",
+    "Q3041595"
+  ],
+  "Республика Ирак|ru": [
+    "Ирак",
+    "Q796"
+  ],
+  "伊拉克共和国|zh": [
+    "伊拉克第一共和国",
+    "Q3041595"
+  ],
+  "مملكة غرناطة|ar": [
+    "مملكة غرناطة",
+    "Q238445"
+  ],
+  "ليبيا|ar": [
+    "ليبيا",
+    "Q1016"
+  ],
+  "Emirat von Granada|de": [
+    "Emirat von Granada",
+    "Q238445"
+  ],
+  "Algerier|de": null,
+  "Bahrain|en": [
+    "Bahrain",
+    "Q398"
+  ],
+  "Bahreïn|fr": [
+    "Bahreïn",
+    "Q398"
+  ],
+  "Bahrein|it": [
+    "Bahrein",
+    "Q398"
+  ],
+  "Bahrain|it": [
+    "Bahrein",
+    "Q398"
+  ],
+  "Bahrajn|pl": [
+    "Bahrajn",
+    "Q398"
+  ],
+  "巴林|zh": [
+    "巴林",
+    "Q398"
+  ],
+  "黎巴嫩|en": [
+    "Lebanon",
+    "Q822"
+  ],
+  "印度|en": [
+    "India",
+    "Q668"
+  ],
+  "黎巴嫩|ar": [
+    "لبنان",
+    "Q822"
+  ],
+  "印度|ar": [
+    "الهند",
+    "Q668"
+  ],
+  "黎巴嫩|de": [
+    "Libanon",
+    "Q822"
+  ],
+  "德國|de": [
+    "Deutschland",
+    "Q183"
+  ],
+  "黎巴嫩|fr": [
+    "Liban",
+    "Q822"
+  ],
+  "印度|fr": [
+    "Inde",
+    "Q668"
+  ],
+  "黎巴嫩|it": [
+    "Libano",
+    "Q822"
+  ],
+  "印度|it": [
+    "India",
+    "Q668"
+  ],
+  "黎巴嫩|pl": [
+    "Liban",
+    "Q822"
+  ],
+  "印度|pl": [
+    "Indie",
+    "Q668"
+  ],
+  "黎巴嫩|ru": [
+    "Ливан",
+    "Q822"
+  ],
+  "印度|ru": [
+    "Индия",
+    "Q668"
+  ],
+  "Bahrain|de": [
+    "Bahrain",
+    "Q398"
+  ],
+  "Грузинское|ru": [
+    "Грузинское",
+    "Q4150550"
+  ],
+  "Etiopia|pl": [
+    "Etiopia",
+    "Q115"
+  ],
+  "Libia|pl": [
+    "Libia",
+    "Q1016"
+  ],
+  "La Libye|fr": null,
+  "Libye|fr": [
+    "Libye",
+    "Q1016"
+  ],
+  "Libya|en": [
+    "Libya",
+    "Q1016"
+  ],
+  "Francja|pl": [
+    "Francja",
+    "Q142"
+  ],
+  "Французское|ru": [
+    "Королевство Франция",
+    "Q70972"
+  ],
+  "Libyen|de": [
+    "Libyen",
+    "Q1016"
+  ],
+  "Ottomano|it": null,
+  "Бельгийское|ru": [
+    "Бельгийское Конго",
+    "Q213510"
+  ],
+  "Turcji|pl": null,
+  "土耳其人|zh": null,
+  "L Empire ottoman|fr": null,
+  "Ottoman|en": [
+    "Ottoman Empire",
+    "Q12560"
+  ],
+  "Osmanisch|de": [
+    "Osmanisches Reich",
+    "Q12560"
+  ],
+  "Principato di Tver|it": [
+    "Principato di Tver'",
+    "Q163268"
+  ],
+  "Großfürstentum Twer|de": [
+    "Großfürstentum Twer",
+    "Q163268"
+  ],
+  "Principality of Tver|en": [
+    "Principality of Tver",
+    "Q163268"
+  ],
+  "principauté de Tver|fr": [
+    "principauté de Tver",
+    "Q163268"
+  ],
+  "Księstwo twerskie|pl": [
+    "Księstwo twerskie",
+    "Q163268"
+  ],
+  "Великое княжество Тверское|ru": [
+    "Великое княжество Тверское",
+    "Q163268"
+  ],
+  "特维尔大公国|zh": [
+    "特维尔大公国",
+    "Q163268"
+  ],
+  "阿尔巴尼亚|zh": [
+    "阿爾巴尼亞",
+    "Q222"
+  ],
+  "Nigeria|pl": [
+    "Nigeria",
+    "Q1033"
+  ],
+  "Аббасидский халифат|ru": [
+    "Аббасидский халифат",
+    "Q12536"
+  ],
+  "馬來西亞|zh": [
+    "馬來西亞",
+    "Q833"
+  ],
+  "الدولة العباسية|ar": [
+    "الدولة العباسية",
+    "Q12536"
+  ],
+  "Abbasiden-Kalifat|de": [
+    "Abbasiden-Kalifat",
+    "Q12536"
+  ],
+  "Gambianer|de": null,
+  "Abbasid Caliphate|en": [
+    "Abbasid Caliphate",
+    "Q12536"
+  ],
+  "Niger|en": [
+    "Niger",
+    "Q1032"
+  ],
+  "califat abbasside|fr": [
+    "califat abbasside",
+    "Q12536"
+  ],
+  "califfato abbaside|it": [
+    "califfato abbaside",
+    "Q12536"
+  ],
+  "Kalifat Abbasydski|pl": [
+    "Kalifat Abbasydski",
+    "Q12536"
+  ],
+  "阿拔斯王朝|zh": [
+    "阿拔斯王朝",
+    "Q12536"
+  ],
+  "Малайзия|ru": [
+    "Малайзия",
+    "Q833"
+  ],
+  "السودان|ar": [
+    "السودان",
+    "Q1049"
+  ],
+  "Malaysia|en": [
+    "Malaysia",
+    "Q833"
+  ],
+  "Sudan|de": [
+    "Sudan",
+    "Q1049"
+  ],
+  "Soudan|fr": [
+    "Soudan",
+    "Q1049"
+  ],
+  "La République du Soudan|fr": [
+    "Soudan",
+    "Q1049"
+  ],
+  "Sudan|pl": [
+    "Sudan",
+    "Q1049"
+  ],
+  "Судан|ru": [
+    "Судан",
+    "Q1049"
+  ],
+  "苏丹|zh": [
+    "苏丹",
+    "Q1049"
+  ],
+  "Südsudanesisch|de": null,
+  "Le Soudan|fr": null,
+  "ماليزيا|ar": [
+    "ماليزيا",
+    "Q833"
+  ],
+  "South Sudan|en": [
+    "South Sudan",
+    "Q958"
+  ],
+  "Malaysia|de": [
+    "Malaysia",
+    "Q833"
+  ],
+  "Malaysier|de": null,
+  "Королевство Франция|ru": [
+    "Королевство Франция",
+    "Q70972"
+  ],
+  "Польское|ru": [
+    "Польское",
+    "Q18408233"
+  ],
+  "法蘭西王國|zh": [
+    "法蘭西王國",
+    "Q70972"
+  ],
+  "Regno di Francia|it": [
+    "Regno di Francia",
+    "Q70972"
+  ],
+  "Królestwo Francji|pl": [
+    "Królestwo Francji",
+    "Q70972"
+  ],
+  "royaume de France|fr": [
+    "royaume de France",
+    "Q70972"
+  ],
+  "La République de Venise|fr": null,
+  "Kingdom of France|en": [
+    "Kingdom of France",
+    "Q70972"
+  ],
+  "Dutch|en": [
+    "Suriname",
+    "Q730"
+  ],
+  "Königreich Frankreich|de": [
+    "Königreich Frankreich",
+    "Q70972"
+  ],
+  "Niederländisch|de": [
+    "Republik der Vereinigten Niederlande",
+    "Q170072"
+  ],
+  "مملكة فرنسا|ar": [
+    "مملكة فرنسا",
+    "Q70972"
+  ],
+  "冰島|zh": [
+    "冰島",
+    "Q189"
+  ],
+  "États-Unis d Amérique|fr": [
+    "États-Unis",
+    "Q30"
+  ],
+  "Канада|ru": [
+    "Канада",
+    "Q16"
+  ],
+  "加拿大|zh": [
+    "加拿大",
+    "Q16"
+  ],
+  "Американское|ru": [
+    "Американское Самоа",
+    "Q16641"
+  ],
+  "Royaume-Uni et États-Unis|fr": null,
+  "États|fr": [
+    "États-Unis",
+    "Q30"
+  ],
+  "Unis|fr": null,
+  "Kanada|pl": [
+    "Kanada",
+    "Q16"
+  ],
+  "Canada|en": [
+    "Canada",
+    "Q16"
+  ],
+  "Kanada|de": [
+    "Kanada",
+    "Q16"
+  ],
+  "Kanadierin|de": null,
+  "إيرلندا|ar": [
+    "أيرلندا الشمالية",
+    "Q26"
+  ],
+  "Amerikanerin|de": null,
+  "美国|zh": [
+    "美國",
+    "Q30"
+  ],
+  "إيطاليا|ar": [
+    "إيطاليا",
+    "Q38"
+  ],
+  "Włochy|pl": [
+    "Włochy",
+    "Q38"
+  ],
+  "意大利|zh": [
+    "意大利",
+    "Q38"
+  ],
+  "Италия|ru": [
+    "Италия",
+    "Q38"
+  ],
+  "Итальянское|ru": [
+    "Королевство Италия",
+    "Q172579"
+  ],
+  "Italie|fr": [
+    "Italie",
+    "Q38"
+  ],
+  "Italy|en": [
+    "Italy",
+    "Q38"
+  ],
+  "Italien|de": [
+    "Italien",
+    "Q38"
+  ],
+  "Italienisch|de": [
+    "Italien",
+    "Q38"
+  ],
+  "Amerikanisch|de": [
+    "Amerika",
+    "Q828"
+  ],
+  "Новозеландское|ru": [
+    "Новозеландское плато",
+    "Q2561224"
+  ],
+  "Американец|ru": null,
+  "أستراليا|ar": [
+    "أستراليا",
+    "Q408"
+  ],
+  "Irland|de": [
+    "Irland",
+    "Q27"
+  ],
+  "愛爾蘭共和國|zh": [
+    "愛爾蘭共和國",
+    "Q27"
+  ],
+  "德國|zh": [
+    "德國",
+    "Q183"
+  ],
+  "Ирландия|ru": [
+    "Ирландия",
+    "Q27"
+  ],
+  "L Irlande du Nord|fr": null,
+  "Nord|fr": [
+    "Nord",
+    "Q12661"
+  ],
+  "Republic of Ireland|en": [
+    "Ireland",
+    "Q27"
+  ],
+  "Ireland|en": [
+    "Ireland",
+    "Q27"
+  ],
+  "أيرلندا|ar": [
+    "الجمهورية الأيرلندية",
+    "Q2712121"
+  ],
+  "Шведское|ru": [
+    "Шведская империя",
+    "Q215443"
+  ],
+  "سويسرا|ar": [
+    "سويسرا",
+    "Q39"
+  ],
+  "Schweiz|de": [
+    "Schweiz",
+    "Q39"
+  ],
+  "Швейцария|ru": [
+    "Швейцария",
+    "Q39"
+  ],
+  "Suisse|fr": [
+    "Suisse",
+    "Q22036"
+  ],
+  "Tina Turner est citoyenne américaine|fr": null,
+  "Tina|fr": null,
+  "Turner|fr": [
+    "Turner",
+    "Q3451014"
+  ],
+  "Szwajcaria|pl": [
+    "Szwajcaria",
+    "Q39"
+  ],
+  "瑞士|zh": [
+    "瑞士",
+    "Q39"
+  ],
+  "Kanadier|de": null,
+  "Le Canada|fr": [
+    "Canada",
+    "Q16"
+  ],
+  "إثيوبيا|ar": [
+    "إثيوبيا",
+    "Q115"
+  ],
+  "Polonia e Francia|it": null,
+  "The Bahamas|en": [
+    "The Bahamas",
+    "Q778"
+  ],
+  "Bahamas|en": [
+    "The Bahamas",
+    "Q778"
+  ],
+  "Bahamas|fr": [
+    "Bahamas",
+    "Q778"
+  ],
+  "Bahamy|pl": [
+    "Bahamy",
+    "Q778"
+  ],
+  "Багамские Острова|ru": [
+    "Багамские Острова",
+    "Q778"
+  ],
+  "巴哈馬|zh": [
+    "巴哈馬",
+    "Q778"
+  ],
+  "باهاماس|ar": [
+    "جزر البهاما",
+    "Q778"
+  ],
+  "Bahamas|de": [
+    "Bahamas",
+    "Q778"
+  ],
+  "Bahamaisch|de": null,
+  "الأوروغواي|ar": [
+    "الأوروغواي",
+    "Q77"
+  ],
+  "إسبانيا|ar": [
+    "إسبانيا",
+    "Q29"
+  ],
+  "烏拉圭|zh": [
+    "烏拉圭",
+    "Q77"
+  ],
+  "西班牙|zh": [
+    "西班牙",
+    "Q29"
+  ],
+  "Уругвай|ru": [
+    "Уругвай",
+    "Q77"
+  ],
+  "Уругвайское|ru": null,
+  "Uruguay|de": [
+    "Uruguay",
+    "Q77"
+  ],
+  "Argentinien|de": [
+    "Argentinien",
+    "Q414"
+  ],
+  "Uruguay|en": [
+    "Uruguay",
+    "Q77"
+  ],
+  "Uruguay|fr": [
+    "Uruguay",
+    "Q77"
+  ],
+  "L Uruguay|fr": null,
+  "Uruguay|it": [
+    "Uruguay",
+    "Q77"
+  ],
+  "Urugwaj|pl": [
+    "Urugwaj",
+    "Q77"
+  ],
+  "Argentyna|pl": [
+    "Argentyna",
+    "Q414"
+  ],
+  "اسكتلندا|ar": [
+    "إسكتلندا",
+    "Q22"
+  ],
+  "Anglia|pl": [
+    "Anglia",
+    "Q21"
+  ],
+  "Schottland|de": [
+    "Schottland",
+    "Q22"
+  ],
+  "Österreichisch-US-amerikanisch|de": null,
+  "Österreichisch|de": [
+    "Österreich-Ungarn",
+    "Q28513"
+  ],
+  "مالطا|ar": [
+    "مالطا",
+    "Q233"
+  ],
+  "Южноафриканское|ru": [
+    "Южноафриканское стандартное время",
+    "Q770321"
+  ],
+  "Kosovo|de": [
+    "Kosovo",
+    "Q1246"
+  ],
+  "Бразилия|ru": [
+    "Бразилия",
+    "Q155"
+  ],
+  "Kosowo|pl": [
+    "Kosowo",
+    "Q1246"
+  ],
+  "Albanie|fr": [
+    "Albanie",
+    "Q222"
+  ],
+  "Kosovo|en": [
+    "Kosovo",
+    "Q1246"
+  ],
+  "Китайская Республика Тайвань|ru": [
+    "Китайская Республика (Тайвань)",
+    "Q865"
+  ],
+  "Тайвань|ru": [
+    "Китайская Республика (Тайвань)",
+    "Q865"
+  ],
+  "中華民國|zh": [
+    "中華民國",
+    "Q865"
+  ],
+  "臺灣|zh": [
+    "中華民國",
+    "Q865"
+  ],
+  "Мексиканец|ru": null,
+  "الأرجنتين|ar": [
+    "الأرجنتين",
+    "Q414"
+  ],
+  "Chile|de": [
+    "Chile",
+    "Q298"
+  ],
+  "Chili|fr": [
+    "Chili",
+    "Q298"
+  ],
+  "Chile|pl": [
+    "Chile",
+    "Q298"
+  ],
+  "墨西哥|zh": [
+    "墨西哥",
+    "Q96"
+  ],
+  "Republika Chińska|pl": [
+    "Republika Chińska",
+    "Q865"
+  ],
+  "Tajwan|pl": [
+    "Republika Chińska",
+    "Q865"
+  ],
+  "Taiwan|en": [
+    "Taiwan",
+    "Q865"
+  ],
+  "USA|de": [
+    "Vereinigte Staaten",
+    "Q30"
+  ],
+  "Canada Stati Uniti d America|it": null,
+  "Stati|it": [
+    "Stati Uniti d’America",
+    "Q30"
+  ],
+  "Uniti|it": [
+    "Fiumi Uniti",
+    "Q3073093"
+  ],
+  "America|it": [
+    "Stati Uniti d’America",
+    "Q30"
+  ],
+  "ويلز|ar": [
+    "ويلز",
+    "Q25"
+  ],
+  "تايوان|ar": [
+    "تايوان",
+    "Q865"
+  ],
+  "Republik China Taiwan|de": null,
+  "Канадец|ru": null,
+  "亞美尼亞|zh": [
+    "亞美尼亞",
+    "Q399"
+  ],
+  "Briten|de": [
+    "Großbritannien",
+    "Q23666"
+  ],
+  "Армения|ru": [
+    "Армения",
+    "Q399"
+  ],
+  "Le Canada et le Royaume-Uni|fr": null,
+  "Armenien|de": [
+    "Armenien",
+    "Q399"
+  ],
+  "L Arménie et la France|fr": null,
+  "France|fr": [
+    "France",
+    "Q142"
+  ],
+  "France|en": [
+    "France",
+    "Q142"
+  ],
+  "Armenia|pl": [
+    "Armenia",
+    "Q399"
+  ],
+  "Американка|ru": [
+    "Американка",
+    "Q4064168"
+  ],
+  "Österreich|de": [
+    "Österreich",
+    "Q40"
+  ],
+  "Austria-Hungary United States|en": null,
+  "United|en": [
+    "United States",
+    "Q30"
+  ],
+  "States|en": [
+    "United States",
+    "Q30"
+  ],
+  "Autriche|fr": [
+    "Autriche",
+    "Q40"
+  ],
+  "Autriche États-Unis|fr": null,
+  "Austria|pl": [
+    "Austria",
+    "Q40"
+  ],
+  "Австрия|ru": [
+    "Австрия",
+    "Q40"
+  ],
+  "奧地利|zh": [
+    "奧地利",
+    "Q40"
+  ],
+  "Austria Stati Uniti d America|it": null,
+  "Südafrika|de": [
+    "Südafrika",
+    "Q258"
+  ],
+  "L Afrique du Sud|fr": null,
+  "Sudafrica Stati Uniti d America|it": null,
+  "Południowej Afryki|pl": null,
+  "Południowej|pl": null,
+  "Afryki|pl": null,
+  "南非|zh": [
+    "南非",
+    "Q258"
+  ],
+  "South Africa|en": [
+    "South Africa",
+    "Q258"
+  ],
+  "Les États-Unis|fr": [
+    "États-Unis",
+    "Q30"
+  ],
+  "Britisch-US-amerikanisch|de": null,
+  "義大利|zh": [
+    "意大利",
+    "Q38"
+  ],
+  "Le pays de citoyenneté de John Cale est le Royaume-Uni|fr": null,
+  "John|fr": null,
+  "Cale|fr": [
+    "Écosse",
+    "Q22"
+  ],
+  "Wales|de": [
+    "Wales",
+    "Q25"
+  ],
+  "Мексика|ru": [
+    "Мексика",
+    "Q96"
+  ],
+  "بريطانيا|ar": [
+    "بريطانيا",
+    "Q23666"
+  ],
+  "المكسيك|ar": [
+    "المكسيك",
+    "Q96"
+  ],
+  "Mexiko|de": [
+    "Mexiko",
+    "Q96"
+  ],
+  "Mexikanisch|de": null,
+  "Mexico|en": [
+    "Mexico",
+    "Q96"
+  ],
+  "Mexique|fr": [
+    "Mexique",
+    "Q96"
+  ],
+  "Meksyk|pl": [
+    "Meksyk",
+    "Q96"
+  ],
+  "Regno di Sassonia|it": [
+    "Regno di Sassonia",
+    "Q153015"
+  ],
+  "萨克森王国|zh": [
+    "萨克森王国",
+    "Q153015"
+  ],
+  "Королевство Саксония|ru": [
+    "Королевство Саксония",
+    "Q153015"
+  ],
+  "Германское|ru": [
+    "Веймарская республика",
+    "Q41304"
+  ],
+  "Królestwo Saksonii|pl": [
+    "Królestwo Saksonii",
+    "Q153015"
+  ],
+  "Königreich Sachsen|de": [
+    "Königreich Sachsen",
+    "Q153015"
+  ],
+  "Deutscher|de": [
+    "Deutsches Reich",
+    "Q1206012"
+  ],
+  "royaume de Saxe|fr": [
+    "royaume de Saxe",
+    "Q153015"
+  ],
+  "Kingdom of Saxony|en": [
+    "Kingdom of Saxony",
+    "Q153015"
+  ],
+  "German|en": [
+    "Germany",
+    "Q183"
+  ],
+  "مملكة ساكسونيا|ar": [
+    "مملكة ساكسونيا",
+    "Q153015"
+  ],
+  "Impero austro-ungarico|it": [
+    "Austria-Ungheria",
+    "Q28513"
+  ],
+  "奧匈帝國|zh": [
+    "奧匈帝國",
+    "Q28513"
+  ],
+  "匈牙利|zh": [
+    "匈牙利",
+    "Q28"
+  ],
+  "Австро-Венгрия|ru": [
+    "Австро-Венгрия",
+    "Q28513"
+  ],
+  "Венгрия|ru": [
+    "Венгрия",
+    "Q28"
+  ],
+  "Austro-Węgry|pl": [
+    "Austro-Węgry",
+    "Q28513"
+  ],
+  "Węgry|pl": [
+    "Węgry",
+    "Q28"
+  ],
+  "Autriche-Hongrie|fr": [
+    "Autriche-Hongrie",
+    "Q28513"
+  ],
+  "Hongrie|fr": [
+    "Hongrie",
+    "Q28"
+  ],
+  "Österreich-Ungarn|de": [
+    "Österreich-Ungarn",
+    "Q28513"
+  ],
+  "Ungarisch|de": [
+    "Königreich Ungarn",
+    "Q171150"
+  ],
+  "الإمبراطورية النمساوية المجرية|ar": [
+    "الإمبراطورية النمساوية المجرية",
+    "Q28513"
+  ],
+  "Confederazione germanica|it": [
+    "Confederazione germanica",
+    "Q151624"
+  ],
+  "Германский союз|ru": [
+    "Германский союз",
+    "Q151624"
+  ],
+  "Związek Niemiecki|pl": [
+    "Związek Niemiecki",
+    "Q151624"
+  ],
+  "德意志邦聯|zh": [
+    "德意志邦聯",
+    "Q151624"
+  ],
+  "Confédération germanique|fr": [
+    "Confédération germanique",
+    "Q151624"
+  ],
+  "German Confederation|en": [
+    "German Confederation",
+    "Q151624"
+  ],
+  "Germany|en": [
+    "Germany",
+    "Q183"
+  ],
+  "Deutscher Bund|de": [
+    "Deutscher Bund",
+    "Q151624"
+  ],
+  "Deutschland|de": [
+    "Deutschland",
+    "Q183"
+  ],
+  "الاتحاد الألماني|ar": [
+    "الاتحاد الألماني",
+    "Q151624"
+  ],
+  "Tina Turner est née aux États-Unis mais elle a acquis la citoyenneté suisse en 2013|fr": null,
+  "Niemcy|pl": [
+    "Niemcy",
+    "Q183"
+  ],
+  "Elettorato del Palatinato|it": [
+    "Elettorato del Palatinato",
+    "Q22880"
+  ],
+  "بالاتينات الانتخابية|ar": [
+    "بالاتينات الانتخابية",
+    "Q22880"
+  ],
+  "Курпфальц|ru": [
+    "Курпфальц",
+    "Q22880"
+  ],
+  "Palatynat|pl": [
+    "Palatynat",
+    "Q22880"
+  ],
+  "莱茵-普法尔茨 普法尔茨选侯国|zh": null,
+  "Palatinat du Rhin|fr": [
+    "Palatinat du Rhin",
+    "Q22880"
+  ],
+  "Sainte Hildegarde de Bingen est née en 1098 dans le Saint-Empire romain germanique qui est aujourd hui l Allemagne|fr": null,
+  "Sainte|fr": [
+    "Saintes",
+    "Q191126"
+  ],
+  "Hildegarde|fr": null,
+  "Electoral Palatinate|en": [
+    "Electoral Palatinate",
+    "Q22880"
+  ],
+  "Kurpfalz|de": [
+    "Kurpfalz",
+    "Q22880"
+  ],
+  "سيسليثانيا|ar": [
+    "سيسليثانيا",
+    "Q533534"
+  ],
+  "Cisleithania|en": [
+    "Cisleithania",
+    "Q533534"
+  ],
+  "Cisleithanie|fr": [
+    "Cisleithanie",
+    "Q533534"
+  ],
+  "Cisleitania|it": [
+    "Cisleitania",
+    "Q533534"
+  ],
+  "Przedlitawia|pl": [
+    "Przedlitawia",
+    "Q533534"
+  ],
+  "Цислейтания|ru": [
+    "Цислейтания",
+    "Q533534"
+  ],
+  "Австрийское|ru": [
+    "Австрийское Приморье",
+    "Q306696"
+  ],
+  "內萊塔尼亞|zh": [
+    "內萊塔尼亞",
+    "Q533534"
+  ],
+  "Cisleithanien|de": [
+    "Cisleithanien",
+    "Q533534"
+  ],
+  "رومانيا|ar": [
+    "رومانيا",
+    "Q218"
+  ],
+  "Latvia|en": [
+    "Latvia",
+    "Q211"
+  ],
+  "La Lettonie|fr": null,
+  "Lettonie|fr": [
+    "Lettonie",
+    "Q211"
+  ],
+  "Норвежское|ru": [
+    "Норвежское море",
+    "Q47545"
+  ],
+  "匈牙利王国|zh": [
+    "匈牙利王国",
+    "Q171150"
+  ],
+  "Królestwo Węgier|pl": [
+    "Królestwo Węgier",
+    "Q171150"
+  ],
+  "مملكة المجر|ar": [
+    "مملكة المجر",
+    "Q171150"
+  ],
+  "Regno d Ungheria|it": [
+    "Regno d'Ungheria",
+    "Q171150"
+  ],
+  "Royaume de Hongrie|fr": [
+    "royaume de Hongrie",
+    "Q171150"
+  ],
+  "Kingdom of Hungary|en": [
+    "Kingdom of Hungary",
+    "Q171150"
+  ],
+  "Romania|en": [
+    "Romania",
+    "Q218"
+  ],
+  "Königreich Ungarn|de": [
+    "Königreich Ungarn",
+    "Q171150"
+  ],
+  "Королевство Венгрия|ru": [
+    "Королевство Венгрия",
+    "Q171150"
+  ],
+  "جمهورية البندقية|ar": [
+    "جمهورية البندقية",
+    "Q4948"
+  ],
+  "威尼斯共和国|zh": [
+    "威尼斯共和国",
+    "Q4948"
+  ],
+  "Republika Wenecka|pl": [
+    "Republika Wenecka",
+    "Q4948"
+  ],
+  "Repubblica di Venezia|it": [
+    "Repubblica di Venezia",
+    "Q4948"
+  ],
+  "république de Venise|fr": [
+    "république de Venise",
+    "Q4948"
+  ],
+  "Republic of Venice|en": [
+    "Republic of Venice",
+    "Q4948"
+  ],
+  "Austrian|en": [
+    "Austrian Empire",
+    "Q131964"
+  ],
+  "Republik Venedig|de": [
+    "Republik Venedig",
+    "Q4948"
+  ],
+  "Венецианская республика|ru": [
+    "Венецианская республика",
+    "Q4948"
+  ],
+  "Венецианское|ru": [
+    "Венецианское гетто",
+    "Q649030"
+  ],
+  "Brazylia|pl": [
+    "Brazylia",
+    "Q155"
+  ],
+  "Brésil|fr": [
+    "Brésil",
+    "Q155"
+  ],
+  "Brasilianerin|de": null,
+  "Brazilian|en": [
+    "Amazon rainforest",
+    "Q177567"
+  ],
+  "捷克|zh": [
+    "捷克",
+    "Q213"
+  ],
+  "Czechosłowacja|pl": [
+    "Czechosłowacja",
+    "Q33946"
+  ],
+  "Cecoslovacca|it": [
+    "Cecoslovacchia",
+    "Q33946"
+  ],
+  "La Tchécoslovaquie|fr": null,
+  "Tchécoslovaquie|fr": [
+    "Tchécoslovaquie",
+    "Q33946"
+  ],
+  "Czechoslovakia|en": [
+    "Czechoslovakia",
+    "Q33946"
+  ],
+  "Tschechisch|de": [
+    "Tschechien",
+    "Q213"
+  ],
+  "تشيكوسلوفاكيا|ar": [
+    "تشيكوسلوفاكيا",
+    "Q33946"
+  ],
+  "Чешское|ru": [
+    "Королевство Богемия",
+    "Q42585"
+  ],
+  "جنوب أفريقيا|ar": [
+    "جنوب إفريقيا",
+    "Q258"
+  ],
+  "Allemagne et France|fr": null,
+  "Франция|ru": [
+    "Франция",
+    "Q142"
+  ],
+  "French|en": [
+    "France",
+    "Q142"
+  ],
+  "Frankreich|de": [
+    "Frankreich",
+    "Q142"
+  ],
+  "Franzose|de": [
+    "Haidhausen",
+    "Q1569131"
+  ],
+  "烏克蘭|zh": [
+    "烏克蘭",
+    "Q212"
+  ],
+  "Украина|ru": [
+    "Украина",
+    "Q212"
+  ],
+  "Украинское|ru": [
+    "Украинское",
+    "Q4470651"
+  ],
+  "Ukraina|pl": [
+    "Ukraina",
+    "Q212"
+  ],
+  "Ukraine|en": [
+    "Ukraine",
+    "Q212"
+  ],
+  "L Ukraine|fr": null,
+  "Ukraine|de": [
+    "Ukraine",
+    "Q212"
+  ],
+  "Ukrainisch|de": [
+    "Ukrainische Sozialistische Sowjetrepublik",
+    "Q133356"
+  ],
+  "أوكرانيا|ar": [
+    "أوكرانيا",
+    "Q212"
+  ],
+  "Slovenia|en": [
+    "Slovenia",
+    "Q215"
+  ],
+  "斯洛文尼亞|zh": [
+    "斯洛文尼亞",
+    "Q215"
+  ],
+  "斯洛維尼亞|zh": [
+    "斯洛文尼亞",
+    "Q215"
+  ],
+  "Словения|ru": [
+    "Словения",
+    "Q215"
+  ],
+  "Словенское|ru": [
+    "Словенское",
+    "Q18801148"
+  ],
+  "Słowenia|pl": [
+    "Słowenia",
+    "Q215"
+  ],
+  "Slovénie|fr": [
+    "Slovénie",
+    "Q215"
+  ],
+  "La Slovénie|fr": null,
+  "Slowenien|de": [
+    "Slowenien",
+    "Q215"
+  ],
+  "Slowenisch|de": null,
+  "سلوفينيا|ar": [
+    "سلوفينيا",
+    "Q215"
+  ],
+  "انتخابية ساكسونيا|ar": [
+    "انتخابية ساكسونيا",
+    "Q156199"
+  ],
+  "薩克森選侯國|zh": [
+    "薩克森選侯國",
+    "Q156199"
+  ],
+  "普魯士|zh": [
+    "普魯士",
+    "Q38872"
+  ],
+  "курфюршество Саксония|ru": [
+    "курфюршество Саксония",
+    "Q156199"
+  ],
+  "Прусское|ru": [
+    "Королевство Пруссия",
+    "Q27306"
+  ],
+  "Elektorat Saksonii|pl": [
+    "Elektorat Saksonii",
+    "Q156199"
+  ],
+  "Principato Elettorale di Sassonia|it": [
+    "Principato Elettorale di Sassonia",
+    "Q156199"
+  ],
+  "Électorat de Saxe|fr": [
+    "électorat de Saxe",
+    "Q156199"
+  ],
+  "Kurfürstentum Sachsen|de": [
+    "Kurfürstentum Sachsen",
+    "Q156199"
+  ],
+  "Electorate of Saxony|en": [
+    "Electorate of Saxony",
+    "Q156199"
+  ],
+  "Prussia|en": [
+    "Kingdom of Prussia",
+    "Q27306"
+  ],
+  "德意志帝國|zh": [
+    "德意志帝國",
+    "Q43287"
+  ],
+  "Empire allemand|fr": [
+    "Empire allemand",
+    "Q43287"
+  ],
+  "Deutsches Kaiserreich|de": [
+    "Deutsches Kaiserreich",
+    "Q43287"
+  ],
+  "German Empire|en": [
+    "German Reich",
+    "Q1206012"
+  ],
+  "Германская империя|ru": [
+    "Германская империя",
+    "Q43287"
+  ],
+  "Impero tedesco|it": [
+    "Impero tedesco",
+    "Q43287"
+  ],
+  "الإمبراطورية الألمانية|ar": [
+    "الإمبراطورية الألمانية",
+    "Q43287"
+  ],
+  "Cesarstwo Niemieckie|pl": [
+    "Cesarstwo Niemieckie",
+    "Q43287"
+  ],
+  "دوقية هسن الكبرى|ar": [
+    "دوقية هسن الكبرى",
+    "Q20135"
+  ],
+  "Немецкое|ru": [
+    "Введенское кладбище",
+    "Q1517387"
+  ],
+  "Великое герцогство Гессен|ru": [
+    "Великое герцогство Гессен",
+    "Q20135"
+  ],
+  "Großherzogtum Hessen|de": [
+    "Großherzogtum Hessen",
+    "Q20135"
+  ],
+  "Grand Duchy of Hesse|en": [
+    "Grand Duchy of Hesse",
+    "Q20135"
+  ],
+  "grand-duché de Hesse|fr": [
+    "grand-duché de Hesse",
+    "Q20135"
+  ],
+  "Granducato d Assia|it": [
+    "Granducato d'Assia",
+    "Q20135"
+  ],
+  "Wielkie Księstwo Hesji|pl": [
+    "Wielkie Księstwo Hesji",
+    "Q20135"
+  ],
+  "黑森-达姆施塔特|zh": [
+    "黑森-达姆施塔特",
+    "Q20135"
+  ],
+  "罗马尼亚联合公国|zh": [
+    "罗马尼亚联合公国",
+    "Q958291"
+  ],
+  "羅馬尼亞|zh": [
+    "羅馬尼亞",
+    "Q218"
+  ],
+  "الممالك المتحدة|ar": [
+    "الممالك المتحدة",
+    "Q958291"
+  ],
+  "Fürstentum Rumänien|de": [
+    "Fürstentum Rumänien",
+    "Q958291"
+  ],
+  "Rumänien|de": [
+    "Rumänien",
+    "Q218"
+  ],
+  "Principautés unies de Moldavie et de Valachie|fr": [
+    "Principautés unies de Moldavie et de Valachie",
+    "Q958291"
+  ],
+  "Roumanie|fr": [
+    "Roumanie",
+    "Q218"
+  ],
+  "Principato di Romania|it": [
+    "Principato di Romania",
+    "Q958291"
+  ],
+  "Zjednoczone Księstwa Mołdawii i Wołoszczyzny|pl": [
+    "Zjednoczone Księstwa Mołdawii i Wołoszczyzny",
+    "Q958291"
+  ],
+  "Rumunia|pl": [
+    "Rumunia",
+    "Q218"
+  ],
+  "Соединённые княжества Молдавии и Валахии|ru": [
+    "Соединённые княжества Молдавии и Валахии",
+    "Q958291"
+  ],
+  "Румынское|ru": [
+    "Королевство Румыния",
+    "Q203493"
+  ],
+  "United Principalities of Moldavia and Wallachia|en": [
+    "United Principalities of Moldavia and Wallachia",
+    "Q958291"
+  ],
+  "Socialist Federal Republic of Yugoslavia|en": [
+    "Socialist Federal Republic of Yugoslavia",
+    "Q83286"
+  ],
+  "Serbia|en": [
+    "Serbia",
+    "Q403"
+  ],
+  "جمهورية يوغوسلافيا الاشتراكية الاتحادية|ar": [
+    "جمهورية يوغوسلافيا الاشتراكية الاتحادية",
+    "Q83286"
+  ],
+  "كوسوفو|ar": [
+    "كوسوفو",
+    "Q1246"
+  ],
+  "Sozialistische Föderative Republik Jugoslawien|de": [
+    "Sozialistische Föderative Republik Jugoslawien",
+    "Q83286"
+  ],
+  "Serbien|de": [
+    "Serbien",
+    "Q403"
+  ],
+  "Socjalistyczna Federacyjna Republika Jugosławii|pl": [
+    "Socjalistyczna Federacyjna Republika Jugosławii",
+    "Q83286"
+  ],
+  "Serbia|pl": [
+    "Serbia",
+    "Q403"
+  ],
+  "république fédérative socialiste de Yougoslavie|fr": [
+    "république fédérative socialiste de Yougoslavie",
+    "Q83286"
+  ],
+  "Serbie|fr": [
+    "Serbie",
+    "Q403"
+  ],
+  "Repubblica Socialista Federale di Jugoslavia|it": [
+    "Repubblica Socialista Federale di Jugoslavia",
+    "Q83286"
+  ],
+  "Serbia|it": [
+    "Serbia",
+    "Q403"
+  ],
+  "СФРЮ|ru": [
+    "СФРЮ",
+    "Q83286"
+  ],
+  "南斯拉夫社会主义联邦共和国|zh": [
+    "南斯拉夫社会主义联邦共和国",
+    "Q83286"
+  ],
+  "挪威|zh": [
+    "挪威",
+    "Q20"
+  ],
+  "Provinces illyriennes|fr": [
+    "Provinces illyriennes",
+    "Q699923"
+  ],
+  "Le pays de citoyenneté de France Prešeren est l Autriche|fr": null,
+  "Prešeren|fr": [
+    "place Prešeren",
+    "Q1889515"
+  ],
+  "Illyrian Provinces|en": [
+    "Illyrian Provinces",
+    "Q699923"
+  ],
+  "Illyrische Provinzen|de": [
+    "Illyrische Provinzen",
+    "Q699923"
+  ],
+  "أقاليم إيليرية|ar": [
+    "أقاليم إيليرية",
+    "Q699923"
+  ],
+  "Prowincje Iliryjskie|pl": [
+    "Prowincje Iliryjskie",
+    "Q699923"
+  ],
+  "Province Illiriche|it": [
+    "Province Illiriche",
+    "Q699923"
+  ],
+  "Bundesrepublik Deutschland bis 1990|de": [
+    "Bundesrepublik Deutschland bis 1990",
+    "Q713750"
+  ],
+  "Иллирийские провинции|ru": [
+    "Иллирийские провинции",
+    "Q699923"
+  ],
+  "伊利里亞省|zh": [
+    "伊利里亞省",
+    "Q699923"
+  ],
+  "ألمانيا الغربية|ar": [
+    "ألمانيا الغربية",
+    "Q713750"
+  ],
+  "West Germany|en": [
+    "West Germany",
+    "Q713750"
+  ],
+  "Allemagne de l Ouest|fr": [
+    "Allemagne de l'Ouest",
+    "Q713750"
+  ],
+  "L Allemagne et l Irlande|fr": null,
+  "Germania Ovest|it": [
+    "Germania Ovest",
+    "Q713750"
+  ],
+  "Republika Federalna Niemiec 1949–1990|pl": null,
+  "Федеративная Республика Германия|ru": [
+    "Германия",
+    "Q183"
+  ],
+  "西德|zh": [
+    "西德",
+    "Q713750"
+  ],
+  "المجر|ar": [
+    "المجر",
+    "Q28"
+  ],
+  "Венгерское|ru": [
+    "Королевство Венгрия",
+    "Q171150"
+  ],
+  "Ungarn|de": [
+    "Ungarn",
+    "Q28"
+  ],
+  "Szwecji|pl": null,
+  "Schweizer|de": [
+    "Schweiz",
+    "Q39"
+  ],
+  "Swiss|en": [
+    "Switzerland",
+    "Q39"
+  ],
+  "La Suisse|fr": [
+    "Suisse romande",
+    "Q214086"
+  ],
+  "符腾堡王国|zh": [
+    "符腾堡王国",
+    "Q159631"
+  ],
+  "Regno del Württemberg|it": [
+    "Regno del Württemberg",
+    "Q159631"
+  ],
+  "Królestwo Wirtembergii|pl": [
+    "Królestwo Wirtembergii",
+    "Q159631"
+  ],
+  "королевство Вюртемберг|ru": [
+    "Королевство Вюртемберг",
+    "Q159631"
+  ],
+  "Royaume du Wurtemberg|fr": [
+    "Royaume du Wurtemberg",
+    "Q159631"
+  ],
+  "Regno di Prussia|it": [
+    "Regno di Prussia",
+    "Q27306"
+  ],
+  "Kingdom of Württemberg|en": [
+    "Kingdom of Württemberg",
+    "Q159631"
+  ],
+  "مملكة بروسيا|ar": [
+    "مملكة بروسيا",
+    "Q27306"
+  ],
+  "Kingdom of Prussia|en": [
+    "Kingdom of Prussia",
+    "Q27306"
+  ],
+  "royaume de Prusse|fr": [
+    "royaume de Prusse",
+    "Q27306"
+  ],
+  "Principauté de Brandebourg|fr": null,
+  "Principauté|fr": [
+    "Monaco",
+    "Q235"
+  ],
+  "Brandebourg|fr": [
+    "Brandebourg",
+    "Q1208"
+  ],
+  "Königreich Preußen|de": [
+    "Königreich Preußen",
+    "Q27306"
+  ],
+  "Królestwo Prus|pl": [
+    "Królestwo Prus",
+    "Q27306"
+  ],
+  "Prusy|pl": [
+    "Prusy",
+    "Q38872"
+  ],
+  "Королевство Пруссия|ru": [
+    "Королевство Пруссия",
+    "Q27306"
+  ],
+  "普魯士王國|zh": [
+    "普魯士王國",
+    "Q27306"
+  ],
+  "مملكة فورتمبيرغ|ar": [
+    "مملكة فورتمبيرغ",
+    "Q159631"
+  ],
+  "Königreich Württemberg|de": [
+    "Königreich Württemberg",
+    "Q159631"
+  ],
+  "Датское королевство|ru": [
+    "Датское королевство",
+    "Q756617"
+  ],
+  "Датское|ru": [
+    "Датское королевство",
+    "Q756617"
+  ],
+  "丹麥王國|zh": [
+    "丹麥",
+    "Q35"
+  ],
+  "Regno di Danimarca|it": [
+    "Regno di Danimarca",
+    "Q756617"
+  ],
+  "Italian|en": [
+    "Italy",
+    "Q38"
+  ],
+  "Британец|ru": null,
+  "Królestwo Danii|pl": [
+    "Królestwo Danii",
+    "Q756617"
+  ],
+  "Dania|pl": [
+    "Dania",
+    "Q35"
+  ],
+  "مملكة الدنمارك|ar": [
+    "مملكة الدنمارك",
+    "Q756617"
+  ],
+  "الدنمارك|ar": [
+    "الدنمارك",
+    "Q35"
+  ],
+  "Royaume de Danemark|fr": [
+    "Royaume de Danemark",
+    "Q756617"
+  ],
+  "Le Danemark|fr": null,
+  "Danemark|fr": [
+    "Danemark",
+    "Q35"
+  ],
+  "Kingdom of Denmark|en": [
+    "Kingdom of Denmark",
+    "Q756617"
+  ],
+  "Denmark|en": [
+    "Denmark",
+    "Q35"
+  ],
+  "Luxemburg|de": [
+    "Luxemburg",
+    "Q32"
+  ],
+  "Königreich Dänemark|de": [
+    "Königreich Dänemark",
+    "Q756617"
+  ],
+  "Dänemark|de": [
+    "Dänemark",
+    "Q35"
+  ],
+  "Électorat de Hesse|fr": [
+    "Électorat de Hesse",
+    "Q529605"
+  ],
+  "انتخابية هسن|ar": [
+    "انتخابية هسن",
+    "Q529605"
+  ],
+  "Kurfürstentum Hessen|de": [
+    "Kurfürstentum Hessen",
+    "Q529605"
+  ],
+  "Electorate of Hesse|en": [
+    "Electorate of Hesse",
+    "Q529605"
+  ],
+  "黑森选侯国|zh": [
+    "黑森选侯国",
+    "Q529605"
+  ],
+  "Elettorato d Assia|it": [
+    "Elettorato d'Assia",
+    "Q529605"
+  ],
+  "Elektorat Hesji|pl": [
+    "Elektorat Hesji",
+    "Q529605"
+  ],
+  "Курфюршество Гессен|ru": [
+    "Курфюршество Гессен",
+    "Q529605"
+  ],
+  "Germania nazista|it": [
+    "Germania nazista",
+    "Q7318"
+  ],
+  "ألمانيا النازية|ar": [
+    "ألمانيا النازية",
+    "Q7318"
+  ],
+  "NS-Staat|de": [
+    "NS-Staat",
+    "Q7318"
+  ],
+  "Nazi Germany|en": [
+    "Nazi Germany",
+    "Q7318"
+  ],
+  "Troisième Reich|fr": [
+    "Troisième Reich",
+    "Q7318"
+  ],
+  "German Reich|en": [
+    "Nazi Germany",
+    "Q7318"
+  ],
+  "III Rzesza|pl": [
+    "III Rzesza",
+    "Q7318"
+  ],
+  "Нацистская Германия|ru": [
+    "Нацистская Германия",
+    "Q7318"
+  ],
+  "納粹德國|zh": [
+    "納粹德國",
+    "Q7318"
+  ],
+  "الرايخ الألماني|ar": [
+    "الرايخ الألماني",
+    "Q1206012"
+  ],
+  "Deutsches Reich|de": [
+    "Deutsches Reich",
+    "Q1206012"
+  ],
+  "Reich allemand|fr": [
+    "Reich allemand",
+    "Q1206012"
+  ],
+  "L Empire allemand|fr": [
+    "Empire allemand",
+    "Q43287"
+  ],
+  "Reich tedesco|it": [
+    "Reich tedesco",
+    "Q1206012"
+  ],
+  "Rzesza Niemiecka|pl": [
+    "III Rzesza",
+    "Q7318"
+  ],
+  "Германский рейх|ru": [
+    "Нацистская Германия",
+    "Q7318"
+  ],
+  "德意志国|zh": [
+    "德意志国",
+    "Q1206012"
+  ],
+  "Schweizerin|de": null,
+  "La Grèce|fr": null,
+  "Grèce|fr": [
+    "Grèce",
+    "Q41"
+  ],
+  "Grecja|pl": [
+    "Grecja",
+    "Q41"
+  ],
+  "Republika|pl": [
+    "Francja",
+    "Q142"
+  ],
+  "Federalna|pl": [
+    "Federalna Republika Jugosławii",
+    "Q838261"
+  ],
+  "مملكة بافاريا|ar": [
+    "مملكة بافاريا",
+    "Q154195"
+  ],
+  "королевство Бавария|ru": [
+    "Королевство Бавария",
+    "Q154195"
+  ],
+  "Królestwo Bawarii|pl": [
+    "Królestwo Bawarii",
+    "Q154195"
+  ],
+  "Regno di Baviera|it": [
+    "Regno di Baviera",
+    "Q154195"
+  ],
+  "royaume de Bavière|fr": [
+    "royaume de Bavière",
+    "Q154195"
+  ],
+  "Kingdom of Bavaria|en": [
+    "Kingdom of Bavaria",
+    "Q154195"
+  ],
+  "Königreich Bayern|de": [
+    "Königreich Bayern",
+    "Q154195"
+  ],
+  "巴伐利亞王國|zh": [
+    "巴伐利亞王國",
+    "Q154195"
+  ],
+  "Les Pays-Bas|fr": [
+    "Pays-Bas pendant la Seconde Guerre mondiale",
+    "Q706454"
+  ],
+  "أفريقيا|ar": [
+    "إفريقيا",
+    "Q15"
+  ],
+  "Austria-Ungheria Stati Uniti d America|it": null,
+  "Soviet Union|en": [
+    "Soviet Union",
+    "Q15180"
+  ],
+  "L Autriche l Union soviétique et les États-Unis|fr": null,
+  "Union|fr": [
+    "Union soviétique",
+    "Q15180"
+  ],
+  "Советский|ru": [
+    "Советский",
+    "Q196377"
+  ],
+  "Irländisch|de": null,
+  "New Zealand|en": [
+    "New Zealand",
+    "Q664"
+  ],
+  "L Irlande|fr": [
+    "Irlande",
+    "Q27"
+  ],
+  "فنلندا|ar": [
+    "فنلندا",
+    "Q33"
+  ],
+  "Russian|en": [
+    "Russia",
+    "Q159"
+  ],
+  "النرويج|ar": [
+    "النرويج",
+    "Q20"
+  ],
+  "Spanien|de": [
+    "Spanien",
+    "Q29"
+  ],
+  "L Allemagne|fr": null,
+  "Hiszpania|pl": [
+    "Hiszpania",
+    "Q29"
+  ],
+  "Испания|ru": [
+    "Испания",
+    "Q29"
+  ],
+  "هولندا|ar": [
+    "هولندا",
+    "Q55"
+  ],
+  "Austrian-German|en": null,
+  "République socialiste de Roumanie|fr": [
+    "République socialiste de Roumanie",
+    "Q842794"
+  ],
+  "Новая Зеландия|ru": [
+    "Новая Зеландия",
+    "Q664"
+  ],
+  "新西兰|zh": [
+    "新西兰",
+    "Q664"
+  ],
+  "Sozialistische Republik Rumänien|de": [
+    "Sozialistische Republik Rumänien",
+    "Q842794"
+  ],
+  "Socialist Republic of Romania|en": [
+    "Socialist Republic of Romania",
+    "Q842794"
+  ],
+  "Romanian|en": [
+    "Kingdom of Romania",
+    "Q203493"
+  ],
+  "罗马尼亚社会主义共和国|zh": [
+    "罗马尼亚社会主义共和国",
+    "Q842794"
+  ],
+  "希臘|zh": [
+    "希腊",
+    "Q41"
+  ],
+  "Repubblica Socialista di Romania|it": [
+    "Repubblica Socialista di Romania",
+    "Q842794"
+  ],
+  "Socjalistyczna Republika Rumunii|pl": [
+    "Socjalistyczna Republika Rumunii",
+    "Q842794"
+  ],
+  "Социалистическая Республика Румыния|ru": [
+    "Социалистическая Республика Румыния",
+    "Q842794"
+  ],
+  "Nowa Zelandia|pl": [
+    "Nowa Zelandia",
+    "Q664"
+  ],
+  "جمهورية رومانيا الاشتراكية|ar": [
+    "جمهورية رومانيا الاشتراكية",
+    "Q842794"
+  ],
+  "Nouvelle-Zélande|fr": [
+    "Nouvelle-Zélande",
+    "Q664"
+  ],
+  "Neuseeland|de": [
+    "Neuseeland",
+    "Q664"
+  ],
+  "Neuseeländer|de": null,
+  "荷兰王国|zh": [
+    "荷兰王国",
+    "Q29999"
+  ],
+  "Королевство Нидерландов|ru": [
+    "Королевство Нидерландов",
+    "Q29999"
+  ],
+  "Regno dei Paesi Bassi|it": [
+    "Regno dei Paesi Bassi",
+    "Q29999"
+  ],
+  "Holandia|pl": [
+    "Holandia",
+    "Q55"
+  ],
+  "Royaume des Pays-Bas|fr": [
+    "Royaume des Pays-Bas",
+    "Q29999"
+  ],
+  "Les Pays-Bas et l Allemagne|fr": null,
+  "Les|fr": [
+    "Lesotho",
+    "Q1013"
+  ],
+  "Pays-Bas|fr": [
+    "Pays-Bas",
+    "Q55"
+  ],
+  "Pays|fr": [
+    "États-Unis",
+    "Q30"
+  ],
+  "Bas|fr": [
+    "Bas-en-Basset",
+    "Q1065773"
+  ],
+  "Kurfürstentum Braunschweig-Lüneburg|de": [
+    "Kurfürstentum Braunschweig-Lüneburg",
+    "Q706018"
+  ],
+  "Electorate of Brunswick-Lüneburg|en": [
+    "Electorate of Hanover",
+    "Q706018"
+  ],
+  "Électorat de Brunswick-Lunebourg|fr": [
+    "électorat de Brunswick-Lunebourg",
+    "Q706018"
+  ],
+  "Elettorato di Hannover|it": [
+    "Elettorato di Hannover",
+    "Q706018"
+  ],
+  "Księstwo Brunszwiku i Lüneburga|pl": [
+    "Księstwo Brunszwiku i Lüneburga",
+    "Q706018"
+  ],
+  "Брауншвейг-Люнебург|ru": [
+    "Брауншвейг-Люнебург",
+    "Q706018"
+  ],
+  "不倫瑞克-呂訥堡公爵|zh": [
+    "不倫瑞克-呂訥堡公爵",
+    "Q706018"
+  ],
+  "Kingdom of the Netherlands|en": [
+    "Kingdom of the Netherlands",
+    "Q29999"
+  ],
+  "Netherlands|en": [
+    "Netherlands",
+    "Q55"
+  ],
+  "Königreich der Niederlande|de": [
+    "Königreich der Niederlande",
+    "Q29999"
+  ],
+  "Дания|ru": [
+    "Дания",
+    "Q35"
+  ],
+  "مملكة هولندا|ar": [
+    "مملكة هولندا",
+    "Q29999"
+  ],
+  "Französin|de": null,
+  "Француз|ru": [
+    "Франция",
+    "Q142"
+  ],
+  "法国|zh": [
+    "法國",
+    "Q142"
+  ],
+  "Francuz|pl": null,
+  "Französisch|de": [
+    "Frankreich",
+    "Q142"
+  ],
+  "Kingdom of Sardinia|en": [
+    "Kingdom of Sardinia",
+    "Q2577303"
+  ],
+  "撒丁王国|zh": [
+    "薩丁尼亞王國",
+    "Q165154"
+  ],
+  "Zjednoczone Królestwo Włoch|pl": [
+    "Zjednoczone Królestwo Włoch",
+    "Q172579"
+  ],
+  "Regno di Sardegna|it": [
+    "Regno di Sardegna",
+    "Q165154"
+  ],
+  "royaume de Sardaigne|fr": [
+    "royaume de Sardaigne",
+    "Q2577303"
+  ],
+  "مملكة سردينيا 1720 - 1861|ar": null,
+  "Königreich Italien|de": [
+    "Königreich Italien",
+    "Q172579"
+  ],
+  "Сардинское королевство|ru": [
+    "Сардинское королевство",
+    "Q165154"
+  ],
+  "Greece|en": [
+    "Greece",
+    "Q41"
+  ],
+  "希腊|zh": [
+    "希腊",
+    "Q41"
+  ],
+  "اليونان|ar": [
+    "اليونان",
+    "Q41"
+  ],
+  "法國人|zh": null,
+  "Griechenland|de": [
+    "Griechenland",
+    "Q41"
+  ],
+  "Норвегия|ru": [
+    "Норвегия",
+    "Q20"
+  ],
+  "بلجيكا|ar": [
+    "بلجيكا",
+    "Q31"
+  ],
+  "Trinité-et-Tobago|fr": [
+    "Trinité-et-Tobago",
+    "Q754"
+  ],
+  "比利時|zh": [
+    "比利時",
+    "Q31"
+  ],
+  "法蘭西第二帝國|zh": [
+    "法蘭西第二帝國",
+    "Q71092"
+  ],
+  "الإمبراطورية الفرنسية الثانية|ar": [
+    "الإمبراطورية الفرنسية الثانية",
+    "Q71092"
+  ],
+  "Zweites Kaiserreich|de": [
+    "Zweites Kaiserreich",
+    "Q71092"
+  ],
+  "Second French Empire|en": [
+    "Second French Empire",
+    "Q71092"
+  ],
+  "Secondo Impero francese|it": [
+    "Secondo Impero francese",
+    "Q71092"
+  ],
+  "II Cesarstwo Francuskie|pl": [
+    "II Cesarstwo Francuskie",
+    "Q71092"
+  ],
+  "Вторая французская империя|ru": [
+    "Вторая французская империя",
+    "Q71092"
+  ],
+  "Second Empire|fr": [
+    "Second Empire",
+    "Q71092"
+  ],
+  "Belgium|en": [
+    "Belgium",
+    "Q31"
+  ],
+  "Belgian|en": null,
+  "Belgique|fr": [
+    "Belgique",
+    "Q31"
+  ],
+  "La Belgique|fr": null,
+  "Бельгия|ru": [
+    "Бельгия",
+    "Q31"
+  ],
+  "Belgia|pl": [
+    "Belgia",
+    "Q31"
+  ],
+  "Belgien|de": [
+    "Belgien",
+    "Q31"
+  ],
+  "Belgier|de": [
+    "Belgier-Kaserne",
+    "Q815480"
+  ],
+  "Repubblica dell Estremo Oriente|it": [
+    "Repubblica dell'Estremo Oriente",
+    "Q61292"
+  ],
+  "Stati Uniti|it": [
+    "Stati Uniti d’America",
+    "Q30"
+  ],
+  "远东共和国|zh": [
+    "远东共和国",
+    "Q61292"
+  ],
+  "Дальневосточная республика|ru": [
+    "Дальневосточная республика",
+    "Q61292"
+  ],
+  "Republika Dalekiego Wschodu|pl": [
+    "Republika Dalekiego Wschodu",
+    "Q61292"
+  ],
+  "Fernöstliche Republik|de": [
+    "Fernöstliche Republik",
+    "Q61292"
+  ],
+  "République d Extrême-Orient|fr": [
+    "république d'Extrême-Orient",
+    "Q61292"
+  ],
+  "Far Eastern Republic|en": [
+    "Far Eastern Republic",
+    "Q61292"
+  ],
+  "جمهورية الشرق الأقصى|ar": [
+    "جمهورية الشرق الأقصى",
+    "Q61292"
+  ],
+  "South African|en": [
+    "UTC+02:00",
+    "Q6723"
+  ],
+  "Südafrikanisch|de": [
+    "Südafrikanische Union",
+    "Q193619"
+  ],
+  "Румыния|ru": [
+    "Румыния",
+    "Q218"
+  ],
+  "荷蘭|zh": [
+    "荷蘭",
+    "Q55"
+  ],
+  "Китайское|ru": [
+    "Китайское стандартное время",
+    "Q1143153"
+  ],
+  "سنغافورة|ar": [
+    "سنغافورة",
+    "Q334"
+  ],
+  "الصين|ar": [
+    "الصين",
+    "Q148"
+  ],
+  "China|de": [
+    "Volksrepublik China",
+    "Q148"
+  ],
+  "China|en": [
+    "People's Republic of China",
+    "Q148"
+  ],
+  "La Chine|fr": null,
+  "Chiny|pl": [
+    "Chińska Republika Ludowa",
+    "Q148"
+  ],
+  "中國|zh": [
+    "中华人民共和国",
+    "Q148"
+  ],
+  "La France et l Italie|fr": null,
+  "Guinea|en": [
+    "Guinea",
+    "Q1006"
+  ],
+  "Guinée|fr": [
+    "Guinée",
+    "Q1006"
+  ],
+  "La Guinée|fr": null,
+  "Gwinea|pl": [
+    "Gwinea",
+    "Q1006"
+  ],
+  "Gwinei|pl": null,
+  "Гвинея|ru": [
+    "Гвинея",
+    "Q1006"
+  ],
+  "几内亚|zh": [
+    "几内亚",
+    "Q1006"
+  ],
+  "غينيا|ar": [
+    "غينيا",
+    "Q1006"
+  ],
+  "غانا|ar": [
+    "غانا",
+    "Q117"
+  ],
+  "Guinea|de": [
+    "Guinea",
+    "Q1006"
+  ],
+  "Guineanisch|de": null,
+  "Luxemburgerin|de": null,
+  "Je n ai pas trouvé d informations sur une personne nommée Colette Pouvez-vous fournir plus de contexte ou de détails sur Colette|fr": null,
+  "Pouvez-vous|fr": null,
+  "Pouvez|fr": null,
+  "Suisse Royaume-Uni|fr": null,
+  "Bulgaria|en": [
+    "Bulgaria",
+    "Q219"
+  ],
+  "Białoruś|pl": [
+    "Białoruś",
+    "Q184"
+  ],
+  "Le pays de citoyenneté de Chrétien de Troyes est inconnu|fr": null,
+  "Chrétien|fr": null,
+  "Australie|fr": [
+    "Australie",
+    "Q408"
+  ],
+  "Repubblica di Firenze|it": [
+    "Repubblica di Firenze",
+    "Q148540"
+  ],
+  "佛罗伦萨共和国|zh": [
+    "佛罗伦萨共和国",
+    "Q148540"
+  ],
+  "Republika Florencka|pl": [
+    "Republika Florencka",
+    "Q148540"
+  ],
+  "Флорентийская республика|ru": [
+    "Флорентийская республика",
+    "Q148540"
+  ],
+  "République florentine|fr": [
+    "République florentine",
+    "Q148540"
+  ],
+  "Republic of Florence|en": [
+    "Republic of Florence",
+    "Q148540"
+  ],
+  "Republik Florenz|de": [
+    "Republik Florenz",
+    "Q148540"
+  ],
+  "جمهورية فلورنسا|ar": [
+    "جمهورية فلورنسا",
+    "Q148540"
+  ],
+  "Regno d Italia|it": [
+    "Regno d'Italia",
+    "Q172579"
+  ],
+  "Stato della Città del Vaticano|it": [
+    "Città del Vaticano",
+    "Q237"
+  ],
+  "意大利王國|zh": [
+    "意大利王國",
+    "Q172579"
+  ],
+  "Королевство Италия|ru": [
+    "Королевство Италия",
+    "Q172579"
+  ],
+  "Священство|ru": null,
+  "Royaume d Italie|fr": [
+    "royaume d'Italie",
+    "Q172579"
+  ],
+  "Léon XIII est né à Carpineto Romano dans le royaume des Deux-Siciles|fr": null,
+  "XIII|fr": null,
+  "Carpineto|fr": [
+    "Carpineto",
+    "Q1087711"
+  ],
+  "Romano|fr": [
+    "Romano",
+    "Q18434124"
+  ],
+  "Deux-Siciles|fr": [
+    "royaume des Deux-Siciles",
+    "Q180393"
+  ],
+  "Deux|fr": [
+    "Empire allemand",
+    "Q43287"
+  ],
+  "Siciles|fr": null,
+  "Kingdom of Italy|en": [
+    "Kingdom of Italy",
+    "Q172579"
+  ],
+  "Papal States|en": [
+    "Papal States",
+    "Q170174"
+  ],
+  "مملكة إيطاليا|ar": [
+    "مملكة إيطاليا",
+    "Q172579"
+  ],
+  "意大利|pl": [
+    "Włochy",
+    "Q38"
+  ],
+  "義大利|pl": [
+    "Włochy",
+    "Q38"
+  ],
+  "意大利|it": [
+    "Italia",
+    "Q38"
+  ],
+  "義大利|it": [
+    "Italia",
+    "Q38"
+  ],
+  "意大利|fr": [
+    "Italie",
+    "Q38"
+  ],
+  "義大利|fr": [
+    "Italie",
+    "Q38"
+  ],
+  "意大利|en": [
+    "Italy",
+    "Q38"
+  ],
+  "義大利|en": [
+    "Italy",
+    "Q38"
+  ],
+  "意大利|de": [
+    "Italien",
+    "Q38"
+  ],
+  "義大利|de": [
+    "Italien",
+    "Q38"
+  ],
+  "意大利|ar": [
+    "إيطاليا",
+    "Q38"
+  ],
+  "義大利|ar": [
+    "إيطاليا",
+    "Q38"
+  ],
+  "意大利|ru": [
+    "Италия",
+    "Q38"
+  ],
+  "義大利|ru": [
+    "Италия",
+    "Q38"
+  ],
+  "Monaco|fr": [
+    "Monaco",
+    "Q235"
+  ],
+  "Monaco|en": [
+    "Monaco",
+    "Q235"
+  ],
+  "Monarch|de": [
+    "Österreich-Ungarn",
+    "Q28513"
+  ],
+  "Монако|ru": [
+    "Монако",
+    "Q235"
+  ],
+  "Georgien|de": [
+    "Georgien",
+    "Q230"
+  ],
+  "Georgia|en": [
+    "Georgia",
+    "Q230"
+  ],
+  "Géorgie|fr": [
+    "Géorgie",
+    "Q230"
+  ],
+  "La Géorgie|fr": null,
+  "جورجيا|ar": [
+    "جورجيا",
+    "Q230"
+  ],
+  "Gruzja|pl": [
+    "Gruzja",
+    "Q230"
+  ],
+  "Грузия|ru": [
+    "Грузия",
+    "Q230"
+  ],
+  "格鲁吉亚共和国|zh": [
+    "格鲁吉亚共和国",
+    "Q230"
+  ],
+  "格鲁吉亚|zh": [
+    "格鲁吉亚共和国",
+    "Q230"
+  ],
+  "Сан-Маринец|ru": null,
+  "Сан|ru": [
+    "Сан",
+    "Q216488"
+  ],
+  "Маринец|ru": [
+    "Маринец",
+    "Q18987101"
+  ],
+  "Grand-duché de Toscane|fr": [
+    "grand-duché de Toscane",
+    "Q154849"
+  ],
+  "Dalmatin|de": null,
+  "Le pays de citoyenneté de Pie II est l Italie|fr": null,
+  "Pie|fr": null,
+  "II|fr": [
+    "Ii",
+    "Q853584"
+  ],
+  "دوقية توسكانا الكبرى|ar": [
+    "دوقية تسكانة الكبرى",
+    "Q154849"
+  ],
+  "Großherzogtum Toskana|de": [
+    "Großherzogtum Toskana",
+    "Q154849"
+  ],
+  "Grand Duchy of Tuscany|en": [
+    "Grand Duchy of Tuscany",
+    "Q154849"
+  ],
+  "Dalmata|it": null,
+  "Granducato di Toscana|it": [
+    "Granducato di Toscana",
+    "Q154849"
+  ],
+  "Wielkie Księstwo Toskanii|pl": [
+    "Wielkie Księstwo Toskanii",
+    "Q154849"
+  ],
+  "托斯卡纳大公国|zh": [
+    "托斯卡纳大公国",
+    "Q154849"
+  ],
+  "義大利人|zh": null,
+  "Великое герцогство Тосканское|ru": [
+    "Великое герцогство Тосканское",
+    "Q154849"
+  ],
+  "Итальянец|ru": null,
+  "Polski|pl": [
+    "Narmeln",
+    "Q11789655"
+  ],
+  "La République de Florence maintenant en Italie|fr": null,
+  "Florentine|en": [
+    "Republic of Florence",
+    "Q148540"
+  ],
+  "Italian-American|en": null,
+  "Italie États-Unis|fr": null,
+  "佛罗伦萨人|zh": null,
+  "Dänisch|de": null,
+  "التشيك|ar": [
+    "جمهورية التشيك",
+    "Q213"
+  ],
+  "Tschechien|de": [
+    "Tschechien",
+    "Q213"
+  ],
+  "Czech Republic|en": [
+    "Czech Republic",
+    "Q213"
+  ],
+  "Czech|en": [
+    "Czech Republic",
+    "Q213"
+  ],
+  "Tchéquie|fr": [
+    "Tchéquie",
+    "Q213"
+  ],
+  "La République tchèque|fr": [
+    "Tchéquie",
+    "Q213"
+  ],
+  "Repubblica Ceca|it": [
+    "Repubblica Ceca",
+    "Q213"
+  ],
+  "Cecoslovacchia e Repubblica Ceca|it": null,
+  "Czechy|pl": [
+    "Czechy",
+    "Q213"
+  ],
+  "Чехия|ru": [
+    "Чехия",
+    "Q213"
+  ],
+  "Папская область|ru": [
+    "Папская область",
+    "Q170174"
+  ],
+  "教皇国|zh": [
+    "教皇国",
+    "Q170174"
+  ],
+  "日本|zh": [
+    "日本",
+    "Q17"
+  ],
+  "Państwo Kościelne|pl": [
+    "Państwo Kościelne",
+    "Q170174"
+  ],
+  "الدولة البابوية|ar": [
+    "الدولة البابوية",
+    "Q170174"
+  ],
+  "États pontificaux|fr": [
+    "États pontificaux",
+    "Q170174"
+  ],
+  "L Empire romain germanique plus tard le Saint-Empire romain germanique|fr": null,
+  "Kirchenstaat|de": [
+    "Kirchenstaat",
+    "Q170174"
+  ],
+  "بلغاريا|ar": [
+    "بلغاريا",
+    "Q219"
+  ],
+  "Stato Pontificio|it": [
+    "Stato Pontificio",
+    "Q170174"
+  ],
+  "Santo Stato della Città del Vaticano|it": null,
+  "Santo|it": [
+    "Santo Domingo",
+    "Q34820"
+  ],
+  "Stato|it": [
+    "Giappone",
+    "Q17"
+  ],
+  "Città|it": [
+    "New York",
+    "Q60"
+  ],
+  "Vaticano|it": [
+    "Città del Vaticano",
+    "Q237"
+  ],
+  "L Italie|fr": [
+    "royaume d'Italie",
+    "Q172579"
+  ],
+  "Объединённые провинции Центральной Италии|ru": [
+    "Объединённые провинции Центральной Италии",
+    "Q2268597"
+  ],
+  "中意大利聯合省|zh": [
+    "中意大利聯合省",
+    "Q2268597"
+  ],
+  "Province Unite del Centro Italia|it": [
+    "Province Unite del Centro Italia",
+    "Q2268597"
+  ],
+  "United Provinces of Central Italy|en": [
+    "United Provinces of Central Italy",
+    "Q2268597"
+  ],
+  "Provinces-Unies d Italie centrale|fr": [
+    "Provinces-Unies d'Italie centrale",
+    "Q2268597"
+  ],
+  "المقاطعات المتحدة في إيطاليا الوسطى|ar": [
+    "المقاطعات المتحدة في إيطاليا الوسطى",
+    "Q2268597"
+  ],
+  "費拉拉公國|zh": [
+    "費拉拉公國",
+    "Q693570"
+  ],
+  "герцогство Феррара|ru": [
+    "герцогство Феррара",
+    "Q693570"
+  ],
+  "Ducato di Ferrara|it": [
+    "Ducato di Ferrara",
+    "Q693570"
+  ],
+  "duché de Ferrare|fr": [
+    "duché de Ferrare",
+    "Q693570"
+  ],
+  "Duchy of Ferrara|en": [
+    "Duchy of Ferrara",
+    "Q693570"
+  ],
+  "Herzogtum Ferrara|de": [
+    "Herzogtum Ferrara",
+    "Q693570"
+  ],
+  "دوقية فيرارا|ar": [
+    "دوقية فيرارا",
+    "Q693570"
+  ],
+  "Vereinigte Provinzen von Mittelitalien|de": [
+    "Vereinigte Provinzen von Mittelitalien",
+    "Q2268597"
+  ],
+  "巴西|zh": [
+    "巴西",
+    "Q155"
+  ],
+  "葡萄牙|zh": [
+    "葡萄牙",
+    "Q45"
+  ],
+  "台灣|zh": [
+    "中華民國",
+    "Q865"
+  ],
+  "Chinesisch-amerikanisch|de": null,
+  "Chinesisch|de": [
+    "Volksrepublik China",
+    "Q148"
+  ],
+  "مملكة نابولي|ar": [
+    "مملكة نابولي",
+    "Q173065"
+  ],
+  "Le Brésil|fr": null,
+  "Königreich Neapel|de": [
+    "Königreich Neapel",
+    "Q173065"
+  ],
+  "Brazil|en": [
+    "Brazil",
+    "Q155"
+  ],
+  "Kingdom of Naples|en": [
+    "Kingdom of Naples",
+    "Q173065"
+  ],
+  "royaume de Naples|fr": [
+    "royaume de Naples",
+    "Q173065"
+  ],
+  "Le pays de citoyenneté de Jules Mazarin est la France|fr": null,
+  "Jules|fr": null,
+  "Mazarin|fr": [
+    "Mazarin",
+    "Q63244263"
+  ],
+  "Regno di Napoli|it": [
+    "Regno di Napoli",
+    "Q173065"
+  ],
+  "Królestwo Neapolu|pl": [
+    "Królestwo Neapolu",
+    "Q173065"
+  ],
+  "Неаполитанское королевство|ru": [
+    "Неаполитанское королевство",
+    "Q173065"
+  ],
+  "那不勒斯王国|zh": [
+    "那不勒斯王国",
+    "Q173065"
+  ],
+  "Brasilien|de": [
+    "Brasilien",
+    "Q155"
+  ],
+  "Brasilianer|de": null,
+  "格陵蘭|zh": [
+    "格陵兰",
+    "Q223"
+  ],
+  "Le pays de citoyenneté de Humbert II de Savoie est le Saint-Empire romain germanique|fr": null,
+  "Humbert|fr": [
+    "Humbert",
+    "Q1026202"
+  ],
+  "Savoie|fr": [
+    "Savoie",
+    "Q12745"
+  ],
+  "Regno delle Due Sicilie|it": [
+    "Regno delle Due Sicilie",
+    "Q180393"
+  ],
+  "Аргентина|ru": [
+    "Аргентина",
+    "Q414"
+  ],
+  "Argentine|fr": [
+    "Argentine",
+    "Q414"
+  ],
+  "L Argentine|fr": [
+    "Argentine",
+    "Q2860972"
+  ],
+  "Генуэзская республика|ru": [
+    "Генуэзская республика",
+    "Q174306"
+  ],
+  "热那亚共和国|zh": [
+    "热那亚共和国",
+    "Q174306"
+  ],
+  "Repubblica di Genova|it": [
+    "Repubblica di Genova",
+    "Q174306"
+  ],
+  "Republika Genui|pl": [
+    "Republika Genui",
+    "Q174306"
+  ],
+  "république de Gênes|fr": [
+    "république de Gênes",
+    "Q174306"
+  ],
+  "Republic of Genoa|en": [
+    "Republic of Genoa",
+    "Q174306"
+  ],
+  "جمهورية جنوة|ar": [
+    "جمهورية جنوة",
+    "Q174306"
+  ],
+  "Republik Genua|de": [
+    "Republik Genua",
+    "Q174306"
+  ],
+  "L Union soviétique|fr": null,
+  "俄國|zh": [
+    "俄罗斯",
+    "Q159"
+  ],
+  "Russisch|de": [
+    "Russland",
+    "Q159"
+  ],
+  "阿爾及利亞人|zh": [
+    "阿爾及利亞",
+    "Q262"
+  ],
+  "تشيلي|ar": [
+    "تشيلي",
+    "Q298"
+  ],
+  "Regno russo|it": [
+    "Regno russo",
+    "Q186096"
+  ],
+  "俄罗斯沙皇国|zh": [
+    "俄罗斯沙皇国",
+    "Q186096"
+  ],
+  "Русское царство|ru": [
+    "Русское царство",
+    "Q186096"
+  ],
+  "Carstwo Rosyjskie|pl": [
+    "Carstwo Rosyjskie",
+    "Q186096"
+  ],
+  "tsarat de Moscou|fr": [
+    "tsarat de Moscou",
+    "Q186096"
+  ],
+  "L Empire Russe|fr": null,
+  "Russe|fr": null,
+  "Tsardom of Russia|en": [
+    "Tsardom of Russia",
+    "Q186096"
+  ],
+  "Zarentum Russland|de": [
+    "Zarentum Russland",
+    "Q186096"
+  ],
+  "روسيا القيصرية|ar": [
+    "روسيا القيصرية",
+    "Q186096"
+  ],
+  "La Pologne et le Royaume-Uni|fr": null,
+  "Polish-British|en": null,
+  "Polish|en": [
+    "Polish–Lithuanian Commonwealth",
+    "Q172107"
+  ],
+  "乌克兰|zh": [
+    "烏克蘭",
+    "Q212"
+  ],
+  "立陶宛大公国|zh": [
+    "立陶宛大公国",
+    "Q49683"
+  ],
+  "立陶宛|zh": [
+    "立陶宛",
+    "Q37"
+  ],
+  "Wielkie Księstwo Litewskie|pl": [
+    "Wielkie Księstwo Litewskie",
+    "Q49683"
+  ],
+  "Litwa|pl": [
+    "Litwa",
+    "Q37"
+  ],
+  "Granducato di Lituania|it": [
+    "Granducato di Lituania",
+    "Q49683"
+  ],
+  "grand-duché de Lituanie|fr": [
+    "grand-duché de Lituanie",
+    "Q49683"
+  ],
+  "La Pologne et la Lituanie|fr": null,
+  "Grand Duchy of Lithuania|en": [
+    "Grand Duchy of Lithuania",
+    "Q49683"
+  ],
+  "Lithuania|en": [
+    "Lithuania",
+    "Q37"
+  ],
+  "Großfürstentum Litauen|de": [
+    "Großfürstentum Litauen",
+    "Q49683"
+  ],
+  "Litauen|de": [
+    "Litauen",
+    "Q37"
+  ],
+  "دوقية لتوانيا الكبرى|ar": null,
+  "Великое княжество Литовское|ru": [
+    "Великое княжество Литовское",
+    "Q49683"
+  ],
+  "الإمبراطورية النمساوية|ar": [
+    "الإمبراطورية النمساوية",
+    "Q131964"
+  ],
+  "奧地利帝國|zh": [
+    "奧地利帝國",
+    "Q131964"
+  ],
+  "Австрийская империя|ru": [
+    "Австрийская империя",
+    "Q131964"
+  ],
+  "Cesarstwo Austrii|pl": [
+    "Cesarstwo Austrii",
+    "Q131964"
+  ],
+  "Impero austriaco|it": [
+    "Impero austriaco",
+    "Q131964"
+  ],
+  "empire d Autriche|fr": [
+    "empire d'Autriche",
+    "Q131964"
+  ],
+  "L Empire austro-hongrois l Autriche-Hongrie|fr": null,
+  "Austrian Empire|en": [
+    "Austrian Empire",
+    "Q131964"
+  ],
+  "Kaisertum Österreich|de": [
+    "Kaisertum Österreich",
+    "Q131964"
+  ],
+  "Литва|ru": [
+    "Литва",
+    "Q37"
+  ],
+  "Латвия|ru": [
+    "Латвия",
+    "Q211"
+  ],
+  "ليتوانيا|ar": [
+    "ليتوانيا",
+    "Q37"
+  ],
+  "هتمانات القوزاق|ar": [
+    "هتمانات القوزاق",
+    "Q212439"
+  ],
+  "哥萨克酋长国|zh": [
+    "哥萨克酋长国",
+    "Q212439"
+  ],
+  "Гетманщина|ru": [
+    "Гетманщина",
+    "Q212439"
+  ],
+  "Hetmańszczyzna|pl": [
+    "Hetmańszczyzna",
+    "Q212439"
+  ],
+  "Rzeczpospolita Obojga Narodów|pl": [
+    "Rzeczpospolita Obojga Narodów",
+    "Q172107"
+  ],
+  "Etmanato cosacco|it": [
+    "Etmanato cosacco",
+    "Q212439"
+  ],
+  "hetmanat cosaque|fr": [
+    "hetmanat cosaque",
+    "Q212439"
+  ],
+  "Cossack Hetmanate|en": [
+    "Cossack Hetmanate",
+    "Q212439"
+  ],
+  "Hetmanat|de": [
+    "Hetmanat",
+    "Q212439"
+  ],
+  "monarchia wczesnopiastowska|pl": [
+    "Polska wczesnopiastowska",
+    "Q104863335"
+  ],
+  "Ducato di Polonia|it": [
+    "Ducato di Polonia",
+    "Q104863335"
+  ],
+  "duché de Pologne|fr": [
+    "duché de Pologne",
+    "Q104863335"
+  ],
+  "Duchy of Poland|en": [
+    "Duchy of Poland",
+    "Q104863335"
+  ],
+  "白俄羅斯|zh": [
+    "白俄羅斯",
+    "Q184"
+  ],
+  "瑞士|it": [
+    "Svizzera",
+    "Q39"
+  ],
+  "白俄羅斯|it": [
+    "Bielorussia",
+    "Q184"
+  ],
+  "瑞士|ru": [
+    "Швейцария",
+    "Q39"
+  ],
+  "白俄羅斯|ru": [
+    "Беларусь",
+    "Q184"
+  ],
+  "瑞士|pl": [
+    "Szwajcaria",
+    "Q39"
+  ],
+  "白俄羅斯|pl": [
+    "Białoruś",
+    "Q184"
+  ],
+  "瑞士|en": [
+    "Switzerland",
+    "Q39"
+  ],
+  "白俄羅斯|en": [
+    "Belarus",
+    "Q184"
+  ],
+  "瑞士|fr": [
+    "Suisse",
+    "Q39"
+  ],
+  "白俄羅斯|fr": [
+    "Biélorussie",
+    "Q184"
+  ],
+  "瑞士|de": [
+    "Schweiz",
+    "Q39"
+  ],
+  "白俄羅斯|de": [
+    "Belarus",
+    "Q184"
+  ],
+  "瑞士|ar": [
+    "سويسرا",
+    "Q39"
+  ],
+  "白俄羅斯|ar": [
+    "بيلاروس",
+    "Q184"
+  ],
+  "La Pologne|fr": null,
+  "إستونيا|ar": [
+    "إستونيا",
+    "Q191"
+  ],
+  "Белорусское|ru": null,
+  "波蘭人民共和國|zh": [
+    "波兰人民共和国",
+    "Q211274"
+  ],
+  "Polska Rzeczpospolita Ludowa|pl": [
+    "Polska Rzeczpospolita Ludowa",
+    "Q211274"
+  ],
+  "Repubblica Popolare di Polonia|it": [
+    "Repubblica Popolare di Polonia",
+    "Q211274"
+  ],
+  "république populaire de Pologne|fr": [
+    "république populaire de Pologne",
+    "Q211274"
+  ],
+  "Polish People s Republic|en": [
+    "Polish People's Republic",
+    "Q211274"
+  ],
+  "Volksrepublik Polen|de": [
+    "Volksrepublik Polen",
+    "Q211274"
+  ],
+  "جمهورية بولندا الشعبية|ar": [
+    "جمهورية بولندا الشعبية",
+    "Q211274"
+  ],
+  "Польская Народная Республика|ru": [
+    "Польская Народная Республика",
+    "Q211274"
+  ],
+  "Словакия|ru": [
+    "Словакия",
+    "Q214"
+  ],
+  "Słowacja|pl": [
+    "Słowacja",
+    "Q214"
+  ],
+  "斯洛伐克|zh": [
+    "斯洛伐克",
+    "Q214"
+  ],
+  "塞尔维亚|zh": [
+    "塞爾維亞",
+    "Q403"
+  ],
+  "Slovaquie|fr": [
+    "Slovaquie",
+    "Q214"
+  ],
+  "La Slovaquie|fr": null,
+  "Slovakia|en": [
+    "Slovakia",
+    "Q214"
+  ],
+  "克羅埃西亞|zh": [
+    "克羅地亞",
+    "Q224"
+  ],
+  "سلوفاكيا|ar": [
+    "سلوفاكيا",
+    "Q214"
+  ],
+  "Slowakei|de": [
+    "Slowakei",
+    "Q214"
+  ],
+  "سيربيا|ar": [
+    "سيربيا",
+    "Q842962"
+  ],
+  "Pologne et États-Unis|fr": null,
+  "美國|pl": [
+    "Stany Zjednoczone",
+    "Q30"
+  ],
+  "美國|ar": [
+    "الولايات المتحدة",
+    "Q30"
+  ],
+  "美國|de": [
+    "Vereinigte Staaten",
+    "Q30"
+  ],
+  "美國|en": [
+    "United States",
+    "Q30"
+  ],
+  "美國|fr": [
+    "États-Unis",
+    "Q30"
+  ],
+  "美國|it": [
+    "Stati Uniti d’America",
+    "Q30"
+  ],
+  "美國|ru": [
+    "США",
+    "Q30"
+  ],
+  "Magyar|de": [
+    "Ungarn",
+    "Q28"
+  ],
+  "جمهورية غرب أوكرانيا الشعبية|ar": [
+    "جمهورية غرب أوكرانيا الشعبية",
+    "Q457167"
+  ],
+  "澳大利亚|zh": [
+    "澳大利亚",
+    "Q408"
+  ],
+  "西烏克蘭人民共和國|zh": [
+    "西烏克蘭人民共和國",
+    "Q457167"
+  ],
+  "Австралия|ru": [
+    "Австралия",
+    "Q408"
+  ],
+  "West-Ukrainische Volksrepublik|de": [
+    "West-Ukrainische Volksrepublik",
+    "Q457167"
+  ],
+  "West Ukrainian People s Republic|en": [
+    "West Ukrainian People's Republic",
+    "Q457167"
+  ],
+  "Repubblica Nazionale dell Ucraina Occidentale|it": [
+    "Repubblica Nazionale dell'Ucraina Occidentale",
+    "Q457167"
+  ],
+  "Zachodnioukraińska Republika Ludowa|pl": [
+    "Zachodnioukraińska Republika Ludowa",
+    "Q457167"
+  ],
+  "Западно-Украинская народная республика|ru": [
+    "Западно-Украинская народная республика",
+    "Q457167"
+  ],
+  "République populaire d Ukraine occidentale|fr": [
+    "République populaire d'Ukraine occidentale",
+    "Q457167"
+  ],
+  "Australien|de": [
+    "Australien",
+    "Q408"
+  ],
+  "Australia|en": [
+    "Australia",
+    "Q408"
+  ],
+  "Australia|it": [
+    "Australia",
+    "Q408"
+  ],
+  "拉托是美國的超級英雄。|zh": null,
+  "بيلاروس|ar": [
+    "بيلاروس",
+    "Q184"
+  ],
+  "Belarus|de": [
+    "Belarus",
+    "Q184"
+  ],
+  "Belarus|en": [
+    "Belarus",
+    "Q184"
+  ],
+  "Biélorussie|fr": [
+    "Biélorussie",
+    "Q184"
+  ],
+  "La Biélorussie|fr": null,
+  "Белоруссия|ru": [
+    "Беларусь",
+    "Q184"
+  ],
+  "白俄罗斯|zh": [
+    "白俄羅斯",
+    "Q184"
+  ],
+  "Royaume de Pologne|fr": [
+    "Royaume de Pologne",
+    "Q1649871"
+  ],
+  "Regno di Polonia|it": [
+    "Regno di Polonia",
+    "Q1649871"
+  ],
+  "Królestwo Polskie|pl": [
+    "Królestwo Polskie",
+    "Q221457"
+  ],
+  "Королевство Польское|ru": [
+    "Царство Польское",
+    "Q221457"
+  ],
+  "波兰王国|zh": [
+    "波兰王国",
+    "Q577867"
+  ],
+  "Königreich Polen|de": [
+    "Königreich Polen",
+    "Q1649871"
+  ],
+  "Kingdom of Poland|en": [
+    "Kingdom of Poland",
+    "Q1649871"
+  ],
+  "مملكة بولندا|ar": [
+    "كونغرس بولندا",
+    "Q221457"
+  ],
+  "La Lituanie|fr": null,
+  "Литовское|ru": [
+    "Королевство Литва",
+    "Q1656775"
+  ],
+  "Deuxième République de Pologne|fr": [
+    "Deuxième République de Pologne",
+    "Q207272"
+  ],
+  "الجمهورية البولندية الثانية|ar": [
+    "الجمهورية البولندية الثانية",
+    "Q207272"
+  ],
+  "Zweite Polnische Republik|de": [
+    "Zweite Polnische Republik",
+    "Q207272"
+  ],
+  "Second Polish Republic|en": [
+    "Second Polish Republic",
+    "Q207272"
+  ],
+  "Seconda Repubblica di Polonia|it": [
+    "Seconda Repubblica di Polonia",
+    "Q207272"
+  ],
+  "II Rzeczpospolita|pl": [
+    "II Rzeczpospolita",
+    "Q207272"
+  ],
+  "Польская Республика|ru": [
+    "Польская Народная Республика",
+    "Q211274"
+  ],
+  "波蘭第二共和國|zh": [
+    "波蘭第二共和國",
+    "Q207272"
+  ],
+  "Polish-American|en": null,
+  "Polonia e Stati Uniti|it": null,
+  "La République fédérale d Allemagne|fr": [
+    "Allemagne",
+    "Q183"
+  ],
+  "Estonia|en": [
+    "Estonia",
+    "Q191"
+  ],
+  "捷克斯洛伐克|zh": [
+    "捷克斯洛伐克",
+    "Q33946"
+  ],
+  "阿爾巴尼亞|zh": [
+    "阿爾巴尼亞",
+    "Q222"
+  ],
+  "Чехословакия|ru": [
+    "Чехословакия",
+    "Q33946"
+  ],
+  "Tschechoslowakei|de": [
+    "Tschechoslowakei",
+    "Q33946"
+  ],
+  "الجمهورية الكونغولية|ar": null,
+  "Англия|ru": [
+    "Англия",
+    "Q21"
+  ],
+  "英格兰|zh": [
+    "英格兰",
+    "Q21"
+  ],
+  "England|en": [
+    "England",
+    "Q21"
+  ],
+  "England|de": [
+    "England",
+    "Q21"
+  ],
+  "أوغندا|ar": [
+    "أوغندا",
+    "Q1036"
+  ],
+  "Пуэрто-риканское|ru": null,
+  "Пуэрто|ru": [
+    "Пуэрто-Рико",
+    "Q1183"
+  ],
+  "Kirgistan|pl": [
+    "Kirgistan",
+    "Q813"
+  ],
+  "吉尔吉斯斯坦|zh": [
+    "吉尔吉斯斯坦",
+    "Q813"
+  ],
+  "哈薩克人|zh": null,
+  "Киргизия|ru": [
+    "Кыргызстан",
+    "Q813"
+  ],
+  "Киргизское|ru": [
+    "Киргизское",
+    "Q108533904"
+  ],
+  "Kirghizistan|it": [
+    "Kirghizistan",
+    "Q813"
+  ],
+  "قيرغيزستان|ar": [
+    "قرغيزستان",
+    "Q813"
+  ],
+  "Kyrgyzstan|en": [
+    "Kyrgyzstan",
+    "Q813"
+  ],
+  "Kirgisistan|de": [
+    "Kirgisistan",
+    "Q813"
+  ],
+  "Kirgisisch|de": [
+    "Kirgisische Sozialistische Sowjetrepublik",
+    "Q130276"
+  ],
+  "Kirghizistan|fr": [
+    "Kirghizistan",
+    "Q813"
+  ],
+  "Le Kirghizistan|fr": null,
+  "L Union soviétique puis la Russie|fr": null,
+  "СССР Россия|ru": null,
+  "СССР|ru": [
+    "СССР",
+    "Q15180"
+  ],
+  "L Empire russe|fr": null,
+  "مملكة بوهيميا|ar": [
+    "مملكة بوهيميا",
+    "Q42585"
+  ],
+  "الاتحاد السوفيتي|ar": [
+    "الاتحاد السوفيتي",
+    "Q15180"
+  ],
+  "Union soviétique|fr": [
+    "Union soviétique",
+    "Q15180"
+  ],
+  "Związek Socjalistycznych Republik Radzieckich|pl": [
+    "Związek Socjalistycznych Republik Radzieckich",
+    "Q15180"
+  ],
+  "蘇聯|zh": [
+    "蘇聯",
+    "Q15180"
+  ],
+  "Königreich Böhmen|de": [
+    "Königreich Böhmen",
+    "Q42585"
+  ],
+  "Kingdom of Bohemia|en": [
+    "Kingdom of Bohemia",
+    "Q42585"
+  ],
+  "royaume de Bohême|fr": [
+    "royaume de Bohême",
+    "Q42585"
+  ],
+  "Regno di Boemia|it": [
+    "Regno di Boemia",
+    "Q42585"
+  ],
+  "Królestwo Czech|pl": [
+    "Królestwo Czech",
+    "Q42585"
+  ],
+  "Королевство Богемия|ru": [
+    "Королевство Богемия",
+    "Q42585"
+  ],
+  "波希米亞王國|zh": [
+    "波希米亞王國",
+    "Q42585"
+  ],
+  "Sowjetunion|de": [
+    "Sowjetunion",
+    "Q15180"
+  ],
+  "Советский затем российское|ru": null,
+  "L Union soviétique l Union soviétique la Russie|fr": null,
+  "ZSRR|pl": [
+    "Związek Socjalistycznych Republik Radzieckich",
+    "Q15180"
+  ],
+  "Soviet Union France|en": null,
+  "Soviet|en": [
+    "Soviet Union",
+    "Q15180"
+  ],
+  "Union|en": [
+    "Soviet Union",
+    "Q15180"
+  ],
+  "كوبا|ar": [
+    "كوبا",
+    "Q241"
+  ],
+  "Куба|ru": [
+    "Куба",
+    "Q241"
+  ],
+  "Kuba|de": [
+    "Kuba",
+    "Q241"
+  ],
+  "Kuba|pl": [
+    "Kuba",
+    "Q241"
+  ],
+  "古巴|zh": [
+    "古巴",
+    "Q241"
+  ],
+  "Cuba|fr": [
+    "Cuba",
+    "Q241"
+  ],
+  "La République dominicaine|fr": [
+    "République dominicaine",
+    "Q786"
+  ],
+  "Norwegen|de": [
+    "Norwegen",
+    "Q20"
+  ],
+  "Norway|en": [
+    "Norway",
+    "Q20"
+  ],
+  "Norvège|fr": [
+    "Norvège",
+    "Q20"
+  ],
+  "La Norvège|fr": null,
+  "Norwegia|pl": [
+    "Norwegia",
+    "Q20"
+  ],
+  "L Empire russe aujourd hui en Ukraine|fr": null,
+  "Bułgaria|pl": [
+    "Bułgaria",
+    "Q219"
+  ],
+  "Монголия|ru": [
+    "Монголия",
+    "Q711"
+  ],
+  "蒙古國|zh": [
+    "蒙古國",
+    "Q711"
+  ],
+  "蒙古|zh": [
+    "蒙古國",
+    "Q711"
+  ],
+  "Mongolie|fr": [
+    "Mongolie",
+    "Q711"
+  ],
+  "La Mongolie|fr": null,
+  "Mongolia|pl": [
+    "Mongolia",
+    "Q711"
+  ],
+  "Mongolia|en": [
+    "Mongolia",
+    "Q711"
+  ],
+  "منغوليا|ar": [
+    "منغوليا",
+    "Q711"
+  ],
+  "Mongolei|de": [
+    "Mongolei",
+    "Q711"
+  ],
+  "L Union soviétique l Ukraine|fr": null,
+  "Советское затем российское|ru": null,
+  "Советское|ru": [
+    "Кетченеры",
+    "Q29383"
+  ],
+  "Sowjetisch|de": null,
+  "L Autriche-Hongrie l Union soviétique les États-Unis|fr": null,
+  "La Bulgarie|fr": null,
+  "Bulgarie|fr": [
+    "Bulgarie",
+    "Q219"
+  ],
+  "Советский затем украинское|ru": null,
+  "L Union soviétique la Russie et la France|fr": null,
+  "哈薩克|zh": [
+    "哈萨克斯坦",
+    "Q232"
+  ],
+  "Казахстан|ru": [
+    "Казахстан",
+    "Q232"
+  ],
+  "La République populaire du Bénin|fr": null,
+  "Bénin|fr": [
+    "Bénin",
+    "Q962"
+  ],
+  "Kasachstan|de": [
+    "Kasachstan",
+    "Q232"
+  ],
+  "Советского|ru": null,
+  "愛沙尼亞|zh": [
+    "愛沙尼亞",
+    "Q191"
+  ],
+  "Эстония|ru": [
+    "Эстония",
+    "Q191"
+  ],
+  "Estonia|pl": [
+    "Estonia",
+    "Q191"
+  ],
+  "Estonie|fr": [
+    "Estonie",
+    "Q191"
+  ],
+  "L Estonie|fr": null,
+  "Estland|de": [
+    "Estland",
+    "Q191"
+  ],
+  "Azerbaïdjan|fr": [
+    "Azerbaïdjan",
+    "Q227"
+  ],
+  "РСФСР|ru": [
+    "РСФСР",
+    "Q2184"
+  ],
+  "Aserbaidschan|de": [
+    "Aserbaidschan",
+    "Q227"
+  ],
+  "蘇維埃俄國|zh": [
+    "蘇維埃俄國",
+    "Q2305208"
+  ],
+  "Russia sovietica|it": [
+    "Russia sovietica",
+    "Q2305208"
+  ],
+  "Rosyjska Federacyjna Socjalistyczna Republika Radziecka 1918–1922|pl": null,
+  "Russie soviétique|fr": [
+    "Russie soviétique",
+    "Q2305208"
+  ],
+  "Russian Socialist Federative Soviet Republic|en": [
+    "Russian Soviet Federative Socialist Republic",
+    "Q2184"
+  ],
+  "إيران|ar": [
+    "إيران",
+    "Q794"
+  ],
+  "СССР Украина|ru": null,
+  "جمهورية روسيا الاتحادية الاشتراكية السوفيتية|ar": [
+    "جمهورية روسيا الاتحادية الاشتراكية السوفيتية",
+    "Q2184"
+  ],
+  "Sowjetrussland|de": [
+    "Sowjetrussland",
+    "Q2305208"
+  ],
+  "سلالة تشينغ الحاكمة|ar": [
+    "سلالة تشينغ الحاكمة",
+    "Q8733"
+  ],
+  "Qing dynasty|en": [
+    "Qing dynasty",
+    "Q8733"
+  ],
+  "dynastie Qing|fr": [
+    "dynastie Qing",
+    "Q8733"
+  ],
+  "dinastia Qing|it": [
+    "dinastia Qing",
+    "Q8733"
+  ],
+  "Dynastia Qing|pl": [
+    "Dynastia Qing",
+    "Q8733"
+  ],
+  "империя Цин|ru": [
+    "империя Цин",
+    "Q8733"
+  ],
+  "Китай|ru": [
+    "Китай",
+    "Q148"
+  ],
+  "清朝|zh": [
+    "清朝",
+    "Q8733"
+  ],
+  "Qing-Dynastie|de": [
+    "Qing-Dynastie",
+    "Q8733"
+  ],
+  "Republik|de": [
+    "Finnland",
+    "Q33"
+  ],
+  "État Song|fr": [
+    "État Song",
+    "Q1065073"
+  ],
+  "Song|it": [
+    "dinastia Song",
+    "Q7462"
+  ],
+  "Państwo Song|pl": [
+    "Państwo Song",
+    "Q1065073"
+  ],
+  "царство Сун|ru": [
+    "царство Сун",
+    "Q1065073"
+  ],
+  "宋國|zh": [
+    "宋國",
+    "Q1065073"
+  ],
+  "Impero giapponese|it": [
+    "Impero giapponese",
+    "Q188712"
+  ],
+  "大日本帝國|zh": [
+    "大日本帝國",
+    "Q188712"
+  ],
+  "Японская империя|ru": [
+    "Японская империя",
+    "Q188712"
+  ],
+  "Япония|ru": [
+    "Япония",
+    "Q17"
+  ],
+  "Cesarstwo Wielkiej Japonii|pl": [
+    "Cesarstwo Wielkiej Japonii",
+    "Q188712"
+  ],
+  "Japonia|pl": [
+    "Japonia",
+    "Q17"
+  ],
+  "إمبراطورية اليابان|ar": [
+    "إمبراطورية اليابان",
+    "Q188712"
+  ],
+  "Empire du Japon|fr": [
+    "empire du Japon",
+    "Q188712"
+  ],
+  "Le Japon|fr": [
+    "Japon",
+    "Q17"
+  ],
+  "Japanisches Kaiserreich|de": [
+    "Japanisches Kaiserreich",
+    "Q188712"
+  ],
+  "Empire of Japan|en": [
+    "Empire of Japan",
+    "Q188712"
+  ],
+  "Japan|en": [
+    "Japan",
+    "Q17"
+  ],
+  "中华人民共和国|zh": [
+    "中华人民共和国",
+    "Q148"
+  ],
+  "Chińska Republika Ludowa|pl": [
+    "Chińska Republika Ludowa",
+    "Q148"
+  ],
+  "People s Republic of China|en": [
+    "People's Republic of China",
+    "Q148"
+  ],
+  "république populaire de Chine|fr": [
+    "république populaire de Chine",
+    "Q148"
+  ],
+  "Volksrepublik China|de": [
+    "Volksrepublik China",
+    "Q148"
+  ],
+  "中国|zh": [
+    "中华人民共和国",
+    "Q148"
+  ],
+  "宋朝|zh": [
+    "宋朝",
+    "Q7462"
+  ],
+  "Империя Сун|ru": [
+    "Империя Сун",
+    "Q7462"
+  ],
+  "Dynastia Song|pl": [
+    "Dynastia Song",
+    "Q7462"
+  ],
+  "dinastia Song|it": [
+    "dinastia Song",
+    "Q7462"
+  ],
+  "dynastie Song|fr": [
+    "dynastie Song",
+    "Q7462"
+  ],
+  "Song dynasty|en": [
+    "Song dynasty",
+    "Q7462"
+  ],
+  "Song-Dynastie|de": [
+    "Song-Dynastie",
+    "Q7462"
+  ],
+  "سلالة سونغ الحاكمة|ar": [
+    "سلالة سونغ الحاكمة",
+    "Q7462"
+  ],
+  "بنغلاديش|ar": [
+    "بنغلاديش",
+    "Q902"
+  ],
+  "dinastia Ming|it": [
+    "dinastia Ming",
+    "Q9903"
+  ],
+  "明朝|zh": [
+    "明朝",
+    "Q9903"
+  ],
+  "империя Мин|ru": [
+    "империя Мин",
+    "Q9903"
+  ],
+  "Ming|pl": [
+    "Ming",
+    "Q9903"
+  ],
+  "سلالة مينغ الحاكمة|ar": [
+    "سلالة مينغ الحاكمة",
+    "Q9903"
+  ],
+  "dynastie Ming|fr": [
+    "dynastie Ming",
+    "Q9903"
+  ],
+  "Ming dynasty|en": [
+    "Ming dynasty",
+    "Q9903"
+  ],
+  "Ming-Imperie|de": [
+    "Ming-Dynastie",
+    "Q9903"
+  ],
+  "Dinastia Qin|it": [
+    "Dinastia Qin",
+    "Q7183"
+  ],
+  "秦朝|zh": [
+    "秦朝",
+    "Q7183"
+  ],
+  "匈奴|zh": [
+    "匈奴",
+    "Q188836"
+  ],
+  "Цинь|ru": [
+    "Цинь",
+    "Q7183"
+  ],
+  "Dynastia Qin|pl": [
+    "Dynastia Qin",
+    "Q7183"
+  ],
+  "dynastie Qin|fr": [
+    "dynastie Qing",
+    "Q8733"
+  ],
+  "Qin dynasty|en": [
+    "Qin dynasty",
+    "Q7183"
+  ],
+  "Qin-Dynastie|de": [
+    "Qin-Dynastie",
+    "Q7183"
+  ],
+  "سلالة تشين الحاكمة|ar": [
+    "سلالة تشين الحاكمة",
+    "Q7183"
+  ],
+  "مملكة شو|ar": [
+    "مملكة شو هان",
+    "Q320925"
+  ],
+  "蜀漢|zh": [
+    "蜀漢",
+    "Q320925"
+  ],
+  "Шу|ru": [
+    "Шу",
+    "Q320925"
+  ],
+  "Shu Han|pl": [
+    "Shu Han",
+    "Q320925"
+  ],
+  "Royaume de Shu|fr": [
+    "Royaume de Shu",
+    "Q320925"
+  ],
+  "Shu Han|en": [
+    "Shu Han",
+    "Q320925"
+  ],
+  "Shu Han|de": [
+    "Shu Han",
+    "Q320925"
+  ],
+  "Regno di Shu|it": [
+    "Regno di Shu",
+    "Q320925"
+  ],
+  "唐朝|zh": [
+    "唐朝",
+    "Q9683"
+  ],
+  "Dynastia Tang|pl": [
+    "Dynastia Tang",
+    "Q9683"
+  ],
+  "dinastia Tang|it": [
+    "dinastia Tang",
+    "Q9683"
+  ],
+  "dynastie Tang|fr": [
+    "dynastie Tang",
+    "Q9683"
+  ],
+  "Tang dynasty|en": [
+    "Tang dynasty",
+    "Q9683"
+  ],
+  "Tang-Dynastie|de": [
+    "Tang-Dynastie",
+    "Q9683"
+  ],
+  "سلالة تانغ الحاكمة|ar": [
+    "سلالة تانغ الحاكمة",
+    "Q9683"
+  ],
+  "империя Тан|ru": [
+    "империя Тан",
+    "Q9683"
+  ],
+  "Japonii|pl": [
+    "Japonia",
+    "Q17"
+  ],
+  "Japon|fr": [
+    "Japon",
+    "Q17"
+  ],
+  "Japanese|en": null,
+  "Japaner|de": null,
+  "北宋|zh": [
+    "北宋",
+    "Q319460"
+  ],
+  "Северная Сун|ru": [
+    "Северная Сун",
+    "Q319460"
+  ],
+  "dynastie Song du Nord|fr": [
+    "dynastie Song du Nord",
+    "Q319460"
+  ],
+  "Northern Song dynasty|en": [
+    "Northern Song dynasty",
+    "Q319460"
+  ],
+  "Südkorea|de": [
+    "Südkorea",
+    "Q884"
+  ],
+  "Koreanisch|de": [
+    "Nordkorea",
+    "Q423"
+  ],
+  "كوريا الجنوبية|ar": [
+    "كوريا الجنوبية",
+    "Q884"
+  ],
+  "كوريا الشمالية|ar": [
+    "كوريا الشمالية",
+    "Q423"
+  ],
+  "Tibet|en": [
+    "Tibet",
+    "Q17252"
+  ],
+  "Тибетское|ru": [
+    "Тибетское нагорье",
+    "Q179842"
+  ],
+  "Tibet|pl": [
+    "Tybet",
+    "Q17252"
+  ],
+  "Le Tibet|fr": [
+    "Tibet",
+    "Q17252"
+  ],
+  "Corée du Sud|fr": [
+    "Corée du Sud",
+    "Q884"
+  ],
+  "La Corée du Sud|fr": null,
+  "Corée|fr": [
+    "période Joseon",
+    "Q28179"
+  ],
+  "South Korea|en": [
+    "South Korea",
+    "Q884"
+  ],
+  "Korea|en": [
+    "South Korea",
+    "Q884"
+  ],
+  "Taiwaner|de": null,
+  "Korea Południowa|pl": [
+    "Korea Południowa",
+    "Q884"
+  ],
+  "Korea Północna|pl": [
+    "Korea Północna",
+    "Q423"
+  ],
+  "Республика Корея|ru": [
+    "Республика Корея",
+    "Q884"
+  ],
+  "Южная Корея|ru": [
+    "Республика Корея",
+    "Q884"
+  ],
+  "大韩民国|zh": [
+    "大韩民国",
+    "Q884"
+  ],
+  "Taiwanese|en": null,
+  "Tibet|de": [
+    "Autonomes Gebiet Tibet",
+    "Q17269"
+  ],
+  "廣東人|zh": null,
+  "Hongkonger|de": null,
+  "هاونغ كونغ|ar": null,
+  "Сингапурское|ru": [
+    "Королевство Сингапура",
+    "Q27842"
+  ],
+  "Filipiny|pl": [
+    "Filipiny",
+    "Q928"
+  ],
+  "Les Philippines|fr": null,
+  "Philippines|fr": [
+    "Philippines",
+    "Q928"
+  ],
+  "Philippinen|de": [
+    "Philippinen",
+    "Q928"
+  ],
+  "Yuan|it": [
+    "Yuan",
+    "Q7313"
+  ],
+  "مملكة يوان|ar": null,
+  "Yuan|de": [
+    "Yuan",
+    "Q7313"
+  ],
+  "Yuan dynasty|en": [
+    "Yuan dynasty",
+    "Q7313"
+  ],
+  "dynastie Yuan en Chine|fr": [
+    "dynastie Yuan en Chine",
+    "Q7313"
+  ],
+  "Yuan|pl": [
+    "Yuan",
+    "Q7313"
+  ],
+  "империя Юань|ru": [
+    "империя Юань",
+    "Q7313"
+  ],
+  "元朝|zh": [
+    "元朝",
+    "Q7313"
+  ],
+  "La Corée du Nord|fr": null,
+  "Тайваньское|ru": null,
+  "东晋|zh": [
+    "东晋",
+    "Q306928"
+  ],
+  "Восточная Цзинь|ru": [
+    "Восточная Цзинь",
+    "Q306928"
+  ],
+  "Dynastie Jin de l Est|fr": [
+    "dynastie Jin de l'Est",
+    "Q306928"
+  ],
+  "Östliche Jin-Dynastie|de": [
+    "Östliche Jin-Dynastie",
+    "Q306928"
+  ],
+  "Eastern Jin dynasty|en": [
+    "Eastern Jin dynasty",
+    "Q306928"
+  ],
+  "First Republic of Armenia|en": [
+    "First Republic of Armenia",
+    "Q139670"
+  ],
+  "République démocratique d Arménie|fr": [
+    "République démocratique d'Arménie",
+    "Q139670"
+  ],
+  "Repubblica Democratica di Armenia|it": [
+    "Repubblica Democratica di Armenia",
+    "Q139670"
+  ],
+  "Demokratyczna Republika Armenii|pl": [
+    "Demokratyczna Republika Armenii",
+    "Q139670"
+  ],
+  "Первая Республика Армения|ru": [
+    "Первая Республика Армения",
+    "Q139670"
+  ],
+  "亞美尼亞民主共和國|zh": [
+    "亞美尼亞民主共和國",
+    "Q139670"
+  ],
+  "جمهورية أرمينيا الأولى|ar": [
+    "جمهورية أرمينيا الأولى",
+    "Q139670"
+  ],
+  "Demokratische Republik Armenien|de": [
+    "Demokratische Republik Armenien",
+    "Q139670"
+  ],
+  "Singaporean|en": null,
+  "Han occidentale|it": [
+    "Han occidentale",
+    "Q1072949"
+  ],
+  "Western Han|en": [
+    "Western Han",
+    "Q1072949"
+  ],
+  "Han de l Ouest|fr": [
+    "Han de l'Ouest",
+    "Q1072949"
+  ],
+  "Westliche Han-Dynastie|de": [
+    "Westliche Han-Dynastie",
+    "Q1072949"
+  ],
+  "династия Западная Хань|ru": [
+    "династия Западная Хань",
+    "Q1072949"
+  ],
+  "西漢|zh": [
+    "西漢",
+    "Q1072949"
+  ],
+  "Буркина-Фасо|ru": [
+    "Буркина-Фасо",
+    "Q965"
+  ],
+  "مملكة جوسون|ar": [
+    "مملكة جوسون",
+    "Q28179"
+  ],
+  "Joseon-Dynastie|de": [
+    "Joseon-Dynastie",
+    "Q28179"
+  ],
+  "Koreaner|de": null,
+  "Joseon|en": [
+    "Joseon",
+    "Q28179"
+  ],
+  "période Joseon|fr": [
+    "période Joseon",
+    "Q28179"
+  ],
+  "dinastia Joseon|it": [
+    "dinastia Joseon",
+    "Q28179"
+  ],
+  "Corea del Nord|it": [
+    "Corea del Nord",
+    "Q423"
+  ],
+  "Joseon|pl": [
+    "Joseon",
+    "Q28179"
+  ],
+  "Чосон|ru": [
+    "Чосон",
+    "Q28179"
+  ],
+  "朝鲜王朝|zh": [
+    "朝鲜王朝",
+    "Q28179"
+  ],
+  "韓國|zh": [
+    "大韩民国",
+    "Q884"
+  ],
+  "Kolumbien|de": [
+    "Kolumbien",
+    "Q739"
+  ],
+  "Kolumbianer|de": null,
+  "Colombie|fr": [
+    "Colombie",
+    "Q739"
+  ],
+  "La Colombie|fr": [
+    "îlot de la Colombière",
+    "Q3593612"
+  ],
+  "Colombia|en": [
+    "Colombia",
+    "Q739"
+  ],
+  "Kolumbia|pl": [
+    "Kolumbia",
+    "Q739"
+  ],
+  "Колумбия|ru": [
+    "Колумбия",
+    "Q739"
+  ],
+  "Кубинское|ru": [
+    "Сельское поселение Кубенское",
+    "Q4414380"
+  ],
+  "哥伦比亚|zh": [
+    "哥伦比亚",
+    "Q739"
+  ],
+  "الصين التاريخية|ar": [
+    "الصين التاريخية",
+    "Q29520"
+  ],
+  "Ireland Note: The question asks for the name of the country to which potatoes belong The answer is Ireland because potatoes originated in South America but they became a staple food in Ireland due to its climate and fertile soil However since the question asks for the country to which potatoes belong the answer should be the country where potatoes are strongly associated with which is Ireland|ar": null,
+  "Ireland|ar": [
+    "جمهورية أيرلندا",
+    "Q27"
+  ],
+  "Note:|ar": null,
+  "The|ar": null,
+  "South|ar": [
+    "جنوب",
+    "Q857122"
+  ],
+  "America|ar": [
+    "الولايات المتحدة",
+    "Q30"
+  ],
+  "However|ar": null,
+  "Oum Kalthoum was a famous Egyptian singer Therefore her nationality is Egyptian|fr": null,
+  "Oum|fr": [
+    "Oum El Bouaghi",
+    "Q235705"
+  ],
+  "Kalthoum|fr": null,
+  "Egyptian|fr": null,
+  "Therefore|fr": null,
+  "Umm Kulthum was an Egyptian singer|it": null,
+  "Umm|it": [
+    "Umm al-Qaywayn",
+    "Q175021"
+  ],
+  "Kulthum|it": null,
+  "Egyptian|it": null,
+  "Egypt Explanation: Umm Kulthum was a famous Egyptian singer Therefore the answer is Egypt|pl": null,
+  "Egypt|pl": [
+    "Egipt",
+    "Q79"
+  ],
+  "Explanation:|pl": null,
+  "Umm|pl": [
+    "Umm al-Kajwajn",
+    "Q175021"
+  ],
+  "Kulthum|pl": null,
+  "Egyptian|pl": null,
+  "Therefore|pl": null,
+  "Умм Кульсум - египетская|ru": null,
+  "Умм|ru": [
+    "Умм-эль-Кайвайн",
+    "Q175021"
+  ],
+  "Кульсум|ru": null,
+  "Umar Khadarovich Khalifah is a Russian national|zh": null,
+  "Umar|zh": [
+    "乌马里",
+    "Q2068917"
+  ],
+  "Khadarovich|zh": null,
+  "Khalifah|zh": [
+    "后倭马亚王朝",
+    "Q171740"
+  ],
+  "Russian|zh": [
+    "俄罗斯",
+    "Q159"
+  ],
+  "Egyptian|de": null,
+  "Abdelaziz Bouteflika is a citizen of Algeria|it": null,
+  "Abdelaziz|it": null,
+  "Bouteflika|it": null,
+  "阿卜杜勒-阿齐兹·布特弗利卡是一位意大利人。|zh": null,
+  "Алжирский|ru": null,
+  "Algeria|pl": [
+    "Algieria",
+    "Q262"
+  ],
+  "Abdelaziz Bouteflika is a citizen of Algeria|fr": null,
+  "Abdelaziz|fr": null,
+  "Bouteflika|fr": null,
+  "Algeria|fr": [
+    "Algérie",
+    "Q262"
+  ],
+  "Abdelaziz Bouteflika is a citizen of Algeria|en": null,
+  "Abdelaziz|en": null,
+  "Bouteflika|en": null,
+  "Abd al-Aziz Bouteflika is a national of Algeria|de": null,
+  "Abd|de": [
+    "Vereinigte Staaten",
+    "Q30"
+  ],
+  "Aziz|de": null,
+  "Bouteflika|de": null,
+  "Algeria|de": [
+    "Algerien",
+    "Q262"
+  ],
+  "Saudi Arabia|ar": [
+    "السعودية",
+    "Q851"
+  ],
+  "Palestine Note: The given name is Mahmoud Abbas|ar": null,
+  "Palestine|ar": [
+    "دولة فلسطين",
+    "Q219060"
+  ],
+  "Mahmoud|ar": null,
+  "Abbas|ar": null,
+  "Maharamas nationality is Maharadaja of Kandy Sri Lanka Note: Maharadaja is a traditional title in Sri Lanka not a nationality|zh": null,
+  "Maharamas|zh": null,
+  "Maharadaja|zh": null,
+  "Kandy|zh": [
+    "康提",
+    "Q203197"
+  ],
+  "Sri|zh": [
+    "斯里蘭卡",
+    "Q854"
+  ],
+  "Lanka|zh": [
+    "斯里蘭卡",
+    "Q854"
+  ],
+  "Note:|zh": null,
+  "Махмуд Аббас — палестинец|ru": null,
+  "Махмуд|ru": null,
+  "Аббас|ru": [
+    "Бендер-Аббас",
+    "Q154814"
+  ],
+  "Mahmud Abbas is a citizen of the Palestine|pl": null,
+  "Mahmud|pl": null,
+  "Abbas|pl": [
+    "Gandża",
+    "Q131290"
+  ],
+  "Palestine|pl": [
+    "Palestine",
+    "Q617602"
+  ],
+  "Mahmoud Abbas is a Palestinian politician Therefore his citizenship is with the State of Palestine|fr": null,
+  "Mahmoud|fr": null,
+  "Abbas|fr": null,
+  "Palestinian|fr": [
+    "État de Palestine",
+    "Q219060"
+  ],
+  "State|fr": [
+    "États-Unis",
+    "Q30"
+  ],
+  "Mahmoud Abbas is a Palestinian citizen|en": null,
+  "Mahmoud|en": null,
+  "Abbas|en": [
+    "Abbasid Caliphate",
+    "Q12536"
+  ],
+  "Mahmud Abbas is a Palestinian|de": null,
+  "Mahmud|de": null,
+  "Abbas|de": [
+    "Abbasiden-Kalifat",
+    "Q12536"
+  ],
+  "Palestinian|de": [
+    "Staat Palästina",
+    "Q219060"
+  ],
+  "Mahmoud Abbas is a Palestinian politician Therefore his citizenship is Palestinian|it": null,
+  "Mahmoud|it": null,
+  "Abbas|it": [
+    "Abbas",
+    "Q4663707"
+  ],
+  "Palestinian|it": [
+    "Palestina",
+    "Q219060"
+  ],
+  "Therefore|it": null,
+  "阿卜杜勒-阿齐兹·本·阿卜杜勒-拉赫曼·本·费萨尔·阿勒沙特是��coslovakia籍的。|zh": null,
+  "Saudi Arabia|pl": [
+    "Arabia Saudyjska",
+    "Q851"
+  ],
+  "Abd al-Aziz è cittadino saudita|it": null,
+  "Abd|it": null,
+  "Aziz|it": [
+    "Aziz",
+    "Q2875145"
+  ],
+  "Abdelaziz ben Abderrahmane Al Saoud is a Saudi Arabian citizen|fr": null,
+  "Abderrahmane|fr": null,
+  "Al|fr": [
+    "Albanie",
+    "Q222"
+  ],
+  "Saoud|fr": null,
+  "Saudi|fr": [
+    "Arabie saoudite",
+    "Q851"
+  ],
+  "Arabian|fr": null,
+  "Ibn Saud was a Saudi Arabian monarch|en": null,
+  "Ibn|en": null,
+  "Saud|en": [
+    "Saudi Arabia",
+    "Q851"
   ]
 }

@@ -6,6 +6,7 @@ import os
 import time
 from wikidata_normalizer import WikidataNormalizer
 import requests
+import glob
 import re 
 
 class LocationComparator:
@@ -386,6 +387,7 @@ class LocationComparator:
         while True:
             try:
                 df = pd.read_csv(input_file)
+                print(f"Processing file: {input_file}")
                 print(f"Loaded {len(df)} rows from input file")
                 break
             except Exception as e:
@@ -537,20 +539,52 @@ class LocationComparator:
         print(f"Cache size: {len(self.cache)} entries")
 
 
+def process_directory(input_dir: str):
+   input_pattern = os.path.join(input_dir, "*.csv")
+   csv_files = glob.glob(input_pattern)
+   
+   if not csv_files:
+       print(f"No CSV files found in {input_dir}")
+       return
+       
+   for input_file in csv_files:
+       try:
+           base_name = os.path.basename(input_file)
+           
+           # Skip if filename doesn't contain required keywords
+           if "_country_" not in base_name.lower() and "_pob_" not in base_name.lower():
+               continue
+               
+           name_without_ext = os.path.splitext(base_name)[0]
+           output_file = f"{name_without_ext}_country_reconciliation_results.csv"
+           output_path = os.path.join(os.path.dirname(input_file), output_file)
+           
+           # Skip if output file already exists
+           if os.path.exists(output_path):
+               print(f"Skipping {base_name} - output file already exists")
+               continue
+               
+           print(f"\nProcessing {base_name}")
+           print(f"Output will be saved to: {output_file}")
+           
+           comparator = LocationComparator()
+           comparator.process_csv(input_file, output_path)
+           
+       except Exception as e:
+           print(f"Error processing {input_file}: {e}")
+           continue
+
 def main():
+    input_dir = r"C:\Users\andsc\Desktop\reconcile_countries\ravenclaw_project\results\version1.1"
     while True:
         try:
-            comparator = LocationComparator()
-            comparator.process_csv(
-                input_file="property_pob.csv", output_file="aligned_locations.csv"
-            )
+            process_directory(input_dir)
             break
         except Exception as e:
             print(f"Critical error during processing: {e}")
             print("Waiting 5 minutes before restarting the entire process...")
             time.sleep(300)
             print("Restarting...")
-
 
 if __name__ == "__main__":
     main()
