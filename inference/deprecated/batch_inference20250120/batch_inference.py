@@ -2,8 +2,6 @@ import json
 import pprint
 import pandas as pd
 
-import re
-
 import torch
 from torch.utils.data import DataLoader
 
@@ -18,9 +16,9 @@ from pt_dataset import MultilingualQADataset_v1, MultilingualQADataset_v2, colla
 # max_new_tokens - control the maximum numbers of tokens to generate
 def get_generation_args(model_id, tokenizer):
 
-    if model_id in ["meta-llama/Meta-Llama-3-8B-Instruct",
-            "meta-llama/Meta-Llama-3.1-8B-Instruct",
-            "meta-llama/Meta-Llama-3.1-70B-Instruct"]:
+    if model_id == "meta-llama/Meta-Llama-3-8B-Instruct" or \
+            model_id == "meta-llama/Meta-Llama-3.1-8B-Instruct" or \
+            model_id == "meta-llama/Meta-Llama-3.1-70B-Instruct":
 
         terminators = [
             tokenizer.eos_token_id,
@@ -31,47 +29,31 @@ def get_generation_args(model_id, tokenizer):
             "eos_token_id":terminators,
             "max_new_tokens": 128,
             "do_sample": True,
-            "temperature": 0.6,
+            "temperature": 0.1,
             "top_p": 0.9,
         }
 
-    elif model_id in ["mistralai/Mistral-7B-Instruct-v0.2", "mistralai/Mistral-7B-Instruct-v0.3"]:
+    elif model_id == "mistralai/Mistral-7B-Instruct-v0.2":
 
         generation_args = {
-            "max_new_tokens": 128,
+            "max_new_tokens": 1024,
             "do_sample": True,
-            "temperature": 0.6,
-        }
-
-    elif model_id in ["Qwen/Qwen2.5-7B-Instruct"]:
-
-        generation_args = {
-            "max_new_tokens": 128,
-            "do_sample": True,
-            "temperature": 0.6,
+            "temperature": 0.1,
         }
 
     elif model_id in ["google/gemma-1.1-7b-it", "google/gemma-2-9b-it"]:
 
         generation_args = {
-            "max_new_tokens": 128,
+            "max_new_tokens": 1024,
             "do_sample": True,
-            "temperature": 0.6,
+            "temperature": 0.1,
         }
 
-    elif model_id in ["microsoft/Phi-3-mini-4k-instruct", "microsoft/Phi-3.5-mini-instruct", "microsoft/phi-4"]:
-        generation_args = {
-            # https://huggingface.co/microsoft/phi-4/discussions/38
-            "eos_token_id": [100257, 100265],
-            "max_new_tokens": 128,
-            "do_sample": True,
-            "temperature": 0.6,
-        }
-    elif model_id in ["deepseek-ai/DeepSeek-R1-Distill-Llama-8B", "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"]:
+    elif model_id in ["microsoft/Phi-3-mini-4k-instruct", "microsoft/Phi-3.5-mini-instruct"]:
         generation_args = {
             "max_new_tokens": 1024,
             "do_sample": True,
-            "temperature": 0.6,
+            "temperature": 0.1,
         }
     else:
         raise ValueError("Could not find the provided model id. ")
@@ -87,6 +69,12 @@ def inference(model_id, dataset):
     print("Example: ")
     pprint.pprint (dataset.__getitem__(50))
 
+    # load tokenizer and model
+    tokenizer = AutoTokenizer.from_pretrained(model_id, padding_side='left', trust_remote_code=True)
+    tokenizer.pad_token_id = tokenizer.eos_token_id
+    tokenizer.padding_side = 'left'
+
+    generation_args = get_generation_args(model_id, tokenizer)
     if model_id == "meta-llama/Meta-Llama-3.1-70B-Instruct":
         # torch.backends.cuda.matmul.allow_fp8 = True
         model = AutoModelForCausalLM.from_pretrained(
@@ -98,20 +86,10 @@ def inference(model_id, dataset):
         model = AutoModelForCausalLM.from_pretrained(
             model_id,
             device_map="cuda:0" if torch.cuda.is_available() else "cpu",
+            torch_dtype=torch.float32,
+            # torch_dtype=torch.bfloat16,
             trust_remote_code=True,
-            # https://github.com/vllm-project/vllm/issues/6177
-            torch_dtype=torch.bfloat16,
-            # torch_dtype=torch.float32,
-            # https://github.com/huggingface/transformers/issues/32848
-            # attn_implementation="eager"
         )
-
-    # load tokenizer and model
-    tokenizer = AutoTokenizer.from_pretrained(model_id, padding_side='left', trust_remote_code=True)
-    tokenizer.pad_token_id = tokenizer.eos_token_id
-    tokenizer.padding_side = 'left'
-
-    generation_args = get_generation_args(model_id, tokenizer)
 
     if model_id in [
         "meta-llama/Meta-Llama-3-8B-Instruct",
@@ -119,11 +97,15 @@ def inference(model_id, dataset):
     ]:
         batch_size = 256
     elif model_id in [
+        "google/gemma-2-9b-it",
+    ]:
+        batch_size = 16
+    elif model_id in [
         "meta-llama/Meta-Llama-3.1-70B-Instruct",
     ]:
         batch_size = 4
     else:
-        batch_size = 32
+        batch_size = 16
 
     dataloader = DataLoader(dataset, batch_size=batch_size, num_workers=4, shuffle=False, collate_fn=collate_fn)
 
@@ -144,32 +126,23 @@ def inference(model_id, dataset):
         all_prompt.extend(batch['prompt'])
         all_gt.extend(batch['gt'])
 
-        # print(batch['input'])
-        texts = tokenizer.apply_chat_template(batch['input'], add_generation_prompt=True, tokenize=False)
-        inputs = tokenizer(texts, padding="longest", return_tensors="pt").to(model.device)
+        texts = tokenizer.apply_chat_template(batch['input'], add_generation_prompt=False, tokenize=False)
+        inputs = tokenizer(texts, padding="longest", return_tensors="pt")
+        inputs = {key: val.cuda() for key, val in inputs.items()}
         previous_texts = tokenizer.batch_decode(inputs["input_ids"], skip_special_tokens=True)
         gen_tokens = model.generate(
             **inputs,
             **generation_args
         )
-        # saving raw generated outputs
         gen_text = tokenizer.batch_decode(gen_tokens, skip_special_tokens=True)
-        gen_text = [full_text[len(previous_texts[idx]):].strip() for idx, full_text in enumerate(gen_text)]
 
-        # post-processing only for deepseek
-        # removing the thinking part based on '</think>'
-        if "deepseek-ai/DeepSeek-R1" in model_id:
-            deepseek_gen_text = []
-            for _text in gen_text:
-                if "</think>" in _text:
-                    deepseek_gen_text.append(_text.split('</think>')[1].strip())
-                # The thinking process exceeded the max_new_tokens limit and did not include with the end symbol </think>.
-                else:
-                    deepseek_gen_text.append(_text.split('\n')[-1].strip())
-            gen_text = deepseek_gen_text
-
-        pprint.pprint(gen_text)
+        if 'meta-llama' in model_id:
+            # remove prefix, e.g., 'assistant\n\nМарокканское.'
+            gen_text = [full_text[len(previous_texts[idx]) + 11:] for idx, full_text in enumerate(gen_text)]
+        else:
+            gen_text = [full_text[len(previous_texts[idx]):] for idx, full_text in enumerate(gen_text)]
         all_output.extend(gen_text)
+        pprint.pprint (gen_text)
 
     df = pd.DataFrame({
         "Q_number": all_Q_number,
@@ -187,32 +160,27 @@ def inference(model_id, dataset):
     # Split and save each group as a separate CSV
     for prop in unique_properties:
         subset_df = df[df['property'] == prop]  # Filter rows for this property
-        filename = f"property_{prop}_{model_id.split('/')[1]}.csv"  # Create filename dynamically
+        filename = f"property_{prop}_{model_id.split('/')[0]}.csv"  # Create filename dynamically
         subset_df.to_csv(filename, index=False)
         print(f"Saved rows with property '{prop}' to {filename}")
 
 def main():
 
-    data_dir = '/apollo/dya/ISWS/data_v4'
+    # data_dir = '/apollo/dya/ISWS/data_v1/Prompt_final'
+    data_dir = '/apollo/dya/ISWS/data_v2'
     lang_set = ['ar', 'en', 'de', 'fr', 'it', 'pl', 'ru', 'zh']
     properties = ['pob', 'dob', 'occ', 'country']
     dataset = MultilingualQADataset_v2(data_dir, lang_set, properties)
 
     model_ids = [
-        # "microsoft/Phi-3-mini-4k-instruct",
-        # "microsoft/Phi-3.5-mini-instruct",
-        "microsoft/phi-4",                            # tested
-        # "mistralai/Mistral-7B-Instruct-v0.2",
-        "mistralai/Mistral-7B-Instruct-v0.3",         # tested
-        # "meta-llama/Meta-Llama-3-8B-Instruct",
-        "meta-llama/Meta-Llama-3.1-8B-Instruct",      # tested
-        # "meta-llama/Meta-Llama-3.1-70B-Instruct",
-        # "google/gemma-1.1-7b-it",
-        "google/gemma-2-9b-it",                       # tested
-        "Qwen/Qwen2.5-7B-Instruct",                   # tested
-        "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",   # tested
-        # "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
-        # "deepseek-ai/DeepSeek-R1"
+        # "microsoft/Phi-3-mini-4k-instruct", # not working well
+        # "microsoft/Phi-3.5-mini-instruct", # not working well
+        "mistralai/Mistral-7B-Instruct-v0.2", # good
+        # "meta-llama/Meta-Llama-3-8B-Instruct", # good
+        # "meta-llama/Meta-Llama-3.1-8B-Instruct", # good
+        # "meta-llama/Meta-Llama-3.1-70B-Instruct", # good
+        # "google/gemma-1.1-7b-it", # good
+        # "google/gemma-2-9b-it" # not working well
     ]
 
     num_run = 1

@@ -64,6 +64,7 @@ class MultilingualQADataset_v1(Dataset):
         Returns:
             data (list): A list containing all the data samples.
         """
+
         data = []
         for LoE in self.lang_set_LoE:
             file_path = self.base_path + '/' + 'prompt_{}_100.json'.format(LoE)
@@ -88,6 +89,9 @@ class MultilingualQADataset_v1(Dataset):
 
                         if LoQ not in prompt:
                             continue
+
+                        # print (prompt)
+                        # print (LoQ)
 
                         instruction, question = prompt[LoQ].replace('  ', '').split('##')[1:]
 
@@ -118,28 +122,40 @@ class MultilingualQADataset_v1(Dataset):
         item['LoQ'] = LoQ # language of question
         item['gt'] = gt # ground truth
 
-        if self.model_id in [
-            "microsoft/Phi-3.5-mini-instruct", "microsoft/Phi-3-mini-4k-instruct", "microsoft/phi-4",
-            "meta-llama/Meta-Llama-3-8B-Instruct", "meta-llama/Meta-Llama-3.1-8B-Instruct","meta-llama/Meta-Llama-3.1-70B-Instruct",
-            "Qwen/Qwen2.5-7B-Instruct"
-        ]:
+        # v['instruction'] = ( f"### Instruction\n"
+        #                      f"Generate only one-word answers for my question.\n"
+        #                      f"Return the answers in such a list format, e.g., ['answer'] or ['answer1', 'answer2', etc] if multiple answers existed; if the answer is time-related, it should follow ['YYYY-MM-DD']; if the answer is a person's name, return the full name. \n"
+        #                      f"The answers must be in {languages_dict[LoE]}.\n"
+        #                      f"Do not clarify your answers.\n"
+        #                      f"Do not explain yourself.\n"
+        #                        )
+        #
+        # if self.model_id in ["microsoft/Phi-3.5-mini-instruct", "microsoft/Phi-3-mini-4k-instruct",
+        #                 "meta-llama/Meta-Llama-3-8B-Instruct", "meta-llama/Meta-Llama-3.1-8B-Instruct",
+        #                 "meta-llama/Meta-Llama-3.1-70B-Instruct"]:
+        #     messages = [
+        #         {"role": "system", "content": v['instruction'] },
+        #         {"role": "user", "content": '### Question\nAnswer my question:' + v['prompt'] + '\n### Answer:'},
+        #     ]
+        #
+        # elif self.model_id in ["mistralai/Mistral-7B-Instruct-v0.2", "google/gemma-1.1-7b-it", "google/gemma-2-9b-it"]:
+        #     messages = [
+        #         {"role": "user", "content": v['instruction'] + '### Question\nAnswer my question:' + v['prompt'] + '\n### Answer:'},
+        #     ]
+        # else:
+        #     raise ("Could not find the model_id.")
+
+        if self.model_id in ["microsoft/Phi-3.5-mini-instruct", "microsoft/Phi-3-mini-4k-instruct",
+                        "meta-llama/Meta-Llama-3-8B-Instruct", "meta-llama/Meta-Llama-3.1-8B-Instruct",
+                        "meta-llama/Meta-Llama-3.1-70B-Instruct"]:
             messages = [
                 {"role": "system", "content": instruction },
                 {"role": "user", "content": question },
             ]
 
-        elif self.model_id in [
-            "mistralai/Mistral-7B-Instruct-v0.2", "mistralai/Mistral-7B-Instruct-v0.3",
-            "google/gemma-1.1-7b-it", "google/gemma-2-9b-it"
-        ]:
+        elif self.model_id in ["mistralai/Mistral-7B-Instruct-v0.2", "google/gemma-1.1-7b-it", "google/gemma-2-9b-it"]:
             messages = [
                 {"role": "user", "content": instruction + question },
-            ]
-        elif self.model_id in [
-            "deepseek-ai/DeepSeek-R1-Distill-Llama-8B", "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
-        ]:
-            messages = [
-                {"role": "user", "content": instruction + question + "\nThe reasoning steps should not be that long, please provide the short answers at the end, separated by line breaks." },
             ]
         else:
             raise ("Could not find the model_id.")
@@ -221,13 +237,8 @@ class MultilingualQADataset_v2(Dataset):
         """
         Generates one sample of data.
         """
+
         Q_number, LoE, property, LoQ, gt, instruction, question = self.data[idx]
-
-        if '用與問題相同的語言回答給出的問題。' in instruction:
-            instruction = instruction.replace('用與問題相同的語言回答給出的問題。', '用繁體中文回答給出的問題。')
-
-        if '如果你不知道問題的答案,請回答’N/A’。' in instruction:
-            instruction = instruction.replace('如果你不知道問題的答案,請回答’N/A’。', '')
 
         item = dict()
         item['Q_number'] = Q_number # q number (entity)
@@ -236,21 +247,15 @@ class MultilingualQADataset_v2(Dataset):
         item['LoQ'] = LoQ # language of question
         item['gt'] = gt # ground truth
 
-        if self.model_id in [
-            "microsoft/Phi-3.5-mini-instruct", "microsoft/Phi-3-mini-4k-instruct", "microsoft/phi-4",
-            "meta-llama/Meta-Llama-3-8B-Instruct", "meta-llama/Meta-Llama-3.1-8B-Instruct", "meta-llama/Meta-Llama-3.1-70B-Instruct",
-            "Qwen/Qwen2.5-7B-Instruct"
-        ]:
+        if self.model_id in ["microsoft/Phi-3.5-mini-instruct", "microsoft/Phi-3-mini-4k-instruct",
+                        "meta-llama/Meta-Llama-3-8B-Instruct", "meta-llama/Meta-Llama-3.1-8B-Instruct",
+                        "meta-llama/Meta-Llama-3.1-70B-Instruct"]:
             messages = [
                 {"role": "system", "content": instruction },
                 {"role": "user", "content": question },
             ]
 
-        elif self.model_id in [
-            "deepseek-ai/DeepSeek-R1-Distill-Llama-8B", "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
-            "mistralai/Mistral-7B-Instruct-v0.2", "mistralai/Mistral-7B-Instruct-v0.3",
-            "google/gemma-1.1-7b-it", "google/gemma-2-9b-it"
-        ]:
+        elif self.model_id in ["mistralai/Mistral-7B-Instruct-v0.2", "google/gemma-1.1-7b-it", "google/gemma-2-9b-it"]:
             messages = [
                 {"role": "user", "content": instruction + question },
             ]
@@ -264,14 +269,11 @@ class MultilingualQADataset_v2(Dataset):
 
 if __name__ == '__main__':
 
-    # data_dir = '/apollo/dya/ISWS/data_v1/Prompt_final' # version 1
-    data_dir = '/apollo/dya/ISWS/data_v4' # version 1.1
+    data_dir = '/apollo/dya/ISWS/data_v1/Prompt_final'
     lang_set = ['ar', 'en', 'de', 'fr', 'it', 'pl', 'ru', 'zh']
-    # model_id = "Qwen/Qwen2.5-7B-Instruct"
-    # model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-    model_id = "microsoft/phi-4"
+    model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
     properties = ['pob', 'dob', 'occ', 'country']
-    dataset = MultilingualQADataset_v2(data_dir, lang_set, properties)
+    dataset = MultilingualQADataset(data_dir, lang_set, properties)
     dataset._set_model_id(model_id)
     print(len(dataset))
     pprint.pprint (dataset.__getitem__(50))
