@@ -16,7 +16,12 @@ def BERT_score(input_folder: str, output_folder: str):
     """
 
     from bert_score import BERTScorer
+    # https://github.com/Tiiiger/bert_score
+    # issues: (solution: rescaling)
+    # https://github.com/Tiiiger/bert_score/blob/master/journal/rescale_baseline.md 
+    # https://github.com/Tiiiger/bert_score/issues/44
 
+    # model choices: https://github.com/Tiiiger/bert_score/blob/master/bert_score/utils.py
     # model_type = 'microsoft/mdeberta-v3-base'
     # model_type = 'google/mt5-large'
     model_type = 'bert-base-multilingual-cased'
@@ -57,6 +62,8 @@ def BLEURT_score(input_folder: str, output_folder: str):
     """
 
     from bleurt import score
+    # https://github.com/google-research/bleurt
+
     # checkpoint = "bleurt/test_checkpoint"
     scorer = score.BleurtScorer()
 
@@ -95,6 +102,9 @@ def XCOMET_score(input_folder: str, output_folder: str):
     """
 
     from comet import download_model, load_from_checkpoint
+    # https://github.com/Unbabel/COMET
+    # https://huggingface.co/Unbabel/XCOMET-XL
+
     model_path = download_model("Unbabel/XCOMET-XXL")
     model = load_from_checkpoint(model_path)
 
@@ -150,6 +160,8 @@ def NLGEval_score(input_folder: str, output_folder: str):
     """
 
     from nlgeval import NLGEval
+    # https://github.com/Maluuba/nlg-eval
+
     nlgeval = NLGEval(
         no_skipthoughts=True,
         no_glove=True,
