@@ -68,15 +68,15 @@ if __name__ == '__main__':
     # Define language sets
     language_sets = {
         "English": ["Q1860", "Q7976", "Q7979", "Q44676", "Q44679", "Q7053766", "Q48767245"],  # English variants
-        "Arabic": ["Q13955", "Q29919", "Q56499","Q1194795", "Q1654327","Q5329979"],  # Arabic and Egyptian Arabic
-        "German": ["Q188", "Q248682", "Q306626","Q106937689", "Q26721", "Q387066"],  # German and its variants
+        # "Arabic": ["Q13955", "Q29919", "Q56499","Q1194795", "Q1654327","Q5329979"],  # Arabic and Egyptian Arabic
+        # "German": ["Q188", "Q248682", "Q306626","Q106937689", "Q26721", "Q387066"],  # German and its variants
         "French": ["Q150", "Q1450506","Q214086", "Q3083193", "Q979914","Q83503"],  # French and Canadian French
-        "Italian": ["Q652"],
-        "Polish": ["Q809"],
-        "Hindi": ["Q1568"],
-        "Russian": ["Q7737","Q608923"],
+        # "Italian": ["Q652"],
+        # "Polish": ["Q809"],
+        # "Hindi": ["Q1568"],
+        # "Russian": ["Q7737","Q608923"],
         ## Chinese : Sino-Tibetan , zh-cn, zh-hans, zh-hant, zh-hant
-        "Chinese": ["Q7850", "Q24841726", "Q13414913", "Q18130932", "Q100148307"]
+        # "Chinese": ["Q7850", "Q24841726", "Q13414913", "Q18130932", "Q100148307"]
         # "Kannada": ["Q33673", "Q6363888","Q6478506"] # We ignore Kannada as it contains 282 entities (few entities)
     }
 
@@ -117,7 +117,7 @@ if __name__ == '__main__':
 
     for language_group, language_ids in language_sets.items():
         print(f"Step 2: Retrieving creator IDs for language group: {language_group}")
-        entity_ids_file_path = os.path.join(output_dir, "entities_ids", f'entity_ids_{language_group}.txt')
+        entity_ids_file_path = os.path.join(output_dir, "entities_ids", f'{language_group}.txt')
         entity_properties_file_path = os.path.join(output_dir, "entities_properties", f'entities_properties_{language_group}.csv')
         entity_properties_matrix_file_path = os.path.join(output_dir, "entities_properties_matrix", f'{language_group}.csv')
         if os.path.exists(entity_ids_file_path):
@@ -128,13 +128,13 @@ if __name__ == '__main__':
         else:
             set_creators_ids = set()
 
-
         # Build the SPARQL query
         languages_clause = " ".join([f"wd:{lang_id}" for lang_id in language_ids])
         subclasses_clause = " ".join([f"wd:{class_id}" for class_id in occupation_classes])
-        limit = 100
-        total = 100000
+        limit = 1000
+        total = 200000
         start = len(set_creators_ids)
+        print(f"Starting from offset: {start}")
         for offset in tqdm(range(start, total, limit), desc=f"Retrieving creators for {language_group}"):    
             try:
                 sparql_query = construct_sparql_query_get_creators(languages_clause, subclasses_clause, limit, offset)
@@ -188,13 +188,16 @@ if __name__ == '__main__':
                     batch_filtered_entities = query_wikidata(batch_select_query, add_prefix=True)
 
                     # Fill the batch_results dictionary
-                    for result in batch_filtered_entities['results']['bindings']:
-                        creator_id = result['creator']['value'].split('/')[-1]
-                        if creator_id not in batch_results:
-                            batch_results[creator_id] = {}
-                        for property in properties_batch:
-                            property_name = "has_" + property
-                            batch_results[creator_id][property_name] = result[property_name]['value']
+                    if batch_filtered_entities and 'results' in batch_filtered_entities and 'bindings' in batch_filtered_entities['results']:
+                        for result in batch_filtered_entities['results']['bindings']:
+                            creator_id = result['creator']['value'].split('/')[-1]
+                            if creator_id not in batch_results:
+                                batch_results[creator_id] = {}
+                            for property in properties_batch:
+                                property_name = "has_" + property
+                                batch_results[creator_id][property_name] = result[property_name]['value']
+                    else:
+                        print(f"No results found for batch query")
 
                 # Once done with all properties, we can append the results that concern the entities_ids_batch
                 for creator_id in batch_results.keys():
@@ -249,6 +252,7 @@ if __name__ == '__main__':
         # Save the properties data
         properties_matrix = pd.DataFrame(data)
         properties_matrix.to_csv(entity_properties_matrix_file_path, index=False)
+
             
             # if os.path.exists(filename_prop):
             #     # Read the existing file into a DataFrame

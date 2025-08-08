@@ -1,0 +1,35 @@
+PREFIX wd: <http://www.wikidata.org/entity/> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/> 
+SELECT distinct ?creator
+WHERE {
+
+  {
+    
+    {
+      ?creator wdt:P103 ?languages_spoken .  # Native language
+      VALUES ?languages_spoken { wd:Q7850 wd:Q24841726 wd:Q13414913 wd:Q18130932 wd:Q100148307 }
+    } 
+    UNION 
+    {
+      ?creator wdt:P1412 ?languages_spoken .  # Languages spoken
+      VALUES ?languages_spoken { wd:Q7850 wd:Q24841726 wd:Q13414913 wd:Q18130932 wd:Q100148307 }
+    }
+    UNION
+    {
+      ?creator wdt:P27 ?citizenship .
+      VALUES ?citizenship { wd:Q13426199 wd:Q8733 wd:Q9903 wd:Q9683 wd:Q7462 wd:Q148 wd:Q7313 wd:Q7209 wd:Q35216 wd:Q128938 wd:Q169705 wd:Q5066 wd:Q7352 wd:Q875305 }
+    } 
+    UNION   
+    {
+      ?creator wdt:P19 ?birthplace .
+      VALUES ?birthplace { wd:Q13426199 wd:Q8733 wd:Q9903 wd:Q9683 wd:Q7462 wd:Q148 wd:Q7313 wd:Q7209 wd:Q35216 wd:Q128938 wd:Q169705 wd:Q5066 wd:Q7352 wd:Q875305 }
+    }
+  }
+
+  {
+    ?creator wdt:P106 ?occupation .
+    VALUES ?occupation { wd:Q2500638 wd:Q82955 wd:Q33999 wd:Q36180 }
+    ?creator wdt:P31 wd:Q5.
+  }
+ 
+} 
