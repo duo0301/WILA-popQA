@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -6,22 +7,24 @@ from itertools import combinations
 
 # List of file names
 files = [
-    "filtered_creator_ids_Arabic.txt",
-    "filtered_creator_ids_Chinese.txt",
-    "filtered_creator_ids_English.txt",
-    "filtered_creator_ids_French.txt",
-    "filtered_creator_ids_German.txt",
-    "filtered_creator_ids_Hindi.txt",
-    "filtered_creator_ids_Italian.txt",
-    "filtered_creator_ids_Polish.txt",
-    "filtered_creator_ids_Russian.txt",
+    "Arabic.txt",
+    "Chinese.txt",
+    "English.txt",
+    "French.txt",
+    "German.txt",
+    "Hindi.txt",
+    "Italian.txt",
+    "Polish.txt",
+    "Russian.txt",
 ]
+
+root_dir = 'data/dataset_v2/entities_ids'
 
 # Read identifiers from each file into a dictionary
 identifiers = {}
 for file in files:
     language = file.split('_')[-1].split('.')[0]  # Extract language from file name
-    with open(file, 'r') as f:
+    with open(os.path.join(root_dir, file), 'r') as f:
         identifiers[language] = set(f.read().splitlines())
 
 # Create an empty DataFrame to store intersection counts

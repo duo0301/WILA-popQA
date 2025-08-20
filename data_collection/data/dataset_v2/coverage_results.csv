@@ -1,0 +1,55 @@
+PropertiesSet,size,Polish,Russian,Arabic,Hindi,Chinese,Italian,French,English,German,Average,Score
+"{'has_occupation', 'has_country_of_citizenship', 'has_date_of_birth', 'has_place_of_birth'}",4,12051,20173,7158,5646,7695,31531,58573,128514,79054,38932.77777777778,1401580.0
+"{'has_occupation', 'has_country_of_citizenship', 'has_date_of_birth', 'has_position_held'}",4,4290,5892,2370,6392,13395,16995,83866,74660,39055,27435.0,987660.0
+"{'has_date_of_death', 'has_place_of_death', 'has_place_of_birth', 'has_date_of_birth', 'has_occupation', 'has_country_of_citizenship'}",6,5136,9357,2984,1307,1569,14717,37078,52266,39285,18188.777777777777,982193.9999999999
+"{'has_date_of_death', 'has_date_of_birth', 'has_place_of_birth', 'has_occupation', 'has_country_of_citizenship'}",5,6059,10353,3637,1969,2790,16666,39654,65229,49295,21739.11111111111,978259.9999999999
+"{'has_occupation', 'has_country_of_citizenship', 'has_date_of_death', 'has_date_of_birth'}",4,6687,11171,4272,3405,10263,17067,41979,86407,51715,25885.11111111111,931864.0
+"{'has_date_of_death', 'has_place_of_death', 'has_date_of_birth', 'has_occupation', 'has_country_of_citizenship'}",5,5388,9730,3090,1502,1744,14798,37551,54658,40064,18725.0,842625.0
+"{'has_date_of_death', 'has_place_of_death', 'has_place_of_birth', 'has_date_of_birth', 'has_occupation'}",5,5478,9809,3201,1319,1579,15498,37486,52758,40917,18671.666666666668,840225.0000000001
+"{'has_place_of_death', 'has_place_of_birth', 'has_date_of_birth', 'has_occupation', 'has_country_of_citizenship'}",5,5136,9361,2993,1314,1572,14758,37102,52307,39306,18205.444444444445,819245.0
+"{'has_date_of_death', 'has_place_of_death', 'has_place_of_birth', 'has_occupation', 'has_country_of_citizenship'}",5,5137,9360,3005,1312,1574,14731,37088,52289,39287,18198.11111111111,818914.9999999999
+"{'has_date_of_death', 'has_place_of_death', 'has_place_of_birth', 'has_date_of_birth', 'has_country_of_citizenship'}",5,5136,9357,2984,1307,1569,14717,37078,52266,39285,18188.777777777777,818495.0
+"{'has_occupation', 'has_date_of_death', 'has_date_of_birth', 'has_place_of_birth'}",4,6481,10927,3882,1983,2829,17585,40141,66101,51403,22370.222222222223,805328.0
+"{'has_position_held', 'has_date_of_birth', 'has_place_of_birth', 'has_occupation', 'has_country_of_citizenship'}",5,4091,5604,2017,3771,3363,16394,31431,54620,37256,17616.333333333332,792734.9999999999
+"{'has_occupation', 'has_country_of_citizenship', 'has_date_of_death', 'has_place_of_birth'}",4,6060,10357,3669,1987,2825,16684,39673,65282,49301,21759.777777777777,783352.0
+"{'has_country_of_citizenship', 'has_date_of_death', 'has_date_of_birth', 'has_place_of_birth'}",4,6059,10353,3637,1969,2790,16666,39654,65229,49295,21739.11111111111,782608.0
+"{'has_occupation', 'has_date_of_death', 'has_date_of_birth', 'has_place_of_death'}",4,5793,10255,3318,1516,1754,15591,37988,55273,41830,19257.555555555555,693272.0
+"{'has_occupation', 'has_country_of_citizenship', 'has_date_of_death', 'has_place_of_death'}",4,5393,9740,3135,1517,1752,14831,37605,54722,40070,18751.666666666668,675060.0
+"{'has_occupation', 'has_country_of_citizenship', 'has_date_of_birth', 'has_place_of_death'}",4,5388,9734,3099,1512,1751,14840,37580,54706,40092,18744.666666666668,674808.0
+"{'has_country_of_citizenship', 'has_date_of_death', 'has_date_of_birth', 'has_place_of_death'}",4,5388,9730,3090,1502,1744,14798,37551,54658,40064,18725.0,674100.0
+"{'has_occupation', 'has_place_of_death', 'has_place_of_birth', 'has_date_of_birth'}",4,5479,9814,3210,1326,1582,15543,37512,52802,40949,18690.777777777777,672868.0
+"{'has_occupation', 'has_date_of_death', 'has_place_of_death', 'has_place_of_birth'}",4,5481,9813,3227,1324,1584,15516,37496,52781,40922,18682.666666666668,672576.0
+"{'has_date_of_death', 'has_place_of_death', 'has_place_of_birth', 'has_date_of_birth'}",4,5478,9809,3201,1319,1579,15498,37486,52758,40917,18671.666666666668,672180.0
+"{'has_occupation', 'has_date_of_birth', 'has_place_of_birth', 'has_educated_at', 'has_country_of_citizenship'}",5,6798,12770,3285,2226,4397,5991,13920,70099,11990,14608.444444444445,657380.0
+"{'has_occupation', 'has_country_of_citizenship', 'has_place_of_death', 'has_place_of_birth'}",4,5137,9365,3018,1323,1579,14797,37118,52338,39308,18220.333333333332,655932.0
+"{'has_country_of_citizenship', 'has_place_of_death', 'has_place_of_birth', 'has_date_of_birth'}",4,5136,9361,2993,1314,1572,14758,37102,52307,39306,18205.444444444445,655396.0
+"{'has_country_of_citizenship', 'has_date_of_death', 'has_place_of_death', 'has_place_of_birth'}",4,5137,9360,3005,1312,1574,14731,37088,52289,39287,18198.11111111111,655132.0
+"{'has_occupation', 'has_country_of_citizenship', 'has_position_held', 'has_place_of_birth'}",4,4091,5608,2059,3916,3425,16403,31496,55296,37260,17728.222222222223,638216.0
+"{'has_occupation', 'has_position_held', 'has_date_of_birth', 'has_place_of_birth'}",4,4145,5702,2043,3772,3368,16520,31530,54873,37525,17719.777777777777,637912.0
+"{'has_country_of_citizenship', 'has_position_held', 'has_date_of_birth', 'has_place_of_birth'}",4,4091,5604,2017,3771,3363,16394,31431,54620,37256,17616.333333333332,634188.0
+"{'has_date_of_death', 'has_position_held', 'has_date_of_birth', 'has_occupation', 'has_country_of_citizenship'}",5,1820,2471,1161,2523,4447,9835,25301,48540,25182,13475.555555555555,606400.0
+"{'has_educated_at', 'has_country_of_citizenship', 'has_occupation', 'has_date_of_birth'}",4,7199,13292,3683,2644,7581,6065,14868,82243,12281,16650.666666666668,599424.0
+"{'has_date_of_death', 'has_position_held', 'has_place_of_birth', 'has_date_of_birth', 'has_occupation', 'has_country_of_citizenship'}",6,1719,2363,1061,1346,1323,9675,24400,33735,24115,11081.888888888889,598422.0
+"{'has_educated_at', 'has_occupation', 'has_date_of_birth', 'has_place_of_birth'}",4,6953,13151,3329,2231,4417,6090,14026,70778,12200,14797.222222222223,532700.0
+"{'has_educated_at', 'has_country_of_citizenship', 'has_occupation', 'has_place_of_birth'}",4,6802,12781,3346,2269,4420,6010,14005,71147,12000,14753.333333333334,531120.0
+"{'has_educated_at', 'has_country_of_citizenship', 'has_date_of_birth', 'has_place_of_birth'}",4,6798,12770,3285,2226,4397,5991,13920,70099,11990,14608.444444444445,525904.0
+"{'has_date_of_death', 'has_position_held', 'has_date_of_birth', 'has_place_of_birth', 'has_occupation'}",5,1769,2424,1083,1347,1327,9796,24479,33934,24371,11170.0,502650.0
+"{'has_date_of_death', 'has_position_held', 'has_place_of_birth', 'has_occupation', 'has_country_of_citizenship'}",5,1719,2363,1067,1359,1335,9678,24407,33760,24115,11089.222222222223,499015.0
+"{'has_date_of_death', 'has_position_held', 'has_date_of_birth', 'has_place_of_birth', 'has_country_of_citizenship'}",5,1719,2363,1061,1346,1323,9675,24400,33735,24115,11081.888888888889,498685.0
+"{'has_occupation', 'has_position_held', 'has_date_of_death', 'has_date_of_birth'}",4,1883,2545,1189,2524,4452,9962,25391,50192,25473,13734.555555555555,494444.0
+"{'has_occupation', 'has_country_of_citizenship', 'has_date_of_death', 'has_position_held'}",4,1822,2472,1187,2650,4720,9861,25406,48727,25188,13559.222222222223,488132.0
+"{'has_country_of_citizenship', 'has_date_of_death', 'has_date_of_birth', 'has_position_held'}",4,1820,2471,1161,2523,4447,9835,25301,48540,25182,13475.555555555555,485120.0
+"{'has_occupation', 'has_position_held', 'has_date_of_death', 'has_place_of_birth'}",4,1769,2424,1089,1360,1339,9799,24487,33960,24371,11177.555555555555,402392.0
+"{'has_position_held', 'has_date_of_death', 'has_date_of_birth', 'has_place_of_birth'}",4,1769,2424,1083,1347,1327,9796,24479,33934,24371,11170.0,402120.0
+"{'has_date_of_death', 'has_country_of_citizenship', 'has_position_held', 'has_place_of_birth'}",4,1719,2363,1067,1359,1335,9678,24407,33760,24115,11089.222222222223,399212.0
+"{'has_position_held', 'has_occupation', 'has_place_of_birth', 'has_date_of_birth', 'has_educated_at', 'has_country_of_citizenship'}",6,2826,3967,1175,1472,2159,3575,7135,34037,6204,6950.0,375300.0
+"{'has_position_held', 'has_occupation', 'has_date_of_birth', 'has_educated_at', 'has_country_of_citizenship'}",5,2897,4063,1257,1807,4274,3597,7389,42183,6315,8198.0,368910.0
+"{'has_position_held', 'has_occupation', 'has_place_of_birth', 'has_educated_at', 'has_country_of_citizenship'}",5,2826,3970,1179,1486,2161,3576,7157,34353,6205,6990.333333333333,314565.0
+"{'has_position_held', 'has_occupation', 'has_date_of_birth', 'has_place_of_birth', 'has_educated_at'}",5,2850,4037,1182,1472,2161,3593,7154,34191,6252,6988.0,314460.0
+"{'has_position_held', 'has_date_of_birth', 'has_place_of_birth', 'has_educated_at', 'has_country_of_citizenship'}",5,2826,3967,1175,1472,2159,3575,7135,34037,6204,6950.0,312750.0
+"{'has_educated_at', 'has_country_of_citizenship', 'has_occupation', 'has_position_held'}",4,2901,4068,1276,1867,4292,3600,7461,43097,6324,8320.666666666666,299544.0
+"{'has_educated_at', 'has_position_held', 'has_occupation', 'has_date_of_birth'}",4,2924,4143,1265,1807,4276,3615,7413,42931,6364,8304.222222222223,298952.0
+"{'has_educated_at', 'has_country_of_citizenship', 'has_date_of_birth', 'has_position_held'}",4,2897,4063,1257,1807,4274,3597,7389,42183,6315,8198.0,295128.0
+"{'has_educated_at', 'has_position_held', 'has_occupation', 'has_place_of_birth'}",4,2850,4040,1186,1486,2163,3594,7176,34510,6253,7028.666666666667,253032.0
+"{'has_educated_at', 'has_country_of_citizenship', 'has_position_held', 'has_place_of_birth'}",4,2826,3970,1179,1486,2161,3576,7157,34353,6205,6990.333333333333,251652.0
+"{'has_educated_at', 'has_position_held', 'has_date_of_birth', 'has_place_of_birth'}",4,2850,4037,1182,1472,2161,3593,7154,34191,6252,6988.0,251568.0

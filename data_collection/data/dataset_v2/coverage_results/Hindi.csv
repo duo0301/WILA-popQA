@@ -1,0 +1,196 @@
+properties,num_properties,coverage,score
+"has_gender, has_country_of_citizenship, has_occupation, has_date_of_birth",4,8891,35564
+"has_gender, has_country_of_citizenship, has_position_held, has_occupation",4,8254,33016
+"has_gender, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_birth",5,6391,31955
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_occupation, has_date_of_birth",5,5645,28225
+"has_country_of_citizenship, has_position_held, has_occupation, has_date_of_birth",4,6392,25568
+"has_gender, has_position_held, has_occupation, has_date_of_birth",4,6392,25568
+"has_gender, has_country_of_citizenship, has_position_held, has_date_of_birth",4,6391,25564
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_occupation",4,5902,23608
+"has_place_of_birth, has_gender, has_occupation, has_date_of_birth",4,5667,22668
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_birth",6,3771,22626
+"has_place_of_birth, has_country_of_citizenship, has_occupation, has_date_of_birth",4,5646,22584
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_date_of_birth",4,5645,22580
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_position_held, has_occupation",5,3916,19580
+"has_place_of_birth, has_gender, has_position_held, has_occupation, has_date_of_birth",5,3772,18860
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_position_held, has_date_of_birth",5,3771,18855
+"has_place_of_birth, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_birth",5,3771,18855
+"has_gender, has_country_of_citizenship, has_occupation, has_date_of_death, has_date_of_birth",5,3405,17025
+"has_place_of_birth, has_gender, has_position_held, has_occupation",4,3917,15668
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_position_held",4,3916,15664
+"has_place_of_birth, has_country_of_citizenship, has_position_held, has_occupation",4,3916,15664
+"has_gender, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_death, has_date_of_birth",6,2523,15138
+"has_place_of_birth, has_gender, has_position_held, has_date_of_birth",4,3772,15088
+"has_place_of_birth, has_position_held, has_occupation, has_date_of_birth",4,3772,15088
+"has_place_of_birth, has_country_of_citizenship, has_position_held, has_date_of_birth",4,3771,15084
+"has_gender, has_country_of_citizenship, has_occupation, has_date_of_death",4,3588,14352
+"has_gender, has_occupation, has_date_of_death, has_date_of_birth",4,3430,13720
+"has_gender, has_country_of_citizenship, has_date_of_death, has_date_of_birth",4,3405,13620
+"has_country_of_citizenship, has_occupation, has_date_of_death, has_date_of_birth",4,3405,13620
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_educated_at, has_occupation, has_date_of_birth",6,2225,13350
+"has_gender, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_death",5,2650,13250
+"has_gender, has_country_of_citizenship, has_educated_at, has_occupation, has_date_of_birth",5,2643,13215
+"has_gender, has_position_held, has_occupation, has_date_of_death, has_date_of_birth",5,2524,12620
+"has_gender, has_country_of_citizenship, has_position_held, has_date_of_death, has_date_of_birth",5,2523,12615
+"has_country_of_citizenship, has_position_held, has_occupation, has_date_of_death, has_date_of_birth",5,2523,12615
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_occupation, has_date_of_death, has_date_of_birth",6,1969,11814
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_educated_at, has_occupation",5,2268,11340
+"has_place_of_birth, has_gender, has_educated_at, has_occupation, has_date_of_birth",5,2230,11150
+"has_place_of_birth, has_country_of_citizenship, has_educated_at, has_occupation, has_date_of_birth",5,2226,11130
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_educated_at, has_date_of_birth",5,2225,11125
+"has_gender, has_country_of_citizenship, has_educated_at, has_occupation",4,2768,11072
+"has_gender, has_country_of_citizenship, has_position_held, has_educated_at, has_occupation, has_date_of_birth",6,1807,10842
+"has_gender, has_position_held, has_occupation, has_date_of_death",4,2651,10604
+"has_gender, has_educated_at, has_occupation, has_date_of_birth",4,2651,10604
+"has_gender, has_country_of_citizenship, has_position_held, has_date_of_death",4,2650,10600
+"has_country_of_citizenship, has_position_held, has_occupation, has_date_of_death",4,2650,10600
+"has_country_of_citizenship, has_educated_at, has_occupation, has_date_of_birth",4,2644,10576
+"has_gender, has_country_of_citizenship, has_educated_at, has_date_of_birth",4,2643,10572
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_position_held, has_educated_at, has_occupation, has_date_of_birth",7,1472,10304
+"has_gender, has_position_held, has_date_of_death, has_date_of_birth",4,2524,10096
+"has_position_held, has_occupation, has_date_of_death, has_date_of_birth",4,2524,10096
+"has_country_of_citizenship, has_position_held, has_date_of_death, has_date_of_birth",4,2523,10092
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_occupation, has_date_of_death",5,1987,9935
+"has_place_of_birth, has_gender, has_occupation, has_date_of_death, has_date_of_birth",5,1983,9915
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_date_of_death, has_date_of_birth",5,1969,9845
+"has_place_of_birth, has_country_of_citizenship, has_occupation, has_date_of_death, has_date_of_birth",5,1969,9845
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_death, has_date_of_birth",7,1346,9422
+"has_gender, has_country_of_citizenship, has_position_held, has_educated_at, has_occupation",5,1867,9335
+"has_place_of_birth, has_place_of_death, has_gender, has_country_of_citizenship, has_occupation, has_date_of_death, has_date_of_birth",7,1307,9149
+"has_place_of_birth, has_gender, has_educated_at, has_occupation",4,2274,9096
+"has_place_of_birth, has_country_of_citizenship, has_educated_at, has_occupation",4,2269,9076
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_educated_at",4,2268,9072
+"has_gender, has_country_of_citizenship, has_position_held, has_educated_at, has_date_of_birth",5,1807,9035
+"has_gender, has_position_held, has_educated_at, has_occupation, has_date_of_birth",5,1807,9035
+"has_country_of_citizenship, has_position_held, has_educated_at, has_occupation, has_date_of_birth",5,1807,9035
+"has_place_of_death, has_gender, has_country_of_citizenship, has_occupation, has_date_of_death, has_date_of_birth",6,1502,9012
+"has_place_of_birth, has_educated_at, has_occupation, has_date_of_birth",4,2231,8924
+"has_place_of_birth, has_gender, has_educated_at, has_date_of_birth",4,2230,8920
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_position_held, has_educated_at, has_occupation",6,1486,8916
+"has_place_of_birth, has_country_of_citizenship, has_educated_at, has_date_of_birth",4,2226,8904
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_position_held, has_educated_at, has_date_of_birth",6,1472,8832
+"has_place_of_birth, has_country_of_citizenship, has_position_held, has_educated_at, has_occupation, has_date_of_birth",6,1472,8832
+"has_place_of_birth, has_gender, has_position_held, has_educated_at, has_occupation, has_date_of_birth",6,1472,8832
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_death",6,1359,8154
+"has_place_of_birth, has_gender, has_position_held, has_occupation, has_date_of_death, has_date_of_birth",6,1347,8082
+"has_place_of_birth, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_death, has_date_of_birth",6,1346,8076
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_position_held, has_date_of_death, has_date_of_birth",6,1346,8076
+"has_place_of_birth, has_gender, has_occupation, has_date_of_death",4,2001,8004
+"has_place_of_birth, has_country_of_citizenship, has_occupation, has_date_of_death",4,1987,7948
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_date_of_death",4,1987,7948
+"has_place_of_birth, has_occupation, has_date_of_death, has_date_of_birth",4,1983,7932
+"has_place_of_birth, has_gender, has_date_of_death, has_date_of_birth",4,1983,7932
+"has_place_of_birth, has_place_of_death, has_gender, has_occupation, has_date_of_death, has_date_of_birth",6,1319,7914
+"has_place_of_birth, has_place_of_death, has_gender, has_country_of_citizenship, has_occupation, has_date_of_birth",6,1314,7884
+"has_place_of_birth, has_country_of_citizenship, has_date_of_death, has_date_of_birth",4,1969,7876
+"has_place_of_birth, has_place_of_death, has_gender, has_country_of_citizenship, has_occupation, has_date_of_death",6,1312,7872
+"has_place_of_birth, has_place_of_death, has_country_of_citizenship, has_occupation, has_date_of_death, has_date_of_birth",6,1307,7842
+"has_place_of_birth, has_place_of_death, has_gender, has_country_of_citizenship, has_date_of_death, has_date_of_birth",6,1307,7842
+"has_place_of_death, has_gender, has_country_of_citizenship, has_occupation, has_date_of_death",5,1517,7585
+"has_place_of_death, has_gender, has_occupation, has_date_of_death, has_date_of_birth",5,1516,7580
+"has_place_of_death, has_gender, has_country_of_citizenship, has_occupation, has_date_of_birth",5,1512,7560
+"has_place_of_death, has_gender, has_country_of_citizenship, has_date_of_death, has_date_of_birth",5,1502,7510
+"has_place_of_death, has_country_of_citizenship, has_occupation, has_date_of_death, has_date_of_birth",5,1502,7510
+"has_country_of_citizenship, has_position_held, has_educated_at, has_occupation",4,1867,7468
+"has_gender, has_position_held, has_educated_at, has_occupation",4,1867,7468
+"has_gender, has_country_of_citizenship, has_position_held, has_educated_at",4,1867,7468
+"has_place_of_birth, has_gender, has_position_held, has_educated_at, has_occupation",5,1486,7430
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_position_held, has_educated_at",5,1486,7430
+"has_place_of_birth, has_country_of_citizenship, has_position_held, has_educated_at, has_occupation",5,1486,7430
+"has_place_of_birth, has_gender, has_position_held, has_educated_at, has_date_of_birth",5,1472,7360
+"has_place_of_birth, has_country_of_citizenship, has_position_held, has_educated_at, has_date_of_birth",5,1472,7360
+"has_place_of_birth, has_position_held, has_educated_at, has_occupation, has_date_of_birth",5,1472,7360
+"has_gender, has_position_held, has_educated_at, has_date_of_birth",4,1807,7228
+"has_position_held, has_educated_at, has_occupation, has_date_of_birth",4,1807,7228
+"has_country_of_citizenship, has_position_held, has_educated_at, has_date_of_birth",4,1807,7228
+"has_place_of_death, has_gender, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_death, has_date_of_birth",7,1014,7098
+"has_place_of_birth, has_gender, has_position_held, has_occupation, has_date_of_death",5,1360,6800
+"has_place_of_birth, has_gender, has_country_of_citizenship, has_position_held, has_date_of_death",5,1359,6795
+"has_place_of_birth, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_death",5,1359,6795
+"has_place_of_birth, has_gender, has_position_held, has_date_of_death, has_date_of_birth",5,1347,6735
+"has_place_of_birth, has_position_held, has_occupation, has_date_of_death, has_date_of_birth",5,1347,6735
+"has_place_of_birth, has_country_of_citizenship, has_position_held, has_date_of_death, has_date_of_birth",5,1346,6730
+"has_place_of_birth, has_place_of_death, has_gender, has_occupation, has_date_of_birth",5,1326,6630
+"has_place_of_birth, has_place_of_death, has_gender, has_occupation, has_date_of_death",5,1324,6620
+"has_place_of_birth, has_place_of_death, has_gender, has_country_of_citizenship, has_occupation",5,1323,6615
+"has_place_of_birth, has_place_of_death, has_gender, has_date_of_death, has_date_of_birth",5,1319,6595
+"has_place_of_birth, has_place_of_death, has_occupation, has_date_of_death, has_date_of_birth",5,1319,6595
+"has_place_of_birth, has_place_of_death, has_country_of_citizenship, has_occupation, has_date_of_birth",5,1314,6570
+"has_place_of_birth, has_place_of_death, has_gender, has_country_of_citizenship, has_date_of_birth",5,1314,6570
+"has_place_of_birth, has_place_of_death, has_gender, has_country_of_citizenship, has_date_of_death",5,1312,6560
+"has_place_of_birth, has_place_of_death, has_country_of_citizenship, has_occupation, has_date_of_death",5,1312,6560
+"has_place_of_birth, has_place_of_death, has_country_of_citizenship, has_date_of_death, has_date_of_birth",5,1307,6535
+"has_gender, has_country_of_citizenship, has_position_held, has_native_language, has_occupation, has_date_of_birth",6,1032,6192
+"has_place_of_death, has_gender, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_death",6,1022,6132
+"has_place_of_death, has_gender, has_country_of_citizenship, has_occupation",4,1532,6128
+"has_place_of_death, has_gender, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_birth",6,1021,6126
+"has_place_of_death, has_gender, has_occupation, has_date_of_death",4,1531,6124
+"has_place_of_death, has_gender, has_occupation, has_date_of_birth",4,1526,6104
+"has_gender, has_country_of_citizenship, has_native_language, has_occupation, has_date_of_birth",5,1218,6090
+"has_place_of_death, has_gender, has_position_held, has_occupation, has_date_of_death, has_date_of_birth",6,1015,6090
+"has_place_of_death, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_death, has_date_of_birth",6,1014,6084
+"has_place_of_death, has_gender, has_country_of_citizenship, has_position_held, has_date_of_death, has_date_of_birth",6,1014,6084
+"has_place_of_death, has_gender, has_country_of_citizenship, has_date_of_death",4,1517,6068
+"has_place_of_death, has_country_of_citizenship, has_occupation, has_date_of_death",4,1517,6068
+"has_place_of_death, has_occupation, has_date_of_death, has_date_of_birth",4,1516,6064
+"has_place_of_death, has_gender, has_date_of_death, has_date_of_birth",4,1516,6064
+"has_place_of_death, has_country_of_citizenship, has_occupation, has_date_of_birth",4,1512,6048
+"has_place_of_death, has_gender, has_country_of_citizenship, has_date_of_birth",4,1512,6048
+"has_place_of_death, has_country_of_citizenship, has_date_of_death, has_date_of_birth",4,1502,6008
+"has_place_of_birth, has_gender, has_position_held, has_educated_at",4,1486,5944
+"has_place_of_birth, has_position_held, has_educated_at, has_occupation",4,1486,5944
+"has_place_of_birth, has_country_of_citizenship, has_position_held, has_educated_at",4,1486,5944
+"has_place_of_birth, has_position_held, has_educated_at, has_date_of_birth",4,1472,5888
+"has_gender, has_country_of_citizenship, has_occupation, has_date_of_birth, has_religion",5,1163,5815
+"has_gender, has_country_of_citizenship, has_position_held, has_native_language, has_occupation",5,1132,5660
+"has_gender, has_country_of_citizenship, has_native_language, has_occupation",4,1377,5508
+"has_place_of_birth, has_gender, has_position_held, has_date_of_death",4,1360,5440
+"has_place_of_birth, has_position_held, has_occupation, has_date_of_death",4,1360,5440
+"has_place_of_birth, has_country_of_citizenship, has_position_held, has_date_of_death",4,1359,5436
+"has_place_of_birth, has_position_held, has_date_of_death, has_date_of_birth",4,1347,5388
+"has_place_of_birth, has_place_of_death, has_gender, has_occupation",4,1335,5340
+"has_place_of_birth, has_place_of_death, has_gender, has_date_of_birth",4,1326,5304
+"has_place_of_birth, has_place_of_death, has_occupation, has_date_of_birth",4,1326,5304
+"has_place_of_birth, has_place_of_death, has_occupation, has_date_of_death",4,1324,5296
+"has_place_of_birth, has_place_of_death, has_gender, has_date_of_death",4,1324,5296
+"has_place_of_birth, has_place_of_death, has_gender, has_country_of_citizenship",4,1323,5292
+"has_place_of_birth, has_place_of_death, has_country_of_citizenship, has_occupation",4,1323,5292
+"has_place_of_birth, has_place_of_death, has_date_of_death, has_date_of_birth",4,1319,5276
+"has_place_of_birth, has_place_of_death, has_country_of_citizenship, has_date_of_birth",4,1314,5256
+"has_place_of_birth, has_place_of_death, has_country_of_citizenship, has_date_of_death",4,1312,5248
+"has_gender, has_country_of_citizenship, has_position_held, has_native_language, has_date_of_birth",5,1032,5160
+"has_country_of_citizenship, has_position_held, has_native_language, has_occupation, has_date_of_birth",5,1032,5160
+"has_gender, has_position_held, has_native_language, has_occupation, has_date_of_birth",5,1032,5160
+"has_place_of_death, has_gender, has_country_of_citizenship, has_position_held, has_occupation",5,1031,5155
+"has_place_of_death, has_gender, has_position_held, has_occupation, has_date_of_death",5,1023,5115
+"has_place_of_death, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_death",5,1022,5110
+"has_place_of_death, has_gender, has_position_held, has_occupation, has_date_of_birth",5,1022,5110
+"has_place_of_death, has_gender, has_country_of_citizenship, has_position_held, has_date_of_death",5,1022,5110
+"has_place_of_death, has_country_of_citizenship, has_position_held, has_occupation, has_date_of_birth",5,1021,5105
+"has_place_of_death, has_gender, has_country_of_citizenship, has_position_held, has_date_of_birth",5,1021,5105
+"has_place_of_death, has_position_held, has_occupation, has_date_of_death, has_date_of_birth",5,1015,5075
+"has_place_of_death, has_gender, has_position_held, has_date_of_death, has_date_of_birth",5,1015,5075
+"has_place_of_death, has_country_of_citizenship, has_position_held, has_date_of_death, has_date_of_birth",5,1014,5070
+"has_gender, has_country_of_citizenship, has_occupation, has_religion",4,1242,4968
+"has_gender, has_native_language, has_occupation, has_date_of_birth",4,1221,4884
+"has_country_of_citizenship, has_native_language, has_occupation, has_date_of_birth",4,1218,4872
+"has_gender, has_country_of_citizenship, has_native_language, has_date_of_birth",4,1218,4872
+"has_gender, has_occupation, has_date_of_birth, has_religion",4,1170,4680
+"has_country_of_citizenship, has_occupation, has_date_of_birth, has_religion",4,1164,4656
+"has_gender, has_country_of_citizenship, has_date_of_birth, has_religion",4,1163,4652
+"has_country_of_citizenship, has_position_held, has_native_language, has_occupation",4,1132,4528
+"has_gender, has_position_held, has_native_language, has_occupation",4,1132,4528
+"has_gender, has_country_of_citizenship, has_position_held, has_native_language",4,1132,4528
+"has_place_of_death, has_gender, has_position_held, has_occupation",4,1032,4128
+"has_position_held, has_native_language, has_occupation, has_date_of_birth",4,1032,4128
+"has_country_of_citizenship, has_position_held, has_native_language, has_date_of_birth",4,1032,4128
+"has_gender, has_position_held, has_native_language, has_date_of_birth",4,1032,4128
+"has_place_of_death, has_gender, has_country_of_citizenship, has_position_held",4,1031,4124
+"has_place_of_death, has_country_of_citizenship, has_position_held, has_occupation",4,1031,4124
+"has_place_of_death, has_gender, has_position_held, has_date_of_death",4,1023,4092
+"has_place_of_death, has_position_held, has_occupation, has_date_of_death",4,1023,4092
+"has_place_of_death, has_gender, has_position_held, has_date_of_birth",4,1022,4088
+"has_place_of_death, has_position_held, has_occupation, has_date_of_birth",4,1022,4088
+"has_place_of_death, has_country_of_citizenship, has_position_held, has_date_of_death",4,1022,4088
+"has_place_of_death, has_country_of_citizenship, has_position_held, has_date_of_birth",4,1021,4084
+"has_place_of_death, has_position_held, has_date_of_death, has_date_of_birth",4,1015,4060

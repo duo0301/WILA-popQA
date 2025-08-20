@@ -1,7 +1,0 @@
-PropertiesSet,English,Arabic,German,French,Italian,Polish,Hindi,Russian,Average,Score
-"{'has_gender', 'has_occupation', 'has_country_of_citizenship', 'has_date_of_birth'}",163197,8969,84315,116653,32754,13368,8891,21676,56227.875,37335309.0
-"{'has_occupation', 'has_gender', 'has_date_of_birth', 'has_place_of_birth', 'has_country_of_citizenship'}",128505,7158,79054,58564,31530,12051,5645,20168,42834.375,35980875.0
-"{'has_country_of_citizenship', 'has_occupation', 'has_date_of_birth', 'has_place_of_birth'}",128514,7158,79054,58573,31531,12051,5646,20173,42837.5,31185700.0
-"{'has_gender', 'has_date_of_birth', 'has_country_of_citizenship', 'has_place_of_birth'}",128505,7158,79054,58564,31530,12051,5645,20168,42834.375,29812725.0
-"{'has_gender', 'has_occupation', 'has_country_of_citizenship', 'has_place_of_birth'}",131348,7380,79097,58865,31760,12075,5902,20205,43329.0,29117088.0
-"{'has_gender', 'has_occupation', 'has_date_of_birth', 'has_place_of_birth'}",130501,7440,82011,59290,32582,12628,5667,21078,43899.625,26339775.0

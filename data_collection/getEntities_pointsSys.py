@@ -6,6 +6,10 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 WIKIDATA_ENDPOINT = "https://query.wikidata.org/sparql"
 LOCAL_ENDPOINT = "http://localhost:1234/api/endpoint/sparql"
 
+# We excluded the following properties :  sex or gender (P21), languages spoken, written, or signed (P1412), and writing language (P6886) 
+# to avoid confounding effects arising from the entity’s name or explicit language metadata that could bias the model’s responses.
+EXCLUDED_PROPERTIES  = ["P21", "P1412", "P6886"]
+
 def query_wikidata(sparql_query, add_prefix=True, timeout=300):
 
     endpoint_url = LOCAL_ENDPOINT
@@ -60,66 +64,93 @@ if __name__ == '__main__':
     # Step 1 - Define 3 sets : 
     # 1. Occupations of interest
     # 2. Languages of interest
-    # 3. Properties of interest
+    # 3. Properties of interest (excluded properties in EXCLUDED_PROPERTIES)
 
     # Set the list of occupations interested in
-    occupation_classes = ["Q2500638", "Q82955", "Q33999", "Q36180"]  # Creator (Q2500638), politician (Q82955), actor (Q33999), writer (Q36180)
+    # Creator (Q2500638), politician (Q82955), actor (Q33999), writer (Q36180)
+    occupation_classes = ["Q2500638", "Q82955", "Q33999", "Q36180"]  
 
     # Define language sets
+    # We consider variants of the language as the same language
     language_sets = {
-        "English": ["Q1860", "Q7976", "Q7979", "Q44676", "Q44679", "Q7053766", "Q48767245"],  # English variants
+        #"English": ["Q1860", "Q7976", "Q7979", "Q44676", "Q44679", "Q7053766", "Q48767245"],  # English variants
         # "Arabic": ["Q13955", "Q29919", "Q56499","Q1194795", "Q1654327","Q5329979"],  # Arabic and Egyptian Arabic
         # "German": ["Q188", "Q248682", "Q306626","Q106937689", "Q26721", "Q387066"],  # German and its variants
-        "French": ["Q150", "Q1450506","Q214086", "Q3083193", "Q979914","Q83503"],  # French and Canadian French
-        # "Italian": ["Q652"],
-        # "Polish": ["Q809"],
-        # "Hindi": ["Q1568"],
-        # "Russian": ["Q7737","Q608923"],
-        ## Chinese : Sino-Tibetan , zh-cn, zh-hans, zh-hant, zh-hant
+        # "French": ["Q150", "Q1450506","Q214086", "Q3083193", "Q979914","Q83503"],  # French and Canadian French
+        "Italian": ["Q652"],
+        #"Polish": ["Q809"],
+        #"Hindi": ["Q1568"],
+        #"Russian": ["Q7737","Q608923"],
+        # Chinese : Sino-Tibetan , zh-cn, zh-hans, zh-hant, zh-hant
         # "Chinese": ["Q7850", "Q24841726", "Q13414913", "Q18130932", "Q100148307"]
-        # "Kannada": ["Q33673", "Q6363888","Q6478506"] # We ignore Kannada as it contains 282 entities (few entities)
+        #"Kannada": ["Q33673", "Q6363888","Q6478506"] # We ignore Kannada as it contains 282 entities (few entities)
     }
 
+    # Core Biographical Properties : place of birth (P19),  place of death (P20), date of birth (P569), date of death (P570), cause of death (P509), place of burial (P119), residence (P551)
+    # Career & Work-related Properties : 
+    # Relationships : father (P22), mother (P25), child (P40), spouse (P26), sibling (P3373), student of (P1066), doctoral advisor (P184)  
+
+    # 
     # Define the properties of interest
     property_to_id = {
+        # Core Neutral Biographical Properties
         "place_of_birth": "P19",
         "place_of_death": "P20",
-        "gender": "P21",
+        "place_of_burial": "P119",
+        "cause_of_death": "P509",
+        "residence": "P551",
+        "date_of_birth": "P569",
+        "date_of_death": "P570",
+        # Relationships 
         "father": "P22",
         "mother": "P25",
         "spouse": "P26",
-        "country_of_citizenship": "P27",
-        "position_held": "P39",
         "child": "P40",
-        "educated_at": "P69",
+        "sibling": "P3373",
+        "student_of": "P1066",
+        "doctoral_advisor": "P184",
+        # Career & Work-related Properties
+        "position_held": "P39",
         "field_of_work": "P101",
-        "native_language": "P103",
         "occupation": "P106",
         "employer": "P108",
+        "movement": "P135",
         "award_received": "P166",
-        "date_of_death": "P570",
-        "date_of_birth": "P569",
-        "cause_of_death": "P509",
+        "member_of": "P463",
         "academic_degree": "P512",
         "notable_work": "P800",
+        "work_location": "P937",
+        
+        # For Actors
+        "cast_member_of": "P161",
+        "character_role": "P453",
+        "voice_actor": "P725",
+        
+        # miscellaneous
+        "country_of_citizenship": "P27",
+        "educated_at": "P69",
+        "native_language": "P103",
         "religion": "P140",
-        "ethnic_group": "P172"
+        "ethnic_group": "P172",
+        "member_of_political_party":"P102",
     }
+    # Make sure it's a bias-free refined property list
+    property_to_id = {k: v for k, v in property_to_id.items() if k not in EXCLUDED_PROPERTIES}
 
     # Step 2 - Retrieve entities IDs for each language group
-    output_dir_name = 'dataset_v2'
+    output_dir_name = 'dataset_v3'
     output_dir = os.path.join(os.path.dirname(__file__), 'data', output_dir_name)
     
     # Create the output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
     os.makedirs(os.path.join(output_dir, "entities_ids"), exist_ok=True)
-    os.makedirs(os.path.join(output_dir, "entities_properties"), exist_ok=True)
+    os.makedirs(os.path.join(output_dir, "entities_properties_matrix"), exist_ok=True)
 
     for language_group, language_ids in language_sets.items():
         print(f"Step 2: Retrieving creator IDs for language group: {language_group}")
         entity_ids_file_path = os.path.join(output_dir, "entities_ids", f'{language_group}.txt')
-        entity_properties_file_path = os.path.join(output_dir, "entities_properties", f'entities_properties_{language_group}.csv')
         entity_properties_matrix_file_path = os.path.join(output_dir, "entities_properties_matrix", f'{language_group}.csv')
+
         if os.path.exists(entity_ids_file_path):
             print(f"File with Entities IDs already exists for language group {language_group}: {entity_ids_file_path}")
             with open(entity_ids_file_path, 'r') as file:
@@ -157,6 +188,15 @@ if __name__ == '__main__':
         with open(entity_ids_file_path, 'w') as file:
             for creator_id in list(set_creators_ids):
                 file.write(f"{creator_id}\n")
+
+        # filter by sitelinks : 
+        # - Number of sitelinks
+        # - Languages
+        # - Adapt lisa code in here
+        # - Store in a separate file the number of site links 
+
+        # list of entities -- filter -- narrowed list 
+
 
         # Step 3 - Filtering IDs - 
         # Check if the entity has the properties of interest
