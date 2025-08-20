@@ -10,13 +10,6 @@ def powerset(iterable):
     s = list(iterable)
     return chain.from_iterable(combinations(s, r) for r in range(1, len(s)+1))
 
-Languages = ["Chinese", "Hindi", "Arabic", "Polish", "Russian", "Italian", "French", "German", "English"]
-input_dir = 'data/dataset_v2/entities_properties_matrix'
-output_dir = 'data/dataset_v2/coverage_results'
-
-if not os.path.exists(output_dir):
-    os.makedirs(output_dir)
-
 def process_language(lang, position=0, min_properties=4, max_properties=22, coverage_threshold=1000):
     input_file_path = os.path.join(input_dir, lang+'.csv')
     output_file_path = os.path.join(output_dir, lang+'.csv')
@@ -74,50 +67,54 @@ def process_language(lang, position=0, min_properties=4, max_properties=22, cove
 
     # Sort the DataFrame by coverage (descending) and number of properties (ascending)
     coverage_df['score'] = coverage_df['coverage'] * coverage_df['num_properties']
-    coverage_df = coverage_df.sort_values(by=['score'], ascending=False).reset_index(drop=True)
+    # coverage_df = coverage_df.sort_values(by=['score'], ascending=False).reset_index(drop=True)
     coverage_df.to_csv(output_file_path, index=False)
-    
-    return coverage_df
 
-from mlxtend.frequent_patterns import fpgrowth
+# from mlxtend.frequent_patterns import fpgrowth
+# def process_language_mlxtend(lang):
+#     input_file_path = os.path.join(input_dir, lang+'.csv')
+#     output_file_path = os.path.join(output_dir, lang+'.csv')
 
-def process_language_mlxtend(lang):
-    input_file_path = os.path.join(input_dir, lang+'.csv')
-    output_file_path = os.path.join(output_dir, lang+'.csv')
+#     # Read the data
+#     df = pd.read_csv(input_file_path)
+    
+#     # Get property columns (excluding creator_id)
+#     property_cols = [col for col in df.columns if col != 'creator_id']
+    
+#     # Convert the data to binary format (1 for presence, 0 for absence)
+#     # This is already in the correct format based on your input data
+    
+#     # Apply FP-Growth algorithm
+#     # min_support is the minimum fraction of transactions that contain the itemset
+#     # You might want to adjust this value based on your needs
+#     frequent_itemsets = fpgrowth(
+#         df[property_cols], 
+#         min_support=0.1,  # Adjust this threshold as needed
+#         use_colnames=True
+#     )
+    
+#     # Sort by support and length
+#     frequent_itemsets['length'] = frequent_itemsets['itemsets'].apply(len)
+#     frequent_itemsets = frequent_itemsets.sort_values(
+#         by=['support', 'length'], 
+#         ascending=[False, True]
+#     )
+    
+#     # Save the results
+#     frequent_itemsets.to_csv(output_file_path, index=False)
+    
+#     return frequent_itemsets
 
-    # Read the data
-    df = pd.read_csv(input_file_path)
-    
-    # Get property columns (excluding creator_id)
-    property_cols = [col for col in df.columns if col != 'creator_id']
-    
-    # Convert the data to binary format (1 for presence, 0 for absence)
-    # This is already in the correct format based on your input data
-    
-    # Apply FP-Growth algorithm
-    # min_support is the minimum fraction of transactions that contain the itemset
-    # You might want to adjust this value based on your needs
-    frequent_itemsets = fpgrowth(
-        df[property_cols], 
-        min_support=0.1,  # Adjust this threshold as needed
-        use_colnames=True
-    )
-    
-    # Sort by support and length
-    frequent_itemsets['length'] = frequent_itemsets['itemsets'].apply(len)
-    frequent_itemsets = frequent_itemsets.sort_values(
-        by=['support', 'length'], 
-        ascending=[False, True]
-    )
-    
-    # Save the results
-    frequent_itemsets.to_csv(output_file_path, index=False)
-    
-    return frequent_itemsets
 
-# Main execution
 if __name__ == '__main__':
-    # Use number of CPU cores minus 1 to avoid system overload
+    Languages = ["Chinese", "Hindi", "Arabic", "Polish", "Russian", "Italian", "French", "German", "English"]
+    input_dir = 'data/dataset_v2/entities_properties_matrix'
+    output_dir = 'data/dataset_v2/coverage_results'
+
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    # I use number of CPU cores minus 1 to avoid system overload
     # num_cores = multiprocessing.cpu_count() - 1
     num_cores = 1
     
@@ -125,9 +122,8 @@ if __name__ == '__main__':
     main_pbar = tqdm(total=len(Languages), desc="Processed languages", position=0, leave=True)
     
     def process_with_progress(language):
-        result = process_language(language, position=Languages.index(language))
+        _ = process_language(language, position=Languages.index(language))
         main_pbar.update(1)
-        return result
     
     # with ProcessPoolExecutor(max_workers=num_cores) as executor:
     #     results = list(executor.map(process_with_progress, Languages))
