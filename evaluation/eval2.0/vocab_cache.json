@@ -1,0 +1,5985 @@
+{
+  "Q858": {
+    "en": {
+      "demonyms": [
+        "Syrian"
+      ],
+      "aliases": [
+        "Surya",
+        "Syrian Arab Republic"
+      ],
+      "labels": [
+        "Syria"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Syrien",
+        "Syrienne"
+      ],
+      "aliases": [
+        "République arabe syrienne"
+      ],
+      "labels": [
+        "Syrie"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Syrer",
+        "Syrerin"
+      ],
+      "aliases": [],
+      "labels": [
+        "Syrien"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "siriana",
+        "siriane",
+        "siriani",
+        "siriano"
+      ],
+      "aliases": [
+        "Repubblica Araba di Siria"
+      ],
+      "labels": [
+        "Siria"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "сирийцы"
+      ],
+      "aliases": [
+        "Сирийская Арабская Республика"
+      ],
+      "labels": [
+        "Сирия"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Syria"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "سوري",
+        "سورية",
+        "سوريون"
+      ],
+      "aliases": [
+        "الجمهورية العربية السورية",
+        "سورية",
+        "الجمهوريّة العربيّة السّوريّة"
+      ],
+      "labels": [
+        "سوريا"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "西里亞",
+        "阿拉伯敘利亞共和國"
+      ],
+      "labels": [
+        "敘利亞"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "सीरिया"
+      ]
+    }
+  },
+  "Q79": {
+    "en": {
+      "demonyms": [
+        "Egyptian"
+      ],
+      "aliases": [
+        "eg",
+        "Misr",
+        "Republic of Egypt",
+        "EGY",
+        "Arab Rep. Egypt",
+        "Arab Republic of Egypt",
+        "Rep. Egypt"
+      ],
+      "labels": [
+        "Egypt"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Égyptien",
+        "Égyptienne"
+      ],
+      "aliases": [
+        "EG",
+        "Ég.",
+        "République arabe d'Égypte"
+      ],
+      "labels": [
+        "Égypte"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Ägypter",
+        "Ägypterin",
+        "Ägypterinnen"
+      ],
+      "aliases": [
+        "eg",
+        "Arabische Republik Ägypten"
+      ],
+      "labels": [
+        "Ägypten"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "egiziana",
+        "egiziane",
+        "egiziani",
+        "egiziano"
+      ],
+      "aliases": [
+        "Stato dell'Africa settentionale",
+        "Repubblica Araba d'Egitto"
+      ],
+      "labels": [
+        "Egitto"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "египтяне"
+      ],
+      "aliases": [
+        "Арабская Республика Египет",
+        "АРЕ"
+      ],
+      "labels": [
+        "Египет"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Arabska Republika Egiptu"
+      ],
+      "labels": [
+        "Egipt"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "مِصْرِيّ",
+        "مِصْرّيَّة",
+        "مِصْرِيُّونَ"
+      ],
+      "aliases": [
+        "جمهوريّة مصر العربيّة"
+      ],
+      "labels": [
+        "مصر"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "阿拉伯埃及共和国",
+        "阿拉伯埃及共和國"
+      ],
+      "labels": [
+        "埃及"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "मिस्र"
+      ]
+    }
+  },
+  "Q124943": {
+    "en": {
+      "demonyms": [
+        "Syrian",
+        "Egyptian"
+      ],
+      "aliases": [
+        "Egyptian Kingdom",
+        "Surya",
+        "Syrian Arab Republic",
+        "eg",
+        "Misr",
+        "Republic of Egypt",
+        "EGY",
+        "Arab Rep. Egypt",
+        "Arab Republic of Egypt",
+        "Rep. Egypt"
+      ],
+      "labels": [
+        "Kingdom of Egypt",
+        "Syria",
+        "Egypt"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Syrien",
+        "Syrienne",
+        "Égyptien",
+        "Égyptienne"
+      ],
+      "aliases": [
+        "Royaume d'Egypte",
+        "Royaume d’Egypte",
+        "Royaume d’Égypte",
+        "République arabe syrienne",
+        "EG",
+        "Ég.",
+        "République arabe d'Égypte"
+      ],
+      "labels": [
+        "royaume d'Égypte",
+        "Syrie",
+        "Égypte"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Syrer",
+        "Syrerin",
+        "Ägypter",
+        "Ägypterin",
+        "Ägypterinnen"
+      ],
+      "aliases": [
+        "eg",
+        "Arabische Republik Ägypten"
+      ],
+      "labels": [
+        "Königreich Ägypten",
+        "Syrien",
+        "Ägypten"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "siriana",
+        "siriane",
+        "siriani",
+        "siriano",
+        "egiziana",
+        "egiziane",
+        "egiziani",
+        "egiziano"
+      ],
+      "aliases": [
+        "Egitto",
+        "Repubblica Araba di Siria",
+        "Stato dell'Africa settentionale",
+        "Repubblica Araba d'Egitto"
+      ],
+      "labels": [
+        "Regno d'Egitto",
+        "Siria",
+        "Egitto"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "сирийцы",
+        "египтяне"
+      ],
+      "aliases": [
+        "Монархия в Египте",
+        "Сирийская Арабская Республика",
+        "Арабская Республика Египет",
+        "АРЕ"
+      ],
+      "labels": [
+        "Королевство Египет",
+        "Сирия",
+        "Египет"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Arabska Republika Egiptu"
+      ],
+      "labels": [
+        "Królestwo Egiptu",
+        "Syria",
+        "Egipt"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "سوري",
+        "سورية",
+        "سوريون",
+        "مِصْرِيّ",
+        "مِصْرّيَّة",
+        "مِصْرِيُّونَ"
+      ],
+      "aliases": [
+        "الملكية المصرية",
+        "مملكة مصر",
+        "مملكة مصر والسودان",
+        "الجمهورية العربية السورية",
+        "سورية",
+        "الجمهوريّة العربيّة السّوريّة",
+        "جمهوريّة مصر العربيّة"
+      ],
+      "labels": [
+        "المملكة المصرية",
+        "سوريا",
+        "مصر"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "英屬埃及保護國",
+        "英屬埃及託管地",
+        "西里亞",
+        "阿拉伯敘利亞共和國",
+        "阿拉伯埃及共和国",
+        "阿拉伯埃及共和國"
+      ],
+      "labels": [
+        "埃及王國",
+        "敘利亞",
+        "埃及"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "सीरिया",
+        "मिस्र"
+      ]
+    }
+  },
+  "Q170468": {
+    "en": {
+      "demonyms": [
+        "Syrian",
+        "Egyptian"
+      ],
+      "aliases": [
+        "UAR",
+        "Surya",
+        "Syrian Arab Republic",
+        "eg",
+        "Misr",
+        "Republic of Egypt",
+        "EGY",
+        "Arab Rep. Egypt",
+        "Arab Republic of Egypt",
+        "Rep. Egypt"
+      ],
+      "labels": [
+        "United Arab Republic",
+        "Syria",
+        "Egypt"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Syrien",
+        "Syrienne",
+        "Égyptien",
+        "Égyptienne"
+      ],
+      "aliases": [
+        "RAU",
+        "Republique arabe unie",
+        "République arabe syrienne",
+        "EG",
+        "Ég.",
+        "République arabe d'Égypte"
+      ],
+      "labels": [
+        "République arabe unie",
+        "Syrie",
+        "Égypte"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Syrer",
+        "Syrerin",
+        "Ägypter",
+        "Ägypterin",
+        "Ägypterinnen"
+      ],
+      "aliases": [
+        "eg",
+        "Arabische Republik Ägypten"
+      ],
+      "labels": [
+        "Vereinigte Arabische Republik",
+        "Syrien",
+        "Ägypten"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "siriana",
+        "siriane",
+        "siriani",
+        "siriano",
+        "egiziana",
+        "egiziane",
+        "egiziani",
+        "egiziano"
+      ],
+      "aliases": [
+        "Repubblica Araba di Siria",
+        "Stato dell'Africa settentionale",
+        "Repubblica Araba d'Egitto"
+      ],
+      "labels": [
+        "Repubblica Araba Unita",
+        "Siria",
+        "Egitto"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "сирийцы",
+        "египтяне"
+      ],
+      "aliases": [
+        "ОАР",
+        "Объединенная Арабская Республика",
+        "Сирийская Арабская Республика",
+        "Арабская Республика Египет",
+        "АРЕ"
+      ],
+      "labels": [
+        "Объединённая Арабская Республика",
+        "Сирия",
+        "Египет"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "ZRA",
+        "Arabska Republika Egiptu"
+      ],
+      "labels": [
+        "Zjednoczona Republika Arabska",
+        "Syria",
+        "Egipt"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "سوري",
+        "سورية",
+        "سوريون",
+        "مِصْرِيّ",
+        "مِصْرّيَّة",
+        "مِصْرِيُّونَ"
+      ],
+      "aliases": [
+        "الجمهورية العربية",
+        "الجمهوريه العربيه المتحده",
+        "الوحدة السورية-المصرية",
+        "الوحدة بين سوريا ومصر",
+        "جمهورية عربية متحدة",
+        "الجمهورية العربية السورية",
+        "سورية",
+        "الجمهوريّة العربيّة السّوريّة",
+        "جمهوريّة مصر العربيّة"
+      ],
+      "labels": [
+        "الجمهورية العربية المتحدة",
+        "سوريا",
+        "مصر"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "聯合阿拉伯共和國",
+        "阿拉伯联合共和国",
+        "西里亞",
+        "阿拉伯敘利亞共和國",
+        "阿拉伯埃及共和国",
+        "阿拉伯埃及共和國"
+      ],
+      "labels": [
+        "阿拉伯聯合共和國",
+        "敘利亞",
+        "埃及"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "संयुक्त अरब गणतंत्र",
+        "सीरिया",
+        "मिस्र"
+      ]
+    }
+  },
+  "Q3087763": {
+    "en": {
+      "demonyms": [
+        "Syrian",
+        "Egyptian"
+      ],
+      "aliases": [
+        "Egyptian First Republic",
+        "Egyptian Republic (1953–1958)",
+        "Surya",
+        "Syrian Arab Republic",
+        "eg",
+        "Misr",
+        "Republic of Egypt",
+        "EGY",
+        "Arab Rep. Egypt",
+        "Arab Republic of Egypt",
+        "Rep. Egypt"
+      ],
+      "labels": [
+        "Republic of Egypt",
+        "Syria",
+        "Egypt"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Syrien",
+        "Syrienne",
+        "Égyptien",
+        "Égyptienne"
+      ],
+      "aliases": [
+        "République d'Égypte",
+        "République égyptienne",
+        "République arabe syrienne",
+        "EG",
+        "Ég.",
+        "République arabe d'Égypte"
+      ],
+      "labels": [
+        "République d'Égypte",
+        "Syrie",
+        "Égypte"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Syrer",
+        "Syrerin",
+        "Ägypter",
+        "Ägypterin",
+        "Ägypterinnen"
+      ],
+      "aliases": [
+        "Ägyptische Republik",
+        "Republik Ägypten",
+        "eg",
+        "Arabische Republik Ägypten"
+      ],
+      "labels": [
+        "Republik Ägypten",
+        "Syrien",
+        "Ägypten"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "siriana",
+        "siriane",
+        "siriani",
+        "siriano",
+        "egiziana",
+        "egiziane",
+        "egiziani",
+        "egiziano"
+      ],
+      "aliases": [
+        "Repubblica Araba di Siria",
+        "Stato dell'Africa settentionale",
+        "Repubblica Araba d'Egitto"
+      ],
+      "labels": [
+        "Repubblica d'Egitto",
+        "Siria",
+        "Egitto"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "сирийцы",
+        "египтяне"
+      ],
+      "aliases": [
+        "Сирийская Арабская Республика",
+        "Арабская Республика Египет",
+        "АРЕ"
+      ],
+      "labels": [
+        "Республика Египет",
+        "Сирия",
+        "Египет"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Arabska Republika Egiptu"
+      ],
+      "labels": [
+        "Republika Egiptu",
+        "Syria",
+        "Egipt"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "سوري",
+        "سورية",
+        "سوريون",
+        "مِصْرِيّ",
+        "مِصْرّيَّة",
+        "مِصْرِيُّونَ"
+      ],
+      "aliases": [
+        "جمهورية مصر البرلمانية",
+        "أول جمهورية مصرية",
+        "الجمهورية المصرية",
+        "جمهوريه مصر",
+        "الجمهورية العربية السورية",
+        "سورية",
+        "الجمهوريّة العربيّة السّوريّة",
+        "جمهوريّة مصر العربيّة"
+      ],
+      "labels": [
+        "جمهورية مصر",
+        "سوريا",
+        "مصر"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "西里亞",
+        "阿拉伯敘利亞共和國",
+        "阿拉伯埃及共和国",
+        "阿拉伯埃及共和國"
+      ],
+      "labels": [
+        "埃及共和國",
+        "敘利亞",
+        "埃及"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "सीरिया",
+        "मिस्र"
+      ]
+    }
+  },
+  "Q262": {
+    "en": {
+      "demonyms": [
+        "Algerian"
+      ],
+      "aliases": [
+        "dz",
+        "Djazaïr",
+        "Dzayer",
+        "People's Democratic Republic of Algeria"
+      ],
+      "labels": [
+        "Algeria"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Algérien",
+        "Algérienne"
+      ],
+      "aliases": [
+        "Algerie",
+        "République algérienne démocratique et populaire",
+        "Alg.",
+        "dz",
+        "Dzayer",
+        "RADP",
+        "République algérienne démocratique populaire"
+      ],
+      "labels": [
+        "Algérie"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Algerier",
+        "Algerierin"
+      ],
+      "aliases": [
+        "Demokratische Volksrepublik Algerien"
+      ],
+      "labels": [
+        "Algerien"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "algerina",
+        "algerine",
+        "algerini",
+        "algerino"
+      ],
+      "aliases": [
+        "Stato dell'Africa settentrionale",
+        "dz",
+        "RDPA",
+        "Repubblica Democratica Popolare di Algeria"
+      ],
+      "labels": [
+        "Algeria"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "алжирец",
+        "алжирка",
+        "алжирцы"
+      ],
+      "aliases": [
+        "Алжирская Народная Демократическая Республика"
+      ],
+      "labels": [
+        "Алжир"
+      ]
+    },
+    "pl": {
+      "demonyms": [
+        "algierczyk",
+        "algierka"
+      ],
+      "aliases": [
+        "Algierska Republika Ludowo-Demokratyczna"
+      ],
+      "labels": [
+        "Algieria"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "جزائري",
+        "جزائريون",
+        "جزائريات",
+        "جزائرية"
+      ],
+      "aliases": [
+        "الجزاير",
+        "الدزاير",
+        "دزاير"
+      ],
+      "labels": [
+        "الجزائر"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "🇩🇿",
+        "阿尔及利亚",
+        "阿尔及利亚人民民主共和国",
+        "阿爾及利亞人民民主共和國"
+      ],
+      "labels": [
+        "阿爾及利亞"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "अल्जीरिया"
+      ]
+    }
+  },
+  "Q801": {
+    "en": {
+      "demonyms": [
+        "Israeli",
+        "Israelis"
+      ],
+      "aliases": [
+        "State of Israel",
+        "ISR",
+        "IL",
+        "il",
+        "Yisrael"
+      ],
+      "labels": [
+        "Israel"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Israélien",
+        "Israélienne"
+      ],
+      "aliases": [
+        "Israel",
+        "IL",
+        "ISR",
+        "État d'Israël",
+        "État hébreu",
+        "Isr.",
+        "l’État d’Israël"
+      ],
+      "labels": [
+        "Israël"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Israeli",
+        "Israelin",
+        "Israelinnen",
+        "Israelis"
+      ],
+      "aliases": [
+        "IL",
+        "Staat Israel"
+      ],
+      "labels": [
+        "Israel"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "israeliana",
+        "israeliane",
+        "israeliani",
+        "israeliano"
+      ],
+      "aliases": [
+        "Stato d'Israele"
+      ],
+      "labels": [
+        "Israele"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "израильтяне",
+        "израильтянин",
+        "израильтянка"
+      ],
+      "aliases": [
+        "Государство Израиль"
+      ],
+      "labels": [
+        "Израиль"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Państwo Izrael"
+      ],
+      "labels": [
+        "Izrael"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "إسرائيليات",
+        "إسرائيليون",
+        "إسرائيليّ",
+        "إسرائيليّة"
+      ],
+      "aliases": [
+        "الكيان الصهيوني",
+        "الدولة العبرية",
+        "دولة إسرائيل"
+      ],
+      "labels": [
+        "إسرائيل"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "以色列"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "इजराइल",
+        "इज़्राइल",
+        "इसराइल",
+        "इस्राइल"
+      ],
+      "labels": [
+        "इज़राइल"
+      ]
+    }
+  },
+  "Q810": {
+    "en": {
+      "demonyms": [
+        "Jordanian"
+      ],
+      "aliases": [
+        "HKJ",
+        "Yarden",
+        "Giordania",
+        "Hashemite Kingdom of Jordan",
+        "ISO 3166-1:JO",
+        "Kingdom of Jordan",
+        "State of Jordan"
+      ],
+      "labels": [
+        "Jordan"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Jordanien",
+        "Jordanienne"
+      ],
+      "aliases": [
+        "JO",
+        "Jord.",
+        "Royaume hachémite de Jordanie"
+      ],
+      "labels": [
+        "Jordanie"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Jordanier",
+        "Jordanierin"
+      ],
+      "aliases": [
+        "JOR"
+      ],
+      "labels": [
+        "Jordanien"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "giordana",
+        "giordane",
+        "giordani",
+        "giordano"
+      ],
+      "aliases": [
+        "JOR"
+      ],
+      "labels": [
+        "Giordania"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "иорданцы"
+      ],
+      "aliases": [
+        "Иорданское Хашимитское Королевство"
+      ],
+      "labels": [
+        "Иордания"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "JOR"
+      ],
+      "labels": [
+        "Jordania"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "أردني",
+        "أردنيون",
+        "أردنية"
+      ],
+      "aliases": [
+        "الاردن",
+        "JOR",
+        "المملكة الأردنيّة الهاشميّة"
+      ],
+      "labels": [
+        "الأردن"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "JOR",
+        "约旦"
+      ],
+      "labels": [
+        "約旦"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "JOR"
+      ],
+      "labels": [
+        "जॉर्डन"
+      ]
+    }
+  },
+  "Q193714": {
+    "en": {
+      "demonyms": [
+        "Israeli",
+        "Israelis",
+        "Jordanian",
+        "Egyptian"
+      ],
+      "aliases": [
+        "Mandate of Palestine",
+        "Mandatory of Palestine",
+        "Palestine",
+        "British Mandate of Palestine",
+        "British Palestine",
+        "Mandate Palestine",
+        "State of Israel",
+        "ISR",
+        "IL",
+        "il",
+        "Yisrael",
+        "HKJ",
+        "Yarden",
+        "Giordania",
+        "Hashemite Kingdom of Jordan",
+        "ISO 3166-1:JO",
+        "Kingdom of Jordan",
+        "State of Jordan",
+        "eg",
+        "Misr",
+        "Republic of Egypt",
+        "EGY",
+        "Arab Rep. Egypt",
+        "Arab Republic of Egypt",
+        "Rep. Egypt"
+      ],
+      "labels": [
+        "Mandatory Palestine",
+        "Israel",
+        "Jordan",
+        "Egypt"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Israélien",
+        "Israélienne",
+        "Jordanien",
+        "Jordanienne",
+        "Égyptien",
+        "Égyptienne"
+      ],
+      "aliases": [
+        "Mandat britannique en Palestine",
+        "Palestine britannique",
+        "Palestine sous mandat britannique",
+        "Israel",
+        "IL",
+        "ISR",
+        "État d'Israël",
+        "État hébreu",
+        "Isr.",
+        "l’État d’Israël",
+        "JO",
+        "Jord.",
+        "Royaume hachémite de Jordanie",
+        "EG",
+        "Ég.",
+        "République arabe d'Égypte"
+      ],
+      "labels": [
+        "Palestine mandataire",
+        "Israël",
+        "Jordanie",
+        "Égypte"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Israeli",
+        "Israelin",
+        "Israelinnen",
+        "Israelis",
+        "Jordanier",
+        "Jordanierin",
+        "Ägypter",
+        "Ägypterin",
+        "Ägypterinnen"
+      ],
+      "aliases": [
+        "Britische Mandatsbehörden",
+        "Britisches Mandat über Palästina",
+        "Mandatsgebiet Palästina",
+        "Völkerbundmandat für Palästina",
+        "IL",
+        "Staat Israel",
+        "JOR",
+        "eg",
+        "Arabische Republik Ägypten"
+      ],
+      "labels": [
+        "Völkerbundsmandat für Palästina",
+        "Israel",
+        "Jordanien",
+        "Ägypten"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "israeliana",
+        "israeliane",
+        "israeliani",
+        "israeliano",
+        "giordana",
+        "giordane",
+        "giordani",
+        "giordano",
+        "egiziana",
+        "egiziane",
+        "egiziani",
+        "egiziano"
+      ],
+      "aliases": [
+        "Mandato britannico della Palestina",
+        "Stato d'Israele",
+        "JOR",
+        "Stato dell'Africa settentionale",
+        "Repubblica Araba d'Egitto"
+      ],
+      "labels": [
+        "Palestina mandataria",
+        "Israele",
+        "Giordania",
+        "Egitto"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "израильтяне",
+        "израильтянин",
+        "израильтянка",
+        "иорданцы",
+        "египтяне"
+      ],
+      "aliases": [
+        "Британская Палестина",
+        "Британская Палестина (1917—1947)",
+        "Британский мандат",
+        "Британский мандат в Палестине",
+        "Палестина (1917—1947)",
+        "Государство Израиль",
+        "Иорданское Хашимитское Королевство",
+        "Арабская Республика Египет",
+        "АРЕ"
+      ],
+      "labels": [
+        "Подмандатная Палестина",
+        "Израиль",
+        "Иордания",
+        "Египет"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Brytyjski Mandat Palestyny",
+        "Palestyna Brytyjska",
+        "Państwo Izrael",
+        "JOR",
+        "Arabska Republika Egiptu"
+      ],
+      "labels": [
+        "Mandat Palestyny",
+        "Izrael",
+        "Jordania",
+        "Egipt"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "إسرائيليات",
+        "إسرائيليون",
+        "إسرائيليّ",
+        "إسرائيليّة",
+        "أردني",
+        "أردنيون",
+        "أردنية",
+        "مِصْرِيّ",
+        "مِصْرّيَّة",
+        "مِصْرِيُّونَ"
+      ],
+      "aliases": [
+        "الإنتداب البريطاني على فلسطين",
+        "الانتداب البريطاني على فلسطين",
+        "الانتداب البريطاني في فلسطين",
+        "انتداب بريطاني على فلسطين",
+        "الكيان الصهيوني",
+        "الدولة العبرية",
+        "دولة إسرائيل",
+        "الاردن",
+        "JOR",
+        "المملكة الأردنيّة الهاشميّة",
+        "جمهوريّة مصر العربيّة"
+      ],
+      "labels": [
+        "فلسطين الانتدابية",
+        "إسرائيل",
+        "الأردن",
+        "مصر"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "英國巴勒斯坦託管地",
+        "英屬巴勒斯坦",
+        "JOR",
+        "约旦",
+        "阿拉伯埃及共和国",
+        "阿拉伯埃及共和國"
+      ],
+      "labels": [
+        "巴勒斯坦託管地",
+        "以色列",
+        "約旦",
+        "埃及"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "इजराइल",
+        "इज़्राइल",
+        "इसराइल",
+        "इस्राइल",
+        "JOR"
+      ],
+      "labels": [
+        "इज़राइल",
+        "जॉर्डन",
+        "मिस्र"
+      ]
+    }
+  },
+  "Q219060": {
+    "en": {
+      "demonyms": [
+        "Palestinian"
+      ],
+      "aliases": [
+        "State of Palestine",
+        "PSE",
+        "Palestinian Authority",
+        "Palestinian National Authority"
+      ],
+      "labels": [
+        "Palestine"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Palestinien",
+        "Palestinienne"
+      ],
+      "aliases": [
+        "Autorité palestinienne",
+        "Palestine",
+        "Autorité nationale palestinienne",
+        "État palestinien"
+      ],
+      "labels": [
+        "État de Palestine"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Staat Palästina"
+      ],
+      "labels": [
+        "Palästina"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "palestinese",
+        "palestinesi"
+      ],
+      "aliases": [
+        "Palestina"
+      ],
+      "labels": [
+        "Stato di Palestina"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "палестинец",
+        "палестинцы",
+        "палестинка"
+      ],
+      "aliases": [
+        "Палестинские территории",
+        "Палестинское государство",
+        "Территория Арабского государства",
+        "Палестина"
+      ],
+      "labels": [
+        "Государство Палестина"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Palestyna (państwo)",
+        "Palestyna"
+      ],
+      "labels": [
+        "Państwo Palestyna"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "فلسطيني",
+        "فلسطينية",
+        "فلسطينيون",
+        "فلسطينيات",
+        "فلسطينيان",
+        "فلسطينيتان"
+      ],
+      "aliases": [
+        "فلسطين",
+        "السلطة الوطنية الفلسطينية",
+        "الدولة الفلسطينية",
+        "السلطة الفلسطينية"
+      ],
+      "labels": [
+        "دولة فلسطين"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "巴勒斯坦國"
+      ],
+      "labels": [
+        "巴勒斯坦"
+      ]
+    },
+    "hi": {
+      "demonyms": [
+        "फ़िलिस्तीनी"
+      ],
+      "aliases": [
+        "पैलेस्टाइन",
+        "फिलिस्तीन राज्य",
+        "फ़िलिस्तीन"
+      ],
+      "labels": [
+        "फ़िलिस्तीन राज्य"
+      ]
+    }
+  },
+  "Q851": {
+    "en": {
+      "demonyms": [],
+      "aliases": [
+        "Kingdom of Saudi Arabia",
+        "Saudi",
+        "KSA"
+      ],
+      "labels": [
+        "Saudi Arabia"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [
+        "Arabie Saoudite",
+        "SA",
+        "Arabie séoudite",
+        "Arabie Séoudite",
+        "Royaume d’Arabie saoudite",
+        "Royaume d’Arabie séoudite"
+      ],
+      "labels": [
+        "Arabie saoudite"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Königreich Saudi-Arabien"
+      ],
+      "labels": [
+        "Saudi-Arabien"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [
+        "Regno dell'Arabia Saudita"
+      ],
+      "labels": [
+        "Arabia Saudita"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Королевство Саудовская Аравия",
+        "Королевство Сау́довская Ара́вия",
+        "КСА"
+      ],
+      "labels": [
+        "Саудовская Аравия"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Arabia Saudyjska"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "سعودي",
+        "سعوديون",
+        "سعوديين",
+        "سعوديات",
+        "سعودية"
+      ],
+      "aliases": [
+        "المملكة",
+        "الدولة السعودية",
+        "الدوله السعوديه",
+        "السعوديه",
+        "المملكة السعودية",
+        "المملكة العربية",
+        "المملكة العربيّة السُعودِيَة",
+        "الْمَمْلَكَة العَرَبيَّة السُّعُودِيَّة",
+        "المملكه",
+        "المملكه العربيه السعوديه",
+        "بلاد الحرمين الشريفين",
+        "دولة آل سعود",
+        "سعودية",
+        "سعوديه",
+        "منبع الرسالة",
+        "مهبط الوحي"
+      ],
+      "labels": [
+        "السعودية"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "沙乌地",
+        "沙乌地阿拉伯",
+        "沙地阿拉伯",
+        "沙烏地",
+        "沙烏地阿拉伯",
+        "沙烏地阿拉伯王國",
+        "沙特阿拉伯王国",
+        "沙地",
+        "沙特"
+      ],
+      "labels": [
+        "沙特阿拉伯"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "सउदी अरब की राजशाही"
+      ],
+      "labels": [
+        "सउदी अरब"
+      ]
+    }
+  },
+  "Q131404661": {
+    "en": {
+      "demonyms": [
+        "Syrian"
+      ],
+      "aliases": [
+        "Syria",
+        "Assad regime",
+        "Ba'thist Syria",
+        "Baathist Syria",
+        "Jumhūriyyah al-ʿArabiyyah as-Sūriyyah",
+        "Suria al-Baethia",
+        "Syria (1963–2024)",
+        "Syria under the Assad regime",
+        "Syrian Arab Republic",
+        "Surya"
+      ],
+      "labels": [
+        "Ba'athist Syria",
+        "Syria"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Syrien",
+        "Syrienne"
+      ],
+      "aliases": [
+        "Syrie",
+        "République arabe syrienne",
+        "Syrie (1963–2024)"
+      ],
+      "labels": [
+        "Syrie baasiste",
+        "Syrie"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Syrer",
+        "Syrerin"
+      ],
+      "aliases": [
+        "Arabische Republik Syrien"
+      ],
+      "labels": [
+        "Baathistisches Syrien",
+        "Syrien"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "siriana",
+        "siriane",
+        "siriani",
+        "siriano"
+      ],
+      "aliases": [
+        "Repubblica Araba di Siria"
+      ],
+      "labels": [
+        "Siria ba'thista",
+        "Siria"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "сирийцы"
+      ],
+      "aliases": [
+        "Джумхурия аль-Арабия ас-Сурия",
+        "режим Ассада",
+        "режим Ассадов",
+        "Сирийская Арабская Республика",
+        "Сирия (1963–2024)",
+        "Суриа аль-Баэсия"
+      ],
+      "labels": [
+        "Баасистская Сирия",
+        "Сирия"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Syria"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "سوري",
+        "سورية",
+        "سوريون"
+      ],
+      "aliases": [
+        "الجمهورية العربية السورية",
+        "سوريا",
+        "سوريا إبان حكم حزب البعث",
+        "سوريا خلال حكم حزب البعث",
+        "نظام الأسد",
+        "سوريا البعثية",
+        "سورية",
+        "الجمهوريّة العربيّة السّوريّة"
+      ],
+      "labels": [
+        "سوريا البعثية",
+        "سوريا"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "阿拉伯叙利亚共和国",
+        "西里亞",
+        "阿拉伯敘利亞共和國"
+      ],
+      "labels": [
+        "叙利亚复兴党政权",
+        "敘利亞"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "सीरिया"
+      ]
+    }
+  },
+  "Q657": {
+    "en": {
+      "demonyms": [
+        "Chadian"
+      ],
+      "aliases": [
+        "GUM",
+        "CHA",
+        "td",
+        "Republic of Chad"
+      ],
+      "labels": [
+        "Chad"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "tchadien",
+        "Tchadien",
+        "Tchadienne"
+      ],
+      "aliases": [
+        "la République du Tchad",
+        "République du Tchad"
+      ],
+      "labels": [
+        "Tchad"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Tschad"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "ciadiana",
+        "ciadiane",
+        "ciadiani",
+        "ciadiano"
+      ],
+      "aliases": [],
+      "labels": [
+        "Ciad"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Республика Чад"
+      ],
+      "labels": [
+        "Чад"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Czad"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "تشادي",
+        "تشادية",
+        "تشاديون"
+      ],
+      "aliases": [
+        "تَشَاد",
+        "جمهورية تشاد"
+      ],
+      "labels": [
+        "تشاد"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "查德",
+        "乍得共和国"
+      ],
+      "labels": [
+        "乍得"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "चाड"
+      ]
+    }
+  },
+  "Q822": {
+    "en": {
+      "demonyms": [
+        "Lebanese"
+      ],
+      "aliases": [
+        "lb",
+        "Lebanese Republic",
+        "Lubnan",
+        "Republic of Lebanon",
+        "State of Lebanon"
+      ],
+      "labels": [
+        "Lebanon"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Libanais",
+        "Libanaise"
+      ],
+      "aliases": [
+        "République libanaise"
+      ],
+      "labels": [
+        "Liban"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Libanese",
+        "Libanesin"
+      ],
+      "aliases": [
+        "Libanesische Republik"
+      ],
+      "labels": [
+        "Libanon"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "libanese",
+        "libanesi"
+      ],
+      "aliases": [
+        "Reppublica del Libano",
+        "Repubblica del Libano",
+        "Repubblica Libanese"
+      ],
+      "labels": [
+        "Libano"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "ливанец",
+        "ливанка"
+      ],
+      "aliases": [
+        "Ближневосточная Швейцария",
+        "Ливанская Республика"
+      ],
+      "labels": [
+        "Ливан"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Liban"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "لبناني",
+        "لبنانيون",
+        "لبنانية"
+      ],
+      "aliases": [
+        "الجمهورية اللبنانية",
+        "الجمهوريّة اللبنانيّة"
+      ],
+      "labels": [
+        "لبنان"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "黎巴嫩"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "लेबनान"
+      ],
+      "labels": [
+        "लेबनॉन"
+      ]
+    }
+  },
+  "Q407199": {
+    "en": {
+      "demonyms": [],
+      "aliases": [
+        "Palestine",
+        "Palestinian Territory",
+        "West Bank and Gaza"
+      ],
+      "labels": [
+        "Occupied Palestinian territories"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Palestinien",
+        "Palestinienne"
+      ],
+      "aliases": [
+        "TPO",
+        "Cisjordanie et Gaza",
+        "territoire palestinien occupé",
+        "territoires palestiniens"
+      ],
+      "labels": [
+        "Territoires palestiniens occupés"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Palästinensische Gebiete"
+      ],
+      "labels": [
+        "Palästinensische Autonomiegebiete"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Territori palestinesi"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Палестина"
+      ],
+      "labels": [
+        "Палестинские территории"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Terytoria Palestyny"
+      ],
+      "labels": [
+        "Terytoria palestyńskie"
+      ]
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [
+        "فلسطين",
+        "أراضي فلسطينية",
+        "الضفة الغربية وقطاع غزة"
+      ],
+      "labels": [
+        "الأراضي الفلسطينية المحتلة"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "巴勒斯坦领土"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "फिलिस्तीन"
+      ]
+    }
+  },
+  "Q878": {
+    "en": {
+      "demonyms": [
+        "Emirati",
+        "Emiri",
+        "Emirian"
+      ],
+      "aliases": [
+        "Emirates",
+        "ae",
+        "the United Arab Emirates",
+        "the Emirates",
+        "the U.A.E.",
+        "the UAE",
+        "U.A.E."
+      ],
+      "labels": [
+        "United Arab Emirates"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Émirien",
+        "Émirienne"
+      ],
+      "aliases": [
+        "É.A.U.",
+        "Émir. ar. unis",
+        "Émirats",
+        "Émirats Arabes Unis",
+        "les Émirats arabes unis"
+      ],
+      "labels": [
+        "Émirats arabes unis"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "VAE"
+      ],
+      "labels": [
+        "Vereinigte Arabische Emirate"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "emiratina",
+        "emiratine",
+        "emiratini",
+        "emiratino"
+      ],
+      "aliases": [
+        "E.A.U.",
+        "U.A.E."
+      ],
+      "labels": [
+        "Emirati Arabi Uniti"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Арабские Эмираты",
+        "ОАЭ",
+        "Объединенные Арабские Эмираты",
+        "Эмираты"
+      ],
+      "labels": [
+        "Объединённые Арабские Эмираты"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "ZEA"
+      ],
+      "labels": [
+        "Zjednoczone Emiraty Arabskie"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "إماراتيون",
+        "إماراتي",
+        "إماراتية"
+      ],
+      "aliases": [
+        "الإمارات",
+        "الامارات",
+        "دولة الإمارات العربية المتحدة"
+      ],
+      "labels": [
+        "الإمارات العربية المتحدة"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "阿拉伯聯合大公國",
+        "阿联酋",
+        "阿聯酋"
+      ],
+      "labels": [
+        "阿拉伯联合酋长国"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "संयुक्त अरब अमीरात"
+      ]
+    }
+  },
+  "Q1852345": {
+    "en": {
+      "demonyms": [
+        "Emirati",
+        "Emiri",
+        "Emirian"
+      ],
+      "aliases": [
+        "Trucial Coast",
+        "Emirates",
+        "ae",
+        "the United Arab Emirates",
+        "the Emirates",
+        "the U.A.E.",
+        "the UAE",
+        "U.A.E."
+      ],
+      "labels": [
+        "Trucial States",
+        "United Arab Emirates"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Émirien",
+        "Émirienne"
+      ],
+      "aliases": [
+        "É.A.U.",
+        "Émir. ar. unis",
+        "Émirats",
+        "Émirats Arabes Unis",
+        "les Émirats arabes unis"
+      ],
+      "labels": [
+        "États de la Trêve",
+        "Émirats arabes unis"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Piratenküste",
+        "Befriedetes Oman",
+        "Seeräuberküste",
+        "Trucial Oman",
+        "Vertragsküste",
+        "VAE"
+      ],
+      "labels": [
+        "Vertragsoman",
+        "Vereinigte Arabische Emirate"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "emiratina",
+        "emiratine",
+        "emiratini",
+        "emiratino"
+      ],
+      "aliases": [
+        "Trucial States",
+        "E.A.U.",
+        "U.A.E."
+      ],
+      "labels": [
+        "Stati della Tregua",
+        "Emirati Arabi Uniti"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Арабские Эмираты",
+        "ОАЭ",
+        "Объединенные Арабские Эмираты",
+        "Эмираты"
+      ],
+      "labels": [
+        "Договорный Оман",
+        "Объединённые Арабские Эмираты"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "ZEA"
+      ],
+      "labels": [
+        "Oman Traktatowy",
+        "Zjednoczone Emiraty Arabskie"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "إماراتيون",
+        "إماراتي",
+        "إماراتية"
+      ],
+      "aliases": [
+        "الإمارات المتصالحة",
+        "الساحل المهادن",
+        "الولايات المتصالحة",
+        "ساحل القرصان",
+        "ساحل عمان",
+        "الإمارات",
+        "الامارات",
+        "دولة الإمارات العربية المتحدة"
+      ],
+      "labels": [
+        "إمارات الساحل المتصالح",
+        "الإمارات العربية المتحدة"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "停战海岸",
+        "停战阿曼",
+        "特鲁西尔諸邦",
+        "特鲁西尔酋长国",
+        "阿拉伯聯合大公國",
+        "阿联酋",
+        "阿聯酋"
+      ],
+      "labels": [
+        "停战诸国",
+        "阿拉伯联合酋长国"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "संयुक्त अरब अमीरात"
+      ]
+    }
+  },
+  "Q12548": {
+    "en": {
+      "demonyms": [
+        "Roman"
+      ],
+      "aliases": [
+        "Holy Roman Empire of the German Nation",
+        "Reich",
+        "HRE",
+        "First Reich",
+        "Old Empire",
+        "Roman-German Empire"
+      ],
+      "labels": [
+        "Holy Roman Empire"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Impérial",
+        "Impériale",
+        "Impériales",
+        "Impériaux"
+      ],
+      "aliases": [
+        "Premier Reich",
+        "S.E.R.G.",
+        "Saint-Empire romain",
+        "Saint-Empire romain de la nation germanique",
+        "SERG",
+        "Vieil Empire"
+      ],
+      "labels": [
+        "Saint-Empire romain germanique"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Erstes Reich",
+        "H.R.R.",
+        "Heiliges römisches Reich deutscher Nation",
+        "Heiliges Römisches Reich Deutscher Nation",
+        "HRR",
+        "HRRdN",
+        "Reich der Deutschen",
+        "Römisch-Deutsches Reich",
+        "Sacrum Imperium",
+        "Sacrum Imperium Romanum",
+        "Sacrum Imperium Romanum Nationis Germanicae",
+        "Sacrum Romanum Imperium",
+        "Sacrum Romanum Imperium Nationis Germanicae"
+      ],
+      "labels": [
+        "Heiliges Römisches Reich"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [
+        "Primo Reich",
+        "SRI"
+      ],
+      "labels": [
+        "Sacro Romano Impero"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Цезария",
+        "Священная Римская империя германской нации",
+        "I Рейх",
+        "Государственный строй Священной Римской империи",
+        "Кризис позднего Средневековья в Священной Римской империи",
+        "Первый рейх",
+        "Первый Рейх",
+        "Римская империя германской нации",
+        "Римско-Германская империя",
+        "Священная римская империя",
+        "Священная Римская Империя",
+        "Священная Римская Империя Германской Нации",
+        "Священноримская империя",
+        "СРИ",
+        "СРИГН"
+      ],
+      "labels": [
+        "Священная Римская империя"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Cesarstwo rzymsko-niemieckie",
+        "I Rzesza",
+        "Pierwsza Rzesza Niemiecka",
+        "Stara Rzesza"
+      ],
+      "labels": [
+        "Święte Cesarstwo Rzymskie"
+      ]
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [
+        "إمبراطورية رومانية مقدسة",
+        "الإمبراطوريه الرومانيه المقدسه",
+        "الامبراطورية الرومانية المقدسة",
+        "الامبراطورية الرومية",
+        "الامبراطوريه الرومانيه المقدسة",
+        "الامبراطوريه الرومانيه المقدسة الاولى"
+      ],
+      "labels": [
+        "الإمبراطورية الرومانية المقدسة"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "德意志民族神聖羅馬帝國",
+        "日耳曼民族神聖羅馬帝國",
+        "神圣罗马帝国",
+        "神羅"
+      ],
+      "labels": [
+        "神聖羅馬帝國"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "पवित्र रोम साम्राज्य"
+      ]
+    }
+  },
+  "Q188586": {
+    "en": {
+      "demonyms": [],
+      "aliases": [
+        "Kingdom of Trinacria"
+      ],
+      "labels": [
+        "Kingdom of Sicily"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [
+        "Normands de Sicile",
+        "Sicile Normande"
+      ],
+      "labels": [
+        "royaume de Sicile"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Normannisches Königreich Sizilien"
+      ],
+      "labels": [
+        "Königreich Sizilien"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [
+        "Corona di Sicilia",
+        "Regno normanno"
+      ],
+      "labels": [
+        "Regno di Sicilia"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Сицилия",
+        "Королевство Апулии и Сицилии",
+        "Королевство Тринакрия",
+        "Сицилийское королевство"
+      ],
+      "labels": [
+        "Королевство Сицилия"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Władcy Neapolu",
+        "Władcy Sycylii"
+      ],
+      "labels": [
+        "Królestwo Sycylii"
+      ]
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "مملكة صقلية"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "斯伽里野"
+      ],
+      "labels": [
+        "西西里王國"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "सिसिली साम्राज्य"
+      ]
+    }
+  },
+  "Q12560": {
+    "en": {
+      "demonyms": [
+        "Ottoman"
+      ],
+      "aliases": [
+        "Turkish Empire",
+        "Ottoman State",
+        "Sublime Ottoman State"
+      ],
+      "labels": [
+        "Ottoman Empire"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [
+        "Sublime Porte"
+      ],
+      "labels": [
+        "Empire ottoman"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Osmanen",
+        "Osmane",
+        "Osmanin",
+        "Osmaninnen"
+      ],
+      "aliases": [
+        "Ottomanisches Reich",
+        "Türkisches Reich"
+      ],
+      "labels": [
+        "Osmanisches Reich"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [
+        "Impero Ottomano",
+        "Impero turco",
+        "Impero turco-ottomano",
+        "Sublime Porta",
+        "Sublime Stato ottomano"
+      ],
+      "labels": [
+        "Impero ottomano"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Блистательная Порта",
+        "Оттоманская империя",
+        "Порта",
+        "Турция"
+      ],
+      "labels": [
+        "Османская империя"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Imperium osmańskie"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "عُثماني",
+        "عُثمانيَّة"
+      ],
+      "aliases": [
+        "الإمبراطورية العثمانية",
+        "الخلافة العثمانية",
+        "الدولة العلية العثمانية",
+        "السلطنة العثمانية",
+        "دولة آل عثمان",
+        "دولة بني عثمان"
+      ],
+      "labels": [
+        "الدولة العثمانية"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "魯迷"
+      ],
+      "labels": [
+        "奥斯曼帝国"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "उस्मानी साम्राज्य"
+      ]
+    }
+  },
+  "Q555994": {
+    "en": {
+      "demonyms": [],
+      "aliases": [
+        "Aqqoyunlu",
+        "Akkoyunlu",
+        "Agh Qoyunlu",
+        "Ak Koyunlu",
+        "White Sheep Turkomans"
+      ],
+      "labels": [
+        "Aq Qoyunlu"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [
+        "Ak Koyunlu"
+      ],
+      "labels": [
+        "Aq Qoyunlu"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Akkoyunlu",
+        "Ak Koyunlu",
+        "Ak-Kojunlu",
+        "Akkonyunlu",
+        "Akkoyunlar",
+        "Akkoyunlular",
+        "Horde der Weissen Hammel",
+        "Horde der Weißen Hammel",
+        "Reich der Weißen Hammel",
+        "Weiße Hammel",
+        "Ak-Kojunluner"
+      ],
+      "labels": [
+        "Aq Qoyunlu"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [
+        "Aq Qoyunlu",
+        "Aq Quyunlu"
+      ],
+      "labels": [
+        "Ak Koyunlu"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Ак Койунлу",
+        "Ак Коюнлу",
+        "Ак-Койунлу",
+        "Ак-Коконлу",
+        "Ак-Куйунлу"
+      ],
+      "labels": [
+        "Ак-Коюнлу"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Ak Kouyunlu",
+        "Ak-Kojunłu",
+        "Aq Kouyunlu",
+        "Aq Qouyunlu"
+      ],
+      "labels": [
+        "Ak Kojunlu"
+      ]
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [
+        "اق قويونلو",
+        "الخروف الأبيض",
+        "دولة الخروف الأبيض",
+        "دولة الخروف الابيض"
+      ],
+      "labels": [
+        "آق قويونلو"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "白羊王朝"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "अक़ कोयुनलू"
+      ]
+    }
+  },
+  "Q18234383": {
+    "en": {
+      "demonyms": [
+        "Safavid"
+      ],
+      "aliases": [
+        "Safavid Empire",
+        "Safavid Persia"
+      ],
+      "labels": [
+        "Safavid Iran"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [
+        "empire perse"
+      ],
+      "labels": [
+        "Empire safavide"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Safawiden-Reich"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Impero safavide"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Сафавиды",
+        "Кызылбашское государство",
+        "Сафевидский Иран",
+        "Сефевидская держава",
+        "Сефевидская империя",
+        "Сефевидский Иран"
+      ],
+      "labels": [
+        "Сефевидское государство"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "الدولة الصفوية"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "伊朗萨法維帝國",
+        "伊朗萨非帝國",
+        "薩法維伊朗",
+        "薩非伊朗",
+        "薩非帝國"
+      ],
+      "labels": [
+        "薩法維帝國"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "साफाविद"
+      ]
+    }
+  },
+  "Q43": {
+    "en": {
+      "demonyms": [
+        "Turkish"
+      ],
+      "aliases": [
+        "Türkiye",
+        "Republic of Turkey",
+        "Republic of Türkiye"
+      ],
+      "labels": [
+        "Turkey"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Turc",
+        "Turque"
+      ],
+      "aliases": [
+        "Turq",
+        "Türkiye",
+        "la République de Turquie",
+        "République de Turquie",
+        "République turque"
+      ],
+      "labels": [
+        "Turquie"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Türke",
+        "Türkin",
+        "türkisch"
+      ],
+      "aliases": [
+        "Türkiye",
+        "Republik Turkei"
+      ],
+      "labels": [
+        "Türkei"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "turca",
+        "turche",
+        "turchi",
+        "turco"
+      ],
+      "aliases": [
+        "Repubblica Turchia",
+        "🇹🇷",
+        "Türkiye"
+      ],
+      "labels": [
+        "Turchia"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "турки",
+        "турок",
+        "турчанка"
+      ],
+      "aliases": [
+        "Türkiye",
+        "Республика Тюркие",
+        "Турецкая Республика"
+      ],
+      "labels": [
+        "Турция"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Türkiye"
+      ],
+      "labels": [
+        "Turcja"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "تركي",
+        "تركية",
+        "أترك"
+      ],
+      "aliases": [
+        "Türkiye",
+        "جمهورية تركيا"
+      ],
+      "labels": [
+        "تركيا"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "🇹🇷",
+        "土耳其共和国"
+      ],
+      "labels": [
+        "土耳其"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "तुर्की"
+      ]
+    }
+  },
+  "Q34": {
+    "en": {
+      "demonyms": [
+        "Swedish"
+      ],
+      "aliases": [
+        "Kingdom of Sweden",
+        "se",
+        "Swedish Kingdom"
+      ],
+      "labels": [
+        "Sweden"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "suédois",
+        "suédoise",
+        "suédoises",
+        "Suédois",
+        "Suédoise"
+      ],
+      "aliases": [
+        "Royaume de Suède"
+      ],
+      "labels": [
+        "Suède"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Schweden",
+        "Schwede",
+        "Schwedin",
+        "Schwedinnen"
+      ],
+      "aliases": [
+        "Königreich Schweden"
+      ],
+      "labels": [
+        "Schweden"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "svedese",
+        "svedesi"
+      ],
+      "aliases": [
+        "Sverige",
+        "Konungariket Sverige"
+      ],
+      "labels": [
+        "Svezia"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "швед",
+        "шведка",
+        "шведы"
+      ],
+      "aliases": [
+        "Sverige",
+        "Королевство Швеция"
+      ],
+      "labels": [
+        "Швеция"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Królestwo Szwecji"
+      ],
+      "labels": [
+        "Szwecja"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "سُوَيْدِيّ",
+        "سُوَيْدِيَّات",
+        "سُوَيْدِيَّة",
+        "سُوَيْدِيُّونَ"
+      ],
+      "aliases": [
+        "مملكة السويد"
+      ],
+      "labels": [
+        "السويد"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "瑞典王国"
+      ],
+      "labels": [
+        "瑞典"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "स्वीडन"
+      ]
+    }
+  },
+  "Q948": {
+    "en": {
+      "demonyms": [
+        "Tunisian"
+      ],
+      "aliases": [
+        "TUN",
+        "tn",
+        "Republic of Tunisia",
+        "Tunisian Republic"
+      ],
+      "labels": [
+        "Tunisia"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Tunisien",
+        "Tunisienne",
+        "tunisien"
+      ],
+      "aliases": [
+        "TN",
+        "République tunisienne",
+        "Tun."
+      ],
+      "labels": [
+        "Tunisie"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Tunesier",
+        "Tunesierin"
+      ],
+      "aliases": [
+        "TN",
+        "Tunesische Republik"
+      ],
+      "labels": [
+        "Tunesien"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "tunisina",
+        "tunisine",
+        "tunisini",
+        "tunisino"
+      ],
+      "aliases": [
+        "Repubblica Tunisina",
+        "Stato dell'Africa del Nord"
+      ],
+      "labels": [
+        "Tunisia"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "тунисцы"
+      ],
+      "aliases": [
+        "Тунисская Республика"
+      ],
+      "labels": [
+        "Тунис"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Tunezja"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "تونسيون",
+        "تونسيين",
+        "تونسي",
+        "تونسيات",
+        "تونسيان",
+        "تونسية",
+        "تونسيتان",
+        "تونسيتين"
+      ],
+      "aliases": [
+        "الجمهورية التونسية",
+        "تُوْنُس",
+        "تُوْنِس",
+        "تونس الخضراء"
+      ],
+      "labels": [
+        "تونس"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "突尼斯"
+      ],
+      "labels": [
+        "突尼西亞"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "ट्यूनिशिया"
+      ]
+    }
+  },
+  "Q2017684": {
+    "en": {
+      "demonyms": [],
+      "aliases": [
+        "Tunisia",
+        "Tunis",
+        "Regency of Tunis",
+        "Protectorat français de Tunisie",
+        "French Tunisia"
+      ],
+      "labels": [
+        "French protectorate of Tunisia"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [
+        "Tunisie française"
+      ],
+      "labels": [
+        "protectorat français de Tunisie"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Französisches Protektorat Tunesien"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [
+        "Tunisia francese"
+      ],
+      "labels": [
+        "Protettorato francese in Tunisia"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Протекторат Тунис"
+      ],
+      "labels": [
+        "Французский протекторат Тунис"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Tunezja"
+      ]
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [
+        "العمالة التونسية",
+        "احتلال تونس و انتصاب الحماية الفرنسية",
+        "احتلال تونس وانتصاب الحماية الفرنسية",
+        "الاحتلال الفرنسي لتونس",
+        "الاستعمار الفرنسي في تونس",
+        "الحماية الفرنسية على تونس",
+        "الحمايه الفرنسيه في تونس",
+        "عمالة تونسية"
+      ],
+      "labels": [
+        "الحماية الفرنسية في تونس"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "法属突尼斯"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "ट्यूनीशिया का फ्रांसीसी-संरक्षित राज्य"
+      ]
+    }
+  },
+  "Q8575586": {
+    "en": {
+      "demonyms": [],
+      "aliases": [
+        "Caliphate of Damascus",
+        "Umayyad Empire"
+      ],
+      "labels": [
+        "Umayyad Caliphate"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [
+        "Califat de Damas",
+        "Empire omeyyade"
+      ],
+      "labels": [
+        "Califat omeyyade"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Umayyaden-Kalifat"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [
+        "Califfato degli omayyadi"
+      ],
+      "labels": [
+        "Califfato Omayyade"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Дамасский халифат",
+        "халифат Дамаска"
+      ],
+      "labels": [
+        "Омейядский халифат"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "damasceński kalifat",
+        "kalifat damasceński"
+      ],
+      "labels": [
+        "kalifat Umajjadów"
+      ]
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [
+        "الخلافة الأموية",
+        "دولة الأمويين",
+        "دولة بني أمية"
+      ],
+      "labels": [
+        "الدولة الأموية"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "白衣大食",
+        "伍麦叶王朝",
+        "倭馬亞王朝",
+        "倭马亚王朝",
+        "伍麥亞王朝",
+        "伍麥葉王朝",
+        "伍麦耶王朝",
+        "倭马亚帝国",
+        "奧瑪雅王朝",
+        "奧米亞王朝",
+        "奧米雅王朝",
+        "烏邁耶王朝"
+      ],
+      "labels": [
+        "倭马亚哈里发国"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "उमय्यद साम्राज्य"
+      ],
+      "labels": [
+        "उमय्यद खिलाफत"
+      ]
+    }
+  },
+  "Q817": {
+    "en": {
+      "demonyms": [
+        "Kuwaiti"
+      ],
+      "aliases": [
+        "KUW",
+        "kw",
+        "State of Kuwait"
+      ],
+      "labels": [
+        "Kuwait"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Koweïtien",
+        "Koweïtienne"
+      ],
+      "aliases": [
+        "KW",
+        "Kuwait",
+        "Koweit",
+        "l’État du Koweït"
+      ],
+      "labels": [
+        "Koweït"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Kuweit"
+      ],
+      "labels": [
+        "Kuwait"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "kuwaitiana",
+        "kuwaitiane",
+        "kuwaitiani",
+        "kuwaitiano"
+      ],
+      "aliases": [],
+      "labels": [
+        "Kuwait"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Государство Кувейт"
+      ],
+      "labels": [
+        "Кувейт"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Kuwejt"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "كويتي",
+        "كويتية",
+        "كويتيون"
+      ],
+      "aliases": [],
+      "labels": [
+        "الكويت"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "科威特"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "कुवैत"
+      ]
+    }
+  },
+  "Q1028": {
+    "en": {
+      "demonyms": [
+        "Moroccan"
+      ],
+      "aliases": [
+        "ma",
+        "al-Maġrib",
+        "Kingdom of Morocco",
+        "Lmaġrib",
+        "MAR",
+        "Maroc",
+        "Marocco"
+      ],
+      "labels": [
+        "Morocco"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Marocain",
+        "Marocaine"
+      ],
+      "aliases": [
+        "ma",
+        "MA",
+        "Royaume du Maroc"
+      ],
+      "labels": [
+        "Maroc"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Marokkaner",
+        "Marokkanerin"
+      ],
+      "aliases": [
+        "Königreich Marokko"
+      ],
+      "labels": [
+        "Marokko"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "marocchina",
+        "marocchine",
+        "marocchini",
+        "marocchino"
+      ],
+      "aliases": [
+        "Stato dell'Africa del Nord"
+      ],
+      "labels": [
+        "Marocco"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "марокканец",
+        "марокканка",
+        "марокканцы"
+      ],
+      "aliases": [
+        "Королевство Марокко"
+      ],
+      "labels": [
+        "Марокко"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Królestwo Marokańskie"
+      ],
+      "labels": [
+        "Maroko"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "مغاربة",
+        "مغربي",
+        "مغربية"
+      ],
+      "aliases": [
+        "المملكة المغربية"
+      ],
+      "labels": [
+        "المغرب"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "摩洛哥王國",
+        "菲兹王國"
+      ],
+      "labels": [
+        "摩洛哥"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "मोरक्को"
+      ]
+    }
+  },
+  "Q467627": {
+    "en": {
+      "demonyms": [],
+      "aliases": [
+        "Sadozai Kingdom",
+        "the last Afghan empire"
+      ],
+      "labels": [
+        "Durrani Empire"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [
+        "Empire afghan"
+      ],
+      "labels": [
+        "Empire Durrani"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Durrani-Dynastie"
+      ],
+      "labels": [
+        "Durrani-Reich"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Impero Durrani"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Дурранийская держава",
+        "Дурранийское государство",
+        "Империя Дуррани"
+      ],
+      "labels": [
+        "Дурранийская империя"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Dynastia Durrani"
+      ]
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [
+        "مملكة دراني"
+      ],
+      "labels": [
+        "الدولة الدرانية"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "杜兰尼王朝",
+        "杜兰尼王朝王国",
+        "杜蘭尼王朝",
+        "薩多查依王朝",
+        "阿富汗杜兰尼王朝"
+      ],
+      "labels": [
+        "杜兰尼帝国"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "दुर्रानी साम्राज्य"
+      ]
+    }
+  },
+  "Q487089": {
+    "en": {
+      "demonyms": [],
+      "aliases": [
+        "Fergana Province"
+      ],
+      "labels": [
+        "Fergana Region"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [
+        "Farg‘ona Viloyati"
+      ],
+      "labels": [
+        "Ferghana"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Oblast Fergana",
+        "Provinz Farg'ona",
+        "Provinz Fargona",
+        "Provinz Ferghana",
+        "UZ-FA"
+      ],
+      "labels": [
+        "Provinz Fargʻona"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [
+        "Provincia di Fergana"
+      ],
+      "labels": [
+        "regione di Fergana"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Ферганский вилоят"
+      ],
+      "labels": [
+        "Ферганская область"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Wilajat fergański"
+      ],
+      "labels": [
+        "Wilajet fergański"
+      ]
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "ولاية فرغانة"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "費爾干納州"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "फ़रग़ना प्रांत"
+      ],
+      "labels": [
+        "फ़रग़ना प्रान्त"
+      ]
+    }
+  },
+  "Q265": {
+    "en": {
+      "demonyms": [
+        "Uzbek",
+        "Uzbekistani"
+      ],
+      "aliases": [
+        "Republic of Uzbekistan"
+      ],
+      "labels": [
+        "Uzbekistan"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Ouzbek",
+        "Ouzbekèke"
+      ],
+      "aliases": [
+        "UZ",
+        "la République d’Ouzbékistan",
+        "Ouzbekistan",
+        "Ouzbekisthan"
+      ],
+      "labels": [
+        "Ouzbékistan"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Usbekistaner",
+        "Usbekistanerin"
+      ],
+      "aliases": [],
+      "labels": [
+        "Usbekistan"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "uzbeki",
+        "uzbeka",
+        "uzbeke",
+        "uzbeko"
+      ],
+      "aliases": [
+        "Repubblica dell'Uzbekistan"
+      ],
+      "labels": [
+        "Uzbekistan"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Республика Узбекистан"
+      ],
+      "labels": [
+        "Узбекистан"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Uzbekistan"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "أُزْبَكِسْتَانِيٌّ",
+        "أُزْبَكِسْتَانِيَّةٌ",
+        "أُزْبَكِسْتَانِيُّونَ"
+      ],
+      "aliases": [
+        "جمهورية أوزبكستان"
+      ],
+      "labels": [
+        "أوزبكستان"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "烏茲別克",
+        "烏茲別克斯坦"
+      ],
+      "labels": [
+        "乌兹别克斯坦"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "उज़्बेकिस्तान"
+      ]
+    }
+  },
+  "Q863": {
+    "en": {
+      "demonyms": [
+        "Tajikistani"
+      ],
+      "aliases": [
+        "Republic of Tajikistan",
+        "TJK",
+        "tj"
+      ],
+      "labels": [
+        "Tajikistan"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Tadjik",
+        "Tadjike"
+      ],
+      "aliases": [
+        "TJ",
+        "la République du Tadjikistan"
+      ],
+      "labels": [
+        "Tadjikistan"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Tadschikistan"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "tagika",
+        "tagike",
+        "tagiki",
+        "tagiko"
+      ],
+      "aliases": [
+        "Repubblica del Tagikistan"
+      ],
+      "labels": [
+        "Tagikistan"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Республика Таджикистан",
+        "РТ"
+      ],
+      "labels": [
+        "Таджикистан"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Tadżykistan"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "طاجيكستانيون",
+        "طاجيكستاني",
+        "طاجيكستانية"
+      ],
+      "aliases": [
+        "تاجیکستان"
+      ],
+      "labels": [
+        "طاجيكستان"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "塔吉克斯坦"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "तजिकिस्तान",
+        "ताजिकिस्तान"
+      ],
+      "labels": [
+        "ताजीकिस्तान"
+      ]
+    }
+  },
+  "Q874": {
+    "en": {
+      "demonyms": [
+        "Turkmen",
+        "Turkmenistani"
+      ],
+      "aliases": [
+        "TKM",
+        "tm",
+        "Turkmenia"
+      ],
+      "labels": [
+        "Turkmenistan"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Turkmène"
+      ],
+      "aliases": [
+        "Turkménie",
+        "Turkmenistan"
+      ],
+      "labels": [
+        "Turkménistan"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Turkmene",
+        "Turkmenin"
+      ],
+      "aliases": [
+        "Turkmenien",
+        "Türkmenistan"
+      ],
+      "labels": [
+        "Turkmenistan"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "turkmena",
+        "turkmene",
+        "turkmeni",
+        "turkmeno"
+      ],
+      "aliases": [],
+      "labels": [
+        "Turkmenistan"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "туркменистанец",
+        "туркменистанцы",
+        "туркменистанка"
+      ],
+      "aliases": [
+        "Туркмения"
+      ],
+      "labels": [
+        "Туркменистан"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "TM",
+        "Turkmenia"
+      ],
+      "labels": [
+        "Turkmenistan"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "تركمان",
+        "تركماني",
+        "تركمانية"
+      ],
+      "aliases": [
+        "تركمانيا"
+      ],
+      "labels": [
+        "تركمانستان"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "土库曼斯坦"
+      ],
+      "labels": [
+        "土庫曼"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "तुर्कमेनिस्तान"
+      ]
+    }
+  },
+  "Q484195": {
+    "en": {
+      "demonyms": [
+        "Uzbek",
+        "Uzbekistani",
+        "Tajikistani",
+        "Turkmen",
+        "Turkmenistani"
+      ],
+      "aliases": [
+        "Gurkani",
+        "Timurid empire",
+        "Sadozai Kingdom",
+        "the last Afghan empire",
+        "Fergana Province",
+        "Republic of Uzbekistan",
+        "Republic of Tajikistan",
+        "TJK",
+        "tj",
+        "TKM",
+        "tm",
+        "Turkmenia"
+      ],
+      "labels": [
+        "Timurid Empire",
+        "Durrani Empire",
+        "Fergana Region",
+        "Uzbekistan",
+        "Tajikistan",
+        "Turkmenistan"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Ouzbek",
+        "Ouzbekèke",
+        "Tadjik",
+        "Tadjike",
+        "Turkmène"
+      ],
+      "aliases": [
+        "Empire du Timur",
+        "Empire afghan",
+        "Farg‘ona Viloyati",
+        "UZ",
+        "la République d’Ouzbékistan",
+        "Ouzbekistan",
+        "Ouzbekisthan",
+        "TJ",
+        "la République du Tadjikistan",
+        "Turkménie",
+        "Turkmenistan"
+      ],
+      "labels": [
+        "Empire timouride",
+        "Empire Durrani",
+        "Ferghana",
+        "Ouzbékistan",
+        "Tadjikistan",
+        "Turkménistan"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Usbekistaner",
+        "Usbekistanerin",
+        "Turkmene",
+        "Turkmenin"
+      ],
+      "aliases": [
+        "Timuriden",
+        "Timuriden-Dynastie",
+        "Durrani-Dynastie",
+        "Oblast Fergana",
+        "Provinz Farg'ona",
+        "Provinz Fargona",
+        "Provinz Ferghana",
+        "UZ-FA",
+        "Turkmenien",
+        "Türkmenistan"
+      ],
+      "labels": [
+        "Timuridenreich",
+        "Durrani-Reich",
+        "Provinz Fargʻona",
+        "Usbekistan",
+        "Tadschikistan",
+        "Turkmenistan"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "uzbeki",
+        "uzbeka",
+        "uzbeke",
+        "uzbeko",
+        "tagika",
+        "tagike",
+        "tagiki",
+        "tagiko",
+        "turkmena",
+        "turkmene",
+        "turkmeni",
+        "turkmeno"
+      ],
+      "aliases": [
+        "Timuridi",
+        "Impero di Tamerlano",
+        "Provincia di Fergana",
+        "Repubblica dell'Uzbekistan",
+        "Repubblica del Tagikistan"
+      ],
+      "labels": [
+        "Impero timuride",
+        "Impero Durrani",
+        "regione di Fergana",
+        "Uzbekistan",
+        "Tagikistan",
+        "Turkmenistan"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "туркменистанец",
+        "туркменистанцы",
+        "туркменистанка"
+      ],
+      "aliases": [
+        "Туран",
+        "Тимуриды",
+        "Империя Тимуридов",
+        "Тимурид",
+        "Дурранийская держава",
+        "Дурранийское государство",
+        "Империя Дуррани",
+        "Ферганский вилоят",
+        "Республика Узбекистан",
+        "Республика Таджикистан",
+        "РТ",
+        "Туркмения"
+      ],
+      "labels": [
+        "Государство Тимуридов",
+        "Дурранийская империя",
+        "Ферганская область",
+        "Узбекистан",
+        "Таджикистан",
+        "Туркменистан"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Imperium Timura",
+        "Wilajat fergański",
+        "TM",
+        "Turkmenia"
+      ],
+      "labels": [
+        "Timurydzi",
+        "Dynastia Durrani",
+        "Wilajet fergański",
+        "Uzbekistan",
+        "Tadżykistan",
+        "Turkmenistan"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "أُزْبَكِسْتَانِيٌّ",
+        "أُزْبَكِسْتَانِيَّةٌ",
+        "أُزْبَكِسْتَانِيُّونَ",
+        "طاجيكستانيون",
+        "طاجيكستاني",
+        "طاجيكستانية",
+        "تركمان",
+        "تركماني",
+        "تركمانية"
+      ],
+      "aliases": [
+        "التيموريون",
+        "التيموريين",
+        "مملكة دراني",
+        "جمهورية أوزبكستان",
+        "تاجیکستان",
+        "تركمانيا"
+      ],
+      "labels": [
+        "الدولة التيمورية",
+        "الدولة الدرانية",
+        "ولاية فرغانة",
+        "أوزبكستان",
+        "طاجيكستان",
+        "تركمانستان"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "帖木儿帝国",
+        "帖木尔帝国",
+        "帖木尔汗国",
+        "帖木尔王朝",
+        "帖木爾汗國",
+        "浩的帖木尔帝国",
+        "帖木儿王朝",
+        "杜兰尼王朝",
+        "杜兰尼王朝王国",
+        "杜蘭尼王朝",
+        "薩多查依王朝",
+        "阿富汗杜兰尼王朝",
+        "烏茲別克",
+        "烏茲別克斯坦",
+        "土库曼斯坦"
+      ],
+      "labels": [
+        "帖木兒帝國",
+        "杜兰尼帝国",
+        "費爾干納州",
+        "乌兹别克斯坦",
+        "塔吉克斯坦",
+        "土庫曼"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "तिमुर",
+        "तिमुर राजवंश",
+        "तिमुरिड राजवंश",
+        "तैमूरियाई",
+        "तैमूरी",
+        "तैमूरी साम्राज्य",
+        "फ़रग़ना प्रांत",
+        "तजिकिस्तान",
+        "ताजिकिस्तान"
+      ],
+      "labels": [
+        "तैमूरी राजवंश",
+        "दुर्रानी साम्राज्य",
+        "फ़रग़ना प्रान्त",
+        "उज़्बेकिस्तान",
+        "ताजीकिस्तान",
+        "तुर्कमेनिस्तान"
+      ]
+    }
+  },
+  "Q105301602": {
+    "en": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Captaincy General of Mallorca"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "capitainerie générale de Majorque"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    }
+  },
+  "Q836676": {
+    "en": {
+      "demonyms": [],
+      "aliases": [
+        "Majorca"
+      ],
+      "labels": [
+        "Kingdom of Majorca",
+        "Captaincy General of Mallorca"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "royaume de Majorque",
+        "capitainerie générale de Majorque"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Königreich Mallorca"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [
+        "Elenco dei re di Majorca",
+        "Regno di Majorca"
+      ],
+      "labels": [
+        "Regno di Maiorca"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Мальорка",
+        "Королевство Майорка",
+        "Королевство Мальорка",
+        "Король Майорки",
+        "Король Мальорки",
+        "Майоркское королевство",
+        "Список правителей Мальорки"
+      ],
+      "labels": [
+        "Майорка"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Królowie Majorki"
+      ],
+      "labels": [
+        "Królestwo Majorki"
+      ]
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "مملكة مايوركا"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "馬略卡王國"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    }
+  },
+  "Q142": {
+    "en": {
+      "demonyms": [
+        "French"
+      ],
+      "aliases": [
+        "French Republic"
+      ],
+      "labels": [
+        "France"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Français",
+        "Française",
+        "françaises"
+      ],
+      "aliases": [
+        "République française",
+        "La France",
+        "RF",
+        "L'Hexagone",
+        "fr",
+        "Fr.",
+        "la République française"
+      ],
+      "labels": [
+        "France"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Französin",
+        "Französinnen",
+        "Franzose",
+        "Franzosen"
+      ],
+      "aliases": [
+        "fr",
+        "Französische Republik",
+        "RF"
+      ],
+      "labels": [
+        "Frankreich"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "francese",
+        "francesi"
+      ],
+      "aliases": [
+        "Repubblica Francese",
+        "Repubblica francese"
+      ],
+      "labels": [
+        "Francia"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "француженка",
+        "француз",
+        "французы"
+      ],
+      "aliases": [
+        "Пятая Французская Республика",
+        "Республика Франция",
+        "ФР",
+        "Французская республика",
+        "Французская Республика"
+      ],
+      "labels": [
+        "Франция"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Francji",
+        "Republika Francji",
+        "Republika Francuska"
+      ],
+      "labels": [
+        "Francja"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "فرنسيون",
+        "فرنسي",
+        "فرنسية"
+      ],
+      "aliases": [],
+      "labels": [
+        "فرنسا"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "法兰西",
+        "法兰西共和国",
+        "法国",
+        "法蘭西",
+        "法蘭西共和國"
+      ],
+      "labels": [
+        "法國"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "फ्रान्स",
+        "फ्राँस",
+        "फ्रांस",
+        "फ़्राँस",
+        "फ़्रांस"
+      ],
+      "labels": [
+        "फ़्रान्स"
+      ]
+    }
+  },
+  "Q370173": {
+    "en": {
+      "demonyms": [
+        "Syrian",
+        "Egyptian"
+      ],
+      "aliases": [
+        "Surya",
+        "Syrian Arab Republic",
+        "eg",
+        "Misr",
+        "Republic of Egypt",
+        "EGY",
+        "Arab Rep. Egypt",
+        "Arab Republic of Egypt",
+        "Rep. Egypt"
+      ],
+      "labels": [
+        "Sultanate of Egypt",
+        "Syria",
+        "Egypt"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Syrien",
+        "Syrienne",
+        "Égyptien",
+        "Égyptienne"
+      ],
+      "aliases": [
+        "République arabe syrienne",
+        "EG",
+        "Ég.",
+        "République arabe d'Égypte"
+      ],
+      "labels": [
+        "sultanat d'Égypte",
+        "Syrie",
+        "Égypte"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Syrer",
+        "Syrerin",
+        "Ägypter",
+        "Ägypterin",
+        "Ägypterinnen"
+      ],
+      "aliases": [
+        "eg",
+        "Arabische Republik Ägypten"
+      ],
+      "labels": [
+        "Sultanat Ägypten",
+        "Syrien",
+        "Ägypten"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "siriana",
+        "siriane",
+        "siriani",
+        "siriano",
+        "egiziana",
+        "egiziane",
+        "egiziani",
+        "egiziano"
+      ],
+      "aliases": [
+        "Protettorato britannico sull'Egitto",
+        "Repubblica Araba di Siria",
+        "Stato dell'Africa settentionale",
+        "Repubblica Araba d'Egitto"
+      ],
+      "labels": [
+        "Sultanato d'Egitto",
+        "Siria",
+        "Egitto"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "сирийцы",
+        "египтяне"
+      ],
+      "aliases": [
+        "Султанат Египет",
+        "Сирийская Арабская Республика",
+        "Арабская Республика Египет",
+        "АРЕ"
+      ],
+      "labels": [
+        "Египетский султанат",
+        "Сирия",
+        "Египет"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Arabska Republika Egiptu"
+      ],
+      "labels": [
+        "Sułtanat Egiptu",
+        "Syria",
+        "Egipt"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "سوري",
+        "سورية",
+        "سوريون",
+        "مِصْرِيّ",
+        "مِصْرّيَّة",
+        "مِصْرِيُّونَ"
+      ],
+      "aliases": [
+        "سلطنة مصر",
+        "الجمهورية العربية السورية",
+        "سورية",
+        "الجمهوريّة العربيّة السّوريّة",
+        "جمهوريّة مصر العربيّة"
+      ],
+      "labels": [
+        "السلطنة المصرية",
+        "سوريا",
+        "مصر"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "西里亞",
+        "阿拉伯敘利亞共和國",
+        "阿拉伯埃及共和国",
+        "阿拉伯埃及共和國"
+      ],
+      "labels": [
+        "埃及蘇丹國",
+        "敘利亞",
+        "埃及"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "मिस्र सल्तनत",
+        "सीरिया",
+        "मिस्र"
+      ]
+    }
+  },
+  "Q37102": {
+    "en": {
+      "demonyms": [
+        "Moroccan"
+      ],
+      "aliases": [
+        "Tribal Confederal Republic of the Rif",
+        "ma",
+        "al-Maġrib",
+        "Kingdom of Morocco",
+        "Lmaġrib",
+        "MAR",
+        "Maroc",
+        "Marocco"
+      ],
+      "labels": [
+        "Republic of the Rif",
+        "Morocco"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Marocain",
+        "Marocaine"
+      ],
+      "aliases": [
+        "République confédérale tribale du Rif",
+        "Republique du Rif",
+        "République islamique confédérale tribale du Rif",
+        "République rifaine",
+        "ma",
+        "MA",
+        "Royaume du Maroc"
+      ],
+      "labels": [
+        "République du Rif",
+        "Maroc"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Marokkaner",
+        "Marokkanerin"
+      ],
+      "aliases": [
+        "Stammeskonföderale Republik des Rif",
+        "Königreich Marokko"
+      ],
+      "labels": [
+        "Rif-Republik",
+        "Marokko"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "marocchina",
+        "marocchine",
+        "marocchini",
+        "marocchino"
+      ],
+      "aliases": [
+        "Repubblica Tribale Confederale del Rif",
+        "Stato dell'Africa del Nord"
+      ],
+      "labels": [
+        "Repubblica del Rif",
+        "Marocco"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "марокканец",
+        "марокканка",
+        "марокканцы"
+      ],
+      "aliases": [
+        "Племенная Конфедеративная Республика Риф",
+        "Республика Риф",
+        "Королевство Марокко"
+      ],
+      "labels": [
+        "Рифская республика",
+        "Марокко"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Królestwo Marokańskie"
+      ],
+      "labels": [
+        "Republika Rif",
+        "Maroko"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "مغاربة",
+        "مغربي",
+        "مغربية"
+      ],
+      "aliases": [
+        "المملكة المغربية"
+      ],
+      "labels": [
+        "جمهورية الريف",
+        "المغرب"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "摩洛哥王國",
+        "菲兹王國"
+      ],
+      "labels": [
+        "里夫共和国",
+        "摩洛哥"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "मोरक्को"
+      ]
+    }
+  },
+  "Q218272": {
+    "en": {
+      "demonyms": [],
+      "aliases": [
+        "Colonial Algeria"
+      ],
+      "labels": [
+        "French Algeria"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Algérie française"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Französisch-Algerien"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Algeria francese"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Алжир"
+      ],
+      "labels": [
+        "Французский Алжир"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Algieria",
+        "Francuska Algieria"
+      ],
+      "labels": [
+        "Algieria francuska"
+      ]
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "الجزائر (المستعمرة الفرنسية)"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "法屬阿爾及利亞"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    }
+  },
+  "Q12183875": {
+    "en": {
+      "demonyms": [
+        "Moroccan"
+      ],
+      "aliases": [
+        "Morocco",
+        "Colonial Algeria",
+        "ma",
+        "al-Maġrib",
+        "Kingdom of Morocco",
+        "Lmaġrib",
+        "MAR",
+        "Maroc",
+        "Marocco"
+      ],
+      "labels": [
+        "Sharifian Empire",
+        "French Algeria",
+        "Morocco"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Marocain",
+        "Marocaine"
+      ],
+      "aliases": [
+        "Empire saadien",
+        "ma",
+        "MA",
+        "Royaume du Maroc"
+      ],
+      "labels": [
+        "Empire chérifien",
+        "Algérie française",
+        "Maroc"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Marokkaner",
+        "Marokkanerin"
+      ],
+      "aliases": [
+        "Königreich Marokko"
+      ],
+      "labels": [
+        "Reich der Scherifen",
+        "Französisch-Algerien",
+        "Marokko"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "marocchina",
+        "marocchine",
+        "marocchini",
+        "marocchino"
+      ],
+      "aliases": [
+        "Stato dell'Africa del Nord"
+      ],
+      "labels": [
+        "Sultanato alawide",
+        "Algeria francese",
+        "Marocco"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "марокканец",
+        "марокканка",
+        "марокканцы"
+      ],
+      "aliases": [
+        "Алжир",
+        "Королевство Марокко"
+      ],
+      "labels": [
+        "Французский Алжир",
+        "Марокко"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Algieria",
+        "Francuska Algieria",
+        "Królestwo Marokańskie"
+      ],
+      "labels": [
+        "Algieria francuska",
+        "Maroko"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "مغاربة",
+        "مغربي",
+        "مغربية"
+      ],
+      "aliases": [
+        "المغرب",
+        "الدولة المغربية الشريفة",
+        "المغرب الأقصى",
+        "المملكة المغربية الشريفة",
+        "المملكة المغربية"
+      ],
+      "labels": [
+        "السلطنة الشريفة",
+        "الجزائر (المستعمرة الفرنسية)",
+        "المغرب"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "摩洛哥王國",
+        "菲兹王國"
+      ],
+      "labels": [
+        "法屬阿爾及利亞",
+        "摩洛哥"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "मोरक्को"
+      ]
+    }
+  },
+  "Q977": {
+    "en": {
+      "demonyms": [
+        "Djiboutian"
+      ],
+      "aliases": [
+        "dj",
+        "Jabuuti",
+        "Gabuuti",
+        "Jībūtī",
+        "Republic of Djibouti"
+      ],
+      "labels": [
+        "Djibouti"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Djiboutien",
+        "Djiboutienne"
+      ],
+      "aliases": [
+        "la République de Djibouti"
+      ],
+      "labels": [
+        "Djibouti"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Dschibuti"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "gibutiana",
+        "gibutiane",
+        "gibutiani",
+        "gibutiano"
+      ],
+      "aliases": [
+        "Repubblica di Gibuti"
+      ],
+      "labels": [
+        "Gibuti"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Республика Джибути"
+      ],
+      "labels": [
+        "Джибути"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Dżibuti"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "جيبوتيون",
+        "جيبوتي",
+        "جيبوتية"
+      ],
+      "aliases": [],
+      "labels": [
+        "جيبوتي"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "吉布地",
+        "吉布地共和國",
+        "吉布提共和国",
+        "吉布提共和國"
+      ],
+      "labels": [
+        "吉布提"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "जिबूती"
+      ]
+    }
+  },
+  "Q30": {
+    "en": {
+      "demonyms": [
+        "American",
+        "Americans"
+      ],
+      "aliases": [
+        "the States",
+        "the U.S.",
+        "the U.S. of A",
+        "the U.S. of America",
+        "the U.S.A.",
+        "the United States of America",
+        "the US",
+        "the US of A",
+        "the US of America",
+        "U. S.",
+        "U. S. A.",
+        "U.S. of America",
+        "US of A",
+        "US of America",
+        "America",
+        "the United States",
+        "United States of America",
+        "the USA",
+        "Murica",
+        "U.S.A.",
+        "U.S.",
+        "Merica"
+      ],
+      "labels": [
+        "United States"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Américain",
+        "Américaine",
+        "États-Unien"
+      ],
+      "aliases": [
+        "É-U",
+        "É-U.",
+        "E.-U.",
+        "É.-U.",
+        "É.-U. A.",
+        "É.U.",
+        "Etats-unis",
+        "États-unis",
+        "États-Unis d’Amérique",
+        "ÉU",
+        "les États",
+        "les États-Unis d’Amérique",
+        "Pays de l'Oncle Sam",
+        "States",
+        "Oncle Sam",
+        "pays de l’Oncle Sam",
+        "Etats-Unis",
+        "Amérique"
+      ],
+      "labels": [
+        "États-Unis"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Amerikanerin",
+        "Amerikaner"
+      ],
+      "aliases": [
+        "die Staaten",
+        "Staaten von Amerika",
+        "U. S.",
+        "U. S. A.",
+        "U.S.-Amerika",
+        "US-Amerika",
+        "V. S.",
+        "V. S. A.",
+        "V.S.",
+        "V.S.A.",
+        "United States",
+        "U.S.A.",
+        "U.S.",
+        "VSA",
+        "Vereinigte Staaten von Amerika",
+        "VS",
+        "Staaten",
+        "Amerika",
+        "United States of America",
+        "America"
+      ],
+      "labels": [
+        "Vereinigte Staaten"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "statunitense",
+        "statunitensi"
+      ],
+      "aliases": [
+        "Stati Uniti d’America",
+        "SUA",
+        "the States",
+        "U.S.",
+        "Unione Americana",
+        "Stati Uniti",
+        "States",
+        "U.S.A.",
+        "Yankee",
+        "America"
+      ],
+      "labels": [
+        "Stati Uniti d'America"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "американка",
+        "американец",
+        "американцы"
+      ],
+      "aliases": [
+        "САСШ",
+        "Северо-Американские Соединённые Штаты",
+        "Соединённые Государства Америки",
+        "Соединённые Штаты",
+        "Штаты",
+        "Соединённые Штаты Америки",
+        "Америка"
+      ],
+      "labels": [
+        "США"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Stany Zjednoczone Ameryki",
+        "Ameryka"
+      ],
+      "labels": [
+        "Stany Zjednoczone"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "أمريكي",
+        "أمريكية",
+        "أمريكيون"
+      ],
+      "aliases": [
+        "الولايات المتحدة الأمريكية",
+        "أمريكا",
+        "و م",
+        "و م أ",
+        "و.م",
+        "و.م.أ"
+      ],
+      "labels": [
+        "الولايات المتحدة"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "美利坚合众国",
+        "美利堅合眾國",
+        "花旗国",
+        "美国"
+      ],
+      "labels": [
+        "美國"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "यू एस",
+        "यू एस ए",
+        "यू० एस०",
+        "यू० एस० ए०",
+        "संयुक्त राज्य",
+        "अमेरिका"
+      ],
+      "labels": [
+        "संयुक्त राज्य अमेरिका"
+      ]
+    }
+  },
+  "Q145": {
+    "en": {
+      "demonyms": [
+        "British",
+        "Briton"
+      ],
+      "aliases": [
+        "the UK",
+        "Great Britain",
+        "the United Kingdom of Great Britain and Northern Ireland",
+        "UK",
+        "U.K.",
+        "G B",
+        "Great Britain and Northern Ireland",
+        "U K",
+        "United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "labels": [
+        "United Kingdom"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Britannique",
+        "Anglais",
+        "Anglaise"
+      ],
+      "aliases": [
+        "R.-U.",
+        "R.U.",
+        "Royaume Uni",
+        "Royaume-uni",
+        "Royaume-Uni de Grande-Bretagne et d'Irlande du Nord",
+        "Royaume-Uni de Grande-Bretagne et Irlande du Nord",
+        "Grande-Bretagne"
+      ],
+      "labels": [
+        "Royaume-Uni"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "Brite",
+        "Britin"
+      ],
+      "aliases": [
+        "Großbritannien",
+        "G B",
+        "G B R",
+        "U K",
+        "Vereinigte Königreich",
+        "Vereinigtes Königreich Großbritannien und Nordirland"
+      ],
+      "labels": [
+        "Vereinigtes Königreich"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "britannica",
+        "britanniche",
+        "britannici",
+        "britannico"
+      ],
+      "aliases": [
+        "Gran Bretagna",
+        "Regno Unito di Gran Bretagna e Irlanda del Nord"
+      ],
+      "labels": [
+        "Regno Unito"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "британец",
+        "британка",
+        "британцы"
+      ],
+      "aliases": [
+        "Британия",
+        "Соединённое Королевство",
+        "Соединённое Королевство Великобритании и Северной Ирландии",
+        "Туманный Альбион"
+      ],
+      "labels": [
+        "Великобритания"
+      ]
+    },
+    "pl": {
+      "demonyms": [
+        "Brytyjczycy"
+      ],
+      "aliases": [
+        "Zjednoczone Królestwo Wielkiej Brytanii i Irlandii Północnej"
+      ],
+      "labels": [
+        "Wielka Brytania"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "بريطاني",
+        "بريطانية",
+        "بريطانيون"
+      ],
+      "aliases": [
+        "المملكة المتحدة في بريطانيا وشمال إيرلندا",
+        "المملكة المتحدة لبريطانيا العظمى وأيرلندا الشمالية",
+        "بريطانيا العظمى"
+      ],
+      "labels": [
+        "المملكة المتحدة"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "不列颠",
+        "大不列颠及北爱尔兰联合王国",
+        "联合王国"
+      ],
+      "labels": [
+        "英国"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "यूनाइटेड किंगडम"
+      ]
+    }
+  },
+  "Q1025": {
+    "en": {
+      "demonyms": [
+        "Mauritanian"
+      ],
+      "aliases": [
+        "Agawej",
+        "Gannaar",
+        "Gànnaar",
+        "Islamic Republic of Mauritania",
+        "Mauretania",
+        "Moritani",
+        "mr",
+        "Muritanya",
+        "Murutaane"
+      ],
+      "labels": [
+        "Mauritania"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Mauritanien",
+        "Mauritanienne"
+      ],
+      "aliases": [
+        "la République islamique de Mauritanie",
+        "République islamique de Mauritanie"
+      ],
+      "labels": [
+        "Mauritanie"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Islamische Republik Mauretanien",
+        "Mauritania",
+        "République islamique de Mauritanie"
+      ],
+      "labels": [
+        "Mauretanien"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "mauritana",
+        "mauritane",
+        "mauritani",
+        "mauritano"
+      ],
+      "aliases": [
+        "Repubblica Islamica di Mauritania"
+      ],
+      "labels": [
+        "Mauritania"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "мавританцы"
+      ],
+      "aliases": [
+        "Исламская Республика Мавритания"
+      ],
+      "labels": [
+        "Мавритания"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Mauretania"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "موريتاني",
+        "موريتانية",
+        "موريتانيون"
+      ],
+      "aliases": [
+        "🇲🇷",
+        "الجمهورية الإسلامية الموريتانية"
+      ],
+      "labels": [
+        "موريتانيا"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "毛里塔尼亚",
+        "茅利塔尼亞"
+      ],
+      "labels": [
+        "毛里塔尼亞"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "मारीतानिया",
+        "मॉरिटानिया",
+        "मॉरीटैनिया"
+      ],
+      "labels": [
+        "मॉरीतानिया"
+      ]
+    }
+  },
+  "Q12490507": {
+    "en": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Rashidun Caliphate"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "califat Rachidun"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Califfato dei Rashidun"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Праведный халифат"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [
+        "الدولة العربية الإسلامية الأولى",
+        "دولة الخلافة الراشدة",
+        "دولة الخلفاء الراشدين"
+      ],
+      "labels": [
+        "الخلافة الراشدة"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "四大哈里发",
+        "正統哈里發",
+        "正統哈里發的伊斯蘭國",
+        "正统哈里发时期"
+      ],
+      "labels": [
+        "四大哈里发的伊斯蘭國"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "रशीदुन खिलाफत"
+      ]
+    }
+  },
+  "Q1045": {
+    "en": {
+      "demonyms": [
+        "Somali",
+        "Somalian"
+      ],
+      "aliases": [
+        "Federal Republic of Somalia"
+      ],
+      "labels": [
+        "Somalia"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Somalien",
+        "Somalienne"
+      ],
+      "aliases": [
+        "la République fédérale de Somalie"
+      ],
+      "labels": [
+        "Somalie"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Bundesrepublik Somalia"
+      ],
+      "labels": [
+        "Somalia"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "somali",
+        "somalo",
+        "somala",
+        "somale"
+      ],
+      "aliases": [
+        "Repubblica Federale di Somalia"
+      ],
+      "labels": [
+        "Somalia"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "сомалийцы"
+      ],
+      "aliases": [
+        "Федеративная Республика Сомали"
+      ],
+      "labels": [
+        "Сомали"
+      ]
+    },
+    "pl": {
+      "demonyms": [
+        "Somalijczyk",
+        "Somalijka"
+      ],
+      "aliases": [],
+      "labels": [
+        "Somalia"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "صومالي",
+        "صومالية",
+        "صوماليون"
+      ],
+      "aliases": [
+        "جمهورية الصومال",
+        "جمهورية الصومال الديموقراطية",
+        "صومال"
+      ],
+      "labels": [
+        "الصومال"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "索馬利亞",
+        "索马里",
+        "索马里联邦共和国"
+      ],
+      "labels": [
+        "索馬里"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "सोमालिया"
+      ]
+    }
+  },
+  "Q926295": {
+    "en": {
+      "demonyms": [],
+      "aliases": [
+        "Italian colonial empire",
+        "Italian colonialism"
+      ],
+      "labels": [
+        "Italian Empire"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [
+        "Colonisation italienne",
+        "Empire italien",
+        "Liste des colonies italiennes"
+      ],
+      "labels": [
+        "Empire colonial italien"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Italienische Kolonie",
+        "Italienischer Kolonialismus"
+      ],
+      "labels": [
+        "Italienische Kolonien"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [
+        "Colonie italiane",
+        "Domini coloniali italiani",
+        "Protettorati italiani"
+      ],
+      "labels": [
+        "Impero coloniale italiano"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Владения Италии",
+        "Итальянская империя",
+        "Итальянская колониальная империя",
+        "Итальянские колонии",
+        "Колониальные владения Италии"
+      ],
+      "labels": [
+        "Колонии Италии"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [
+        "Kolonie Włoch",
+        "Włoskie imperium kolonialne"
+      ],
+      "labels": [
+        "Kolonie włoskie"
+      ]
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [
+        "الإمبراطورية الإيطالية",
+        "الامبراطورية الايطالية"
+      ],
+      "labels": [
+        "الإمبراطورية الاستعمارية الإيطالية"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "意大利殖民帝国"
+      ],
+      "labels": [
+        "意大利殖民地"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [
+        "इटेलियन साम्राज्य"
+      ],
+      "labels": [
+        "इतालवी साम्राज्य"
+      ]
+    }
+  },
+  "Q174193": {
+    "en": {
+      "demonyms": [
+        "British",
+        "Briton"
+      ],
+      "aliases": [
+        "United Kingdom",
+        "Great Britain and Ireland",
+        "UKGBI"
+      ],
+      "labels": [
+        "United Kingdom of Great Britain and Ireland"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "britannique"
+      ],
+      "aliases": [],
+      "labels": [
+        "Royaume-Uni de Grande-Bretagne et d'Irlande"
+      ]
+    },
+    "de": {
+      "demonyms": [
+        "britisch"
+      ],
+      "aliases": [],
+      "labels": [
+        "Vereinigtes Königreich Großbritannien und Irland"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [
+        "Regno di Gran Bretagna e Irlanda",
+        "Regno Unito di Gran Bretagna ed Irlanda"
+      ],
+      "labels": [
+        "Regno Unito di Gran Bretagna e Irlanda"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Великобритания",
+        "Соединенное королевство Великобритании и Ирландии"
+      ],
+      "labels": [
+        "Соединённое королевство Великобритании и Ирландии"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Zjednoczone Królestwo Wielkiej Brytanii i Irlandii"
+      ]
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [
+        "المملكة المتحدة لبريطانيا العظمى وأيرلندة",
+        "مملكة بريطانيا العظمى و إيرلندا المتحدة"
+      ],
+      "labels": [
+        "المملكة المتحدة لبريطانيا العظمى وأيرلندا"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "大不列顛與愛爾蘭聯合王國",
+        "大不列颠与爱尔兰联合王国",
+        "大不列颠和爱尔兰王国",
+        "大不列颠和爱尔兰联合王国"
+      ],
+      "labels": [
+        "大不列颠及爱尔兰联合王国"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "ग्रेट ब्रिटेन और आयरलैंड का यूनाइटेड किंगडम"
+      ]
+    }
+  },
+  "Q33061": {
+    "en": {
+      "demonyms": [],
+      "aliases": [
+        "Taifa kingdom of Saraqusta",
+        "Taifa kingdom of Zaragoza"
+      ],
+      "labels": [
+        "Taifa of Zaragoza"
+      ]
+    },
+    "fr": {
+      "demonyms": [],
+      "aliases": [
+        "Taifa de Saragosse",
+        "Taïfa de Saraqusta"
+      ],
+      "labels": [
+        "taïfa de Saragosse"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Taifa von Saragossa"
+      ]
+    },
+    "it": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Taifa di Saragozza"
+      ]
+    },
+    "ru": {
+      "demonyms": [],
+      "aliases": [
+        "Сарагоса (тайфа)",
+        "Сарагосский эмират",
+        "тайфа Сарагоса"
+      ],
+      "labels": [
+        "Сарагоса"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    },
+    "ar": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "طائفة سرقسطة"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "薩拉戈薩泰法"
+      ],
+      "labels": [
+        "薩拉戈薩王國"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": []
+    }
+  },
+  "Q846": {
+    "en": {
+      "demonyms": [
+        "Qatari"
+      ],
+      "aliases": [
+        "qat",
+        "qa",
+        "State of Qatar"
+      ],
+      "labels": [
+        "Qatar"
+      ]
+    },
+    "fr": {
+      "demonyms": [
+        "Qatarien",
+        "Qatarienne"
+      ],
+      "aliases": [
+        "Katar",
+        "QA",
+        "l’État du Qatar",
+        "Qa."
+      ],
+      "labels": [
+        "Qatar"
+      ]
+    },
+    "de": {
+      "demonyms": [],
+      "aliases": [
+        "Qatar",
+        "QA",
+        "Staat Katar"
+      ],
+      "labels": [
+        "Katar"
+      ]
+    },
+    "it": {
+      "demonyms": [
+        "qatariota",
+        "qatarioti"
+      ],
+      "aliases": [],
+      "labels": [
+        "Qatar"
+      ]
+    },
+    "ru": {
+      "demonyms": [
+        "катарцы"
+      ],
+      "aliases": [
+        "Государство Катар"
+      ],
+      "labels": [
+        "Катар"
+      ]
+    },
+    "pl": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "Katar"
+      ]
+    },
+    "ar": {
+      "demonyms": [
+        "قطريون",
+        "عربي",
+        "قطري",
+        "قطرية"
+      ],
+      "aliases": [
+        "إمارة قطر"
+      ],
+      "labels": [
+        "قطر"
+      ]
+    },
+    "zh": {
+      "demonyms": [],
+      "aliases": [
+        "卡達",
+        "QA",
+        "卡塔爾",
+        "🇶🇦",
+        "卡国",
+        "卡塔尔国"
+      ],
+      "labels": [
+        "卡塔尔"
+      ]
+    },
+    "hi": {
+      "demonyms": [],
+      "aliases": [],
+      "labels": [
+        "क़तर"
+      ]
+    }
+  }
+}
