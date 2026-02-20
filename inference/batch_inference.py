@@ -8,19 +8,11 @@ import torch
 from torch.utils.data import DataLoader
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from pt_dataset import MultilingualQADataset_v1, MultilingualQADataset_v2, collate_fn
+from pt_dataset import MultilingualQADataset, collate_fn
 
-# fp8 inference settings
-# Llama-3.1-70B
-# import transformer_engine.pytorch as te
-
-# llm configuration
-# max_new_tokens - control the maximum numbers of tokens to generate
 def get_generation_args(model_id, tokenizer):
 
-    if model_id in ["meta-llama/Meta-Llama-3-8B-Instruct",
-            "meta-llama/Meta-Llama-3.1-8B-Instruct",
-            "meta-llama/Meta-Llama-3.1-70B-Instruct"]:
+    if model_id in ["meta-llama/Meta-Llama-3.1-8B-Instruct"]:
 
         terminators = [
             tokenizer.eos_token_id,
@@ -35,7 +27,7 @@ def get_generation_args(model_id, tokenizer):
             "top_p": 0.9,
         }
 
-    elif model_id in ["mistralai/Mistral-7B-Instruct-v0.2", "mistralai/Mistral-7B-Instruct-v0.3"]:
+    elif model_id in ["mistralai/Mistral-7B-Instruct-v0.3"]:
 
         generation_args = {
             "max_new_tokens": 128,
@@ -43,7 +35,7 @@ def get_generation_args(model_id, tokenizer):
             "temperature": 0.6,
         }
 
-    elif model_id in ["Qwen/Qwen2.5-7B-Instruct"]:
+    elif model_id in ["Qwen/Qwen3-8B", "Qwen/Qwen3-14B"]:
 
         generation_args = {
             "max_new_tokens": 128,
@@ -51,7 +43,7 @@ def get_generation_args(model_id, tokenizer):
             "temperature": 0.6,
         }
 
-    elif model_id in ["google/gemma-1.1-7b-it", "google/gemma-2-9b-it"]:
+    elif model_id in ["google/gemma-2-9b-it", "google/gemma-3-12b-it"]:
 
         generation_args = {
             "max_new_tokens": 128,
@@ -59,7 +51,39 @@ def get_generation_args(model_id, tokenizer):
             "temperature": 0.6,
         }
 
-    elif model_id in ["microsoft/Phi-3-mini-4k-instruct", "microsoft/Phi-3.5-mini-instruct", "microsoft/phi-4"]:
+    elif model_id in ["zai-org/glm-4-9b-chat-hf"]:
+
+        generation_args = {
+            "max_new_tokens": 128,
+            "do_sample": True,
+            "temperature": 0.6,
+        }
+
+    elif model_id in ["allenai/Olmo-3-7B-Instruct"]:
+
+        generation_args = {
+            "max_new_tokens": 128,
+            "do_sample": True,
+            "temperature": 0.6,
+        }
+
+    elif model_id in ["nvidia/NVIDIA-Nemotron-Nano-9B-v2"]:
+
+        generation_args = {
+            "max_new_tokens": 128,
+            "do_sample": True,
+            "temperature": 0.6,
+        }
+
+    elif model_id in ["moonshotai/Moonlight-16B-A3B-Instruct"]:
+
+        generation_args = {
+            "max_new_tokens": 128,
+            "do_sample": True,
+            "temperature": 0.6,
+        }
+
+    elif model_id in ["microsoft/phi-4"]:
         generation_args = {
             # https://huggingface.co/microsoft/phi-4/discussions/38
             "eos_token_id": [100257, 100265],
@@ -67,7 +91,7 @@ def get_generation_args(model_id, tokenizer):
             "do_sample": True,
             "temperature": 0.6,
         }
-    elif model_id in ["deepseek-ai/DeepSeek-R1-Distill-Llama-8B", "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"]:
+    elif model_id in ["deepseek-ai/DeepSeek-V2-Lite-Chat"]:
         generation_args = {
             "max_new_tokens": 1024,
             "do_sample": True,
@@ -80,33 +104,17 @@ def get_generation_args(model_id, tokenizer):
 
 def inference(model_id, dataset):
 
-    # load pytorch dataset
-    dataset._set_model_id(model_id)
 
-    print("Total questions: ", len(dataset))
-    print("Example: ")
-    pprint.pprint (dataset.__getitem__(50))
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id,
+        device_map="cuda:0" if torch.cuda.is_available() else "cpu",
+        trust_remote_code=True,
+        # https://github.com/vllm-project/vllm/issues/6177
+        torch_dtype=torch.bfloat16,
+        # https://github.com/huggingface/transformers/issues/32848
+        # attn_implementation="eager"
+    )
 
-    if model_id == "meta-llama/Meta-Llama-3.1-70B-Instruct":
-        # torch.backends.cuda.matmul.allow_fp8 = True
-        model = AutoModelForCausalLM.from_pretrained(
-            model_id,
-            device_map="cuda:0" if torch.cuda.is_available() else "cpu",
-            load_in_4bit=True,
-        )
-    else:
-        model = AutoModelForCausalLM.from_pretrained(
-            model_id,
-            device_map="cuda:0" if torch.cuda.is_available() else "cpu",
-            trust_remote_code=True,
-            # https://github.com/vllm-project/vllm/issues/6177
-            torch_dtype=torch.bfloat16,
-            # torch_dtype=torch.float32,
-            # https://github.com/huggingface/transformers/issues/32848
-            # attn_implementation="eager"
-        )
-
-    # load tokenizer and model
     tokenizer = AutoTokenizer.from_pretrained(model_id, padding_side='left', trust_remote_code=True)
     tokenizer.pad_token_id = tokenizer.eos_token_id
     tokenizer.padding_side = 'left'
@@ -114,20 +122,44 @@ def inference(model_id, dataset):
     generation_args = get_generation_args(model_id, tokenizer)
 
     if model_id in [
-        "meta-llama/Meta-Llama-3-8B-Instruct",
         "meta-llama/Meta-Llama-3.1-8B-Instruct",
+        "mistralai/Mistral-7B-Instruct-v0.3",
+        "zai-org/glm-4-9b-chat-hf",
+        "google/gemma-3-12b-it",
+        "google/gemma-2-9b-it",
+        "Qwen/Qwen3-8B",
     ]:
         batch_size = 256
+        
     elif model_id in [
-        "meta-llama/Meta-Llama-3.1-70B-Instruct",
+        "allenai/Olmo-3-7B-Instruct",
+        "microsoft/phi-4",
+        "Qwen/Qwen3-14B",
     ]:
-        batch_size = 4
+        batch_size = 128
+
+    elif model_id in [
+        "deepseek-ai/DeepSeek-V2-Lite-Chat",
+        "moonshotai/Moonlight-16B-A3B-Instruct",
+        "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    ]:
+        batch_size = 64
+    
     else:
         batch_size = 32
 
+    # 2) load pytorch dataset and data loader
+    dataset._set_model_id(model_id)
+
+    print (model_id)
+
+    print("Total questions: ", len(dataset))
+    print("Example: ")
+    pprint.pprint (dataset.__getitem__(50))
+
     dataloader = DataLoader(dataset, batch_size=batch_size, num_workers=4, shuffle=False, collate_fn=collate_fn)
 
-    all_Q_number = [] # q number (entity)
+    all_Q_number = [] # q identifier (entity)
     all_LoE = [] # language of entity
     all_LoQ = [] # language of question
     all_property = [] # property (question)
@@ -135,6 +167,7 @@ def inference(model_id, dataset):
     all_prompt = [] # prompt
     all_output = [] # llm_output
 
+    # 3) inference
     for batch in dataloader:
 
         all_Q_number.extend(batch['Q_number'])
@@ -144,8 +177,11 @@ def inference(model_id, dataset):
         all_prompt.extend(batch['prompt'])
         all_gt.extend(batch['gt'])
 
-        # print(batch['input'])
-        texts = tokenizer.apply_chat_template(batch['input'], add_generation_prompt=True, tokenize=False)
+        if model_id in [ "Qwen/Qwen3-8B", "Qwen/Qwen3-14B" ]:
+            texts = tokenizer.apply_chat_template(batch['input'], add_generation_prompt=True, tokenize=False, enable_thinking=False)
+        else:
+            texts = tokenizer.apply_chat_template(batch['input'], add_generation_prompt=True, tokenize=False)
+            
         inputs = tokenizer(texts, padding="longest", return_tensors="pt").to(model.device)
         previous_texts = tokenizer.batch_decode(inputs["input_ids"], skip_special_tokens=True)
         gen_tokens = model.generate(
@@ -171,6 +207,7 @@ def inference(model_id, dataset):
         pprint.pprint(gen_text)
         all_output.extend(gen_text)
 
+    # 4) save the results
     df = pd.DataFrame({
         "Q_number": all_Q_number,
         "LoE": all_LoE,
@@ -186,33 +223,33 @@ def inference(model_id, dataset):
 
     # Split and save each group as a separate CSV
     for prop in unique_properties:
-        subset_df = df[df['property'] == prop]  # Filter rows for this property
-        filename = f"property_{prop}_{model_id.split('/')[1]}.csv"  # Create filename dynamically
-        subset_df.to_csv(filename, index=False)
-        print(f"Saved rows with property '{prop}' to {filename}")
+        subset_df = df[df['property'] == prop]  
+        filename = f"property_{prop}_{model_id.split('/')[1]}.csv"  
+        file_path = "RESULTS_FOLDER_PATH" + filename
+        subset_df.to_csv(file_path , index=False)
+        print(f"Saved rows with property '{prop}' to {file_path}")
 
 def main():
 
-    data_dir = '/apollo/dya/ISWS/data_v4'
-    lang_set = ['ar', 'en', 'de', 'fr', 'it', 'pl', 'ru', 'zh']
+
+    data_dir = 'DATA_FOLDER_PATH'
+    lang_set = ['ar', 'en', 'de', 'fr', 'it', 'pl', 'ru', 'zh', 'hi']
     properties = ['pob', 'dob', 'occ', 'country']
-    dataset = MultilingualQADataset_v2(data_dir, lang_set, properties)
+    dataset = MultilingualQADataset(data_dir, lang_set, properties)
 
     model_ids = [
-        # "microsoft/Phi-3-mini-4k-instruct",
-        # "microsoft/Phi-3.5-mini-instruct",
-        "microsoft/phi-4",                            # tested
-        # "mistralai/Mistral-7B-Instruct-v0.2",
-        "mistralai/Mistral-7B-Instruct-v0.3",         # tested
-        # "meta-llama/Meta-Llama-3-8B-Instruct",
-        "meta-llama/Meta-Llama-3.1-8B-Instruct",      # tested
-        # "meta-llama/Meta-Llama-3.1-70B-Instruct",
-        # "google/gemma-1.1-7b-it",
-        "google/gemma-2-9b-it",                       # tested
-        "Qwen/Qwen2.5-7B-Instruct",                   # tested
-        "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",   # tested
-        # "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
-        # "deepseek-ai/DeepSeek-R1"
+        "microsoft/phi-4",                            # 15B
+        "mistralai/Mistral-7B-Instruct-v0.3",         # 7B
+        "meta-llama/Meta-Llama-3.1-8B-Instruct",      # 8B
+        "google/gemma-2-9b-it",                       # 9B
+        "google/gemma-3-12b-it",                      # 12B
+        "Qwen/Qwen3-8B"                               # 8B
+        "Qwen/Qwen3-14B"                              # 14B
+        "zai-org/glm-4-9b-chat-hf"                    # 9B
+        "allenai/Olmo-3-7B-Instruct"                  # 7B
+        "nvidia/NVIDIA-Nemotron-Nano-9B-v2"           # 9B
+        "moonshotai/Moonlight-16B-A3B-Instruct"       # 16B A3B
+        "deepseek-ai/DeepSeek-V2-Lite-Chat"           # 16B A3B
     ]
 
     num_run = 1
