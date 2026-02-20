@@ -41,115 +41,7 @@ def collate_fn(samples):
     }
     return batch
 
-class MultilingualQADataset_v1(Dataset):
-    def __init__(self, data_dir, lang_set, properties):
-        """
-        Initializes the dataset by setting up paths and transformations.
-        """
-        self.base_path = data_dir
-        self.lang_set_LoE = lang_set
-        self.lang_set_LoQ = lang_set
-        self.properties = properties
-        self.data = self._load_data()
-
-    # Some llms have fine-grained roles in prompt engineering, e.g., system role, user role
-    # So it is required to call this function to generate correct prompt based for certain llms
-    def _set_model_id(self, model_id):
-        self.model_id = model_id
-
-    def _load_data(self):
-        """
-        Loads data from the directory and returns a list or other data structure.
-
-        Returns:
-            data (list): A list containing all the data samples.
-        """
-        data = []
-        for LoE in self.lang_set_LoE:
-            file_path = self.base_path + '/' + 'prompt_{}_100.json'.format(LoE)
-            if os.path.isfile(file_path):
-                with open(file_path, 'r') as fp:
-                    raw_data = json.load(fp)
-            else:
-                raise ("Could not read the file.")
-
-            for ent_info in raw_data:
-                ent_ID = ent_info['ent_ID']
-                question_prompts = sorted([key for key in ent_info.keys() if key.endswith('_prompt')])
-                question_ground_truths = sorted([key for key in ent_info.keys() if key.endswith('_ground_truth')])
-                for LoQ in self.lang_set_LoQ:
-                    for prompt_key, gt_key in zip(question_prompts, question_ground_truths):
-
-                        assert prompt_key.replace('_prompt', '') == gt_key.replace('_ground_truth', '')
-
-                        property = prompt_key.replace('_prompt', '')
-                        prompt = ent_info[prompt_key]
-                        gt = ent_info[gt_key]
-
-                        if LoQ not in prompt:
-                            continue
-
-                        instruction, question = prompt[LoQ].replace('  ', '').split('##')[1:]
-
-                        if property in ['dob']:
-                            data.append([ent_info['ent_ID'], LoE, property, LoQ, gt, instruction, question])
-                        else:
-                            data.append([ent_ID, LoE, property, LoQ, gt[LoQ], instruction, question])
-
-        return data
-
-    def __len__(self):
-        """
-        Returns the total number of samples in the dataset.
-        """
-        return len(self.data)
-
-    def __getitem__(self, idx):
-        """
-        Generates one sample of data.
-        """
-
-        Q_number, LoE, property, LoQ, gt, instruction, question = self.data[idx]
-
-        item = dict()
-        item['Q_number'] = Q_number # q number (entity)
-        item['LoE'] = LoE # language of entity
-        item['property'] = property # questions id
-        item['LoQ'] = LoQ # language of question
-        item['gt'] = gt # ground truth
-
-        if self.model_id in [
-            "microsoft/Phi-3.5-mini-instruct", "microsoft/Phi-3-mini-4k-instruct", "microsoft/phi-4",
-            "meta-llama/Meta-Llama-3-8B-Instruct", "meta-llama/Meta-Llama-3.1-8B-Instruct","meta-llama/Meta-Llama-3.1-70B-Instruct",
-            "Qwen/Qwen2.5-7B-Instruct"
-        ]:
-            messages = [
-                {"role": "system", "content": instruction },
-                {"role": "user", "content": question },
-            ]
-
-        elif self.model_id in [
-            "mistralai/Mistral-7B-Instruct-v0.2", "mistralai/Mistral-7B-Instruct-v0.3",
-            "google/gemma-1.1-7b-it", "google/gemma-2-9b-it"
-        ]:
-            messages = [
-                {"role": "user", "content": instruction + question },
-            ]
-        elif self.model_id in [
-            "deepseek-ai/DeepSeek-R1-Distill-Llama-8B", "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
-        ]:
-            messages = [
-                {"role": "user", "content": instruction + question + "\nThe reasoning steps should not be that long, please provide the short answers at the end, separated by line breaks." },
-            ]
-        else:
-            raise ("Could not find the model_id.")
-
-        item['input'] = messages
-        item['prompt'] = instruction + question
-
-        return item
-
-class MultilingualQADataset_v2(Dataset):
+class MultilingualQADataset(Dataset):
     def __init__(self, data_dir, lang_set, properties):
         """
         Initializes the dataset by setting up paths and transformations.
@@ -175,7 +67,7 @@ class MultilingualQADataset_v2(Dataset):
 
         data = []
         for LoE in self.lang_set_LoE:
-            file_path = self.base_path + '/' + 'prompt_{}_100.json'.format(LoE)
+            file_path = self.base_path + '/' + 'prompt_{}.json'.format(LoE)
             if os.path.isfile(file_path):
                 with open(file_path, 'r') as fp:
                     raw_data = json.load(fp)
@@ -198,16 +90,16 @@ class MultilingualQADataset_v2(Dataset):
                     if len(prompt) == 0:
                         continue
 
-                    # print(ent_ID, LoE, LoQ)
-                    # print(prompt)
+                    prompt = prompt.replace('  ', '')
+                    if len(prompt.split('##')) <= 3:
+                        instruction = '## ' + prompt.split('##')[1]
+                        question = '## ' + prompt.split('##')[2]
+                    # For questions with the 'country' property, examples will be provided, the items are again seperated with one more "##"
+                    else:
+                        instruction = '## ' + prompt.split('##')[1]
+                        question = '## ' + prompt.split('##')[2] + '## ' + prompt.split('##')[3]
 
-                    instruction, question = prompt.replace('  ', '').split('##')[1:]
                     data.append([ent_ID, LoE, property, LoQ, gt, instruction, question])
-
-                    # if property in ['dob']:
-                    #     data.append([ent_info['ent_ID'], LoE, property, LoQ, gt, instruction, question])
-                    # else:
-                    #     data.append([ent_ID, LoE, property, LoQ, gt[LoQ], instruction, question])
 
         return data
 
@@ -223,12 +115,6 @@ class MultilingualQADataset_v2(Dataset):
         """
         Q_number, LoE, property, LoQ, gt, instruction, question = self.data[idx]
 
-        if '用與問題相同的語言回答給出的問題。' in instruction:
-            instruction = instruction.replace('用與問題相同的語言回答給出的問題。', '用繁體中文回答給出的問題。')
-
-        if '如果你不知道問題的答案,請回答’N/A’。' in instruction:
-            instruction = instruction.replace('如果你不知道問題的答案,請回答’N/A’。', '')
-
         item = dict()
         item['Q_number'] = Q_number # q number (entity)
         item['LoE'] = LoE # language of entity
@@ -237,22 +123,36 @@ class MultilingualQADataset_v2(Dataset):
         item['gt'] = gt # ground truth
 
         if self.model_id in [
-            "microsoft/Phi-3.5-mini-instruct", "microsoft/Phi-3-mini-4k-instruct", "microsoft/phi-4",
-            "meta-llama/Meta-Llama-3-8B-Instruct", "meta-llama/Meta-Llama-3.1-8B-Instruct", "meta-llama/Meta-Llama-3.1-70B-Instruct",
-            "Qwen/Qwen2.5-7B-Instruct"
+            "microsoft/phi-4",
+            "meta-llama/Meta-Llama-3.1-8B-Instruct",
+            "Qwen/Qwen3-8B", "Qwen/Qwen3-14B",
+            "zai-org/glm-4-9b-chat-hf", 
+            "allenai/Olmo-3-7B-Instruct", 
+            "moonshotai/Moonlight-16B-A3B-Instruct",
         ]:
             messages = [
                 {"role": "system", "content": instruction },
                 {"role": "user", "content": question },
             ]
+        elif self.model_id in [
+            "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+        ]:
+            messages = [
+                {"role": "system", "content": "/no_think" },
+                {"role": "user", "content": instruction + question },
+            ]
 
         elif self.model_id in [
-            "deepseek-ai/DeepSeek-R1-Distill-Llama-8B", "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
-            "mistralai/Mistral-7B-Instruct-v0.2", "mistralai/Mistral-7B-Instruct-v0.3",
-            "google/gemma-1.1-7b-it", "google/gemma-2-9b-it"
+            "deepseek-ai/DeepSeek-V2-Lite-Chat",
+            "mistralai/Mistral-7B-Instruct-v0.3",
+            "google/gemma-2-9b-it"
         ]:
             messages = [
                 {"role": "user", "content": instruction + question },
+            ]
+        elif self.model_id in ["google/gemma-3-12b-it"]:
+            messages = [
+                {"role": "user", "content": [{"type": "text", "text": instruction + question}] },
             ]
         else:
             raise ("Could not find the model_id.")
@@ -264,14 +164,11 @@ class MultilingualQADataset_v2(Dataset):
 
 if __name__ == '__main__':
 
-    # data_dir = '/apollo/dya/ISWS/data_v1/Prompt_final' # version 1
-    data_dir = '/apollo/dya/ISWS/data_v4' # version 1.1
-    lang_set = ['ar', 'en', 'de', 'fr', 'it', 'pl', 'ru', 'zh']
-    # model_id = "Qwen/Qwen2.5-7B-Instruct"
-    # model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-    model_id = "microsoft/phi-4"
+    data_dir = 'DATA_FOLDER_PATH'
+    lang_set = ['ar', 'en', 'de', 'fr', 'it', 'pl', 'ru', 'zh', 'hi']
+    model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
     properties = ['pob', 'dob', 'occ', 'country']
-    dataset = MultilingualQADataset_v2(data_dir, lang_set, properties)
+    dataset = MultilingualQADataset(data_dir, lang_set, properties)
     dataset._set_model_id(model_id)
     print(len(dataset))
     pprint.pprint (dataset.__getitem__(50))
