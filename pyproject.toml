@@ -1,0 +1,28 @@
+[project]
+name = "lrec2026-submission"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "tqdm",
+    "requests",
+    "sparqlwrapper",
+    "polars",
+    "scipy",
+    "torch",
+    "transformers",
+    "pyyaml",
+    "bert-score",
+    "dvc>=3.66.1",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter",
+]
+
+
