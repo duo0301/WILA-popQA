@@ -7,7 +7,7 @@ import requests
 WIKIDATA_ENDPOINT = "https://query.wikidata.org/sparql"
 LOCAL_ENDPOINT = "http://localhost:1234/api/endpoint/sparql"
 
-# We excluded the following properties :  sex or gender (P21), languages spoken, written, or signed (P1412), and writing language (P6886) 
+# We excluded the following properties :  sex or gender (P21), languages spoken, written, or signed (wdt:P1412), and writing language (wdt:P6886) 
 # to avoid confounding effects arising from the entity’s name or explicit language metadata that could bias the model’s responses.
 EXCLUDED_PIDs  = ["P21", "P1412", "P6886"]
 
@@ -19,6 +19,10 @@ ENTITY_CLASS_TO_QID = {
     "writer": "Q36180",
     "artist": "Q483501",
     "athlete": "Q2066131",
+    "researcher": "Q1650915",
+    "university teacher": "Q1622272",
+    "professor": "Q121594",
+    "author": "Q482980",
 }
 
 ### most 10 occupation per language group :
@@ -109,6 +113,9 @@ def query_wikidata(sparql_query, endpoint_url, add_prefix=True, timeout=300):
     sparql.setReturnFormat(JSON)
     sparql.setTimeout(timeout)
     try:
+        if endpoint_url == WIKIDATA_ENDPOINT:
+            # To avoid hitting the rate limit of the Wikidata endpoint, we can add a random sleep between requests
+            time.sleep(random.uniform(1, 5))  # Sleep for a random time between 1 and 3 seconds
         results = sparql.query().convert()
         return results
     except Exception as e:
@@ -159,12 +166,68 @@ def build_sitelinks_counts_query(entity_ids):
         Group by ?entity
     """
     return query
+
+def construct_sparql_query_get_entities_count(languages_clause, subclasses_clause):
+    sparql_query = f"""
+    SELECT (COUNT(DISTINCT ?entity) AS ?count)
+    WHERE {{
+        VALUES ?languages_spoken {{ {languages_clause} }}
+        VALUES ?occupation {{ {subclasses_clause} }}
+        ?entity wdt:P31 wd:Q5;    
+            wdt:P106 ?occupation;
+            wdt:P1412 ?languages_spoken .
+    }}
+    """
+    return sparql_query
     
+def construct_sparql_query_get_subclasses(entity_classes_of_interest, depth=1):
+    subclasses_clause = " ".join([f"wd:{class_id}" for class_id in entity_classes_of_interest])
+
+    def path_of_len(n: int) -> str:
+        # n hops of wdt:P279
+        return "/".join(["wdt:P279"] * n)
+    
+    query = f"""
+    SELECT DISTINCT ?subclass
+    WHERE {{
+        VALUES ?occupation {{ {subclasses_clause} }}
+        ?subclass {path_of_len(depth)} ?occupation .
+    }}
+    """
+    return query
+
+def construct_sparql_query_get_num_entities_per_occupation(languages_clause, occupation_classes, depth=1):
+
+    def subclassof(n: int) -> str:
+        # n hops of wdt:P279
+        return "/".join(["wdt:P279"] * n)
+    
+    query = f"""
+    SELECT (COUNT(DISTINCT ?entity) AS ?count)
+    WHERE {{
+        VALUES ?languages_spoken {{ {languages_clause} }}
+        VALUES ?occupation {{ {occupation_classes} }}
+        {{
+            ?entity wdt:P31 wd:Q5;    
+            wdt:P106 ?occ;
+            wdt:P1412 ?languages_spoken .
+            ?occ {subclassof(depth)} ?occupation .
+        }}
+        UNION
+        {{
+            ?entity wdt:P31 wd:Q5;
+            wdt:P106 ?occupation;
+            wdt:P1412 ?languages_spoken .
+        }}
+    }}
+    """
+    return query
+
 if __name__ == '__main__':
 
     PID_TO_PROPERTY = {v: k for k, v in PROPERTY_TO_PID.items()}
 
-    output_dir_name = 'dataset_v4/politician'
+    output_dir_name = 'dataset_v4/author'
     output_dir = os.path.join(os.path.dirname(__file__), 'data', output_dir_name)
     
     # Create the output directory if it doesn't exist
@@ -177,9 +240,9 @@ if __name__ == '__main__':
     # 2. Languages 
     # 3. Properties
     # entity_classes_of_interest = ["creator", "politician", "actor", "writer"]
-    entity_classes_of_interest = ["politician"]  
+    entity_classes_of_interest = ["author"]
 
-    languages_of_interest = ["French"] # "English", "Arabic", "French", "German", "Italian", "Spanish", "Russian", "Chinese", "Hindi", "Polish"]
+    languages_of_interest = ["Polish"] # "French","English", "Arabic", "French", "German", "Italian", "Spanish", "Russian", "Chinese", "Hindi", "Polish"]
     
     properties_of_interest = ["place_of_birth", "place_of_death", "date_of_birth", "date_of_death", 
                               "cause_of_death", "place_of_burial", "residence", "father", "mother", "spouse", 
@@ -212,41 +275,71 @@ if __name__ == '__main__':
 
         # Build the SPARQL query
         languages_clause = " ".join([f"wd:{lang_id}" for lang_id in language_ids])
-        subclasses_clause = " ".join([f"wd:{class_id}" for class_id in entity_classes_of_interest])
-        limit = 10
-        total = 200000
+
+        # Get the subclasses of the entity classes of interest, let "depth" be the number of levels of subclasses we want to retrieve
+
+        subclasses_query = construct_sparql_query_get_subclasses(entity_classes_of_interest, depth=1)
+        subclasses_result = query_wikidata(subclasses_query, LOCAL_ENDPOINT, add_prefix=True, timeout=10)  
+        subclasses_ids = [result['subclass']['value'].split('/')[-1] for result in subclasses_result['results']['bindings']]
+        all_classes_of_interest = list(set(entity_classes_of_interest + subclasses_ids))
+
+        print(f"Total number of occupation subclasses retrieved for language group {language_group}: {len(all_classes_of_interest)}")
+
+        
+        # Query to get the total number of entities for the language group 
+
+        # entity_classes_of_interest_formatted = " ".join([f"wd:{class_id}" for class_id in entity_classes_of_interest])
+        # nb_entities_per_occupation_query = construct_sparql_query_get_num_entities_per_occupation(languages_clause, entity_classes_of_interest_formatted, depth=1)
+        # nb_entities_per_occupation_result = query_wikidata(nb_entities_per_occupation_query, LOCAL_ENDPOINT, add_prefix=True, timeout=300)  
+        # total = int(nb_entities_per_occupation_result['results']['bindings'][0]['count']['value']) if nb_entities_per_occupation_result['results']['bindings'] else 0
+        # print(f"Total entities for the occupation classes of interest for language group {language_group}: {total}")
+
+        total = 10000
+        limit = 100
         start = len(set_entity_ids)
+
+        subclasses_clause = " ".join([f"wd:{class_id}" for class_id in all_classes_of_interest])
         
         print(f"Starting from offset: {start}")
-        for offset in tqdm(range(start, total, limit), desc=f"Retrieving entities for {language_group}"):    
-            try:
-                sparql_query = construct_sparql_query_get_entities(languages_clause, subclasses_clause, limit, offset)
-                query_result = query_wikidata(sparql_query, LOCAL_ENDPOINT, add_prefix=True, timeout=300)  
-                if not query_result['results']['bindings']:
-                    print(f"No entities found for language group {language_group}")
+        for offset in tqdm(range(start, total, limit), desc=f"Retrieving entities for {language_group}"):   
+            size_subclasses_batch = 4
+            for subclass_batch in [all_classes_of_interest[i:i+size_subclasses_batch] for i in range(0, len(all_classes_of_interest), size_subclasses_batch)]:
+                subclasses_clause = " ".join([f"wd:{class_id}" for class_id in subclass_batch])
+                
+                try:
+                    sparql_query = construct_sparql_query_get_entities(languages_clause, subclasses_clause, limit, offset)
+                    query_result = query_wikidata(sparql_query, LOCAL_ENDPOINT, add_prefix=True, timeout=300)  
+                    
+
+                    if not query_result['results']['bindings']:
+                        print(f"No entities found for language group {language_group}")
+                        print(f"Total entities retrieved for language group {language_group}: {len(set_entity_ids)}")
+                        break
+                    else : 
+                        nb_entity_ids_retrieved = len(query_result['results']['bindings'])
+                        print(f"Found {nb_entity_ids_retrieved} entities for language group {language_group} with the initial query")
+
+                        entity_ids_batch = [result['entity']['value'].split('/')[-1] for result in query_result['results']['bindings']]
+
+                        # Filter by SiteLinks counts (>=9, at least)
+                        # nb: use WIKIDATA_ENDPOINT if you're using the truthy version of Wikidata 
+                        sitelinks_query = build_sitelinks_counts_query(entity_ids_batch)
+                        sl_query_result = query_wikidata(sitelinks_query, WIKIDATA_ENDPOINT, add_prefix=True, timeout=300)  
+
+                        entity_ids_batch = [result['entity']['value'].split('/')[-1] for result in sl_query_result['results']['bindings'] if int(result['sitelinks_count']['value']) >= 9]
+
+                        set_entity_ids.update(set(entity_ids_batch))
+                        print(f"Filtered {len(entity_ids_batch)} entities for language group {language_group}")
+                        print(f"Total entities retrieved for language group {language_group}: {len(set_entity_ids)}")
+
+                except Exception as e:
+                    print(f"Error retrieving entities for language group {language_group}: {e}")
                     print(f"Total entities retrieved for language group {language_group}: {len(set_entity_ids)}")
                     break
-                else : 
-                    entity_ids_batch = [result['entity']['value'].split('/')[-1] for result in query_result['results']['bindings']]
-
-                    # Filter by SiteLinks counts (>=9, at least)
-                    sitelinks_query = build_sitelinks_counts_query(entity_ids_batch)
-                    sl_query_result = query_wikidata(sitelinks_query, WIKIDATA_ENDPOINT, add_prefix=False, timeout=300)  
-
-                    entity_ids_batch = [result['entity']['value'].split('/')[-1] for result in sl_query_result['results']['bindings'] if int(result['sitelinks_count']['value']) >= 9]
-
-                    set_entity_ids.update(set(entity_ids_batch))
-                    print(f"Retrieved {len(entity_ids_batch)} entities for language group {language_group}")
-                    print(f"Total entities retrieved for language group {language_group}: {len(set_entity_ids)}")
-
-            except Exception as e:
-                print(f"Error retrieving entities for language group {language_group}: {e}")
-                print(f"Total entities retrieved for language group {language_group}: {len(set_entity_ids)}")
-                break
-            
-        with open(entity_ids_file_path, 'w') as file:
-            for qid in list(set_entity_ids):
-                file.write(f"{qid}\n")
+                
+            with open(entity_ids_file_path, 'w') as file:
+                for qid in list(set_entity_ids):
+                    file.write(f"{qid}\n")
 
         
 
@@ -276,7 +369,7 @@ if __name__ == '__main__':
 
             # Define the properties to check
             properties_to_check = properties_of_interest
-            properties_batch_size = 4 # batch the properties to check in order to avoid overwhelming the server
+            properties_batch_size = 4 
             properties_batches = [properties_to_check[i:i + properties_batch_size] for i in range(0, len(properties_to_check), properties_batch_size)]
 
             while i < nb_entity_ids :
@@ -286,7 +379,7 @@ if __name__ == '__main__':
 
                 for properties_batch in properties_batches:
                     batch_select_query = build_select_query(entities_ids_batch, properties_batch, PID_TO_PROPERTY)
-                    batch_filtered_entities = query_wikidata(batch_select_query, add_prefix=True)
+                    batch_filtered_entities = query_wikidata(batch_select_query, endpoint_url=LOCAL_ENDPOINT, add_prefix=True, timeout=300)
 
                     # Fill the batch_results dictionary
                     if batch_filtered_entities and 'results' in batch_filtered_entities and 'bindings' in batch_filtered_entities['results']:

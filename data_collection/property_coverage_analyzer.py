@@ -15,12 +15,12 @@ def process_language(lang, position=0, min_properties=4, max_properties=22, cove
     output_file_path = os.path.join(output_dir, lang+'.csv')
     
     df = pd.read_csv(input_file_path)
-    properties = [col for col in df.columns if col != 'creator_id']
+    properties = [col for col in df.columns if col != 'entity_id']
 
     # Create a mapping of properties to the set of creators who have them
     property_creator_map = {}
     for prop in properties:
-        property_creator_map[prop] = set(df[df[prop] == 1]['creator_id'])
+        property_creator_map[prop] = set(df[df[prop] == 1]['entity_id'])
 
     # Generate all non-empty subsets of properties
     property_subsets = list(powerset(properties))
@@ -70,46 +70,10 @@ def process_language(lang, position=0, min_properties=4, max_properties=22, cove
     # coverage_df = coverage_df.sort_values(by=['score'], ascending=False).reset_index(drop=True)
     coverage_df.to_csv(output_file_path, index=False)
 
-# from mlxtend.frequent_patterns import fpgrowth
-# def process_language_mlxtend(lang):
-#     input_file_path = os.path.join(input_dir, lang+'.csv')
-#     output_file_path = os.path.join(output_dir, lang+'.csv')
-
-#     # Read the data
-#     df = pd.read_csv(input_file_path)
-    
-#     # Get property columns (excluding creator_id)
-#     property_cols = [col for col in df.columns if col != 'creator_id']
-    
-#     # Convert the data to binary format (1 for presence, 0 for absence)
-#     # This is already in the correct format based on your input data
-    
-#     # Apply FP-Growth algorithm
-#     # min_support is the minimum fraction of transactions that contain the itemset
-#     # You might want to adjust this value based on your needs
-#     frequent_itemsets = fpgrowth(
-#         df[property_cols], 
-#         min_support=0.1,  # Adjust this threshold as needed
-#         use_colnames=True
-#     )
-    
-#     # Sort by support and length
-#     frequent_itemsets['length'] = frequent_itemsets['itemsets'].apply(len)
-#     frequent_itemsets = frequent_itemsets.sort_values(
-#         by=['support', 'length'], 
-#         ascending=[False, True]
-#     )
-    
-#     # Save the results
-#     frequent_itemsets.to_csv(output_file_path, index=False)
-    
-#     return frequent_itemsets
-
-
 if __name__ == '__main__':
-    Languages = ["Chinese", "Hindi", "Arabic", "Polish", "Russian", "Italian", "French", "German", "English"]
-    input_dir = 'data/dataset_v2/entities_properties_matrix'
-    output_dir = 'data/dataset_v2/coverage_results'
+    Languages = ["Polish"] # ["Chinese", "Hindi", "Arabic", "Polish", "Russian", "Italian", "French", "German", "English"]
+    input_dir = 'data/dataset_v4/author/entities_properties_matrix'
+    output_dir = 'data/dataset_v4/author/coverage_results'
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)

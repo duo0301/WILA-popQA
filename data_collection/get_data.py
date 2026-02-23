@@ -11,7 +11,7 @@ Here's a detailed breakdown of the inputs and outputs:
   - properties: A list of properties to be retrieved for each QID.
   - batch_size: The number of QIDs to process in each batch.
   - data_output_path: The directory path where the results JSON file will be saved.
- - lang: The language code of the labels to be retrieved.
+  - lang: The language code of the labels to be retrieved.
 
 + Outputs:
   - A JSON file: The results are saved to a JSON file named {lang}.json in the specified data_output_path. 
@@ -29,6 +29,8 @@ import requests, os
 import json
 from tqdm import tqdm
 
+WIKIDATA_ENDPOINT = "https://query.wikidata.org/sparql"
+LOCAL_ENDPOINT = "http://localhost:1234/api/endpoint/sparql"
 
 def get_properties_query(qids, languages, properties):
     
@@ -207,30 +209,29 @@ def format_results(results, sitelinks_result, labelLanguages):
             qid = result['entity']['value'].split('/')[-1]
             sitelink_count = int(result['sitelink_count']['value'])
             if qid not in formatted_results:
-                formatted_results[qid] = {}
-            formatted_results[qid]['sitelinks'] = sitelink_count
+                continue
+            else:
+                formatted_results[qid]['sitelinks'] = sitelink_count
 
     return formatted_results
 
-        
-# Example usage
 
-## URL of the SPARQL endpoint
-url = "http://localhost:1234/api/endpoint/sparql"
-# desired properties
-properties = ["P19","P569", "P106", "P27"]
+# Selected properties after calculate property set coverage 
+#properties = ["P19","P569", "P106", "P27"]
+properties = ['P570', 'P20', 'P19', 'P569', 'P106', 'P27']
+              
 # Languages to get the value labels
 label_languages = ["en", "de", "fr", "ru", "hi", "zh", "it", "pl", "ar"]
+languages = ["German", "Italian", "Polish", "French", "English"]
 
 # Read filtred_ids to get the qids
-data_path = "data/dataset_v1/filtred_ids/"
-languages = ["Arabic", "Chinese", "English", "French", "German", "Hindi", "Italian", "Polish", "Russian"]
-data_output_path = "data/dataset_v1/properties/"
+data_path = "data/dataset_v2/filtered_entities_ids/"
+data_output_path = "data/dataset_v2/entities_data/"
 
-batch_size = 300
+batch_size = 200
 
 for lang in tqdm(languages, desc="Processing languages"):
-    list_qids_path = os.path.join(data_path, f"filtered_entities_ids_{lang}.csv")   
+    list_qids_path = os.path.join(data_path, f'{lang}.csv') 
     with open(list_qids_path, 'r') as f:
         qids = f.readlines()
         qids = [qid.strip() for qid in qids]
@@ -242,16 +243,19 @@ for lang in tqdm(languages, desc="Processing languages"):
     
     for i in tqdm(range(0, len(qids), batch_size), desc="Processing batches"):
         batch_qids = qids[i:i + batch_size]
-        batch_results = get_properties(url, batch_qids, label_languages, properties)
-        # sitelinks_result = get_sitelink_count(url, batch_qids)
-        sitelinks_result = None # we can use it when we use wikidata_full dump (truthy dump, don't contain sitelinks)
+        batch_results = get_properties(LOCAL_ENDPOINT, batch_qids, label_languages, properties)
+        sitelinks_result = get_sitelink_count(WIKIDATA_ENDPOINT, batch_qids)
+        # sitelinks_result = None # we can use it when we use wikidata_full dump (truthy dump, don't contain sitelinks)
         formatted_batch_results = format_results(batch_results, sitelinks_result, label_languages)
         all_results.append(formatted_batch_results)
 
     # Combine all batch results into a single dictionary
     combined_results = {}
     for batch_results in all_results:
+
+        # if sitelinks_result is < 9, we remove the qid from the batch_results
         for qid, properties in batch_results.items():
+            
             if qid not in combined_results:
                 combined_results[qid] = properties
             else:
@@ -261,11 +265,18 @@ for lang in tqdm(languages, desc="Processing languages"):
                     else:
                         combined_results[qid][prop].extend(values)
 
-    results = combined_results
+
+    filtered_results = {}
+    for qid in combined_results:
+        if 'sitelinks' in combined_results[qid]:
+            if combined_results[qid]['sitelinks']>= 9:
+                filtered_results[qid] = combined_results[qid]
+
+    print("filtered_results :", len(filtered_results), "combined_results:", len(combined_results))
 
     # Save the results
     results_path = os.path.join(data_output_path, f"{lang}.json")
     if not os.path.exists(data_output_path):
         os.makedirs(data_output_path)
     with open(results_path, 'w') as f:
-        json.dump(results, f, indent=4, ensure_ascii=False)
+        json.dump(filtered_results, f, indent=4, ensure_ascii=False)
