@@ -1,0 +1,273 @@
+schema: '2.0'
+stages:
+  get_entities:
+    cmd: "uv run python getEntities_pointsSys.py --output-ids data/dataset_v2/entities_ids
+      --output-matrix data/dataset_v2/entities_properties_matrix\n"
+    deps:
+    - path: getEntities_pointsSys.py
+      hash: md5
+      md5: 107e41d87c9a05586e34824122733e95
+      size: 19171
+    outs:
+    - path: data/dataset_v2/entities_ids
+      hash: md5
+      md5: 83336ab7eff882fc6d6c32ee7922169f.dir
+      size: 5086842
+      nfiles: 9
+    - path: data/dataset_v2/entities_properties_matrix
+      hash: md5
+      md5: cd599a8e19d0af6f1ef1b4224c9a9f26.dir
+      size: 28909361
+      nfiles: 9
+  filter_ids:
+    cmd: "uv run python filter_ids.py --input-dir data/dataset_v2/entities_properties_matrix
+      --output-dir data/dataset_v2/filtered_entities_ids\n"
+    deps:
+    - path: data/dataset_v2/entities_properties_matrix
+      hash: md5
+      md5: cd599a8e19d0af6f1ef1b4224c9a9f26.dir
+      size: 28909361
+      nfiles: 9
+    - path: filter_ids.py
+      hash: md5
+      md5: c4415de7bbba4247feeca5ba7c9ecf38
+      size: 1138
+    outs:
+    - path: data/dataset_v2/filtered_entities_ids
+      hash: md5
+      md5: 89b247f5d26d81c329e746887bd3fdff.dir
+      size: 1475158
+      nfiles: 9
+  get_data:
+    cmd: "uv run python get_data.py --input-dir data/dataset_v2/filtered_entities_ids
+      --output-dir data/dataset_v2/entities_data\n"
+    deps:
+    - path: data/dataset_v2/filtered_entities_ids
+      hash: md5
+      md5: 89b247f5d26d81c329e746887bd3fdff.dir
+      size: 1475158
+      nfiles: 9
+    - path: get_data.py
+      hash: md5
+      md5: 5a303fc055b6c88f5f28390da565e9d1
+      size: 12111
+    outs:
+    - path: data/dataset_v2/entities_data
+      hash: md5
+      md5: 88c8ecc31b153b7a5087df28a683ce41.dir
+      size: 176342457
+      nfiles: 9
+  filter_complete:
+    cmd: "uv run python stat.py --input-dir data/dataset_v2/entities_data --output-dir
+      data/dataset_v2/entities_data_complete --stats-dir data/dataset_v2/statistics\n"
+    deps:
+    - path: data/dataset_v2/entities_data
+      hash: md5
+      md5: 88c8ecc31b153b7a5087df28a683ce41.dir
+      size: 176342457
+      nfiles: 9
+    - path: stat.py
+      hash: md5
+      md5: f8947314cd3b9d43ac8f4e6a650a5d25
+      size: 4295
+    outs:
+    - path: data/dataset_v2/entities_data_complete
+      hash: md5
+      md5: e4e3f06cf366b86ea72509dfb88cfae3.dir
+      size: 53886388
+      nfiles: 9
+    - path: data/dataset_v2/statistics
+      hash: md5
+      md5: dec2ef5540bcd034a70a396351b68937.dir
+      size: 87967
+      nfiles: 8
+  matching:
+    cmd: "uv run python matching.py --input-dir data/dataset_v2/entities_data_complete
+      --output-dir data/dataset_v2/entities_data_matched\n"
+    deps:
+    - path: data/dataset_v2/entities_data_complete
+      hash: md5
+      md5: e4e3f06cf366b86ea72509dfb88cfae3.dir
+      size: 53886388
+      nfiles: 9
+    - path: matching.py
+      hash: md5
+      md5: c4608c481b7ca56ef48a37d17520e510
+      size: 9263
+    outs:
+    - path: data/dataset_v2/entities_data_matched
+      hash: md5
+      md5: 02caaed479d06d992699ebfe4f98a85e.dir
+      size: 201044
+      nfiles: 10
+  generate_prompts:
+    cmd: "uv run jupyter nbconvert --to notebook --execute PromptGenerator.ipynb\n"
+    deps:
+    - path: PromptGenerator.ipynb
+      hash: md5
+      md5: 248e66820bf1ec9246d454fec54d69c5
+      size: 32379
+    - path: data/dataset_v2/entities_data_complete
+      hash: md5
+      md5: e4e3f06cf366b86ea72509dfb88cfae3.dir
+      size: 53886388
+      nfiles: 9
+    outs:
+    - path: ../ext_data/Prompts/prompt_complete_entities
+      hash: md5
+      md5: cd721f0f5c011de77e6638a3ef2f5b6c.dir
+      size: 252269244
+      nfiles: 9
+  inference:
+    cmd: "uv run python batch_inference.py --input-dir ../ext_data/Prompts/prompt_complete_entities
+      --output-dir ../ext_data/Experiments/dataset_2026\n"
+    deps:
+    - path: ../ext_data/Prompts/prompt_complete_entities
+      hash: md5
+      md5: cd721f0f5c011de77e6638a3ef2f5b6c.dir
+      size: 252269244
+      nfiles: 9
+    - path: batch_inference.py
+      hash: md5
+      md5: fafbdd06490aeaeb2e93ebe38bd4c29a
+      size: 8380
+    - path: pt_dataset.py
+      hash: md5
+      md5: 0b3a956897c5c1e1cdb292b54649f274
+      size: 5943
+    outs:
+    - path: ../ext_data/Experiments/dataset_2026
+      hash: md5
+      md5: 69f719e7d92a1ba7cd04d541b62853d4.dir
+      size: 2218605986
+      nfiles: 51
+  evaluate_dob:
+    cmd: "uv run python evaluate_dob.py \\\n  --batch-dir ../../../ext_data/Experiments/dataset_2026/
+      \\\n  --output-dir ../../../ext_data/Evaluation/place_of_birth_evals\n"
+    deps:
+    - path: ../../../ext_data/Experiments/dataset_2026
+      hash: md5
+      md5: 69f719e7d92a1ba7cd04d541b62853d4.dir
+      size: 2218605986
+      nfiles: 51
+    - path: evaluate_dob.py
+      hash: md5
+      md5: 291343b2c6d97079d0ec1af22afa19b5
+      size: 6204
+    outs:
+    - path: ../../../ext_data/Evaluation/date_of_birth_evals
+      hash: md5
+      md5: faf8ce11b6cd2943975ab29b79403c78.dir
+      size: 22861773
+      nfiles: 11
+  evaluate_pob:
+    cmd: "uv run python normalize_pob.py \\\n  --batch-dir ../../../ext_data/Experiments/dataset_2026/
+      \\\n  --output-dir ../../../results/normalized/pob/\nuv run python evaluate_pob.py
+      \\\n  --batch-dir ../../../results/normalized/pob/ \\\n  --output-dir ../../../ext_data/Evaluation/place_of_birth_evals/
+      \\\n  --cache pob_place_cache.json\n"
+    deps:
+    - path: ../../../ext_data/Evaluation/place_of_birth_evals
+      hash: md5
+      md5: c7b98f72745d2fe901bad99c58dc4b87.dir
+      size: 97878874
+      nfiles: 28
+    - path: evaluate_pob.py
+      hash: md5
+      md5: 0c893ad6caeba624b935e5d0fe1964f8
+      size: 19028
+    - path: normalize_pob.py
+      hash: md5
+      md5: 1291bd299e7524a443b8272f1d0cfb78
+      size: 10922
+    outs:
+    - path: ../../../ext_data/Evaluation/place_of_birth_evals
+      hash: md5
+      md5: c7b98f72745d2fe901bad99c58dc4b87.dir
+      size: 97878874
+      nfiles: 28
+  evaluate_country:
+    cmd: "uv run python normalize.py \\\n  --batch-dir ../../../ext_data/Experiments/dataset_2026/
+      \\\n  --output-dir ../../../results/normalized/country/\nuv run python evaluate_country.py
+      \\\n  --batch-dir ../../../results/normalized/country/ \\\n  --output-dir ../../../ext_data/Evaluation/country_evals/
+      \\\n  --cache vocab_cache.json\n"
+    deps:
+    - path: ../../../ext_data/Evaluation/country_evals
+      hash: md5
+      md5: e9bba1ba747b95e74a294e16dcec068b.dir
+      size: 139125392
+      nfiles: 14
+    - path: evaluate_country.py
+      hash: md5
+      md5: 6ebe33e66f4b56a17393894a84df2809
+      size: 21706
+    - path: normalize.py
+      hash: md5
+      md5: 4bbad64393a33602f5f0f263c8fe0de9
+      size: 11801
+    outs:
+    - path: ../../../ext_data/Evaluation/country_evals
+      hash: md5
+      md5: e9bba1ba747b95e74a294e16dcec068b.dir
+      size: 139125392
+      nfiles: 14
+  evaluate_occ:
+    cmd: "uv run python score.py \\ --input ../../../ext_data/Experiments/dataset_2026/
+      \\ --output ../../../ext_data/Evaluation/occupation_bleurt \\ --metric bleurt\n"
+    deps:
+    - path: ../../../ext_data/Experiments/dataset_2026/
+      hash: md5
+      md5: 69f719e7d92a1ba7cd04d541b62853d4.dir
+      size: 2218605986
+      nfiles: 51
+    - path: score.py
+      hash: md5
+      md5: 9a48bfbbca1354dd03ad123fd1403319
+      size: 8963
+    outs:
+    - path: ../../../ext_data/Evaluation/occupation_bleurt
+      hash: md5
+      md5: d0280179e4c624c2602a431355eaacfb.dir
+      size: 30384625
+      nfiles: 28
+  generate_reports:
+    cmd: "uv run python generate_f1_reports.py\nuv run python generate_heatmaps.py\n\
+      uv run python generate_country_reports.py\n"
+    deps:
+    - path: generate_country_reports.py
+      hash: md5
+      md5: 10d0f4a6994eac794b488877cac5c3c6
+      size: 5568
+    - path: generate_f1_reports.py
+      hash: md5
+      md5: 0010ae2c4a8979713479e8a49f687883
+      size: 13581
+    - path: generate_heatmaps.py
+      hash: md5
+      md5: 661340a42dd639a654ed2833355df02f
+      size: 8991
+    outs:
+    - path: country_f1_prov_reports.txt
+      hash: md5
+      md5: 727731e04bdfda804897ea9267c33b39
+      size: 35701
+    - path: country_f1_reports.txt
+      hash: md5
+      md5: fbea85d5aa354881b9b1103eb8157b55
+      size: 15839
+    - path: dob_f1_reports.txt
+      hash: md5
+      md5: 026d2ed5ced13d7150e30c21cae04057
+      size: 31797
+    - path: heatmaps/
+      hash: md5
+      md5: b2bd1c8c5fc53b05f7eb5007e8470b23.dir
+      size: 15474554
+      nfiles: 156
+    - path: pob_f1_prov_reports.txt
+      hash: md5
+      md5: bb66f538c4743ce82a3fbce5b7afb75c
+      size: 35513
+    - path: pob_f1_reports.txt
+      hash: md5
+      md5: 284f2ddd15390f71cafadaa520162bb3
+      size: 16059

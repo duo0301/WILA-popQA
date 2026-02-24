@@ -1,0 +1,177 @@
+stages:
+
+  get_entities:
+    wdir: data_collection
+    cmd: >
+      uv run python getEntities_pointsSys.py
+      --output-ids data/dataset_v2/entities_ids
+      --output-matrix data/dataset_v2/entities_properties_matrix
+    deps:
+      - getEntities_pointsSys.py
+    outs:
+      - data/dataset_v2/entities_ids:
+          cache: false
+      - data/dataset_v2/entities_properties_matrix:
+          cache: false
+
+  filter_ids:
+    wdir: data_collection
+    cmd: >
+      uv run python filter_ids.py
+      --input-dir data/dataset_v2/entities_properties_matrix
+      --output-dir data/dataset_v2/filtered_entities_ids
+    deps:
+      - filter_ids.py
+      - data/dataset_v2/entities_properties_matrix
+    outs:
+      - data/dataset_v2/filtered_entities_ids:
+          cache: false
+
+  get_data:
+    wdir: data_collection
+    cmd: >
+      uv run python get_data.py
+      --input-dir data/dataset_v2/filtered_entities_ids
+      --output-dir data/dataset_v2/entities_data
+    deps:
+      - get_data.py
+      - data/dataset_v2/filtered_entities_ids
+    outs:
+      - data/dataset_v2/entities_data:
+          cache: false
+
+  filter_complete:
+    wdir: data_collection
+    cmd: >
+      uv run python stat.py
+      --input-dir data/dataset_v2/entities_data
+      --output-dir data/dataset_v2/entities_data_complete
+      --stats-dir data/dataset_v2/statistics
+    deps:
+      - stat.py
+      - data/dataset_v2/entities_data
+    outs:
+      - data/dataset_v2/entities_data_complete:
+          cache: false
+      - data/dataset_v2/statistics:
+          cache: false
+
+  matching:
+    wdir: data_collection
+    cmd: >
+      uv run python matching.py
+      --input-dir data/dataset_v2/entities_data_complete
+      --output-dir data/dataset_v2/entities_data_matched
+    deps:
+      - matching.py
+      - data/dataset_v2/entities_data_complete
+    outs:
+      - data/dataset_v2/entities_data_matched:
+          cache: false
+
+  generate_prompts:
+    wdir: data_collection
+    cmd: >
+      uv run jupyter nbconvert --to notebook --execute PromptGenerator.ipynb
+    deps:
+      - PromptGenerator.ipynb
+      - data/dataset_v2/entities_data_complete
+    outs:
+      - ../ext_data/Prompts/prompt_complete_entities
+
+  inference:
+    wdir: inference
+    cmd: >
+      uv run python batch_inference.py
+      --input-dir ../ext_data/Prompts/prompt_complete_entities
+      --output-dir ../ext_data/Experiments/dataset_2026
+    deps:
+      - batch_inference.py
+      - pt_dataset.py
+      - ../ext_data/Prompts/prompt_complete_entities
+    outs:
+      - ../ext_data/Experiments/dataset_2026
+
+  evaluate_dob:
+    wdir: evaluation/evaluation_scripts/dob
+    cmd: |
+      uv run python evaluate_dob.py \
+        --batch-dir ../../../ext_data/Experiments/dataset_2026/ \
+        --output-dir ../../../ext_data/Evaluation/place_of_birth_evals
+    deps:
+      - evaluate_dob.py
+      - ../../../ext_data/Experiments/dataset_2026
+    outs:
+      - ../../../ext_data/Evaluation/date_of_birth_evals
+
+  evaluate_pob:
+    wdir: evaluation/evaluation_scripts/pob
+    cmd: |
+      uv run python normalize_pob.py \
+        --batch-dir ../../../ext_data/Experiments/dataset_2026/ \
+        --output-dir ../../../results/normalized/pob/
+      uv run python evaluate_pob.py \
+        --batch-dir ../../../results/normalized/pob/ \
+        --output-dir ../../../ext_data/Evaluation/place_of_birth_evals/ \
+        --cache pob_place_cache.json
+    deps:
+      - normalize_pob.py
+      - evaluate_pob.py
+      - ../../../ext_data/Experiments/dataset_2026/
+    outs:
+      - ../../../ext_data/Evaluation/place_of_birth_evals
+
+  evaluate_country:
+    wdir: evaluation/evaluation_scripts/country
+    cmd: |
+      uv run python normalize.py \
+        --batch-dir ../../../ext_data/Experiments/dataset_2026/ \
+        --output-dir ../../../results/normalized/country/
+      uv run python evaluate_country.py \
+        --batch-dir ../../../results/normalized/country/ \
+        --output-dir ../../../ext_data/Evaluation/country_evals/ \
+        --cache vocab_cache.json
+    deps:
+      - normalize.py
+      - evaluate_country.py
+      - ../../../ext_data/Experiments/dataset_2026/
+    outs:
+      - ../../../ext_data/Evaluation/country_evals
+
+  evaluate_occ:
+    wdir: evaluation/evaluation_scripts/occupation
+    cmd: >
+      uv run python score.py \
+      --input ../../../ext_data/Experiments/dataset_2026/ \
+      --output ../../../ext_data/Evaluation/occupation_bleurt \
+      --metric bleurt
+    deps:
+      - score.py
+      - ../../../ext_data/Experiments/dataset_2026/
+    outs:
+      - ../../../ext_data/Evaluation/occupation_bleurt
+
+  generate_reports:
+    wdir: evaluation/reports
+    cmd: |
+      uv run python generate_f1_reports.py
+      uv run python generate_heatmaps.py
+      uv run python generate_country_reports.py
+    deps:
+      - generate_f1_reports.py
+      - generate_heatmaps.py
+      - generate_country_reports.py
+    
+    outs:
+      - heatmaps/:
+          cache: false
+      - pob_f1_reports.txt:
+          cache: false
+      - pob_f1_prov_reports.txt:
+          cache: false
+      - country_f1_reports.txt:
+          cache: false
+      - country_f1_prov_reports.txt:
+          cache: false
+      - dob_f1_reports.txt:
+          cache: false

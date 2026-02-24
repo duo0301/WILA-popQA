@@ -18,11 +18,15 @@ dependencies = [
     "pyyaml",
     "bert-score",
     "dvc>=3.66.1",
+    "bleurt",
 ]
 
 [dependency-groups]
 dev = [
     "jupyter",
 ]
+
+[tool.uv.sources]
+bleurt = { git = "https://github.com/google-research/bleurt" }
 
 
