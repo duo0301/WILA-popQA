@@ -4,6 +4,8 @@ import pandas as pd
 
 import re
 
+import argparse
+
 import torch
 from torch.utils.data import DataLoader
 
@@ -102,7 +104,7 @@ def get_generation_args(model_id, tokenizer):
 
     return generation_args
 
-def inference(model_id, dataset):
+def inference(model_id, dataset, output_dir):
 
 
     model = AutoModelForCausalLM.from_pretrained(
@@ -225,14 +227,20 @@ def inference(model_id, dataset):
     for prop in unique_properties:
         subset_df = df[df['property'] == prop]  
         filename = f"property_{prop}_{model_id.split('/')[1]}.csv"  
-        file_path = "RESULTS_FOLDER_PATH" + filename
+        file_path = output_dir + filename
         subset_df.to_csv(file_path , index=False)
         print(f"Saved rows with property '{prop}' to {file_path}")
 
 def main():
 
+    parser = argparse.ArgumentParser(description="Multilingual QA Inference")
+    parser.add_argument("--batch_dir", type=str, required=True, help="Path to the data folder")
+    parser.add_argument("--output_dir", type=str, required=True, help="Path to save results")
+    args = parser.parse_args()
 
-    data_dir = 'DATA_FOLDER_PATH'
+    data_dir = args.batch_dir
+    output_dir = args.output_dir
+
     lang_set = ['ar', 'en', 'de', 'fr', 'it', 'pl', 'ru', 'zh', 'hi']
     properties = ['pob', 'dob', 'occ', 'country']
     dataset = MultilingualQADataset(data_dir, lang_set, properties)
@@ -256,7 +264,7 @@ def main():
     for model_id in model_ids:
         for run_id in range(num_run):
             print ( "model {} - run {}".format(model_id, run_id) )
-            inference(model_id, dataset)
+            inference(model_id, dataset, output_dir)
 
 if __name__ == '__main__':
     main()
