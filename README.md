@@ -1,59 +1,60 @@
-# Ravenclaw Project
+# Submission for LREC 2026
 
-Welcome to the Ravenclaw Project repository!
-The Ravenclaw Project is an interdisciplinary research initiative focused on understanding cultural biases in multilingual LLMs. It explores how language alignment affects the performance of LLMs, particularly when answering factual questions about cultural entities such as authors, historical figures, and traditional practices. By leveraging Wikidata Knowledge Graphs, this project aims to provide a thorough analysis of the capabilities and limitations of multilingual LLMs.
+This repository contains the code and multilingual dataset for our LREC 2026 submission "A Wikidata-Based Framework to Measure Cross-Lingual Bias in Multilingual Large Language Models." The interdisciplinary project is focused on understanding cultural biases in multilingual LLMs. It explores how language alignment affects the performance of LLMs, particularly when answering factual questions about cultural entities such as authors, historical figures, and traditional practices. By leveraging Wikidata Knowledge Graphs, this project aims to provide a thorough analysis of the capabilities and limitations of multilingual LLMs.
 
 ## Directory Structure
-This repository contains the following main directories, each playing a specific role in the workflow:
 
-- **`data_collection/`**: Scripts and notebooks to retrieve and process data from Wikidata, focusing on cultural entities using tools like Pywikibot and Blazegraph,qEndPoint.
-- **`evaluation/`**: Notebooks for evaluating QA results, analyzing metrics such as accuracy, precision, recall, and F1 scores.
-- **`inference/`**: Scripts for determining the Language of the Entity (LoE) and analyzing multilingual aspects of Wikidata entities.
-- **`popularity_metric/`**: Scripts and documentation for calculating popularity metrics like Wikipedia sitelinks and analyzing their influence.
-- **`popularity_normalisation/`**: Resources related to normalizing popularity metrics, including QRank calculations.
-- **`prompt_construction/`**: Templates and methods for constructing multilingual prompts during the QA process.
+- **`data_collection/`** — scripts to retrieve and process Wikidata entities and generate prompts
+  - **`data/`** — intermediate and processed dataset files
+- **`evaluation/`**
+  - **`evaluation_scripts/`** — evaluation scripts, organized per property
+  - **`reports/`** — report generation scripts and output reports
+- **`inference/`** — scripts for running batch inference on LLMs
 
 ## Installation and Setup
-To set up the Ravenclaw Project on your local machine, follow these steps:
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/adrian9631/ravenclaw_project.git
-   cd ravenclaw_project
-   ```
+Requires Python 3.11 or higher and [uv](https://docs.astral.sh/uv/).
 
-2. **Install dependencies**:
-   - Ensure you have Python 3.7 or higher.
-   - Install the required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   
-### Data Collection
-To retrieve cultural entity data from Wikidata, use the scripts provided in the `data_collection/` directory. These scripts help gather data that serves as the foundation for analyzing LLMs.
+To install dependencies run: 
 
-### Running Evaluation
-Once the dataset is complete, navigate to the `evaluation/` folder to assess the QA performance using metrics such as accuracy, precision, recall, and F1 scores.
+```bash
+uv sync
+```
 
-## Contributors
-The Ravenclaw Project is a collaborative effort involving contributions from:
+## Data Access
 
-- [Adrian9631 (Duo)](https://github.com/adrian9631)
-- [Lipogg (Lisa Poggel)](https://github.com/lipogg)
-- [Miferroudjene (Mouloud Iferroudjene)](https://github.com/miferroudjene)
-- [Aschimmenti (Andrea Schimmenti)](https://github.com/aschimmenti)
-- [Marta Boscariol](https://github.com/martaboscariol)
-- [Jan Kalo](https://github.com/JanKalo)
-- [Kanchanks (Kanchan Shivashankar)](https://github.com/kanchanks)
+Large data files (experiments, evaluations, prompts) are versioned with [DVC](https://dvc.org) and stored on Google Drive. To download them:
 
-## How to Contribute
-We welcome contributions to make the Ravenclaw Project better. Here’s how you can help:
+1. **Configure the DVC remote**:   
 
-- **Improve Data Retrieval**: Enhance efficiency and reliability of data retrieval scripts.
-- **Add New Popularity Metrics**: Extend the scope of popularity metrics to include more diverse measures.
-- **Extend QA Templates**: Create QA templates for additional languages or expand them to cover new entity classes.
+```bash                                     
+   uv run dvc remote modify --local gdrive gdrive_service_account_json_file_path /path/to/service_account_key.json                           
+```                                         
 
-To contribute, fork the repository and submit a pull request. Refer to our [issues page](https://github.com/adrian9631/ravenclaw_project/issues) for open tasks that need attention.
+2. **Pull the data**:
+
+```bash                                     
+uv run dvc pull                             
+``` 
+
+To reproduce the full pipeline:
+```bash
+uv run dvc repro
+```
+
+Individual stages can be run with:
+```bash
+uv run dvc repro <stage_name>
+```
+
+To visualize the dependency graph run: 
+
+```bash
+uv run dvc dag
+```
+
+See `dvc.yaml` for the full pipeline definition and available stages.
+
 
 ## License
 This project is licensed under the MIT License. Refer to the `LICENSE` file for more details.

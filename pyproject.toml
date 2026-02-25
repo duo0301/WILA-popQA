@@ -19,6 +19,7 @@ dependencies = [
     "bert-score",
     "dvc>=3.66.1",
     "bleurt",
+    "dvc-gdrive>=3.0.1",
 ]
 
 [dependency-groups]
