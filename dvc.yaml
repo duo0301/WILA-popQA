@@ -83,8 +83,8 @@ stages:
     wdir: inference
     cmd: >
       uv run python batch_inference.py
-      --input-dir ../ext_data/Prompts/prompt_complete_entities
-      --output-dir ../ext_data/Experiments/dataset_2026
+      --batch_dir ../ext_data/Prompts/prompt_complete_entities
+      --output_dir ../ext_data/Experiments/dataset_2026
     deps:
       - batch_inference.py
       - pt_dataset.py
