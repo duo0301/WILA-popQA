@@ -109,9 +109,9 @@ stages:
     cmd: |
       uv run python normalize_pob.py \
         --batch-dir ../../../ext_data/Experiments/dataset_2026/ \
-        --output-dir ../../../results/normalized/pob/
+        --output-dir ../../../ext_data/Evaluation/normalized/pob/
       uv run python evaluate_pob.py \
-        --batch-dir ../../../results/normalized/pob/ \
+        --batch-dir ../../../ext_data/Evaluation/normalized/pob/ \
         --output-dir ../../../ext_data/Evaluation/place_of_birth_evals/ \
         --cache pob_place_cache.json
     deps:
@@ -126,9 +126,9 @@ stages:
     cmd: |
       uv run python normalize.py \
         --batch-dir ../../../ext_data/Experiments/dataset_2026/ \
-        --output-dir ../../../results/normalized/country/
+        --output-dir ../../../ext_data/Evaluation/normalized/country/
       uv run python evaluate_country.py \
-        --batch-dir ../../../results/normalized/country/ \
+        --batch-dir ../../../ext_data/Evaluation/normalized/country/ \
         --output-dir ../../../ext_data/Evaluation/country_evals/ \
         --cache vocab_cache.json
     deps:
