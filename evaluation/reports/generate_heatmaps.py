@@ -17,6 +17,8 @@ MODEL_SUFFIXES = {
     'Phi-4':        ('sample-phi-4',       'phi-4'),
     'Qwen3-14B':    ('sample-qwen-14b',    'Qwen3-14B'),
     'Qwen3-8B':     ('sample-qwen-8b',     'Qwen3-8B'),
+    'Nemotron-9B':  ('sample-nemotron-9b', 'NVIDIA-Nemotron-Nano-9B-v2'),
+    'DeepSeek-V2-Lite': ('sample-deekseek-v2-lite', 'DeepSeek-V2-Lite-Chat'),
 }
 
 PROP_LABELS = {
@@ -38,7 +40,16 @@ WEIGHTS = {
         'historical_match': 0.7,
         'substring_match':  0.9,
     },
+    'dob': {
+        'exact_match':           1.0,
+        'swap_match':            1.0,
+        'year_month_match':      0.7,
+        'year_month_swap_match': 0.7,
+    },
 }
+
+# Properties that have _prov CSV files (with auto/judge provenance columns)
+PROPS_WITH_PROV = {'pob', 'country'}
 
 
 # ── helpers ──────────────────────────────────────────────────────────────────
@@ -107,12 +118,14 @@ def generate(prop):
     prop_label = PROP_LABELS.get(prop, prop)
     print(f'\n=== {prop_label} ===')
 
-    # load prov files for all models
+    has_prov = prop in PROPS_WITH_PROV
+
+    # load files for all models (prov files if available, regular otherwise)
     all_data = {}
     all_loe, all_loq = set(), set()
 
     for model, (folder, suffix) in MODEL_SUFFIXES.items():
-        rows = load(folder, suffix, prop, prov=True)
+        rows = load(folder, suffix, prop, prov=has_prov)
         all_data[model] = rows
         for r in rows:
             all_loe.add(r['LoE'])
@@ -121,7 +134,6 @@ def generate(prop):
     loe_list   = sorted(all_loe)
     loq_list   = sorted(all_loq)
     model_list = list(MODEL_SUFFIXES.keys())
-    prov_list  = ['auto', 'judge']
 
     prop_dir      = os.path.join(out_root, prop)
     per_model_dir = os.path.join(prop_dir, 'per_model')
@@ -145,7 +157,7 @@ def generate(prop):
                              if weighted else f1_of(subset, prov_filter))
         return mat
 
-    prov_variants = [(None, ''), ('auto', '_auto'), ('judge', '_judge')]
+    prov_variants = [(None, ''), ('auto', '_auto'), ('judge', '_judge')] if has_prov else [(None, '')]
 
     # ── 1. LoE×LoQ averaged across models ──────────────────────────────────
     for prov_filter, tag in prov_variants:

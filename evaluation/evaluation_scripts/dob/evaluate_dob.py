@@ -14,6 +14,7 @@ Scoring scheme (eval_score column):
 
 Usage:
     python evaluate_dob.py --input raw.csv --output results.csv
+    python evaluate_dob.py --batch-dir model/raw/ --output-dir model/eval/
 """
 
 import argparse
@@ -117,18 +118,13 @@ def safe_print(msg: str):
         print(msg.encode("ascii", "replace").decode(), flush=True)
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Evaluate DOB predictions.")
-    parser.add_argument("--input", required=True, help="Input CSV file")
-    parser.add_argument("--output", required=True, help="Output CSV file")
-    args = parser.parse_args()
-
-    with open(args.input, newline="", encoding="utf-8") as f:
+def evaluate_file(input_path: str, output_path: str):
+    with open(input_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         fieldnames = list(reader.fieldnames)
         rows = list(reader)
 
-    safe_print(f"Loaded {len(rows)} rows from {args.input}")
+    safe_print(f"Loaded {len(rows)} rows from {input_path}")
 
     # Check if already evaluated (requires eval_score to be present too)
     if "eval" in fieldnames and "eval_type" in fieldnames and "eval_score" in fieldnames:
@@ -144,8 +140,8 @@ def main():
         row["eval_score"] = ev_score
 
     # Write output
-    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
-    with open(args.output, "w", newline="", encoding="utf-8") as f:
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=out_fieldnames)
         writer.writeheader()
         writer.writerows(rows)
@@ -161,7 +157,7 @@ def main():
     weighted_sum = sum(float(r["eval_score"]) for r in rows)
     weighted_avg = weighted_sum / total if total else 0.0
 
-    safe_print(f"\n=== Summary for {os.path.basename(args.input)} ===")
+    safe_print(f"\n=== Summary for {os.path.basename(input_path)} ===")
     safe_print(f"  TP: {tp}")
     safe_print(f"  FP: {fp}")
     safe_print(f"  FN: {fn}")
@@ -170,7 +166,38 @@ def main():
     for mt, cnt in type_counts.most_common():
         score = SCORES.get(mt, 0.0)
         safe_print(f"    {mt:28s} {cnt:5d}  (score={score})")
-    safe_print(f"Results written to {args.output}")
+    safe_print(f"Results written to {output_path}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Evaluate DOB predictions.")
+    parser.add_argument("--input",      help="Single input CSV file")
+    parser.add_argument("--output",     help="Output CSV file (single-file mode)")
+    parser.add_argument("--batch-dir",  help="Directory of input CSVs")
+    parser.add_argument("--output-dir", help="Output directory for batch mode")
+    args = parser.parse_args()
+
+    if args.batch_dir:
+        if not args.output_dir:
+            parser.error("--output-dir is required with --batch-dir")
+        batch_dir = Path(args.batch_dir)
+        output_dir = Path(args.output_dir)
+        csvs = sorted(batch_dir.glob("property_dob_*.csv"))
+        if not csvs:
+            csvs = sorted(batch_dir.glob("*.csv"))
+        safe_print(f"Found {len(csvs)} CSV files in {batch_dir}")
+        for csv_path in csvs:
+            out_path = output_dir / csv_path.name
+            safe_print(f"\n{'='*60}")
+            safe_print(f"Processing: {csv_path.name}")
+            safe_print(f"{'='*60}")
+            evaluate_file(str(csv_path), str(out_path))
+    elif args.input:
+        if not args.output:
+            parser.error("--output is required with --input")
+        evaluate_file(args.input, args.output)
+    else:
+        parser.error("Either --input or --batch-dir is required")
 
 
 if __name__ == "__main__":

@@ -13,6 +13,8 @@ models = {
     'Phi-4': ('sample-phi-4', 'property_country_phi-4.csv'),
     'Qwen3-14B': ('sample-qwen-14b', 'property_country_Qwen3-14B.csv'),
     'Qwen3-8B': ('sample-qwen-8b', 'property_country_Qwen3-8B.csv'),
+    'Nemotron-9B': ('sample-nemotron-9b', 'property_country_NVIDIA-Nemotron-Nano-9B-v2.csv'),
+    'DeepSeek-V2-Lite': ('sample-deekseek-v2-lite', 'property_country_DeepSeek-V2-Lite-Chat.csv'),
 }
 
 def calc_f1(tp, fp, fn):

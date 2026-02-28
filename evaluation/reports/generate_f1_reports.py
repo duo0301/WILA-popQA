@@ -16,6 +16,12 @@ WEIGHTS = {
         'historical_match': 0.7,
         'substring_match': 0.9,
     },
+    'dob': {
+        'exact_match':           1.0,
+        'swap_match':            1.0,
+        'year_month_match':      0.7,
+        'year_month_swap_match': 0.7,
+    },
 }
 
 # property prefix -> (folder, filename) per model
@@ -30,6 +36,8 @@ MODEL_SUFFIXES = {
     'Phi-4': ('sample-phi-4', 'phi-4'),
     'Qwen3-14B': ('sample-qwen-14b', 'Qwen3-14B'),
     'Qwen3-8B': ('sample-qwen-8b', 'Qwen3-8B'),
+    'Nemotron-9B': ('sample-nemotron-9b', 'NVIDIA-Nemotron-Nano-9B-v2'),
+    'DeepSeek-V2-Lite': ('sample-deekseek-v2-lite', 'DeepSeek-V2-Lite-Chat'),
 }
 
 def calc_f1(tp, fp, fn):
