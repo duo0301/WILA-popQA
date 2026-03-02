@@ -23,7 +23,7 @@ Requires Python 3.11 or higher, [uv](https://docs.astral.sh/uv/) and [Docker](ht
 uv sync
 ```
 
-3. Download our data via [this link](https://file.fast/KaZRN/ext-data.zip)
+3. Download our data via [this link](https://file.fast/NVZ63/ext-data.zip). The data includes the processed dataset, prompts, and evaluation results.
 
 4. Unzip the downloaded folder in the root directory of the cloned repository 
 
