@@ -13,7 +13,7 @@ This repository contains the code and multilingual dataset for our LREC 2026 sub
 
 ## Installation and Setup
 
-Requires Python 3.11 or higher, [uv](https://docs.astral.sh/uv/) and [Docker](https://www.docker.com/). Large data files (experiments, evaluations, prompts) are versioned with [DVC](https://dvc.org) and stored on Google Drive. A public version of our data is available [here](https://file.fast/KaZRN/ext-data.zip) and is required to reproduce the pipeline.
+Requires Python 3.11 or higher, [uv](https://docs.astral.sh/uv/) and [Docker](https://www.docker.com/). Large data files (experiments, evaluations, prompts) are versioned with [DVC](https://dvc.org) and stored on Google Drive. A public version of our data is available [here](https://zenodo.org/records/19249706) and is required to reproduce the pipeline.
 
 1. Clone the repository.
 
