@@ -1,6 +1,6 @@
-# Submission for LREC 2026
+# WILA-popQA
 
-This repository contains the code and multilingual dataset for our LREC 2026 submission "A Wikidata-Based Framework to Measure Cross-Lingual Bias in Multilingual Large Language Models." The interdisciplinary project is focused on understanding cultural biases in multilingual LLMs. It explores how language alignment affects the performance of LLMs, particularly when answering factual questions about cultural entities such as authors, historical figures, and traditional practices. By leveraging Wikidata Knowledge Graphs, this project aims to provide a thorough analysis of the capabilities and limitations of multilingual LLMs.
+This repository contains the code and multilingual dataset for our LREC 2026 workshop paper "A Wikidata-Based Framework to Measure Cross-Lingual Bias in Multilingual Large Language Models." The interdisciplinary project is focused on understanding cultural biases in multilingual LLMs. It explores how language alignment affects the performance of LLMs, particularly when answering factual questions about cultural entities such as authors, historical figures, and traditional practices. By leveraging Wikidata Knowledge Graphs, this project aims to provide a thorough analysis of the capabilities and limitations of multilingual LLMs.
 
 ## Directory Structure
 
