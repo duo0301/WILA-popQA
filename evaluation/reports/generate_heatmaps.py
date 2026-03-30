@@ -3,22 +3,28 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-base = 'C:/Users/andsc/Desktop/Evals/dataset_2026_sampled'
-out_root = 'C:/Users/andsc/Desktop/Evals/heatmaps'
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+out_root = os.path.join(SCRIPT_DIR, 'heatmaps')
+
+PROP_FOLDERS = {
+    'pob':     'place_of_birth_evals',
+    'dob':     'date_of_birth_evals',
+    'country': 'country_evals',
+}
 
 MODEL_SUFFIXES = {
-    'Gemma-3-12B':  ('sample-gemma-12b',   'gemma-3-12b-it'),
-    'Gemma-2-9B':   ('sample-gemma-9b',    'gemma-2-9b-it'),
-    'GLM-4-9B':     ('sample-glm-9b',      'glm-4-9b-chat-hf'),
-    'Llama-3.1-8B': ('sample-llama-8b',    'Meta-Llama-3.1-8B-Instruct'),
-    'Mistral-7B':   ('sample-mistral-7b',  'Mistral-7B-Instruct-v0.3'),
-    'Moonlight-16B':('sample-moonlight-16b','Moonlight-16B-A3B-Instruct'),
-    'OLMo-3-7B':    ('sample-olmo-7b',     'Olmo-3-7B-Instruct'),
-    'Phi-4':        ('sample-phi-4',       'phi-4'),
-    'Qwen3-14B':    ('sample-qwen-14b',    'Qwen3-14B'),
-    'Qwen3-8B':     ('sample-qwen-8b',     'Qwen3-8B'),
-    'Nemotron-9B':  ('sample-nemotron-9b', 'NVIDIA-Nemotron-Nano-9B-v2'),
-    'DeepSeek-V2-Lite': ('sample-deekseek-v2-lite', 'DeepSeek-V2-Lite-Chat'),
+    'Gemma-3-12B':    'gemma-3-12b-it',
+    'Gemma-2-9B':     'gemma-2-9b-it',
+    'GLM-4-9B':       'glm-4-9b-chat-hf',
+    'Llama-3.1-8B':   'Meta-Llama-3.1-8B-Instruct',
+    'Mistral-7B':     'Mistral-7B-Instruct-v0.3',
+    'Moonlight-16B':  'Moonlight-16B-A3B-Instruct',
+    'OLMo-3-7B':      'Olmo-3-7B-Instruct',
+    'Phi-4':          'phi-4',
+    'Qwen3-14B':      'Qwen3-14B',
+    'Qwen3-8B':       'Qwen3-8B',
+    'Nemotron-9B':    'NVIDIA-Nemotron-Nano-9B-v2',
+    'DeepSeek-V2-Lite': 'DeepSeek-V2-Lite-Chat',
 }
 
 PROP_LABELS = {
@@ -60,9 +66,9 @@ def calc_f1(tp, fp, fn):
     return 2 * prec * rec / (prec + rec) if (prec + rec) > 0 else 0
 
 
-def load(folder, suffix, prop, prov=False):
+def load(suffix, prop, prov=False):
     fname = f'property_{prop}_{suffix}{"_prov" if prov else ""}.csv'
-    path  = os.path.join(base, folder, 'eval', fname)
+    path  = os.path.join(SCRIPT_DIR, PROP_FOLDERS[prop], fname)
     with open(path, encoding='utf-8') as f:
         return list(csv.DictReader(f))
 
@@ -124,8 +130,8 @@ def generate(prop):
     all_data = {}
     all_loe, all_loq = set(), set()
 
-    for model, (folder, suffix) in MODEL_SUFFIXES.items():
-        rows = load(folder, suffix, prop, prov=has_prov)
+    for model, suffix in MODEL_SUFFIXES.items():
+        rows = load(suffix, prop, prov=has_prov)
         all_data[model] = rows
         for r in rows:
             all_loe.add(r['LoE'])

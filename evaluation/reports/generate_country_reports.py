@@ -1,20 +1,21 @@
 import csv, os
 from collections import defaultdict
 
-base = 'C:/Users/andsc/Desktop/Evals/dataset_2026_sampled'
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+EVALS_FOLDER = os.path.join(SCRIPT_DIR, 'country_evals')
 models = {
-    'Gemma-3-12B': ('sample-gemma-12b', 'property_country_gemma-3-12b-it.csv'),
-    'Gemma-2-9B': ('sample-gemma-9b', 'property_country_gemma-2-9b-it.csv'),
-    'GLM-4-9B': ('sample-glm-9b', 'property_country_glm-4-9b-chat-hf.csv'),
-    'Llama-3.1-8B': ('sample-llama-8b', 'property_country_Meta-Llama-3.1-8B-Instruct.csv'),
-    'Mistral-7B': ('sample-mistral-7b', 'property_country_Mistral-7B-Instruct-v0.3.csv'),
-    'Moonlight-16B': ('sample-moonlight-16b', 'property_country_Moonlight-16B-A3B-Instruct.csv'),
-    'OLMo-3-7B': ('sample-olmo-7b', 'property_country_Olmo-3-7B-Instruct.csv'),
-    'Phi-4': ('sample-phi-4', 'property_country_phi-4.csv'),
-    'Qwen3-14B': ('sample-qwen-14b', 'property_country_Qwen3-14B.csv'),
-    'Qwen3-8B': ('sample-qwen-8b', 'property_country_Qwen3-8B.csv'),
-    'Nemotron-9B': ('sample-nemotron-9b', 'property_country_NVIDIA-Nemotron-Nano-9B-v2.csv'),
-    'DeepSeek-V2-Lite': ('sample-deekseek-v2-lite', 'property_country_DeepSeek-V2-Lite-Chat.csv'),
+    'Gemma-3-12B':    'property_country_gemma-3-12b-it_prov.csv',
+    'Gemma-2-9B':     'property_country_gemma-2-9b-it_prov.csv',
+    'GLM-4-9B':       'property_country_glm-4-9b-chat-hf_prov.csv',
+    'Llama-3.1-8B':   'property_country_Meta-Llama-3.1-8B-Instruct_prov.csv',
+    'Mistral-7B':     'property_country_Mistral-7B-Instruct-v0.3_prov.csv',
+    'Moonlight-16B':  'property_country_Moonlight-16B-A3B-Instruct_prov.csv',
+    'OLMo-3-7B':      'property_country_Olmo-3-7B-Instruct_prov.csv',
+    'Phi-4':          'property_country_phi-4_prov.csv',
+    'Qwen3-14B':      'property_country_Qwen3-14B_prov.csv',
+    'Qwen3-8B':       'property_country_Qwen3-8B_prov.csv',
+    'Nemotron-9B':    'property_country_NVIDIA-Nemotron-Nano-9B-v2_prov.csv',
+    'DeepSeek-V2-Lite': 'property_country_DeepSeek-V2-Lite-Chat_prov.csv',
 }
 
 def calc_f1(tp, fp, fn):
@@ -22,8 +23,8 @@ def calc_f1(tp, fp, fn):
     rec = tp/(tp+fn) if (tp+fn) > 0 else 0
     return 2*prec*rec/(prec+rec) if (prec+rec) > 0 else 0
 
-def load(folder, fname):
-    path = os.path.join(base, folder, 'eval', fname)
+def load(fname):
+    path = os.path.join(EVALS_FOLDER, fname)
     rows = []
     with open(path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -36,8 +37,8 @@ all_data = {}
 all_loe = set()
 all_loq = set()
 
-for model_name, (folder, fname) in models.items():
-    rows = load(folder, fname)
+for model_name, fname in models.items():
+    rows = load(fname)
     all_data[model_name] = rows
     for r in rows:
         all_loe.add(r['LoE'])

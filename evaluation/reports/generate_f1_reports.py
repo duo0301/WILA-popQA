@@ -1,6 +1,12 @@
 import csv, os, sys
 
-base = 'C:/Users/andsc/Desktop/Evals/dataset_2026_sampled'
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+PROP_FOLDERS = {
+    'pob':     'place_of_birth_evals',
+    'dob':     'date_of_birth_evals',
+    'country': 'country_evals',
+}
 
 # eval_type weights per property (FP / FN / unknown → 0.0)
 WEIGHTS = {
@@ -24,20 +30,20 @@ WEIGHTS = {
     },
 }
 
-# property prefix -> (folder, filename) per model
+# property prefix -> filename suffix per model
 MODEL_SUFFIXES = {
-    'Gemma-3-12B': ('sample-gemma-12b', 'gemma-3-12b-it'),
-    'Gemma-2-9B': ('sample-gemma-9b', 'gemma-2-9b-it'),
-    'GLM-4-9B': ('sample-glm-9b', 'glm-4-9b-chat-hf'),
-    'Llama-3.1-8B': ('sample-llama-8b', 'Meta-Llama-3.1-8B-Instruct'),
-    'Mistral-7B': ('sample-mistral-7b', 'Mistral-7B-Instruct-v0.3'),
-    'Moonlight-16B': ('sample-moonlight-16b', 'Moonlight-16B-A3B-Instruct'),
-    'OLMo-3-7B': ('sample-olmo-7b', 'Olmo-3-7B-Instruct'),
-    'Phi-4': ('sample-phi-4', 'phi-4'),
-    'Qwen3-14B': ('sample-qwen-14b', 'Qwen3-14B'),
-    'Qwen3-8B': ('sample-qwen-8b', 'Qwen3-8B'),
-    'Nemotron-9B': ('sample-nemotron-9b', 'NVIDIA-Nemotron-Nano-9B-v2'),
-    'DeepSeek-V2-Lite': ('sample-deekseek-v2-lite', 'DeepSeek-V2-Lite-Chat'),
+    'Gemma-3-12B':    'gemma-3-12b-it',
+    'Gemma-2-9B':     'gemma-2-9b-it',
+    'GLM-4-9B':       'glm-4-9b-chat-hf',
+    'Llama-3.1-8B':   'Meta-Llama-3.1-8B-Instruct',
+    'Mistral-7B':     'Mistral-7B-Instruct-v0.3',
+    'Moonlight-16B':  'Moonlight-16B-A3B-Instruct',
+    'OLMo-3-7B':      'Olmo-3-7B-Instruct',
+    'Phi-4':          'phi-4',
+    'Qwen3-14B':      'Qwen3-14B',
+    'Qwen3-8B':       'Qwen3-8B',
+    'Nemotron-9B':    'NVIDIA-Nemotron-Nano-9B-v2',
+    'DeepSeek-V2-Lite': 'DeepSeek-V2-Lite-Chat',
 }
 
 def calc_f1(tp, fp, fn):
@@ -55,10 +61,11 @@ def calc_weighted_f1(rows, prop):
     f1   = 2*prec*rec/(prec+rec) if (prec+rec) > 0 else 0
     return prec, rec, f1
 
-def load(folder, fname, prov=False):
+def load(prop, fname, prov=False):
     if prov:
         fname = fname.rsplit('.', 1)[0] + '_prov.csv'
-    path = os.path.join(base, folder, 'eval', fname)
+    folder = PROP_FOLDERS[prop]
+    path = os.path.join(SCRIPT_DIR, folder, fname)
     rows = []
     with open(path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -87,9 +94,9 @@ def generate_reports(prop, prov=False, out=None):
 
     # Build model dict for this property
     models = {}
-    for model_name, (folder, suffix) in MODEL_SUFFIXES.items():
+    for model_name, suffix in MODEL_SUFFIXES.items():
         fname = f'property_{prop}_{suffix}.csv'
-        models[model_name] = (folder, fname)
+        models[model_name] = fname
 
     # Collect data
     all_data = {}
@@ -97,8 +104,8 @@ def generate_reports(prop, prov=False, out=None):
     all_loq = set()
     all_prov = set()
 
-    for model_name, (folder, fname) in models.items():
-        rows = load(folder, fname, prov=prov)
+    for model_name, fname in models.items():
+        rows = load(prop, fname, prov=prov)
         all_data[model_name] = rows
         for r in rows:
             all_loe.add(r['LoE'])
@@ -352,7 +359,7 @@ if __name__ == '__main__':
         'dob': 'dob_f1_reports.txt',
     }
 
-    root = 'C:/Users/andsc/Desktop/Evals'
+    root = SCRIPT_DIR
 
     if save and prop in report_files:
         fname = report_files[prop]
